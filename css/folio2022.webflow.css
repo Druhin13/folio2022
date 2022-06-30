@@ -23,7 +23,6 @@
   position: relative;
   z-index: 50;
   width: 100vw;
-  margin-bottom: 100vh;
   padding-top: 0vh;
   padding-right: 12vw;
   padding-left: 2vw;
@@ -42,15 +41,6 @@
   letter-spacing: -0.1625vw;
 }
 
-.heading1.type2 {
-  margin-bottom: 3.5vh;
-  font-family: 'Editorial New', 'Times New Roman', sans-serif;
-  color: #fff;
-  line-height: 90%;
-  font-weight: 200;
-  letter-spacing: -0.15vw;
-}
-
 .heading1.type3 {
   margin-left: 2vw;
   -webkit-box-flex: 0;
@@ -60,6 +50,8 @@
   color: #fff;
   font-size: 7.5vw;
   font-weight: 400;
+  letter-spacing: -0.3vw;
+  text-transform: none;
 }
 
 .case-study-link {
@@ -145,8 +137,13 @@
 }
 
 .context-heading.white.award-context {
-  display: block;
-  margin-top: 1.75vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 .context-type {
@@ -334,43 +331,6 @@
   background-color: #fff;
 }
 
-.awards-section {
-  position: relative;
-  z-index: 25;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 70vh;
-  padding-top: 0vh;
-  padding-right: 3vw;
-  padding-left: 3vw;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  background-color: #131313;
-}
-
-.awards-holder {
-  position: absolute;
-  left: auto;
-  top: auto;
-  right: 0%;
-  bottom: 0%;
-  margin-bottom: 0px;
-  padding-left: 0px;
-}
-
-.text-span {
-  font-style: italic;
-}
-
 .awards-title-holder {
   display: -webkit-box;
   display: -webkit-flex;
@@ -378,46 +338,6 @@
   display: flex;
   width: auto;
   margin-bottom: 0.8vh;
-}
-
-.awards-title {
-  margin-left: 1vw;
-  color: #fff;
-  font-size: 0.65vw;
-  line-height: 98%;
-  font-weight: 400;
-  text-align: left;
-  letter-spacing: -0.013vw;
-  text-transform: capitalize;
-}
-
-.date {
-  width: 6.75vw;
-  margin-left: 0vw;
-  opacity: 0.5;
-  color: #fff;
-  font-size: 0.65vw;
-  line-height: 98%;
-  font-weight: 400;
-  text-align: right;
-  letter-spacing: -0.013vw;
-  text-transform: uppercase;
-}
-
-.awards-fixed {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-  width: 40%;
-  height: 100vh;
-  margin-left: 17vw;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
 }
 
 .menu {
@@ -650,6 +570,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 12vh;
+  margin-top: 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -663,7 +584,7 @@
 }
 
 .awards {
-  position: fixed;
+  position: relative;
   z-index: 10;
   overflow: hidden;
   width: 100vw;
@@ -709,18 +630,7 @@
 }
 
 .award-name.marquee3k {
-  overflow: hidden;
-  margin-bottom: -0.75vh;
-}
-
-.test {
-  position: relative;
-  z-index: 50;
-  width: 100vw;
-  margin-right: 0px;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  background-color: #000;
+  margin-bottom: -1.5vh;
 }
 
 .m-div {
@@ -736,16 +646,12 @@
 }
 
 .m-div:hover {
-  -webkit-filter: blur(9px);
-  filter: blur(9px);
+  -webkit-filter: none;
+  filter: none;
 }
 
 .m-div.a0 {
   margin-left: 40vw;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
 }
 
 .m-div.a1 {
@@ -772,15 +678,37 @@
   margin-left: 39.5vw;
 }
 
+.m-div.a7 {
+  margin-left: 52.5vw;
+}
+
+.m-div.a8 {
+  margin-left: 45vw;
+}
+
 .all-awards {
   position: absolute;
-  left: 0%;
+  left: auto;
   top: auto;
   right: 0%;
   bottom: 0%;
   z-index: 100;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100vw;
   margin-top: 20vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.date {
+  display: block;
+  margin-top: 2vh;
 }
 
 @media screen and (max-width: 767px) {
