@@ -717,7 +717,7 @@
   bottom: 0%;
   z-index: 100;
   width: 100vw;
-  height: 129.65vh;
+  height: 281.1vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -758,7 +758,7 @@
 
 .testimonial {
   height: 100vh;
-  background-color: #131313;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 767px) {
