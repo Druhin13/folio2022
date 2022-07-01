@@ -42,6 +42,7 @@
 }
 
 .heading1.type3 {
+  z-index: 100;
   margin-left: 2vw;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
@@ -133,7 +134,7 @@
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   color: #fff;
-  text-transform: lowercase;
+  text-transform: none;
 }
 
 .context-heading.white.award-context {
@@ -144,6 +145,28 @@
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
+}
+
+.context-heading.white.type {
+  display: block;
+  margin-top: 2.25vh;
+  -webkit-transition: color 400ms ease;
+  transition: color 400ms ease;
+  font-weight: 500;
+}
+
+.context-heading.white.name {
+  opacity: 0.5;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease;
+}
+
+.context-heading.white.coordinate {
+  position: absolute;
+  left: 5vw;
+  top: auto;
+  right: auto;
+  bottom: 5vh;
 }
 
 .context-type {
@@ -603,7 +626,6 @@
   left: 0%;
   top: 20%;
   right: 0%;
-  bottom: 20%;
   z-index: 50;
   display: -webkit-box;
   display: -webkit-flex;
@@ -630,6 +652,8 @@
 }
 
 .award-name.marquee3k {
+  position: relative;
+  z-index: 100;
   margin-bottom: -1.5vh;
 }
 
@@ -693,12 +717,7 @@
   right: 0%;
   bottom: 0%;
   z-index: 100;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   width: 100vw;
-  margin-top: 20vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -707,8 +726,34 @@
 }
 
 .date {
+  position: relative;
+  z-index: 100;
   display: block;
   margin-top: 2vh;
+}
+
+.award-caterories {
+  position: absolute;
+  left: 0%;
+  top: 22.75vh;
+  right: 0%;
+  z-index: 50;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 8vw;
+  margin-left: 10vw;
+  padding-left: 0vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 767px) {
