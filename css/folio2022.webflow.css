@@ -697,6 +697,7 @@
   flex-wrap: nowrap;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  white-space: nowrap;
 }
 
 .m-div:hover {
@@ -706,7 +707,6 @@
 
 .m-div.a0 {
   padding-left: 0vw;
-  white-space: nowrap;
 }
 
 .all-awards {
