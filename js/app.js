@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const scroll = new GScroll(
   '#GScroll',
-  0.6,
+  0.4,
   () => {ScrollTrigger.update()}
 );
 
