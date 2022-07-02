@@ -42,8 +42,8 @@ window.addEventListener('resize', () => {
 /* Scroll Trigger animations */
 
 gsap.to(".case-study-link", {
-  trigger: ".case-study-link",
   scrollTrigger: {
+    trigger: ".case-study-link",
     pin: true,
     markers: {
       fontSize: "2rem",
