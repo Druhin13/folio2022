@@ -41,7 +41,17 @@ window.addEventListener('resize', () => {
 
 /* Scroll Trigger animations */
 
-gsap.to(".case-study-link", {
+gsap.utils.toArray(".case-study-link").forEach((panel, i) =>{
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top",
+    pin: true,
+    pinSpacing: false
+  });
+});
+
+/*gsap.to(".case-study-link", {
+  trigger: ".case-study-link",
   scrollTrigger: {
     trigger: ".case-study-link",
     pin: true,
@@ -49,5 +59,4 @@ gsap.to(".case-study-link", {
       fontSize: "2rem",
     },
   }  
- 
-})
+})*/
