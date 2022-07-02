@@ -37,3 +37,17 @@ ScrollTrigger.scrollerProxy(scroller, {
 window.addEventListener('resize', () => {
   scroll.resize()
 })
+
+
+/* Scroll Trigger animations */
+
+gsap.to(".case-study-link", {
+  trigger: ".case-study-link",
+  scrollTrigger: {
+    pin: true,
+    markers: {
+      fontSize: "2rem",
+    },
+  }  
+ 
+})
