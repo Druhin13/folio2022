@@ -252,10 +252,6 @@
   text-transform: capitalize;
 }
 
-.noise-filter-embed {
-  position: fixed;
-}
-
 .project-detail-holder {
   display: -webkit-box;
   display: -webkit-flex;
@@ -395,20 +391,9 @@
 }
 
 .card-whipe.bg-cream-shade {
-  background-image: url('../images/skills-test.gif');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(45deg, #fff, #bebebe);
   -webkit-filter: brightness(90%) grayscale(100%);
   filter: brightness(90%) grayscale(100%);
-}
-
-.card-whipe.bg-cream-shade.vtf {
-  background-image: url('../images/vtf-test.gif');
-}
-
-.card-whipe.bg-cream-shade.stamurai {
-  background-image: url('../images/stamurai-test.gif');
 }
 
 .end-blank-case-study {
@@ -879,7 +864,7 @@
 
 .cs-preview {
   position: absolute;
-  top: -11.5vh;
+  top: -15vh;
   right: 33.33%;
   z-index: 10;
   overflow: hidden;
@@ -910,6 +895,11 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -927,7 +917,7 @@
   width: 22vw;
 }
 
-.div-block-2 {
+.c1 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -938,6 +928,24 @@
   display: block;
   margin-top: 1.5vh;
   text-decoration: none;
+}
+
+.t-layout {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 6.5vh;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.line {
+  height: 1px;
+  margin-right: 2.6vw;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 991px) {
