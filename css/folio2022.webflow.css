@@ -369,9 +369,9 @@
   position: absolute;
   z-index: 1;
   padding: 0.9vh 1vw;
-  color: #131313;
+  color: #fff;
   font-size: 0.75vw;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.03px;
 }
 
@@ -386,14 +386,60 @@
 }
 
 .card-whipe.dark-shade {
-  background-color: #f7f7f7;
+  background-color: #131313;
   opacity: 1;
 }
 
 .card-whipe.bg-cream-shade {
-  background-image: none;
-  -webkit-filter: brightness(90%) grayscale(100%);
-  filter: brightness(90%) grayscale(100%);
+  background-image: linear-gradient(45deg, #fff, #bebebe);
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
+}
+
+.card-whipe.bg-cream-shade.mausumi {
+  height: 120%;
+  -webkit-filter: blur(1px) brightness(80%);
+  filter: blur(1px) brightness(80%);
+}
+
+.card-whipe.bg-cream-shade.nowiverse {
+  -webkit-filter: blur(1px) brightness(110%);
+  filter: blur(1px) brightness(110%);
+}
+
+.card-whipe.bg-cream-shade.vtf {
+  -webkit-filter: blur(1px) brightness(90%);
+  filter: blur(1px) brightness(90%);
+}
+
+.card-whipe.bg-cream-shade.vocal {
+  height: 115%;
+}
+
+.card-whipe.bg-cream-shade.greenfox {
+  bottom: 5%;
+  -webkit-filter: blur(1px) brightness(90%);
+  filter: blur(1px) brightness(90%);
+}
+
+.card-whipe.bg-cream-shade.allbodies {
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+}
+
+.card-whipe.bg-cream-shade.fathom {
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
+}
+
+.card-whipe.bg-cream-shade.biobot {
+  -webkit-filter: blur(1px) brightness(100%);
+  filter: blur(1px) brightness(100%);
+}
+
+.card-whipe.bg-cream-shade.insanedeals {
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
 }
 
 .end-blank-case-study {
@@ -437,7 +483,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 96vw;
-  margin-top: 2.5vh;
+  margin-top: 2vh;
   margin-right: 2vw;
   margin-left: 2vw;
   padding: 1.3vh 1.35vw 1vh;
@@ -821,7 +867,7 @@
 .testimonials {
   position: relative;
   z-index: 50;
-  height: 100vh;
+  height: 180vh;
   padding-top: 1vh;
   background-color: #131313;
   box-shadow: 0 0 100px -20px rgba(0, 0, 0, 0.8);
@@ -868,22 +914,86 @@
   top: -11.5vh;
   right: 33.33%;
   z-index: 10;
+  display: block;
   overflow: hidden;
   width: 20vw;
   height: 22vh;
   padding: 2.5em;
   border-radius: 1vw 1vw 0vw 0px;
-  -webkit-transform-origin: 0% 100%;
-  -ms-transform-origin: 0% 100%;
-  transform-origin: 0% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+
+.cs-preview.skillsunion {
+  top: -11.15vh;
+  right: 34%;
+  height: 21vh;
+}
+
+.cs-preview.vtf {
+  right: 31%;
+}
+
+.cs-preview.mausumi {
+  right: 32.5%;
+}
+
+.cs-preview.nowiverse {
+  right: 29.5%;
+}
+
+.cs-preview.vocal {
+  right: 31%;
+}
+
+.cs-preview.greenfox {
+  right: 35%;
+  background-color: #313131;
+}
+
+.cs-preview.allbodies {
+  background-color: #131313;
+}
+
+.cs-preview.buzzoms {
+  top: -13.5vh;
+  right: 34%;
+  height: 24vh;
+  background-color: #131313;
+}
+
+.cs-preview.fathom {
+  right: 33%;
+}
+
+.cs-preview.biobot {
+  right: 31%;
+}
+
+.cs-preview.stamurai {
+  top: -13.5vh;
+  right: 35%;
+  height: 24vh;
+  background-color: #131313;
+}
+
+.cs-preview.keralaonroad {
+  top: -13.5vh;
+  right: 31.5%;
+  height: 24vh;
 }
 
 .c-layout {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-right: 0.75vw;
+  padding-bottom: 13vh;
   padding-left: 3.5vw;
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -896,6 +1006,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 5vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -946,6 +1057,15 @@
 .line {
   height: 1px;
   margin-right: 2.6vw;
+  background-color: #fff;
+}
+
+.test {
+  position: relative;
+  z-index: 50;
+  height: 20vh;
+  padding-top: 66px;
+  padding-left: 176px;
   background-color: #fff;
 }
 
