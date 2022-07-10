@@ -10,7 +10,7 @@ $(".a0").mouseenter(function () {
 	{
 		if(i!=0)
 		{
-			document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(10px)";
+			document.querySelectorAll("."+"a"+i).style.filter = "blur(10px)";
 		}
 	}
 });
@@ -18,7 +18,7 @@ $(".a0").mouseleave(function () {
 	Marquee3k.pause(0);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -32,7 +32,7 @@ $(".a1").mouseenter(function () {
 	{
 		if(i!=1)
 		{
-			document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(10px)";
+			document.querySelectorAll("."+"a"+i).style.filter = "blur(10px)";
 		}
 	}
 });
@@ -40,7 +40,7 @@ $(".a1").mouseleave(function () {
 	Marquee3k.pause(1);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -54,7 +54,7 @@ $(".a2").mouseenter(function () {
 	{
 		if(i!=2)
 		{
-			document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(10px)";
+			document.querySelectorAll("."+"a"+i).style.filter = "blur(10px)";
 		}
 	}
 });
@@ -62,7 +62,7 @@ $(".a2").mouseleave(function () {
 	Marquee3k.pause(2);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -77,7 +77,7 @@ $(".a3").mouseleave(function () {
 	Marquee3k.pause(3);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -92,7 +92,7 @@ $(".a4").mouseleave(function () {
 	Marquee3k.pause(4);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -107,7 +107,7 @@ $(".a5").mouseleave(function () {
 	Marquee3k.pause(5);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -122,7 +122,7 @@ $(".a6").mouseleave(function () {
 	Marquee3k.pause(6);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -137,7 +137,7 @@ $(".a7").mouseleave(function () {
 	Marquee3k.pause(7);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -152,7 +152,7 @@ $(".a8").mouseleave(function () {
 	Marquee3k.pause(8);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -167,7 +167,7 @@ $(".a9").mouseleave(function () {
 	Marquee3k.pause(9);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -182,7 +182,7 @@ $(".a10").mouseleave(function () {
 	Marquee3k.pause(10);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -197,7 +197,7 @@ $(".a11").mouseleave(function () {
 	Marquee3k.pause(11);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -212,7 +212,7 @@ $(".a12").mouseleave(function () {
 	Marquee3k.pause(12);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -227,7 +227,7 @@ $(".a13").mouseleave(function () {
 	Marquee3k.pause(13);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -242,7 +242,7 @@ $(".a14").mouseleave(function () {
 	Marquee3k.pause(14);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -257,7 +257,7 @@ $(".a15").mouseleave(function () {
 	Marquee3k.pause(15);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -272,7 +272,7 @@ $(".a16").mouseleave(function () {
 	Marquee3k.pause(16);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -287,7 +287,7 @@ $(".a17").mouseleave(function () {
 	Marquee3k.pause(17);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -302,7 +302,7 @@ $(".a18").mouseleave(function () {
 	Marquee3k.pause(18);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -317,7 +317,7 @@ $(".a19").mouseleave(function () {
 	Marquee3k.pause(19);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -332,7 +332,7 @@ $(".a20").mouseleave(function () {
 	Marquee3k.pause(20);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -347,7 +347,7 @@ $(".a21").mouseleave(function () {
 	Marquee3k.pause(21);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -362,7 +362,7 @@ $(".a22").mouseleave(function () {
 	Marquee3k.pause(22);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
@@ -377,7 +377,7 @@ $(".a23").mouseleave(function () {
 	Marquee3k.pause(23);
 	for(i=0 ; i<=23 ; i++)
 	{
-		document.querySelectorAll("\""+"."+"a"+i+"\"").style.filter = "blur(0px)";
+		document.querySelectorAll("."+"a"+i).style.filter = "blur(0px)";
 	}
 });
 
