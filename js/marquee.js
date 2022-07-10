@@ -13,7 +13,7 @@ $(".a0").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -43,7 +43,7 @@ $(".a1").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -73,7 +73,7 @@ $(".a2").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -103,7 +103,7 @@ $(".a3").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -133,7 +133,7 @@ $(".a4").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -163,7 +163,7 @@ $(".a5").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -193,7 +193,7 @@ $(".a6").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -223,7 +223,7 @@ $(".a7").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -253,7 +253,7 @@ $(".a8").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -283,7 +283,7 @@ $(".a9").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -313,7 +313,7 @@ $(".a10").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -343,7 +343,7 @@ $(".a11").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -373,7 +373,7 @@ $(".a12").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -403,7 +403,7 @@ $(".a13").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -433,7 +433,7 @@ $(".a14").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -463,7 +463,7 @@ $(".a15").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -493,7 +493,7 @@ $(".a16").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -523,7 +523,7 @@ $(".a17").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -553,7 +553,7 @@ $(".a18").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -583,7 +583,7 @@ $(".a19").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -613,7 +613,7 @@ $(".a20").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -643,7 +643,7 @@ $(".a21").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -673,7 +673,7 @@ $(".a22").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
@@ -703,7 +703,7 @@ $(".a23").mouseenter(function () {
 			l = document.querySelectorAll("."+"a"+i).length;
 			for(j=0 ; j<l ; j++)
 			{
-				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(10px)";
+				document.querySelectorAll("."+"a"+i)[j].style.filter = "blur(13px)";
 			}
 		}
 	}
