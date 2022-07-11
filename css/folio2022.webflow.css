@@ -288,7 +288,7 @@
   left: 5vw;
   top: auto;
   right: auto;
-  bottom: 5vh;
+  bottom: 6vh;
 }
 
 .context-heading.white.paragraph {
@@ -558,20 +558,22 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-radius: 0.5vw;
-  background-color: hsla(0, 0%, 93.7%, 0.5);
-  -webkit-backdrop-filter: blur(50px);
-  backdrop-filter: blur(50px);
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
+  background-color: hsla(0, 0%, 93.7%, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
 }
 
 .menu.type2 {
   z-index: 499;
-  background-color: #efefef;
+  background-color: hsla(0, 0%, 93.7%, 0.8);
   opacity: 0;
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
-  mix-blend-mode: hard-light;
+  -webkit-transition-duration: 100ms;
+  transition-duration: 100ms;
+  mix-blend-mode: luminosity;
 }
 
 .nav-text {
@@ -684,11 +686,6 @@
   text-decoration: none;
 }
 
-.nav-link-block:hover {
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
-}
-
 .line-bottom {
   width: 100%;
   height: 1px;
@@ -697,6 +694,7 @@
 }
 
 .line-bottom.under {
+  display: none;
   margin-top: 0vh;
   background-color: #131313;
 }
@@ -735,7 +733,6 @@
   -ms-flex-align: center;
   align-items: center;
   background-color: #fff;
-  cursor: crosshair;
 }
 
 .other-works-holder {
@@ -956,7 +953,7 @@
   mix-blend-mode: difference;
 }
 
-.num-txt-lg {
+.cs-preview-text {
   position: absolute;
   left: auto;
   top: auto;
@@ -967,13 +964,30 @@
   font-weight: 700;
 }
 
-.num-txt-lg.text-blue {
-  bottom: 5%;
+.cs-preview-text.upper {
+  left: 3.25%;
+  top: 5%;
+  right: auto;
+  bottom: auto;
+  display: none;
+  color: #949494;
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+}
+
+.cs-preview-text.lower {
+  left: auto;
+  top: auto;
+  right: 3%;
+  bottom: 9%;
   display: none;
   color: #fff;
-  font-size: 3vw;
+  font-size: 1.5vw;
   font-weight: 500;
-  mix-blend-mode: difference;
+  text-transform: uppercase;
+  mix-blend-mode: lighten;
 }
 
 .cs-preview {
@@ -1052,9 +1066,6 @@
 }
 
 .c-layout {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1072,6 +1083,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10vh;
   padding-top: 6vh;
   padding-right: 2.6vw;
   -webkit-box-orient: vertical;
@@ -1136,6 +1148,18 @@
   padding-top: 66px;
   padding-left: 176px;
   background-color: #fff;
+}
+
+.all-navs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media screen and (max-width: 991px) {
