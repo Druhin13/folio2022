@@ -1,3 +1,10 @@
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".locomotive-scroll"),
+  smooth: true,
+  multiplier: 0.35,
+}); 
+locoScroll.stop();
+
 let timer = setInterval(remove, 10);
 function remove() {
   $(".w-webflow-badge").remove();
@@ -20,6 +27,8 @@ function updateLoaderText() {
   let progress = Math.round(counter.value);
   $("#load-percent").text(progress);
 }
+
+
 function endLoaderAnimation() {
   //triggering the loader hide animation
   $(".trigger2").click();
@@ -32,20 +41,11 @@ function endLoaderAnimation() {
   //turning off the continuous function run
   clearTimeout(timer);
 
-  const locoScroll = new LocomotiveScroll({
-    el: document.querySelector(".locomotive-scroll"),
-    smooth: true,
-    multiplier: 0.35,
-  }); 
-
-  /*
-  $(".loader").css("display", "none");
-  $(".locomotive-scroll").css("display", "block");
-*/
 
   // Wait 2 seconds then calculate the new page height
   setTimeout(() => {  
     locoScroll.update();
+    locoScroll.start();
   }, 2000);
 
 }
