@@ -666,6 +666,10 @@
   white-space: nowrap;
 }
 
+.locomotive-scroll {
+  display: block;
+}
+
 .nav-link-block {
   display: -webkit-box;
   display: -webkit-flex;
@@ -944,6 +948,7 @@
 .testimonials {
   position: relative;
   z-index: 50;
+  display: block;
   height: 180vh;
   background-color: #131313;
   box-shadow: 0 0 100px -20px rgba(0, 0, 0, 0.8);
@@ -958,6 +963,16 @@
   backdrop-filter: blur(10px);
   -webkit-transition: all 400ms ease;
   transition: all 400ms ease;
+}
+
+.overlay.overall {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 200;
+  background-color: #212121;
 }
 
 .cs-preview-text {
@@ -1276,11 +1291,11 @@
 }
 
 .aww {
-  width: 3vw;
+  width: 2.5vw;
 }
 
 .cssda {
-  width: 3vw;
+  width: 2.5vw;
   margin-top: 1vh;
 }
 
