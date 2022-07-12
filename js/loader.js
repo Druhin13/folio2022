@@ -26,6 +26,17 @@ function endLoaderAnimation() {
   $(".w-webflow-badge").remove();
   //turning off the continuous function run
   clearTimeout(timer);
+
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".locomotive-scroll"),
+    smooth: true,
+    multiplier: 0.35,
+  }); 
+  // Wait 2 seconds then calculate the new page height
+  setTimeout(() => {  
+    locoScroll.update();
+  }, 2000);
+
 }
 
 let tl = gsap.timeline({
