@@ -1,3 +1,5 @@
+$(".w-webflow-badge").css("display", "none");
+
 // Setting the cursor to "Wait"
 document.body.style.cursor='wait';
 
