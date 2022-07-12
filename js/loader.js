@@ -1,4 +1,4 @@
-let timer = setInterval(remove, 100);
+let timer = setInterval(remove, 10);
 
 function remove() {
   $(".w-webflow-badge").remove();
@@ -21,6 +21,7 @@ function endLoaderAnimation() {
   // When loading is finished, setting cursor back to default...
   document.body.style.cursor='default';
   $(".w-webflow-badge").remove();
+  clearTimeout(timer);
 }
 
 let tl = gsap.timeline({
