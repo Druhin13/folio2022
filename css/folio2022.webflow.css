@@ -230,6 +230,10 @@
   background-color: #fff;
 }
 
+.context-holder.loco {
+  background-color: transparent;
+}
+
 .case-study-content-tab {
   display: -webkit-box;
   display: -webkit-flex;
@@ -597,6 +601,7 @@
 .sticky-section-header.loco {
   position: relative;
   top: 0vh;
+  background-color: transparent;
 }
 
 .empty-space-case-study {
@@ -735,19 +740,6 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
   background-color: #fff;
 }
 
@@ -788,6 +780,10 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
   background-color: #fff;
+}
+
+.hide-under.loco {
+  background-color: transparent;
 }
 
 .awards {
@@ -1289,11 +1285,11 @@
 }
 
 .aww {
-  width: 2.5vw;
+  width: 3vw;
 }
 
 .cssda {
-  width: 2.5vw;
+  width: 3vw;
   margin-top: 1vh;
 }
 
