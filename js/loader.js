@@ -5,11 +5,7 @@ function remove() {
 
 
 //hiding the rest of the sections except loader
-$("#about").css("display", "none");
-$("#work").css("display", "none");
-$("#awards").css("display", "none");
-$("#testimonials").css("display", "none");
-$("#test").css("display", "none");
+$(".locomotive-scroll").css("display", "none");
 
 
 let customEase =
@@ -42,12 +38,8 @@ function endLoaderAnimation() {
     multiplier: 0.35,
   }); 
 
-
-  $("#about").css("display", "flex");
-  $("#work").css("display", "block");
-  $("#awards").css("display", "block");
-  $("#testimonials").css("display", "block");
-  $("#test").css("display", "block");
+  $(".loader").css("display", "none");
+  $(".locomotive-scroll").css("display", "block");
 
 
 
