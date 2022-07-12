@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue Jul 12 2022 15:25:45 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Jul 12 2022 17:17:15 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -45,6 +45,7 @@
   </div>
   <div id="locomotive-scroll" class="locomotive-scroll">
     <section id="loader" data-scroll-section="true" class="loader wf-section">
+      <div style="opacity:1" class="overlay overall"></div>
       <div style="-webkit-transform:translate3d(-7.5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-7.5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-7.5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-7.5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="awards-left">
         <a rel="noreferrer" href="https://www.awwwards.com/sites/mausumi-showcase-of-writings" target="_blank" class="award-link w-inline-block"><img src="images/awwwards-honors.svg" loading="lazy" alt="Awwwards Honors" class="aww"></a>
         <a rel="noreferrer" href="https://www.cssdesignawards.com/sites/mausumi/40427/" target="_blank" class="award-link w-inline-block"><img src="images/cssda-nominee-black.png" loading="lazy" alt="CSSDA nominee badge" class="cssda"></a>
@@ -1280,10 +1281,10 @@ html, body {
     width: 5px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #1b1b1b;
+    background-color: #131313;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #E6E1DB;
+    background-color: #131313;
     /*border-radius: 2px;*/
 }
 /*	changing the selection color*/
@@ -1295,7 +1296,6 @@ html, body {
 		color: #E6E1DB;
 		background: #1b1b1b;
 }
-/*	changing the selection color for the Mausumi button*/
 img::-moz-selection {
 		color: rgba(0,0,0,0.0);
 		background: rgba(0,0,0,0.0);
@@ -1455,7 +1455,22 @@ document.addEventListener("mousemove", () => {
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/CustomEase.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
   <script src="https://druh.in/folio2022/js/loader.js"></script>
+  <!-- 
+<script>
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".locomotive-scroll"),
+  smooth: true,
+  multiplier: 0.35,
+}); 
+// Wait 2 seconds then calculate the new page height
+setTimeout(() => {  
+	locoScroll.update();
+}, 2000);
+</script>
+ -->
   <script>
 /**
  * MARQUEE 3000 MARQUEE 3000 MARQUEE 3000 MARQUEE 3000 MARQUEE 3000
@@ -1621,19 +1636,5 @@ Marquee3k.init()
 </script>
   <!--  Linking marquee with respective hover triggers  -->
   <script src="https://druh.in/folio2022/js/marquee.js"></script>
-  <!--  Locomotive exp  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
-  <script>
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".locomotive-scroll"),
-  smooth: true,
-  multiplier: 0.35,
-}); 
-// Wait 2 seconds then calculate the new page height
-setTimeout(() => {  
-	locoScroll.update();
-}, 2000);
-</script>
 </body>
 </html>
