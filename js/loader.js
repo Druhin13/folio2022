@@ -4,15 +4,15 @@ let customEase =
 let counter = {
   value: 0
 };
-let loaderDuration = 7;
+let loaderDuration = 10;
 
 // If not a first time visit in this tab
 if (sessionStorage.getItem("visited") !== null) {
-  loaderDuration = 3;
+  loaderDuration = 3.5;
   counter = {
-    value: 62
+    value: 48
   };
-  $(".progress-bar").css("width", "62%");
+  $(".progress-bar").css("width", "48%");
 }
 sessionStorage.setItem("visited", "true");
 
