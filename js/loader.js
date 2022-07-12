@@ -17,7 +17,7 @@ sessionStorage.setItem("visited", "true");
 
 function updateLoaderText() {
   let progress = Math.round(counter.value);
-  $(".loader_number").text(progress);
+  $(".load-percent").text(progress);
 }
 function endLoaderAnimation() {
   $(".trigger").click();
@@ -32,7 +32,7 @@ tl.to(counter, {
   duration: loaderDuration,
   ease: CustomEase.create("custom", customEase)
 });
-tl.to(".loader_progress", {
+tl.to(".progress-bar", {
     width: "100%",
     duration: loaderDuration,
     ease: CustomEase.create("custom", customEase)
