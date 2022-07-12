@@ -4,15 +4,6 @@ function remove() {
   $(".w-webflow-badge").remove();
 }
 
-if ($(".w-webflow-badge")[0]){
-  console.log("still present");
-}
-else{
-  clearTimeout(timer);
-  console.log("removed");
-}
-
-
 let customEase =
   "M0,0,C0.084,0.61,0.214,0.802,0.28,0.856,0.356,0.918,0.374,1,1,1";
 let counter = {
