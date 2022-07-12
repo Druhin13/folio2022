@@ -1,5 +1,3 @@
-$(".w-webflow-badge").css("display", "none");
-
 // Setting the cursor to "Wait"
 document.body.style.cursor='wait';
 
@@ -29,6 +27,7 @@ function endLoaderAnimation() {
   $(".trigger2").click();
   // When loading is finished, setting cursor back to default...
   document.body.style.cursor='default';
+  $(".w-webflow-badge").css("display", "none");
 }
 
 let tl = gsap.timeline({
