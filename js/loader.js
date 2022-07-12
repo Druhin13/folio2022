@@ -3,6 +3,15 @@ function remove() {
   $(".w-webflow-badge").remove();
 }
 
+
+//hiding the rest of the sections except loader
+$("#about").css("display", "none");
+$("#work").css("display", "none");
+$("#awards").css("display", "none");
+$("#testimonials").css("display", "none");
+$("#test").css("display", "none");
+
+
 let customEase =
   "M0,0,C0.084,0.61,0.214,0.802,0.28,0.856,0.356,0.918,0.374,1,1,1";
 let counter = {
@@ -32,6 +41,16 @@ function endLoaderAnimation() {
     smooth: true,
     multiplier: 0.35,
   }); 
+
+
+  $("#about").css("display", "flex");
+  $("#work").css("display", "block");
+  $("#awards").css("display", "block");
+  $("#testimonials").css("display", "block");
+  $("#test").css("display", "block");
+
+
+
   // Wait 2 seconds then calculate the new page height
   setTimeout(() => {  
     locoScroll.update();
