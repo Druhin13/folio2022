@@ -65,16 +65,16 @@ tl.to(counter, {
 
 //page link scroll triggers
 
-//const about = document.querySelector('#about');
+const about = document.querySelector('#about');
 const work = document.querySelector('#work');
 const awards = document.querySelector('#awards');
 const testimonials = document.querySelector('#testimonials');
+const contact = document.querySelector('#contact');
 
-/*
+
 $('#about-link').click(function() {
   locoScroll.scrollTo(about);
 });
-*/
 
 $('#work-link').click(function() {
   locoScroll.scrollTo(work);
@@ -86,4 +86,8 @@ $('#awards-link').click(function() {
 
 $('#testimonials-link').click(function() {
   locoScroll.scrollTo(testimonials);
+});
+
+$('#contact-link').click(function() {
+  locoScroll.scrollTo(contact);
 });
