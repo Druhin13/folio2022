@@ -1,62 +1,39 @@
-/* https://github.com/grcmichael/gscroll */
-/* GSAP + ScrollTrigger + GScroll */
+// variables
+let customEase =
+  "M0,0,C0,0,0.13,0.34,0.238,0.442,0.305,0.506,0.322,0.514,0.396,0.54,0.478,0.568,0.468,0.56,0.522,0.584,0.572,0.606,0.61,0.719,0.714,0.826,0.798,0.912,1,1,1,1";
+let counter = {
+  value: 0
+};
+let loaderDuration = 10;
 
-import gsap from "https://cdn.skypack.dev/gsap"
-import ScrollTrigger from "https://cdn.skypack.dev/gsap/ScrollTrigger"
-import GScroll from "https://cdn.skypack.dev/@grcmichael/gscroll"
+// If not a first time visit in this tab
+if (sessionStorage.getItem("visited") !== null) {
+  loaderDuration = 2;
+  counter = {
+    value: 75
+  };
+}
+sessionStorage.setItem("visited", "true");
 
-gsap.registerPlugin(ScrollTrigger)
+function updateLoaderText() {
+  let progress = Math.round(counter.value);
+  $(".loader_number").text(progress);
+}
+function endLoaderAnimation() {
+  $(".trigger").click();
+}
 
-const scroll = new GScroll(
-  '#GScroll',
-  0.8,
-  () => {ScrollTrigger.update()}
-);
-
-scroll.init();
-scroll.wheel();
-
-const scroller = document.getElementById('GScroll')
-ScrollTrigger.defaults({
-  scroller: scroller
-})
-
-ScrollTrigger.scrollerProxy(scroller, {
-  scrollTop(value) {
-    if (arguments.length) {
-      scroll.current = -value // setter
-    }
-    return -scroll.current // getter
-  },
-  getBoundingClientRect() {
-    return {top: 0, left: 0, width: window.innerWidth, height: window.innerHeight}
-  }
+let tl = gsap.timeline({
+  onComplete: endLoaderAnimation
 });
-
-
-window.addEventListener('resize', () => {
-  scroll.resize()
-})
-
-
-/* Scroll Trigger animations */
-
-gsap.utils.toArray(".case-study-link").forEach((panel, i) =>{
-  ScrollTrigger.create({
-    trigger: panel,
-    start: "top top",
-    pin: true,
-    pinSpacing: false
-  });
+tl.to(counter, {
+  value: 100,
+  onUpdate: updateLoaderText,
+  duration: loaderDuration,
+  ease: CustomEase.create("custom", customEase)
 });
-
-/*gsap.to(".case-study-link", {
-  trigger: ".case-study-link",
-  scrollTrigger: {
-    trigger: ".case-study-link",
-    pin: true,
-    markers: {
-      fontSize: "2rem",
-    },
-  }  
-})*/
+tl.to(".loader_progress", {
+    width: "100%",
+    duration: loaderDuration,
+    ease: CustomEase.create("custom", customEase)
+}, 0);
