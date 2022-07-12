@@ -1,4 +1,6 @@
-// variables
+// Set the cursor ASAP to "Wait"
+document.body.style.cursor='wait';
+
 let customEase =
   "M0,0 C0.104,0.204 0.712,-0.076 1,1";
 let counter = {
@@ -22,6 +24,8 @@ function updateLoaderText() {
 }
 function endLoaderAnimation() {
   $(".trigger2").click();
+  // When loading is finished, setting cursor back to default...
+  window.onload=function(){document.body.style.cursor='default';}
 }
 
 let tl = gsap.timeline({
@@ -33,6 +37,7 @@ tl.to(counter, {
   duration: loaderDuration,
   ease: CustomEase.create("custom", customEase)
 });
+
 /*tl.to(".progress-bar", {
     width: "100%",
     duration: loaderDuration,
