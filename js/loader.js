@@ -1,5 +1,4 @@
 let timer = setInterval(remove, 10);
-
 function remove() {
   $(".w-webflow-badge").remove();
 }
@@ -9,6 +8,7 @@ let customEase =
 let counter = {
   value: 0
 };
+//setting the total duration of the loading animation
 let loaderDuration = 9;
 
 function updateLoaderText() {
@@ -16,11 +16,15 @@ function updateLoaderText() {
   $("#load-percent").text(progress);
 }
 function endLoaderAnimation() {
-  // triggering the loader hide animation
+  //triggering the loader hide animation
   $(".trigger2").click();
-  // When loading is finished, setting cursor back to default...
+  //when loading is finished, setting cursor back to default...
   document.body.style.cursor='default';
+  //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
+  $('#canvas-div').css('pointer-events','none');
+  //removing the badge
   $(".w-webflow-badge").remove();
+  //turning off the continuous function run
   clearTimeout(timer);
 }
 
