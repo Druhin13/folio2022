@@ -4,7 +4,7 @@ let customEase =
 let counter = {
   value: 0
 };
-let loaderDuration = 10;
+let loaderDuration = 7;
 
 // If not a first time visit in this tab
 if (sessionStorage.getItem("visited") !== null) {
