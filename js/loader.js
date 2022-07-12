@@ -12,16 +12,16 @@ if (sessionStorage.getItem("visited") !== null) {
   counter = {
     value: 48
   };
-  $(".progress-bar").css("width", "48%");
+  //$(".progress-bar").css("width", "48%");
 }
 sessionStorage.setItem("visited", "true");
 
 function updateLoaderText() {
   let progress = Math.round(counter.value);
-  $(".load-percent").text(progress);
+  $("#load-percent").text(progress);
 }
 function endLoaderAnimation() {
-  $(".trigger").click();
+  $(".trigger2").click();
 }
 
 let tl = gsap.timeline({
@@ -33,8 +33,9 @@ tl.to(counter, {
   duration: loaderDuration,
   ease: CustomEase.create("custom", customEase)
 });
-tl.to(".progress-bar", {
+/*tl.to(".progress-bar", {
     width: "100%",
     duration: loaderDuration,
     ease: CustomEase.create("custom", customEase)
 }, 0);
+*/
