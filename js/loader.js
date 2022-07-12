@@ -1,14 +1,16 @@
-var remove = function() {
+setInterval(remove, 100);
+
+function remove() {
   $(".w-webflow-badge").remove();
-};
-var timer = setInterval(remove, 100);
+}
+
 if ($(".w-webflow-badge")[0]){
   console.log("still present");
 }
 else{
   clearTimeout(timer);
+  console.log("removed");
 }
-
 
 
 let customEase =
