@@ -1,4 +1,4 @@
-setInterval(remove, 100);
+let timer = setInterval(remove, 100);
 
 function remove() {
   $(".w-webflow-badge").remove();
@@ -18,13 +18,14 @@ let customEase =
 let counter = {
   value: 0
 };
-let loaderDuration = 10;
+let loaderDuration = 9;
 
 function updateLoaderText() {
   let progress = Math.round(counter.value);
   $("#load-percent").text(progress);
 }
 function endLoaderAnimation() {
+  // triggering the loader hide animation
   $(".trigger2").click();
   // When loading is finished, setting cursor back to default...
   document.body.style.cursor='default';
