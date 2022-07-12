@@ -1,5 +1,5 @@
 // Setting the cursor to "Wait"
-document.body.style.cursor='wait';
+//document.body.style.cursor='wait';
 
 let customEase =
   "M0,0,C0.084,0.61,0.214,0.802,0.28,0.856,0.356,0.918,0.374,1,1,1";
