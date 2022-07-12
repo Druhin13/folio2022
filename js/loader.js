@@ -8,10 +8,11 @@ let loaderDuration = 7;
 
 // If not a first time visit in this tab
 if (sessionStorage.getItem("visited") !== null) {
-  loaderDuration = 2;
+  loaderDuration = 3;
   counter = {
-    value: 75
+    value: 62
   };
+  $(".progress-bar").css("width", "62%");
 }
 sessionStorage.setItem("visited", "true");
 
