@@ -1,4 +1,4 @@
-// Set the cursor ASAP to "Wait"
+// Setting the cursor to "Wait"
 document.body.style.cursor='wait';
 
 let customEase =
