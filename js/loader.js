@@ -2,7 +2,7 @@
 document.body.style.cursor='wait';
 
 let customEase =
-  "M0,0 C0.104,0.204 0.712,-0.076 1,1";
+  "M0,0 C0.126,0.382 0.369,0.342 0.576,0.408 1.002,0.544 0.684,0.988 1,1 ";
 let counter = {
   value: 0
 };
