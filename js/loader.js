@@ -3,10 +3,10 @@ function remove() {
   $(".w-webflow-badge").remove();
 }
 
-
+/*
 //hiding the rest of the sections except loader
 $(".locomotive-scroll").css("display", "none");
-
+*/
 
 let customEase =
   "M0,0,C0.084,0.61,0.214,0.802,0.28,0.856,0.356,0.918,0.374,1,1,1";
@@ -38,13 +38,13 @@ function endLoaderAnimation() {
     multiplier: 0.35,
   }); 
 
+  /*
   $(".loader").css("display", "none");
   $(".locomotive-scroll").css("display", "block");
-
+*/
 
   // Wait 2 seconds then calculate the new page height
   setTimeout(() => {  
-    
     locoScroll.update();
   }, 2000);
 
