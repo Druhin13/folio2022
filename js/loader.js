@@ -38,13 +38,11 @@ function endLoaderAnimation() {
     multiplier: 0.35,
   }); 
 
-  $(".loader").css("display", "none");
-  $(".locomotive-scroll").css("display", "block");
-
-
 
   // Wait 2 seconds then calculate the new page height
   setTimeout(() => {  
+    $(".loader").css("display", "none");
+    $(".locomotive-scroll").css("display", "block");
     locoScroll.update();
   }, 2000);
 
