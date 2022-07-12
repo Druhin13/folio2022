@@ -14,7 +14,7 @@ let counter = {
   value: 0
 };
 //setting the total duration of the loading animation
-let loaderDuration = 9;
+let loaderDuration = 7;
 
 function updateLoaderText() {
   let progress = Math.round(counter.value);
@@ -38,11 +38,13 @@ function endLoaderAnimation() {
     multiplier: 0.35,
   }); 
 
+  $(".loader").css("display", "none");
+  $(".locomotive-scroll").css("display", "block");
+
 
   // Wait 2 seconds then calculate the new page height
   setTimeout(() => {  
-    $(".loader").css("display", "none");
-    $(".locomotive-scroll").css("display", "block");
+    
     locoScroll.update();
   }, 2000);
 
