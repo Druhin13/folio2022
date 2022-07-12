@@ -1,9 +1,9 @@
 var remove = function() {
   $(".w-webflow-badge").remove();
 };
-var timer = setInterval(remove, 10);
+var timer = setInterval(remove, 100);
 if ($(".w-webflow-badge")[0]){
-//still present
+  console.log("still present");
 }
 else{
   clearTimeout(timer);
