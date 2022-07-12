@@ -9,14 +9,15 @@ let counter = {
 let loaderDuration = 10;
 
 // If not a first time visit in this tab
+/*
 if (sessionStorage.getItem("visited") !== null) {
   loaderDuration = 3.5;
   counter = {
     value: 48
   };
-  //$(".progress-bar").css("width", "48%");
 }
 sessionStorage.setItem("visited", "true");
+*/
 
 function updateLoaderText() {
   let progress = Math.round(counter.value);
@@ -37,10 +38,3 @@ tl.to(counter, {
   duration: loaderDuration,
   ease: CustomEase.create("custom", customEase)
 });
-
-/*tl.to(".progress-bar", {
-    width: "100%",
-    duration: loaderDuration,
-    ease: CustomEase.create("custom", customEase)
-}, 0);
-*/
