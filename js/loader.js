@@ -1,5 +1,5 @@
-// Setting the cursor to "Wait"
-//document.body.style.cursor='wait';
+$(".w-webflow-badge").remove();
+
 
 let customEase =
   "M0,0,C0.084,0.61,0.214,0.802,0.28,0.856,0.356,0.918,0.374,1,1,1";
@@ -7,17 +7,6 @@ let counter = {
   value: 0
 };
 let loaderDuration = 10;
-
-// If not a first time visit in this tab
-/*
-if (sessionStorage.getItem("visited") !== null) {
-  loaderDuration = 3.5;
-  counter = {
-    value: 48
-  };
-}
-sessionStorage.setItem("visited", "true");
-*/
 
 function updateLoaderText() {
   let progress = Math.round(counter.value);
@@ -27,7 +16,7 @@ function endLoaderAnimation() {
   $(".trigger2").click();
   // When loading is finished, setting cursor back to default...
   document.body.style.cursor='default';
-  $(".w-webflow-badge").css("display", "none");
+  $(".w-webflow-badge").remove();
 }
 
 let tl = gsap.timeline({
