@@ -28,7 +28,7 @@ function updateLoaderText() {
 function endLoaderAnimation() {
   $(".trigger2").click();
   // When loading is finished, setting cursor back to default...
-  window.onload=function(){document.body.style.cursor='default';}
+  document.body.style.cursor='default';
 }
 
 let tl = gsap.timeline({
