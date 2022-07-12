@@ -59,3 +59,31 @@ tl.to(counter, {
   duration: loaderDuration,
   ease: CustomEase.create("custom", customEase)
 });
+
+
+
+
+//page link scroll triggers
+
+//const about = document.querySelector('#about');
+const work = document.querySelector('#work');
+const awards = document.querySelector('#awards');
+const testimonials = document.querySelector('#testimonials');
+
+/*
+$('#about-link').click(function() {
+  locoScroll.scrollTo(about);
+});
+*/
+
+$('#work-link').click(function() {
+  locoScroll.scrollTo(work);
+});
+
+$('#awards-link').click(function() {
+  locoScroll.scrollTo(awards);
+});
+
+$('#testimonials-link').click(function() {
+  locoScroll.scrollTo(testimonials);
+});
