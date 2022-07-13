@@ -10,10 +10,10 @@ function remove() {
   $(".w-webflow-badge").remove();
 }
 
+
+
 /*
-//hiding the rest of the sections except loader
-$(".locomotive-scroll").css("display", "none");
-*/
+
 
 let customEase =
   "M0,0,C0.084,0.61,0.214,0.802,0.28,0.856,0.356,0.918,0.374,1,1,1";
@@ -42,13 +42,15 @@ function endLoaderAnimation() {
   clearTimeout(timer);
 
 
-  // Wait 2 seconds then calculate the new page height
+  // waiting for 2 seconds and then calculating the new page height
   setTimeout(() => {  
     locoScroll.update();
     locoScroll.start();
   }, 2000);
 
 }
+
+
 
 let tl = gsap.timeline({
   onComplete: endLoaderAnimation
@@ -59,6 +61,69 @@ tl.to(counter, {
   duration: loaderDuration,
   ease: CustomEase.create("custom", customEase)
 });
+
+
+
+*/
+
+
+
+//recreating the loading percentage animation in jquery
+const duration = 9000; //miliseconds
+let start = 0;
+const break1 = 53;
+const break2 = 87;
+const break3 = 100;
+
+
+let timer = setInterval(load1, (duration/3.0));
+function load1() {
+  if(start < break1)
+  {
+    if (start == 0) {
+      $("#load-percent").text("00");
+    }
+    else if (start == 1) {
+      $("#load-percent").text("01");
+    }
+    else if (start == 2) {
+      $("#load-percent").text("02");
+    }
+    else if (start == 3) {
+      $("#load-percent").text("03");
+    }
+    else if (start == 4) {
+      $("#load-percent").text("04");
+    }
+    else if (start == 5) {
+      $("#load-percent").text("05");
+    }
+    else if (start == 6) {
+      $("#load-percent").text("06");
+    }
+    else if (start == 7) {
+      $("#load-percent").text("07");
+    }
+    else if (start == 8) {
+      $("#load-percent").text("08");
+    }
+    else if (start == 9) {
+      $("#load-percent").text("09");
+    }
+
+
+    else
+    {
+      $("#load-percent").text(start);
+      start = start + 1;
+    }
+
+  }
+  else
+  {
+
+  }
+}
 
 
 
