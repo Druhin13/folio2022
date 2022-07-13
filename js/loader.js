@@ -26,7 +26,7 @@ setTimeout(() => {
 
 let test_timer = setInterval(test, 10);
 function test() {
-  if (parseInt($("#count")[0].innerHTML) > 9) {
+  if (parseInt($("#count")[0].innerHTML) > 8) {
     $('#zero').css('display', 'none');
   }
 
