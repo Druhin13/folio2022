@@ -201,34 +201,34 @@ $('#count').jQuerySimpleCounter({
 let counter_test = setInterval(test2, 1);
 function test2() {
   if ($("#count")[0].innerHTML == '0') {
-    $("#count").text("00");
+    $("#count").text('00');
   }
   else if ($("#count")[0].innerHTML == '1') {
-    $("#count").text("01");
+    $("#count").text('01');
   }
   else if ($("#count")[0].innerHTML == '2') {
-    $("#count").text("02");
+    $("#count").text('02');
   }
   else if ($("#count")[0].innerHTML == '3') {
-    $("#count").text("03");
+    $("#count").text('03');
   }
   else if ($("#count")[0].innerHTML == '4') {
-    $("#count").text("04");
+    $("#count").text('04');
   }
   else if ($("#count")[0].innerHTML == '5') {
-    $("#count").text("05");
+    $("#count").text('05');
   }
   else if ($("#count")[0].innerHTML == '6') {
-    $("#count").text("06");
+    $("#count").text('06');
   }
   else if ($("#count")[0].innerHTML == '7') {
-    $("#count").text("07");
+    $("#count").text('07');
   }
   else if ($("#count")[0].innerHTML == '8') {
-    $("#count").text("08");
+    $("#count").text('08');
   }
   else if ($("#count")[0].innerHTML == '9') {
-    $("#count").text("09");
+    $("#count").text('09');
   }
   else {
     clearInterval(counter_test);
