@@ -191,16 +191,37 @@ if (start == break3) //checking if animation countdown is complete
 
 
 $('#count').jQuerySimpleCounter({
-  start:  0,
-  end:    100,
+  start: 0,
+  end: 100,
   easing: 'swing',
   duration: 7000,
-
-  // callback function
-  complete: 'console.log("done")'
-
 });
 
+
+let test_timer = setInterval(test, 10);
+function test() {
+  if ($("#count")[0].innerHTML == '100') {
+    console.log("animation completed");
+    //removing the badge
+    $(".w-webflow-badge").remove();
+    //turning off the continuous function run
+    clearInterval(timer);
+    //when loading is finished, setting cursor back to default...
+    document.body.style.cursor = 'default';
+    //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
+    $('#canvas-div').css('pointer-events', 'none');
+
+
+    //animate the trigger
+
+
+    // waiting for 2 seconds and then calculating the new page height
+    setTimeout(() => {
+      locoScroll.update();
+      locoScroll.start();
+    }, 2000);
+  }
+}
 
 
 
