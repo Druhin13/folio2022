@@ -214,13 +214,13 @@ function test() {
 
 
     //animate the trigger
-
+    $(".trigger1").click();
 
     // waiting for 2 seconds and then calculating the new page height
     setTimeout(() => {
       locoScroll.update();
       locoScroll.start();
-    }, 2000);
+    }, 1750);
   }
 }
 
