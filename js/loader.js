@@ -197,7 +197,7 @@ $('#count').jQuerySimpleCounter({
   duration: 7000,
 
   // callback function
-  complete: console.log("done")
+  complete: 'console.log("done")'
 
 });
 
