@@ -189,7 +189,7 @@ if (start == break3) //checking if animation countdown is complete
 */
 
 
-
+setTimeout(() => {
 $('#count').jQuerySimpleCounter({
   start: 0,
   end: 100,
@@ -234,7 +234,7 @@ function test2() {
     clearInterval(counter_test);
   }
 }
-
+}, 2000);
 
 
 
