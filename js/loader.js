@@ -2,7 +2,7 @@ const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".locomotive-scroll"),
   smooth: true,
   multiplier: 0.35,
-}); 
+});
 locoScroll.stop();
 
 let timer = setInterval(remove, 10);
@@ -39,7 +39,7 @@ function endLoaderAnimation() {
   //removing the badge
   $(".w-webflow-badge").remove();
   //turning off the continuous function run
-  clearTimeout(timer);
+  clearInterval(timer);
 
 
   // waiting for 2 seconds and then calculating the new page height
@@ -75,16 +75,17 @@ const break1 = 53;
 const break2 = 87;
 const break3 = 100;
 
-let timer1 = Math.floor((duration/3)/break1);
-let timer2 = Math.floor((duration/3)/break2);
-let timer3 = Math.floor((duration/3)/break3);
+let timer1 = Math.floor((duration / 3) / break1);
+let timer2 = Math.floor((duration / 3) / (break2 - break1));
+let timer3 = Math.floor((duration / 3) / (break3 - break2 - break1));
 
 
+let loadtimer = setInterval(load, timer1);
 
-let loadtimer = setInterval(load1, timer1);
-function load1() {
-  if(start < break1)
-  {
+function load() {
+
+  if (start <= break1) {
+
     if (start == 0) {
       $("#load-percent").text("00");
       start = start + 1;
@@ -125,20 +126,44 @@ function load1() {
       $("#load-percent").text("09");
       start = start + 1;
     }
-
-
-    else
-    {
+    else {
       $("#load-percent").text(start);
       start = start + 1;
     }
 
   }
-  else
-  {
+
+  if ((start > break1) && (start <= break2)) {
+
+    clearInterval(loadtimer);
+    let loadtimer = setInterval(load, timer2);
+
+    $("#load-percent").text(start);
+    start = start + 1;
 
   }
+
+
+  if ((start > break2) && (start <= break3)) {
+
+    clearInterval(loadtimer);
+    let loadtimer = setInterval(load, timer3);
+
+    $("#load-percent").text(start);
+    if (start != break3) {
+      start = start + 1;
+    }
+
+    if (start == break3) //checking if animation countdown is complete
+    {
+      clearInterval(loadtimer);
+      //animate the trigger
+    }
+
+  }
+
 }
+
 
 
 
@@ -152,22 +177,22 @@ const testimonials = document.querySelector('#testimonials');
 const contact = document.querySelector('#contact');
 
 
-$('#about-link').click(function() {
+$('#about-link').click(function () {
   locoScroll.scrollTo(about);
 });
 
-$('#work-link').click(function() {
+$('#work-link').click(function () {
   locoScroll.scrollTo(work);
 });
 
-$('#awards-link').click(function() {
+$('#awards-link').click(function () {
   locoScroll.scrollTo(awards);
 });
 
-$('#testimonials-link').click(function() {
+$('#testimonials-link').click(function () {
   locoScroll.scrollTo(testimonials);
 });
 
-$('#contact-link').click(function() {
+$('#contact-link').click(function () {
   locoScroll.scrollTo(contact);
 });
