@@ -233,6 +233,7 @@ function test2() {
   else {
     clearInterval(counter_test);
   }
+}
 
 
 
