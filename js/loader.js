@@ -76,7 +76,7 @@ const break2 = 87;
 const break3 = 100;
 
 
-let timer = setInterval(load1, (duration/3.0));
+let loadtimer = setInterval(load1, (duration/3.0));
 function load1() {
   if(start < break1)
   {
