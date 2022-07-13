@@ -135,8 +135,8 @@ function load() {
 
   if ((start > break1) && (start <= break2)) {
 
-    clearInterval(loadtimer);
-    let loadtimer = setInterval(load, timer2);
+    //clearInterval(loadtimer);
+    loadtimer = setInterval(load, timer2);
 
     $("#load-percent").text(start);
     start = start + 1;
@@ -146,22 +146,21 @@ function load() {
 
   if ((start > break2) && (start <= break3)) {
 
-    clearInterval(loadtimer);
-    let loadtimer = setInterval(load, timer3);
+    //clearInterval(loadtimer);
+    loadtimer = setInterval(load, timer3);
 
     $("#load-percent").text(start);
     if (start != break3) {
       start = start + 1;
     }
-
-    if (start == break3) //checking if animation countdown is complete
-    {
-      clearInterval(loadtimer);
-      //animate the trigger
-    }
-
   }
 
+}
+
+if (start == break3) //checking if animation countdown is complete
+{
+  clearInterval(loadtimer);
+  //animate the trigger
 }
 
 
