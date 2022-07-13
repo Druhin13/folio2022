@@ -82,33 +82,43 @@ function load1() {
   {
     if (start == 0) {
       $("#load-percent").text("00");
+      start = start + 1;
     }
     else if (start == 1) {
       $("#load-percent").text("01");
+      start = start + 1;
     }
     else if (start == 2) {
       $("#load-percent").text("02");
+      start = start + 1;
     }
     else if (start == 3) {
       $("#load-percent").text("03");
+      start = start + 1;
     }
     else if (start == 4) {
       $("#load-percent").text("04");
+      start = start + 1;
     }
     else if (start == 5) {
       $("#load-percent").text("05");
+      start = start + 1;
     }
     else if (start == 6) {
       $("#load-percent").text("06");
+      start = start + 1;
     }
     else if (start == 7) {
       $("#load-percent").text("07");
+      start = start + 1;
     }
     else if (start == 8) {
       $("#load-percent").text("08");
+      start = start + 1;
     }
     else if (start == 9) {
       $("#load-percent").text("09");
+      start = start + 1;
     }
 
 
