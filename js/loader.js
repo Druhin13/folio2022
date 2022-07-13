@@ -198,59 +198,97 @@ $('#count').jQuerySimpleCounter({
 });
 
 
-let test_timer = setInterval(test, 10);
-function test() {
-  if ($("#count")[0].innerHTML == '100') {
-    console.log("animation completed");
-    //removing the badge
-    $(".w-webflow-badge").remove();
-    //turning off the continuous function run
-    clearInterval(timer);
-    clearInterval(test_timer);
-    //when loading is finished, setting cursor back to default...
-    document.body.style.cursor = 'default';
-    //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
-    $('#canvas-div').css('pointer-events', 'none');
-
-
-    //animate the trigger
-    $(".trigger1").click();
-
-    // waiting for 1.75 seconds and then calculating the new page height
-    setTimeout(() => {
-      locoScroll.update();
-      locoScroll.start();
-    }, 1750);
+let counter_test = setInterval(test2, 1);
+function test2() {
+  if ($("#count")[0].innerHTML == '0') {
+    $("#count").text("00");
   }
-}
+  else if ($("#count")[0].innerHTML == '1') {
+    $("#count").text("01");
+  }
+  else if ($("#count")[0].innerHTML == '2') {
+    $("#count").text("02");
+  }
+  else if ($("#count")[0].innerHTML == '3') {
+    $("#count").text("03");
+  }
+  else if ($("#count")[0].innerHTML == '4') {
+    $("#count").text("04");
+  }
+  else if ($("#count")[0].innerHTML == '5') {
+    $("#count").text("05");
+  }
+  else if ($("#count")[0].innerHTML == '6') {
+    $("#count").text("06");
+  }
+  else if ($("#count")[0].innerHTML == '7') {
+    $("#count").text("07");
+  }
+  else if ($("#count")[0].innerHTML == '8') {
+    $("#count").text("08");
+  }
+  else if ($("#count")[0].innerHTML == '9') {
+    $("#count").text("09");
+  }
+  else {
+    clearInterval(counter_test);
+  }
 
 
 
-//page link scroll triggers
 
-const about = document.querySelector('#about');
-const work = document.querySelector('#work');
-const awards = document.querySelector('#awards');
-const testimonials = document.querySelector('#testimonials');
-const contact = document.querySelector('#contact');
+  let test_timer = setInterval(test, 10);
+  function test() {
+    if ($("#count")[0].innerHTML == '100') {
+      //removing the badge
+      $(".w-webflow-badge").remove();
+      //turning off the continuous function run
+      clearInterval(timer);
+      clearInterval(test_timer);
+      //when loading is finished, setting cursor back to default...
+      document.body.style.cursor = 'default';
+      //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
+      $('#canvas-div').css('pointer-events', 'none');
 
 
-$('#about-link').click(function () {
-  locoScroll.scrollTo(about);
-});
+      //animate the trigger
+      $(".trigger1").click();
 
-$('#work-link').click(function () {
-  locoScroll.scrollTo(work);
-});
+      // waiting for 1.75 seconds and then calculating the new page height
+      setTimeout(() => {
+        locoScroll.update();
+        locoScroll.start();
+      }, 1750);
+    }
+  }
 
-$('#awards-link').click(function () {
-  locoScroll.scrollTo(awards);
-});
 
-$('#testimonials-link').click(function () {
-  locoScroll.scrollTo(testimonials);
-});
 
-$('#contact-link').click(function () {
-  locoScroll.scrollTo(contact);
-});
+  //page link scroll triggers
+
+  const about = document.querySelector('#about');
+  const work = document.querySelector('#work');
+  const awards = document.querySelector('#awards');
+  const testimonials = document.querySelector('#testimonials');
+  const contact = document.querySelector('#contact');
+
+
+  $('#about-link').click(function () {
+    locoScroll.scrollTo(about);
+  });
+
+  $('#work-link').click(function () {
+    locoScroll.scrollTo(work);
+  });
+
+  $('#awards-link').click(function () {
+    locoScroll.scrollTo(awards);
+  });
+
+  $('#testimonials-link').click(function () {
+    locoScroll.scrollTo(testimonials);
+  });
+
+  $('#contact-link').click(function () {
+    locoScroll.scrollTo(contact);
+  });
