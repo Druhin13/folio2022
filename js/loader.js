@@ -69,7 +69,7 @@ tl.to(counter, {
 
 
 //recreating the loading percentage animation in jquery
-const duration = 9000; //miliseconds
+/*const duration = 9000; //miliseconds
 let start = 0;
 const break1 = 53;
 const break2 = 87;
@@ -185,6 +185,21 @@ if (start == break3) //checking if animation countdown is complete
   }, 2000);
 }
 
+
+*/
+
+
+
+$('#count').jQuerySimpleCounter({
+  start:  0,
+  end:    100,
+  easing: 'swing',
+  duration: 400,
+
+  // callback function
+  complete: ''
+
+});
 
 
 
