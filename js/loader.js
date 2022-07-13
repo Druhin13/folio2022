@@ -76,7 +76,7 @@ const break2 = 87;
 const break3 = 100;
 
 let timer1 = Math.floor((duration / 3) / break1);
-let timer2 = Math.floor((duration / 3) / (break2);
+let timer2 = Math.floor(duration / 3) / (break2);
 let timer3 = Math.floor((duration / 3) / (break3));
 
 
