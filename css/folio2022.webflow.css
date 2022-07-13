@@ -64,8 +64,8 @@
 }
 
 .heading1.type2.disable-select {
-  -webkit-transition: all 200ms ease;
-  transition: all 200ms ease;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
 }
 
 .case-study-link {
@@ -967,8 +967,10 @@
   top: 0%;
   right: 0%;
   bottom: 0%;
-  z-index: 200;
+  z-index: 600;
+  display: none;
   background-color: #212121;
+  cursor: wait;
 }
 
 .cs-preview-text {
@@ -1167,18 +1169,6 @@
   background-color: #fff;
 }
 
-.all-navs {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .loader {
   position: relative;
   left: 0%;
@@ -1190,6 +1180,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
   width: 100vw;
   height: 100vh;
   background-color: #131313;
@@ -1209,7 +1200,7 @@
 .loading-anim {
   position: absolute;
   left: auto;
-  top: auto;
+  top: 0px;
   right: 0%;
   bottom: 0%;
   z-index: 150;
@@ -1237,14 +1228,22 @@
   background-repeat: no-repeat;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  cursor: crosshair;
+  cursor: wait;
 }
 
 .loading-time-group {
+  position: fixed;
+  left: auto;
+  top: auto;
+  right: 2.25vw;
+  bottom: 2.5vh;
+  z-index: 500;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
+  width: 43.5vw;
   height: 11.5vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1255,10 +1254,7 @@
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  background-image: url('../images/grid2.svg'), -webkit-gradient(linear, left top, left bottom, from(#131313), to(#131313));
-  background-image: url('../images/grid2.svg'), linear-gradient(180deg, #131313, #131313);
-  background-position: 50% 50%, 0px 0px;
-  background-repeat: no-repeat, repeat;
+  background-image: none;
 }
 
 .awards-left {
@@ -1285,11 +1281,11 @@
 }
 
 .aww {
-  width: 3vw;
+  width: 2.75vw;
 }
 
 .cssda {
-  width: 3vw;
+  width: 2.75vw;
   margin-top: 1vh;
 }
 
@@ -1297,6 +1293,18 @@
   width: 100%;
   height: 1px;
   margin-bottom: 2vh;
+  background-color: #fff;
+}
+
+.end-overlay {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  z-index: 1000;
+  width: 100vw;
+  height: 0vw;
   background-color: #fff;
 }
 
