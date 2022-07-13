@@ -146,7 +146,7 @@ function load() {
 
 
   if ((start > break2) && (start <= break3)) {
-    console.log("animation " + break2 + " to " + break3 + " going on");
+    //console.log("animation " + break2 + " to " + break3 + " going on");
 
     //clearInterval(loadtimer);
     loadtimer = setInterval(load, timer3);
