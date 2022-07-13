@@ -216,7 +216,7 @@ function test() {
     //animate the trigger
     $(".trigger1").click();
 
-    // waiting for 2 seconds and then calculating the new page height
+    // waiting for 1.75 seconds and then calculating the new page height
     setTimeout(() => {
       locoScroll.update();
       locoScroll.start();
