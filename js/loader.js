@@ -206,6 +206,7 @@ function test() {
     $(".w-webflow-badge").remove();
     //turning off the continuous function run
     clearInterval(timer);
+    clearInterval(test_timer);
     //when loading is finished, setting cursor back to default...
     document.body.style.cursor = 'default';
     //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
