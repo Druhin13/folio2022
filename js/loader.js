@@ -75,9 +75,9 @@ const break1 = 53;
 const break2 = 87;
 const break3 = 100;
 
-let timer1 = Math.floor((duration / 3) / break1);
+let timer3 = Math.floor((duration / 3) / break1);
 let timer2 = Math.floor((duration / 3) / (break2 - break1));
-let timer3 = Math.floor((duration / 3) / (break3 - break2 - break1));
+let timer1 = Math.floor((duration / 3) / (break3 - break2 - break1));
 
 
 let loadtimer = setInterval(load, timer1);
@@ -85,7 +85,7 @@ let loadtimer = setInterval(load, timer1);
 function load() {
 
   if (start <= break1) {
-
+    console.log("animation 0 to " + break1 + " going on");
     if (start == 0) {
       $("#load-percent").text("00");
       start = start + 1;
@@ -134,6 +134,7 @@ function load() {
   }
 
   if ((start > break1) && (start <= break2)) {
+    console.log("animation " + break1 + " to " + break2 + " going on");
 
     //clearInterval(loadtimer);
     loadtimer = setInterval(load, timer2);
@@ -145,6 +146,7 @@ function load() {
 
 
   if ((start > break2) && (start <= break3)) {
+    console.log("animation " + break2 + " to " + break3 + " going on");
 
     //clearInterval(loadtimer);
     loadtimer = setInterval(load, timer3);
@@ -159,6 +161,7 @@ function load() {
 
 if (start == break3) //checking if animation countdown is complete
 {
+  console.log("animation completed");
   clearInterval(loadtimer);
   //animate the trigger
 }
