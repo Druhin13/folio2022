@@ -163,7 +163,26 @@ if (start == break3) //checking if animation countdown is complete
 {
   console.log("animation completed");
   clearInterval(loadtimer);
+
+
+  //removing the badge
+  $(".w-webflow-badge").remove();
+  //turning off the continuous function run
+  clearInterval(timer);
+  //when loading is finished, setting cursor back to default...
+  document.body.style.cursor='default';
+  //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
+  $('#canvas-div').css('pointer-events','none');
+
+
   //animate the trigger
+
+
+  // waiting for 2 seconds and then calculating the new page height
+  setTimeout(() => {  
+    locoScroll.update();
+    locoScroll.start();
+  }, 2000);
 }
 
 
