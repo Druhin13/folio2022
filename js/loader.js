@@ -44,6 +44,8 @@ setTimeout(() => {
     easing: 'swing',
     duration: 7000,
   });
+
+  document.getElementById("sketch").style.display = "block";
 }, 2000);
 
 //timer/checker initialization
