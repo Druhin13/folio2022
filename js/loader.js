@@ -38,12 +38,6 @@ function remove() {
 
 //counter initialization
 setTimeout(() => {
-  $('#count').jQuerySimpleCounter({
-    start: 0,
-    end: 100,
-    easing: 'swing',
-    duration: 7000,
-  });
 
   var new_canvas = document.createElement('canvas');
   new_canvas.id = "sketch";
@@ -96,6 +90,15 @@ setTimeout(() => {
     ctx.lineTo(coord.x, coord.y);
     ctx.stroke();
   }
+
+
+  $('#count').jQuerySimpleCounter({
+    start: 0,
+    end: 100,
+    easing: 'swing',
+    duration: 7000,
+  });
+
 }, 2000);
 
 //timer/checker initialization
