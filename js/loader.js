@@ -47,7 +47,8 @@ setTimeout(() => {
   //new_canvas.style.pointerEvents = "none";
   new_canvas.style.marginLeft = "52vw";
 
-  document.body.appendChild(new_canvas);
+  //document.body.appendChild(new_canvas);
+  document.body.insertBefore(new_canvas, document.body.firstChild);
 
   const canvas = document.getElementById("sketch");
   const ctx = canvas.getContext("2d");
