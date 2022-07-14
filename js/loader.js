@@ -45,7 +45,57 @@ setTimeout(() => {
     duration: 7000,
   });
 
-  document.getElementById("sketch").style.display = "block";
+  var new_canvas = document.createElement('canvas');
+  new_canvas.id = "sketch";
+  new_canvas.style.position = "absolute";
+  new_canvas.style.zIndex = "100";
+  new_canvas.style.backgroundColor = "#ffffff00";
+  new_canvas.style.pointerEvents = "none";
+  new_canvas.style.marginLeft = "52vw";
+
+  document.body.appendChild(new_canvas);
+
+  const canvas = document.getElementById("sketch");
+  const ctx = canvas.getContext("2d");
+
+  //testing size
+  canvas.width = parent.offsetWidth;
+  canvas.height = parent.offsetHeight;
+  ctx.canvas.width = parent.offsetWidth;
+  ctx.canvas.height = parent.offsetHeight;
+
+  let coord = { x: 0, y: 0 };
+
+  document.addEventListener("mouseover", start);
+  window.addEventListener("resize", resize);
+
+  resize();
+
+  function resize() {
+    ctx.canvas.width = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
+  }
+  function reposition(event) {
+    coord.x = event.clientX - canvas.offsetLeft;
+    coord.y = event.clientY - canvas.offsetTop;
+  }
+  function start(event) {
+    document.addEventListener("mousemove", draw);
+    reposition(event);
+  }
+  function stop() {
+    document.removeEventListener("mousemove", draw);
+  }
+  function draw(event) {
+    ctx.beginPath();
+    ctx.lineWidth = 0.75;
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "#fff";
+    ctx.moveTo(coord.x, coord.y);
+    reposition(event);
+    ctx.lineTo(coord.x, coord.y);
+    ctx.stroke();
+  }
 }, 2000);
 
 //timer/checker initialization
