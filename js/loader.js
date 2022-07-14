@@ -123,14 +123,21 @@ function test() {
     //animate the trigger
     $(".trigger1").click();
 
+
+    //waiting for 1 second, and then hiding the sketch canvas
+    setTimeout(() => {
+      //hiding the sketch canvas
+      document.getElementById("sketch").style.display = "none";
+    }, 1000);
+
     //waiting for 1.75 seconds and then calculating the new page height
     setTimeout(() => {
       locoScroll.update();
       locoScroll.start();
-
+      
       //loading the case study preview gifs
       $('head').append('<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>');
-    }, 1750);
+    }, 750);
   }
 }
 
