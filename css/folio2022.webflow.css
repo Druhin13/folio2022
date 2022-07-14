@@ -464,6 +464,8 @@
   bottom: 0%;
   width: 100%;
   height: 100%;
+  -webkit-filter: brightness(90%);
+  filter: brightness(90%);
 }
 
 .card-whipe.dark-shade {
@@ -471,54 +473,48 @@
   opacity: 1;
 }
 
-.card-whipe.bg-cream-shade {
-  background-image: linear-gradient(45deg, #fff, #bebebe);
-  -webkit-filter: brightness(90%);
-  filter: brightness(90%);
-}
-
-.card-whipe.bg-cream-shade.mausumi {
+.card-whipe.lazy.mausumi {
   height: 120%;
   -webkit-filter: blur(1px) brightness(80%);
   filter: blur(1px) brightness(80%);
 }
 
-.card-whipe.bg-cream-shade.nowiverse {
+.card-whipe.lazy.nowiverse {
   -webkit-filter: blur(1px) brightness(110%);
   filter: blur(1px) brightness(110%);
 }
 
-.card-whipe.bg-cream-shade.vtf {
+.card-whipe.lazy.vtf {
   -webkit-filter: blur(1px) brightness(90%);
   filter: blur(1px) brightness(90%);
 }
 
-.card-whipe.bg-cream-shade.vocal {
+.card-whipe.lazy.vocal {
   height: 115%;
 }
 
-.card-whipe.bg-cream-shade.greenfox {
+.card-whipe.lazy.greenfox {
   bottom: 5%;
   -webkit-filter: blur(1px) brightness(90%);
   filter: blur(1px) brightness(90%);
 }
 
-.card-whipe.bg-cream-shade.allbodies {
+.card-whipe.lazy.allbodies {
   -webkit-filter: brightness(80%);
   filter: brightness(80%);
 }
 
-.card-whipe.bg-cream-shade.fathom {
+.card-whipe.lazy.fathom {
   -webkit-filter: brightness(85%);
   filter: brightness(85%);
 }
 
-.card-whipe.bg-cream-shade.biobot {
+.card-whipe.lazy.biobot {
   -webkit-filter: blur(1px) brightness(100%);
   filter: blur(1px) brightness(100%);
 }
 
-.card-whipe.bg-cream-shade.insanedeals {
+.card-whipe.lazy.insanedeals {
   -webkit-filter: brightness(85%);
   filter: brightness(85%);
 }
