@@ -71,6 +71,10 @@ function test() {
     setTimeout(() => {
       locoScroll.update();
       locoScroll.start();
+
+      //loading the case study preview gifs
+      $('head').append('<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>');
+      
     }, 1750);
   }
 }
