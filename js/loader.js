@@ -44,7 +44,7 @@ setTimeout(() => {
   new_canvas.style.position = "absolute";
   new_canvas.style.zIndex = "100";
   new_canvas.style.backgroundColor = "#ffffff00";
-  new_canvas.style.pointerEvents = "none";
+  //new_canvas.style.pointerEvents = "none";
   new_canvas.style.marginLeft = "52vw";
 
   document.body.appendChild(new_canvas);
