@@ -1260,15 +1260,15 @@
 .awards-left {
   position: fixed;
   left: 0%;
-  top: 0%;
+  top: 25%;
   right: auto;
-  bottom: 0%;
-  z-index: 1000;
+  bottom: 25%;
+  z-index: 1500;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
+  height: 50vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1282,10 +1282,12 @@
 
 .aww {
   width: 2.75vw;
+  height: 100%;
 }
 
 .cssda {
   width: 2.75vw;
+  height: 2.75vw;
   margin-top: 1vh;
 }
 
