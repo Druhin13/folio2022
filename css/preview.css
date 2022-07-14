@@ -1,0 +1,63 @@
+.card-whipe {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#skillsunion-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/skillsunion.webp");
+}
+
+#vtf-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/vtf.webp");
+}
+
+#mausumi-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/mausumi.webp");
+}
+
+#nowiverse-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/nowiverse.webp");
+}
+
+#vocal-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/vocal.webp");
+}
+
+#greenfox-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/greenfox.webp");
+}
+
+#allbodies-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/allbodies.webp");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+#buzzoms-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/buzzoms.webp");
+    background-position: right 0px bottom 10%;
+}
+
+#fathom-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/fathom.webp");
+}
+
+#biobot-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/biobot.webp");
+}
+
+#stamurai-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/stamurai.webp");
+    background-position: right 0px bottom 15%;
+}
+
+#insanedeals-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/insanedeals.webp");
+    background-position: right 0px bottom 10%;
+}
+
+#keralaonroad-preview {
+    background-image: url("https://druh.in/folio2022/images/gifs/keralaonroad.webp");
+    background-position: right 0px bottom 10%;
+}
