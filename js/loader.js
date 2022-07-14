@@ -105,7 +105,7 @@ $('#contact-link').click(function () {
   locoScroll.scrollTo(contact);
 });
 
-
+/*
 //lazy loading
 $('.lazy').Lazy({
   // your configuration goes here
@@ -116,3 +116,4 @@ $('.lazy').Lazy({
     console.log('error loading ' + element.data('src'));
   }
 });
+*/
