@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Jul 14 2022 14:33:42 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Jul 14 2022 20:20:49 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -23,6 +23,8 @@
   <meta name="theme-color" content="#131313">
   <style>
 /*! locomotive-scroll v3.1.7 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */.c-scrollbar,.c-scrollbar_thumb{position:absolute;top:0;right:0}.has-scroll-smooth body,html.has-scroll-smooth{overflow:hidden}html.has-scroll-dragging,html.has-scroll-dragging *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.c-scrollbar{z-index:5000;width:7px;height:100vh;transform-origin:center right;transition:transform .3s,opacity .3s;opacity:0}.c-scrollbar:hover{transform:scaleX(1.45)}.c-scrollbar:hover,.has-scroll-dragging .c-scrollbar,.has-scroll-scrolling .c-scrollbar{opacity:1}.c-scrollbar_thumb{background-color:#adadad;border-radius:50vw;width:5px;margin:2px;cursor:-webkit-grab;cursor:grab}.has-scroll-dragging .c-scrollbar_thumb{cursor:-webkit-grabbing;cursor:grabbing}
+</style>
+  <style>
 /* hiding scrollbar */
 ::-webkit-scrollbar{display:none}*{-ms-overflow-style:none;scrollbar-width:none}
 </style>
@@ -75,43 +77,6 @@
           <div data-w-id="808d083b-9a49-d4ef-bff0-6626d0a91894" style="-webkit-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="loading-time-group">
             <div id="loader-line" data-w-id="6c56879b-781e-6e73-4b33-8fe7fddea780" style="width:0%" class="progress-bar"></div>
             <p class="heading1 type2 disable-select"><span id="zero">0</span><span id="count">0</span>%</p>
-          </div>
-          <div id="canvas-div" class="canvas-div">
-            <div class="sketch-embed w-embed w-script">
-              <!--  link to p5js 
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>  -->
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-              <script>
-/*
- * @name Continuous Lines
- * @description Hover the mouse to draw a continuing line.
- */
-function setup() {
-  const myCanvas = createCanvas(displayWidth, displayHeight);
-  myCanvas.parent('canvas-div');
-  background(255,0,0,0); //transparent bg
-}
-function draw() {
-  stroke(19);//black pencil stroke
-  stroke(239);//grey pencil stroke
-  strokeWeight(0.75);
-  line(mouseX, mouseY, pmouseX, pmouseY);
-/*
-  if (mouseIsPressed === true) {
-    stroke(255);//white color eraser
-    stroke(19);//black color eraser
-    strokeWeight(35);
-    line(mouseX, mouseY, pmouseX, pmouseY);
-  }*/
-}
-</script>
-              <style>
-.canvas-div canvas{
-	position: relative;
-	z-index: 0;
-}
-</style>
-            </div>
           </div>
         </div>
         <div style="height:100vh;-webkit-transform:translate3d(0, 100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="end-overlay"></div>
@@ -1274,9 +1239,11 @@ body {
 html, body {
   -webkit-font-smoothing: antialiased;
 	}
+/*
 .canvas-div {
 	pointer-events:none;
 }
+*/
 #overlay {
 	pointer-events: none;
 }
