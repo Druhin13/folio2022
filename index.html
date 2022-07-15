@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Jul 14 2022 20:20:49 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Jul 15 2022 23:10:56 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -56,9 +56,9 @@
       <div style="width:0%" class="line-bottom"></div>
     </a>
   </nav>
-  <div id="locomotive-scroll" class="locomotive-scroll">
-    <section id="about" data-scroll-section="true" class="landing wf-section">
-      <div id="loader" class="loader">
+  <main id="locomotive-scroll" class="locomotive-scroll">
+    <section id="about" data-scroll-section="true" data-scroll-sticky="true" data-scroll-target="#locomotive-scroll" class="landing wf-section">
+      <div id="loader" data-w-id="c8442785-59a3-df2c-1473-e2fc1440e189" style="display:flex" class="loader">
         <div data-w-id="bb5f4941-0564-bcb9-14e5-19ed35d598b3" style="display:block;opacity:1;-webkit-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="overlay overall"></div>
         <div data-w-id="cfa3440e-afea-4706-9eca-a2e785509703" style="-webkit-transform:translate3d(-14.5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-14.5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-14.5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-14.5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="loading-gif disable-select">
           <div class="loading-gif-embed w-embed">
@@ -1168,7 +1168,15 @@
     </section>
     <section id="testimonials" data-scroll-section="true" class="testimonials wf-section">
       <div class="c-layout">
-        <div class="c1"></div>
+        <div class="c1">
+          <aside data-scroll-target="#testimonials" data-scroll="true" data-scroll-sticky="true" class="testimonial-preview">
+            <div data-scroll-speed="1" data-scroll="true" class="testimonial-gif"></div>
+            <div data-scroll-speed="2.5" data-scroll="true" class="testimonial-preview-text">
+              <h1 class="context-heading white type2">Testimonials*</h1>
+              <div class="context-heading white paragraph type3">* i didn’t force them to write these..<br>   trust me</div>
+            </div>
+          </aside>
+        </div>
         <div data-scroll-target="#testimonials" data-scroll="true" data-scroll-sticky="true" class="testimonials-holder">
           <div class="t-layout">
             <div class="t1">
@@ -1228,9 +1236,20 @@
           <div data-w-id="f017b8eb-1484-93a3-d773-1ba157ff9a2e" style="width:0%" class="line"></div>
         </div>
       </div>
+      <div class="testimonial-gif-embed w-embed">
+        <style>
+.testimonial-gif{
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ 	background-image: url("https://druh.in/folio2022/images/gifs/testimonial.webp");
+}
+</style>
+      </div>
+      <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="expand" class="white-transition"></div>
     </section>
     <section id="contact" data-scroll-section="true" class="contact wf-section"></section>
-  </div>
+  </main>
   <div class="document-styling-embed w-embed w-script">
     <style>
 body {
