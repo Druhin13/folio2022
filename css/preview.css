@@ -61,3 +61,10 @@
     background-image: url("https://druh.in/folio2022/images/gifs/keralaonroad.webp");
     background-position: right 0px bottom 10%;
 }
+
+.testimonial-gif{
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+ 	background-image: url("https://druh.in/folio2022/images/gifs/testimonial.webp");
+}
