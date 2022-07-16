@@ -83,7 +83,7 @@ setTimeout(() => {
   }
   function draw(event) {
     ctx.beginPath();
-    ctx.lineWidth = 1.5;
+    ctx.lineWidth = 1;
     ctx.lineCap = "round";
     ctx.strokeStyle = "#fff";
     ctx.moveTo(coord.x, coord.y);
@@ -97,7 +97,7 @@ setTimeout(() => {
     start: 0,
     end: 100,
     easing: 'swing',
-    duration: 7000,
+    duration: 6000,
   });
 
 }, 2000);
