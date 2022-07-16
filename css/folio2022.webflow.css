@@ -29,6 +29,8 @@
   border-top: 1px solid #131313;
   background-color: #fff;
   box-shadow: none;
+  -webkit-filter: blur(0.3px);
+  filter: blur(0.3px);
 }
 
 .heading1 {
@@ -809,6 +811,8 @@
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
 }
 
 .award-name {
@@ -816,6 +820,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-filter: blur(0.65px);
+  filter: blur(0.65px);
 }
 
 .award-name.marquee3k {
@@ -912,7 +918,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 8vw;
-  margin-left: 10vw;
+  margin-left: 10.5vw;
   padding-left: 0vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -932,6 +938,8 @@
   height: 160vh;
   background-color: #131313;
   box-shadow: 0 0 100px -20px rgba(0, 0, 0, 0.8);
+  -webkit-filter: blur(0.4px);
+  filter: blur(0.4px);
 }
 
 .overlay {
@@ -1140,9 +1148,16 @@
 }
 
 .line {
+  width: 0%;
   height: 1px;
   margin-bottom: 1px;
   background-color: #fff;
+  -webkit-transition: width 2000ms cubic-bezier(.165, .84, .44, 1);
+  transition: width 2000ms cubic-bezier(.165, .84, .44, 1);
+}
+
+.line.expand {
+  width: 100%;
 }
 
 .contact {
@@ -1235,6 +1250,8 @@
   -ms-flex-align: end;
   align-items: flex-end;
   background-image: none;
+  -webkit-filter: blur(0.5px);
+  filter: blur(0.5px);
 }
 
 .awards-left {
@@ -1296,6 +1313,7 @@
   width: 8vw;
   height: 8vw;
   border-radius: 0.5vw;
+  background-color: #fff;
 }
 
 .testimonial-preview {
@@ -1305,6 +1323,8 @@
   display: flex;
   padding-top: 100vh;
   padding-bottom: 25vh;
+  -webkit-filter: blur(0.35px);
+  filter: blur(0.35px);
 }
 
 .testimonial-preview-text {
@@ -1332,8 +1352,8 @@
   width: 100vw;
   height: 0vw;
   background-color: #fff;
-  -webkit-transition: all 2150ms cubic-bezier(.23, 1, .32, 1);
-  transition: all 2150ms cubic-bezier(.23, 1, .32, 1);
+  -webkit-transition: all 1850ms cubic-bezier(.23, 1, .32, 1);
+  transition: all 1850ms cubic-bezier(.23, 1, .32, 1);
 }
 
 .white-transition.expand {
