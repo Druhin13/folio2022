@@ -171,3 +171,11 @@ $('#testimonials-link').click(function () {
 $('#contact-link').click(function () {
   locoScroll.scrollTo(contact);
 });
+
+
+
+
+// testing on work section - case study tabs 
+
+$('div.hashtag-txt-hidden').textContent.replace("#", "");
+$('div.hashtag-txt').textContent.replace("#", "");

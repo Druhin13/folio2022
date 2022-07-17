@@ -64,7 +64,14 @@
 
 .testimonial-gif{
 	background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+    background-size: cover;
+    background-position: center center;
  	background-image: url("https://druh.in/folio2022/images/gifs/testimonial.webp");
+}
+
+
+/* testing on work section - case study tabs */
+
+.hashtag-txt-hidden, .hashtag-txt{
+    text-transform: uppercase;
 }
