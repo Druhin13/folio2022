@@ -181,9 +181,11 @@ const h1 = document.querySelectorAll(".hashtag-txt");
 const h2 = document.querySelectorAll(".hashtag-txt-hidden");
 
 for (i = 0; i < h1.length; i++) {
-  h1[i].textContent.replace("#", "");
+  nh1 = h1[i].textContent.replace("#", "");
+  h1[i].innerText = nh1;
 }
 
 for (j = 0; j < h2.length; j++) {
-  h2[j].textContent.replace("#", "");
+  nh2 = h2[j].textContent.replace("#", "");
+  h2[j].innerText = nh2;
 }
