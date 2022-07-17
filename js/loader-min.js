@@ -198,12 +198,12 @@ for (j = 0; j < h2.length; j++) {
 
 let options = {
   timeZone: 'Europe/London',
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
+  //year: 'numeric',
+  //month: 'numeric',
+  //day: 'numeric',
   hour: 'numeric',
   minute: 'numeric',
-  second: 'numeric',
+  //second: 'numeric',
 },
   formatter = new Intl.DateTimeFormat([], options);
 
