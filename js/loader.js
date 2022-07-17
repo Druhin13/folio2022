@@ -41,7 +41,7 @@ setTimeout(() => {
 
   var new_canvas = document.createElement('canvas');
   new_canvas.id = "sketch";
-  new_canvas.class = "sketch";
+  new_canvas.className = "sketch";
   new_canvas.style.position = "absolute";
   new_canvas.style.zIndex = "100";
   new_canvas.style.backgroundColor = "#ffffff00";
@@ -86,7 +86,7 @@ setTimeout(() => {
     ctx.beginPath();
     ctx.lineWidth = 1.25;
     ctx.lineCap = "round";
-    ctx.strokeStyle = "#fff";
+    ctx.strokeStyle = "#cecece";
     ctx.moveTo(coord.x, coord.y);
     reposition(event);
     ctx.lineTo(coord.x, coord.y);
