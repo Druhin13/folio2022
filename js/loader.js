@@ -191,3 +191,24 @@ for (j = 0; j < h2.length; j++) {
 }
 
 */
+
+
+
+/* time calc */
+
+let options = {
+  timeZone: 'Europe/London',
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+},
+  formatter = new Intl.DateTimeFormat([], options);
+
+
+let ctime = setInterval(timecalc, 1000);
+function timecalc() {
+  console.log(formatter.format(new Date()));
+}
