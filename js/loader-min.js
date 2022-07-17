@@ -135,7 +135,7 @@ function test() {
     setTimeout(() => {
       locoScroll.update();
       locoScroll.start();
-      
+
       //loading the case study preview gifs
       $('head').append('<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>');
     }, 750);
@@ -177,5 +177,13 @@ $('#contact-link').click(function () {
 
 // testing on work section - case study tabs 
 
-$('div.hashtag-txt-hidden').textContent.replace("#", "");
-$('div.hashtag-txt').textContent.replace("#", "");
+const h1 = document.querySelectorAll(".hashtag-txt");
+const h2 = document.querySelectorAll(".hashtag-txt-hidden");
+
+for (i = 0; i < h1.length; i++) {
+  h1[i].textContent.replace("#", "");
+}
+
+for (j = 0; j < h2.length; j++) {
+  h2[j].textContent.replace("#", "");
+}
