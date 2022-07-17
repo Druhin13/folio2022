@@ -86,7 +86,7 @@ setTimeout(() => {
     ctx.beginPath();
     ctx.lineWidth = 1.15;
     ctx.lineCap = "round";
-    ctx.strokeStyle = "#cecece";
+    ctx.strokeStyle = "#A4A4A4";
     ctx.moveTo(coord.x, coord.y);
     reposition(event);
     ctx.lineTo(coord.x, coord.y);
