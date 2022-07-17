@@ -41,6 +41,7 @@ setTimeout(() => {
 
   var new_canvas = document.createElement('canvas');
   new_canvas.id = "sketch";
+  new_canvas.class = "sketch";
   new_canvas.style.position = "absolute";
   new_canvas.style.zIndex = "100";
   new_canvas.style.backgroundColor = "#ffffff00";
