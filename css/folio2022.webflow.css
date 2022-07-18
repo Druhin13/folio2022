@@ -1439,8 +1439,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 75vh;
-  padding-bottom: 20vh;
+  padding-top: 65vh;
+  padding-bottom: 30vh;
   -webkit-filter: blur(0.35px);
   filter: blur(0.35px);
 }
@@ -1703,6 +1703,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  background-color: #131313;
 }
 
 .scroll-txts {
@@ -1741,7 +1742,8 @@
   z-index: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../images/fixed-test.webp');
+  background-color: #000;
+  background-image: url('../images/grid.svg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
