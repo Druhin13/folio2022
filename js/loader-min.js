@@ -215,6 +215,6 @@ function timecalc() {
   $("#time").text(time_b);
   if (time_b != time_a) {
     time_a = time_b;
-    $(".time").click();
+    $(".circle").click();
   }
 }
