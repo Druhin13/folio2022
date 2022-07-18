@@ -241,7 +241,7 @@ function timecalc() {
 }
 
 
-/*
+
 
 //if user wanna see more
 
@@ -258,12 +258,15 @@ $('#something-trigger').click(function () {
 
 });
 
-*/
 
 
+
+/*
 
 $('#something').on('inview', function (event, isInView) {
   if (isInView) {
     locoScroll.stop();
   } else { }
 });
+
+*/
