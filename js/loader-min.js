@@ -37,12 +37,12 @@ function remove() {
 }
 
 
-/*
+
 
 //hiding the 'something' section
 $('#something').hide();
 
-*/
+
 
 //counter initialization
 setTimeout(() => {
