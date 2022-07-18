@@ -230,9 +230,9 @@ function timecalc() {
 
 $('#something-trigger').click(function () {
   $('#something').show();
-
+  locoScroll.stop();
   setTimeout(() => {
     locoScroll.update();
-  }, 250);
+  }, 500);
 
 });
