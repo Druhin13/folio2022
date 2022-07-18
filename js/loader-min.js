@@ -231,11 +231,17 @@ function timecalc() {
 $('#something-trigger').click(function () {
   $('#something').show();
   locoScroll.stop();
+
+
+  //new locomotive initialization (when users wanna see more)
+  const locoScroll2 = new LocomotiveScroll({
+    el: document.querySelector(".locomotive-scroll"),
+    smooth: true,
+    multiplier: 0.35,
+  });
+
   setTimeout(() => {
-    locoScroll.update();
-  }, 250);
-  setTimeout(() => {
-    locoScroll.start();
-  }, 250);
+    locoScroll2.start();
+  }, 350);
 
 });
