@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Sun Jul 17 2022 22:44:27 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Mon Jul 18 2022 00:56:05 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
   <link href="images/webclip.png" rel="apple-touch-icon">
   <meta name="theme-color" content="#131313">
   <style>
-/*! locomotive-scroll v3.1.7 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */.c-scrollbar,.c-scrollbar_thumb{position:absolute;top:0;right:0}.has-scroll-smooth body,html.has-scroll-smooth{overflow:hidden}html.has-scroll-dragging,html.has-scroll-dragging *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.c-scrollbar{z-index:5000;width:7px;height:100vh;transform-origin:center right;transition:transform .3s,opacity .3s;opacity:0}.c-scrollbar:hover{transform:scaleX(1.45)}.c-scrollbar:hover,.has-scroll-dragging .c-scrollbar,.has-scroll-scrolling .c-scrollbar{opacity:1}.c-scrollbar_thumb{background-color:#adadad;border-radius:50vw;width:5px;margin:2px;cursor:-webkit-grab;cursor:grab}.has-scroll-dragging .c-scrollbar_thumb{cursor:-webkit-grabbing;cursor:grabbing}
+/*! locomotive-scroll v3.1.7 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */.c-scrollbar,.c-scrollbar_thumb{position:absolute;top:0;right:0}.has-scroll-smooth body,html.has-scroll-smooth{overflow:hidden}html.has-scroll-dragging,html.has-scroll-dragging *{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.c-scrollbar{z-index:5000;width:7px;height:100vh;transform-origin:center right;transition:transform .3s,opacity .3s;opacity:0}.c-scrollbar:hover{transform:scaleX(1.45)}.c-scrollbar:hover,.has-scroll-dragging .c-scrollbar,.has-scroll-scrolling .c-scrollbar{opacity:1}.c-scrollbar_thumb{background-color:#adadad;border-radius:2px;width:5px;margin:2px;cursor:-webkit-grab;cursor:grab}.has-scroll-dragging .c-scrollbar_thumb{cursor:-webkit-grabbing;cursor:grabbing}
 </style>
   <style>
 /* hiding scrollbar */
@@ -1244,7 +1244,41 @@
       <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="expand" class="white-transition"></div>
     </section>
     <section id="contact" data-scroll-section="true" class="contact wf-section">
-      <div data-scroll-target="#contact" data-scroll="true" data-scroll-sticky="true" class="contact-div"></div>
+      <div class="social-div">
+        <div id="line2" data-scroll="true" data-scroll-class="expand" data-scroll-repeat="true" class="line"></div>
+        <div class="time-holder">
+          <div data-w-id="6f2cd7f8-cc35-5240-571c-ee00a3313353" class="circle"></div>
+          <div id="time" class="time">12:09 AM</div>
+        </div>
+        <div class="links">
+          <div class="social-links">
+            <a id="instagram-link" data-w-id="368ed1b9-94cc-c41a-8428-8c1c3e2ee81e" href="https://www.instagram.com/druh.in" target="_blank" class="nav-link-block w-inline-block">
+              <div class="nav-text">instagram</div>
+              <div style="width:0%" class="line-bottom"></div>
+            </a>
+            <a id="github-link" data-w-id="3f4929e4-8a88-e9d3-daf1-bf7e07c0039d" href="https://github.com/Druhin13" target="_blank" class="nav-link-block w-inline-block">
+              <div class="nav-text">github</div>
+              <div style="width:0%" class="line-bottom"></div>
+            </a>
+            <a id="linkedin-link" data-w-id="704cefb0-ccc9-dfd8-4f1c-d44ce547f461" href="https://www.linkedin.com/in/druhin13" target="_blank" class="nav-link-block w-inline-block">
+              <div class="nav-text">linkedin</div>
+              <div style="width:0%" class="line-bottom"></div>
+            </a>
+            <a id="dribbble-link" data-w-id="eed03e1a-7a1e-b3b2-4557-8794b2c79a06" href="https://dribbble.com/druhin" target="_blank" class="nav-link-block w-inline-block">
+              <div class="nav-text">dribbble</div>
+              <div style="width:0%" class="line-bottom"></div>
+            </a>
+          </div>
+          <a id="resume-link" data-w-id="2a0b630c-904b-e2a0-29f4-0b46cc007190" href="#" class="nav-link-block w-inline-block">
+            <div class="nav-text">Resume  <span class="text-span">↓</span></div>
+            <div style="width:0%" class="line-bottom"></div>
+          </a>
+        </div>
+      </div>
+      <div class="email-div">
+        <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="expand" class="line"></div>
+        <div class="txt">Feel free to drop a line anytime*</div>
+      </div>
     </section>
   </main>
   <div class="document-styling-embed w-embed w-script">
@@ -1345,6 +1379,10 @@ pointer-events: none;
 #border {
  -webkit-text-stroke: 1px #131313;
 	text-shadow: 0 0 1px #131313;
+}
+.email-div .line, .social-div .line{
+	height: 1.5px;
+  background-color: #131313;
 }
 /* locomotive scroll styles */
 [data-scroll-container], [data-scroll-section] {

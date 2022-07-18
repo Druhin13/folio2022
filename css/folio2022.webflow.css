@@ -1164,7 +1164,13 @@
 .contact {
   position: relative;
   z-index: 50;
-  height: 160vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 1.5vw;
+  padding-bottom: 7.5vh;
+  padding-left: 1.5vw;
   background-color: #f9f9f9;
 }
 
@@ -1175,10 +1181,7 @@
   right: 0%;
   bottom: 0%;
   z-index: 1000;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
@@ -1362,21 +1365,13 @@
   margin-left: 0vw;
 }
 
-.contact-div {
-  height: 27.5vh;
-  background-image: url('../images/contactdiv.png');
-  background-position: 50% 0%;
-  background-size: cover;
-  background-repeat: repeat-x;
-}
-
 .druhin {
   position: absolute;
   left: -0.25vw;
   top: 3vh;
   z-index: 10;
   overflow: hidden;
-  width: 47.25vw;
+  width: 46.75vw;
   -webkit-filter: blur(0.5px);
   filter: blur(0.5px);
   mix-blend-mode: hard-light;
@@ -1411,13 +1406,82 @@
   position: absolute;
   left: auto;
   top: 22vh;
-  right: 1.15vw;
+  right: 1.65vw;
   bottom: auto;
   z-index: 10;
   width: 3vw;
   -webkit-filter: blur(0.5px);
   filter: blur(0.5px);
   mix-blend-mode: hard-light;
+}
+
+.social-div {
+  width: 100%;
+}
+
+.time {
+  margin-top: 2.5vh;
+  font-size: 3.25vh;
+  line-height: 3.25vh;
+  font-weight: 500;
+  letter-spacing: -0.04vw;
+}
+
+.time-holder {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.circle {
+  width: 3vh;
+  height: 3vh;
+  margin-top: 2.5vh;
+  margin-right: 1vw;
+  border-radius: 50vw;
+  background-color: #131313;
+}
+
+.email-div {
+  width: 100%;
+  margin-left: 2.5vw;
+}
+
+.txt {
+  width: 45%;
+  margin-top: 2.5vh;
+  font-size: 3.25vh;
+  line-height: 3.25vh;
+  font-weight: 500;
+  letter-spacing: -0.04vw;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10vh;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.text-span {
+  font-size: 0.75vw;
 }
 
 @media screen and (max-width: 991px) {
