@@ -36,6 +36,11 @@ function remove() {
   $(".w-webflow-badge").remove();
 }
 
+
+//hiding the 'something' section
+$('#something').hide();
+
+
 //counter initialization
 setTimeout(() => {
 
@@ -218,3 +223,18 @@ function timecalc() {
     $(".circle").click();
   }
 }
+
+
+
+//if user wanna see more
+
+$('#something-trigger').click(function () {
+  locoScroll.stop();
+  $('#something').show();
+
+  setTimeout(() => {
+    locoScroll.update();
+    locoScroll.start();
+  }, 250);
+  
+});
