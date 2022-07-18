@@ -203,12 +203,18 @@ let options = {
   //day: 'numeric',
   hour: 'numeric',
   minute: 'numeric',
-  second: 'numeric',
+  //second: 'numeric',
 },
   formatter = new Intl.DateTimeFormat([], options);
 
+let time_a = formatter.format(new Date());
 
 let ctime = setInterval(timecalc, 1000);
 function timecalc() {
-  $("#time").text(formatter.format(new Date()));
+  let time_b = formatter.format(new Date());
+  $("#time").text(time_b);
+  if (time_b != time_a) {
+    time_a = time_b;
+    $(".time").click();
+  }
 }
