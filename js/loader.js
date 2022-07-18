@@ -203,12 +203,12 @@ let options = {
   //day: 'numeric',
   hour: 'numeric',
   minute: 'numeric',
-  //second: 'numeric',
+  second: 'numeric',
 },
   formatter = new Intl.DateTimeFormat([], options);
 
 
 let ctime = setInterval(timecalc, 1000);
 function timecalc() {
-  console.log(formatter.format(new Date()));
+  $("#time").text(formatter.format(new Date()));
 }
