@@ -201,8 +201,8 @@ let options = {
   //year: 'numeric',
   //month: 'numeric',
   //day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
   //second: 'numeric',
 },
   formatter = new Intl.DateTimeFormat([], options);
