@@ -154,7 +154,7 @@ const about = document.querySelector('#about');
 const work = document.querySelector('#work');
 const awards = document.querySelector('#awards');
 const testimonials = document.querySelector('#testimonials');
-const contact = document.querySelector('#contact');
+const contact = document.querySelector('#trigger1');
 
 
 $('#about-link').click(function () {
@@ -229,12 +229,10 @@ function timecalc() {
 //if user wanna see more
 
 $('#something-trigger').click(function () {
-  locoScroll.stop();
   $('#something').show();
 
   setTimeout(() => {
     locoScroll.update();
-    locoScroll.start();
   }, 250);
 
 });
