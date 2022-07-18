@@ -233,6 +233,9 @@ $('#something-trigger').click(function () {
   locoScroll.stop();
   setTimeout(() => {
     locoScroll.update();
-  }, 500);
+  }, 250);
+  setTimeout(() => {
+    locoScroll.start();
+  }, 250);
 
 });
