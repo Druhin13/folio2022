@@ -98,7 +98,7 @@ setTimeout(() => {
     start: 0,
     end: 100,
     easing: 'swing',
-    duration: 6000,
+    duration: 1000, //set the duration of the loading animation (5000 - 7000 ~6000)
   });
 
 }, 2000);
