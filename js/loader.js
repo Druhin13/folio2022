@@ -190,7 +190,12 @@ $('#testimonials-link').click(function () {
 });
 
 $('#contact-link').click(function () {
-  locoScroll.scrollTo(contact);
+  for(i=0;i<10;i++)
+  {
+    var e = new KeyboardEvent('keydown',{'keyCode':32,'which':32});
+    console.log(e);
+    document.dispatchEvent(e);
+  }
 });
 
 
