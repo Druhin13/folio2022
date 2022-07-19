@@ -253,10 +253,10 @@
       $("#disable-hover").css("display", "block");
   
       //blur up
-      $("#blur-up").css("height", $('#cs1').offset().top - 1);
+      $("#blur-up").css("height", "100%");
+      $("#blur-up").css("z-index", "10");
       //blur down
-      $("#blur-down").css("height", "100vh");
-      $("#blur-down").css("margin-top", $('#cs2').offset().top);
+  
     }, 300);
   });
   
@@ -273,9 +273,9 @@
       $("#disable-hover").css("display", "none");
   
       //blur up
-      $("#blur-up").css("height", "0px");
+      $("#blur-up").css("height", "0%");
+      $("#blur-up").css("z-index", "9");
       //blur down
-      $("#blur-down").css("height", "0px");
-      $("#blur-down").css("margin-top", "200vh");
+  
     }, 300);
   });
