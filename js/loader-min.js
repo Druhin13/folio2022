@@ -258,5 +258,5 @@
       //blur down
       $("#blur-down").css("height", "100vh");
       $("#blur-down").css("margin-top", $('#cs2').offset().top);
-    }, 650);
+    }, 300);
   });
