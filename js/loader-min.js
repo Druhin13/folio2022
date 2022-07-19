@@ -265,7 +265,7 @@
   
     //testing cs iteration
   
-    cs.addEventListener("click", () => {
+    ("cs"+i).addEventListener("click", () => {
   
       $("#disable-hover").css("display", "block");
       var z = 9 + i;
