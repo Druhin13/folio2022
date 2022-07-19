@@ -263,9 +263,16 @@ const cs13 = document.getElementById('cs13')
 
 
 cs1.addEventListener("click", () => {
+  let csv = parseInt(("cs1").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = ns + (per * csv) + "%";
 
   $("#disable-hover").css("display", "block");
-  $("#blur-up").css("z-index", "10");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
 
   setTimeout(() => {
     locoScroll.stop();
@@ -274,6 +281,7 @@ cs1.addEventListener("click", () => {
     $("#blur-up").css("height", "100%");
 
     //blur down
+    $("#blur-down").css("height", h);
 
   }, 300);
 });
@@ -281,69 +289,6 @@ cs1.addEventListener("click", () => {
 
 
 
-
-
-
-cs2.addEventListener("click", () => {
-
-  $("#disable-hover").css("display", "block");
-  $("#blur-up").css("z-index", "11");
-
-  setTimeout(() => {
-    locoScroll.stop();
-
-    //blur up
-    $("#blur-up").css("height", "100%");
-
-    //blur down
-
-  }, 300);
-});
-cs3.addEventListener("click", () => {
-
-  $("#disable-hover").css("display", "block");
-  $("#blur-up").css("z-index", "12");
-
-  setTimeout(() => {
-    locoScroll.stop();
-
-    //blur up
-    $("#blur-up").css("height", "100%");
-
-    //blur down
-
-  }, 300);
-});
-cs4.addEventListener("click", () => {
-
-  $("#disable-hover").css("display", "block");
-  $("#blur-up").css("z-index", "13");
-
-  setTimeout(() => {
-    locoScroll.stop();
-
-    //blur up
-    $("#blur-up").css("height", "100%");
-
-    //blur down
-
-  }, 300);
-});
-cs5.addEventListener("click", () => {
-
-  $("#disable-hover").css("display", "block");
-  $("#blur-up").css("z-index", "14");
-
-  setTimeout(() => {
-    locoScroll.stop();
-
-    //blur up
-    $("#blur-up").css("height", "100%");
-
-    //blur down
-
-  }, 300);
-});
 
 
 
@@ -357,6 +302,7 @@ disable_cs.addEventListener("click", () => {
 
   $("#disable-hover").css("display", "none");
   $("#blur-up").css("height", "0%");
+  $("#blur-down").css("height", "0%");
 
   setTimeout(() => {
     locoScroll.start();
