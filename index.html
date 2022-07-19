@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue Jul 19 2022 07:49:55 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Jul 19 2022 15:15:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -30,6 +30,7 @@
 </style>
 </head>
 <body data-scroll-time="0.5" class="body">
+  <div id="disable-hover" class="disable-hover"></div>
   <div data-w-id="9f0840be-913d-096f-8cca-14c2b34ca4ff" style="display:flex" class="awards-left">
     <a rel="noreferrer" data-w-id="9f0840be-913d-096f-8cca-14c2b34ca500" style="-webkit-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://www.awwwards.com/sites/mausumi-showcase-of-writings" target="_blank" class="award-link w-inline-block"><img src="images/awwwards-honors.svg" loading="lazy" alt="Link to the Awwwards website showcase" class="aww"></a>
     <a rel="noreferrer" data-w-id="9f0840be-913d-096f-8cca-14c2b34ca502" style="-webkit-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://www.cssdesignawards.com/sites/mausumi/40427/" target="_blank" class="award-link w-inline-block"><img src="images/cssda-nominee-black.webp" loading="lazy" alt="Link to the CSSDA  website showcase" class="cssda"></a>
@@ -86,6 +87,8 @@
       </div>
     </section>
     <section id="work" data-scroll-section="true" class="work-section wf-section">
+      <div id="blur-up" class="blur-up"></div>
+      <div id="blur-down" class="blur-down"></div>
       <div data-scroll-target="#work" data-scroll="true" data-scroll-sticky="true" class="sticky-section-header loco">
         <div data-scroll="true" class="hide-under loco">
           <div class="line-bottom under"></div>
@@ -1237,17 +1240,17 @@
               </div>
             </div>
           </div>
-          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="expand" class="line"></div>
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="expand" class="line expand"></div>
         </div>
       </div>
-      <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="expand" class="white-transition"></div>
+      <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="expand" class="white-transition expand"></div>
     </section>
     <section id="contact-test" data-scroll-section="true" data-scroll-speed="15" class="contact-test wf-section">
       <div data-scroll-target="#contact-test" data-scroll="true" data-scroll-sticky="true" class="contact">
         <div class="contact-div">
           <div data-scroll="true" class="social-div">
             <div class="div-up">
-              <div id="line2" data-scroll="true" data-scroll-class="expand" class="line"></div>
+              <div id="line2" data-scroll="true" data-scroll-class="expand" class="line expand"></div>
               <div class="time-holder">
                 <div data-w-id="6f2cd7f8-cc35-5240-571c-ee00a3313353" class="circle"></div>
                 <div id="time" class="time">12:09 AM</div>
@@ -1280,11 +1283,11 @@
           </div>
           <div data-scroll="true" data-w-id="12a4081a-8b3c-79a9-0512-876a35b90d7c" class="email-div">
             <div class="div-up">
-              <div data-scroll-class="expand" data-scroll="true" class="line"></div>
+              <div data-scroll-class="expand" data-scroll="true" class="line expand"></div>
               <div class="txt">Feel free to drop a line anytime*</div>
             </div>
             <div class="div-mid">
-              <div class="attn w-embed"><svg width="100%" height="100%" viewbox="0 0 80 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="attn disable-select w-embed"><svg width="100%" height="100%" viewbox="0 0 80 61" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M1 1.23828C24.0558 -1.24597 53.4245 51.3189 41.7954 59.1726C41.7954 59.1726 29.6659 26.2866 78.2728 34.1236" stroke="#131313" stroke-width="1.5" stroke-linecap="round" class="attn"></path>
                 </svg>
                 <style>
@@ -1334,7 +1337,7 @@ body {
 html, body {
   -webkit-font-smoothing: antialiased;
 	}
-#overlay, .grid-overlay, .cs-preview, .card-whipe, .nothing{
+#overlay, .grid-overlay, .cs-preview, .card-whipe, .nothing, .blur-test, .blur-down, .blur-up{
 	pointer-events: none;
 }
 .landing:hover .pencil-cursor-holder {
@@ -1558,5 +1561,9 @@ document.addEventListener("mousemove", () => {
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
   <script src="https://druh.in/folio2022/js/loader-min.js"></script>
   <script src="https://druh.in/folio2022/js/marquee-min.js"></script>
+  <script>
+$(".line").removeClass("expand");
+$(".white-transition").removeClass("expand");
+</script>
 </body>
 </html>
