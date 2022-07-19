@@ -267,7 +267,7 @@ cs1.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = ns + (per * csv) + "%";
+  let h = ns + (per * (13 - csv)) + "%";
 
   $("#disable-hover").css("display", "block");
 
