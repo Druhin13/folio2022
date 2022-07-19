@@ -261,7 +261,7 @@ const cs13 = document.getElementById('cs13')
 
 
 for (i = 1; i <= 13; i++) {
-  var cs = cs + i;
+  var cs = "cs" + i;
 
   //testing cs iteration
 
