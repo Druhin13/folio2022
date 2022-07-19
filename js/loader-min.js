@@ -279,7 +279,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -305,7 +305,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -331,7 +331,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -357,7 +357,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -383,7 +383,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -409,7 +409,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -435,7 +435,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -460,7 +460,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -487,7 +487,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -513,7 +513,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -539,7 +539,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -565,7 +565,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -591,7 +591,7 @@
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up2").css("height", "101%");
+       
   
       //blur down
       $("#blur-down").css("height", h);
@@ -611,7 +611,6 @@
   
     $("#disable-hover").css("display", "none");
     $("#blur-up").css("height", "0%");
-    $("#blur-up2").css("height", "0%");
     $("#blur-down").css("height", "0%");
   
     setTimeout(() => {
