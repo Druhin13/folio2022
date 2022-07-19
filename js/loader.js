@@ -610,3 +610,16 @@ disable_cs.addEventListener("click", () => {
 
   }, 300);
 });
+
+
+
+
+
+// cs details locomotive initializations
+
+const CS2locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".vtf-cs-main"),
+  smooth: true,
+  multiplier: 0.75,
+});
+CS2locoScroll.start();
