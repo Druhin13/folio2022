@@ -335,7 +335,245 @@ cs3.addEventListener("click", () => {
   }, 300);
 });
 
+cs4.addEventListener("click", () => {
+  let csv = parseInt(("cs4").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
 
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs5.addEventListener("click", () => {
+  let csv = parseInt(("cs5").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs6.addEventListener("click", () => {
+  let csv = parseInt(("cs6").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs7.addEventListener("click", () => {
+  let csv = parseInt(("cs7").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs8.addEventListener("click", () => {
+  let csv = parseInt(("cs8").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs9.addEventListener("click", () => {
+  let csv = parseInt(("cs9").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs10.addEventListener("click", () => {
+  let csv = parseInt(("cs10").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs11.addEventListener("click", () => {
+  let csv = parseInt(("cs11").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs12.addEventListener("click", () => {
+  let csv = parseInt(("cs12").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs13.addEventListener("click", () => {
+  let csv = parseInt(("cs13").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
 
 
 
