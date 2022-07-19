@@ -243,19 +243,3 @@ function timecalc() {
 
 
 //if user wanna see more
-
-$('#something-trigger').click(function () {
-  //$('#something').show();
-  //locoScroll.stop();
-
-  $(".locomotive-scroll").addClass("move-up");
-
-  /*  
-  setTimeout(() => {
-      locoScroll.update();
-    }, 250);
-    setTimeout(() => {
-      locoScroll.start();
-    }, 250);
-  */
-});
