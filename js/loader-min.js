@@ -27,7 +27,7 @@
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".locomotive-scroll"),
     smooth: true,
-    multiplier: 0.75,
+    multiplier: 1,
   });
   locoScroll.stop();
   
@@ -633,6 +633,6 @@
   const CS2locoScroll = new LocomotiveScroll({
     el: document.querySelector(".vtf-cs-main"),
     smooth: true,
-    multiplier: 0.5,
+    multiplier: 0.75,
   });
   CS2locoScroll.start();
