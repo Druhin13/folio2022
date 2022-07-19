@@ -27,7 +27,7 @@
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".locomotive-scroll"),
   smooth: true,
-  multiplier: 1,
+  multiplier: 0.75,
 });
 locoScroll.stop();
 
