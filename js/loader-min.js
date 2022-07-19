@@ -613,7 +613,7 @@
   
   
   
-  /*
+
   
   // cs details locomotive initializations
   
@@ -624,4 +624,3 @@
   });
   CS2locoScroll.start();
   
-  */

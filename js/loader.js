@@ -613,7 +613,7 @@ disable_cs.addEventListener("click", () => {
 
 
 
-/*
+
 
 // cs details locomotive initializations
 
@@ -624,4 +624,3 @@ const CS2locoScroll = new LocomotiveScroll({
 });
 CS2locoScroll.start();
 
-*/
