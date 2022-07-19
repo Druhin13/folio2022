@@ -170,7 +170,7 @@ const about = document.querySelector('#about');
 const work = document.querySelector('#work');
 const awards = document.querySelector('#awards');
 const testimonials = document.querySelector('#testimonials');
-const contact = document.querySelector('#contact');
+const contact = document.querySelector('#contact-test');
 
 
 $('#about-link').click(function () {
@@ -190,7 +190,7 @@ $('#testimonials-link').click(function () {
 });
 
 $('#contact-link').click(function () {
-  locoScroll.scrollTo("bottom");
+  locoScroll.scrollTo(contact);
 });
 
 
