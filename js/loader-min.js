@@ -248,13 +248,15 @@
   
   cs1.addEventListener("click", () => {
   
+    $("#disable-hover").css("display", "block");
+    $("#blur-up").css("z-index", "10");
+  
     setTimeout(() => {
       locoScroll.stop();
-      $("#disable-hover").css("display", "block");
   
       //blur up
       $("#blur-up").css("height", "100%");
-      $("#blur-up").css("z-index", "10");
+  
       //blur down
   
     }, 300);
@@ -268,13 +270,15 @@
   
   disable_cs.addEventListener("click", () => {
   
+    $("#disable-hover").css("display", "none");
+    $("#blur-up").css("height", "0%");
+  
     setTimeout(() => {
       locoScroll.start();
-      $("#disable-hover").css("display", "none");
   
       //blur up
-      $("#blur-up").css("height", "0%");
       $("#blur-up").css("z-index", "9");
+  
       //blur down
   
     }, 300);
