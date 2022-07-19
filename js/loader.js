@@ -251,9 +251,10 @@ cs1.addEventListener("click", () => {
 
   setTimeout(() => {
     locoScroll.stop();
+    $("#disable-hover").css("display", "block");
 
     //blur up
-    $("#blur-up").css("height", $('#cs1').offset().top);
+    $("#blur-up").css("height", $('#cs1').offset().top - 1);
     //blur down
     $("#blur-down").css("height", "100vh");
     $("#blur-down").css("margin-top", $('#cs2').offset().top);
