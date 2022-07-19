@@ -276,6 +276,6 @@ disable_cs.addEventListener("click", () => {
     $("#blur-up").css("height", "0px");
     //blur down
     $("#blur-down").css("height", "0px");
-    $("#blur-down").css("margin-top", "0px");
+    $("#blur-down").css("margin-top", "200vh");
   }, 300);
 });
