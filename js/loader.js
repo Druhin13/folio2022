@@ -466,6 +466,7 @@ cs9.addEventListener("click", () => {
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
   let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 5px)";
 
 
   $("#disable-hover").css("display", "block");
