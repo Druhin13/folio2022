@@ -279,7 +279,7 @@ cs1.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -305,7 +305,7 @@ cs2.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -331,7 +331,7 @@ cs3.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -357,7 +357,7 @@ cs4.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -383,7 +383,7 @@ cs5.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -409,7 +409,7 @@ cs6.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -435,7 +435,7 @@ cs7.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -460,7 +460,7 @@ cs8.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -487,7 +487,7 @@ cs9.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -513,7 +513,7 @@ cs10.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -539,7 +539,7 @@ cs11.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -565,7 +565,7 @@ cs12.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
@@ -591,7 +591,7 @@ cs13.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-    $("#blur-up2").css("height", "100%");
+    $("#blur-up2").css("height", "101%");
 
     //blur down
     $("#blur-down").css("height", h);
