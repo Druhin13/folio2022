@@ -256,6 +256,6 @@ cs1.addEventListener("click", () => {
     $("#blur-up").css("height", $('#cs1').offset().top);
     //blur down
     $("#blur-down").css("height", "100vh");
-    $("#blur-down").css("margin-top", ($('#cs1').offset().top + $('#cs1').outerHeight() + 4));
-  }, 700);
+    $("#blur-down").css("margin-top", $('#cs2').offset().top);
+  }, 650);
 });
