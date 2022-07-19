@@ -244,7 +244,6 @@
   
   //case study clicks
   
-  
   const cs1 = document.getElementById('cs1')
   
   cs1.addEventListener("click", () => {
@@ -258,5 +257,25 @@
       //blur down
       $("#blur-down").css("height", "100vh");
       $("#blur-down").css("margin-top", $('#cs2').offset().top);
+    }, 300);
+  });
+  
+  
+  
+  //closing blur and disable overlay from the cs tabs
+  
+  const disable_cs = document.getElementById('disable-hover');
+  
+  disable_cs.addEventListener("click", () => {
+  
+    setTimeout(() => {
+      locoScroll.start();
+      $("#disable-hover").css("display", "none");
+  
+      //blur up
+      $("#blur-up").css("height", "0px");
+      //blur down
+      $("#blur-down").css("height", "0px");
+      $("#blur-down").css("margin-top", "0px");
     }, 300);
   });
