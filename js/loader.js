@@ -245,14 +245,17 @@ function timecalc() {
 //if user wanna see more
 
 $('#something-trigger').click(function () {
-  $('#something').show();
-  locoScroll.stop();
+  //$('#something').show();
+  //locoScroll.stop();
 
-  setTimeout(() => {
-    locoScroll.update();
-  }, 250);
-  setTimeout(() => {
-    locoScroll.start();
-  }, 250);
+  $(".locomotive-scroll").addClass("move-up");
 
+  /*  
+  setTimeout(() => {
+      locoScroll.update();
+    }, 250);
+    setTimeout(() => {
+      locoScroll.start();
+    }, 250);
+  */
 });
