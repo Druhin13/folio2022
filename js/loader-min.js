@@ -248,11 +248,14 @@
   const cs1 = document.getElementById('cs1')
   
   cs1.addEventListener("click", () => {
-    locoScroll.stop();
   
-    //blur up
-    $("#blur-up").css("height", $('#cs1').offset().top);
-    //blur down
-    $("#blur-down").css("height", "100vh");
-    $("#blur-down").css("margin-top", ($('#cs1').offset().top + $('#cs1').outerHeight() + 4));
+    setTimeout(() => {
+      locoScroll.stop();
+  
+      //blur up
+      $("#blur-up").css("height", $('#cs1').offset().top);
+      //blur down
+      $("#blur-down").css("height", "100vh");
+      $("#blur-down").css("margin-top", ($('#cs1').offset().top + $('#cs1').outerHeight() + 4));
+    }, 700);
   });
