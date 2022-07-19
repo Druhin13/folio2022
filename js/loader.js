@@ -267,7 +267,7 @@ cs1.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -292,7 +292,7 @@ cs2.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -316,7 +316,7 @@ cs3.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -340,7 +340,7 @@ cs4.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -364,7 +364,7 @@ cs5.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -388,7 +388,7 @@ cs6.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -412,7 +412,7 @@ cs7.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -436,7 +436,7 @@ cs8.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -460,7 +460,7 @@ cs9.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -484,7 +484,7 @@ cs10.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -508,7 +508,7 @@ cs11.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -532,7 +532,7 @@ cs12.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
@@ -556,7 +556,7 @@ cs13.addEventListener("click", () => {
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
   let per = 3.15; //per cs size
-  let h = Math.floor(ns + (per * (13 - csv))) + "%";
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
