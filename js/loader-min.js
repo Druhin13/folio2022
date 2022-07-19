@@ -202,13 +202,13 @@
   const h2 = document.querySelectorAll(".hashtag-txt-hidden");
   
   for (i = 0; i < h1.length; i++) {
-    nh1 = h1[i].textContent.replace("#", "");
-    h1[i].innerText = nh1;
+  nh1 = h1[i].textContent.replace("#", "");
+  h1[i].innerText = nh1;
   }
   
   for (j = 0; j < h2.length; j++) {
-    nh2 = h2[j].textContent.replace("#", "");
-    h2[j].innerText = nh2;
+  nh2 = h2[j].textContent.replace("#", "");
+  h2[j].innerText = nh2;
   }
   
   */
@@ -260,31 +260,8 @@
   
   
   
-  for (i = 1; i <= 13; i++) {
-    var cs = "cs" + i;
-  
-    //testing cs iteration
-  
-    ("cs"+i).addEventListener("click", () => {
-  
-      $("#disable-hover").css("display", "block");
-      var z = 9 + i;
-      $("#blur-up").css("z-index", "z");
-      setTimeout(() => {
-        locoScroll.stop();
-  
-        //blur up
-        $("#blur-up").css("height", "100%");
-  
-        //blur down
-  
-      }, 300);
-    });
-  }
   
   
-  
-  /*
   cs1.addEventListener("click", () => {
   
     $("#disable-hover").css("display", "block");
@@ -300,7 +277,74 @@
   
     }, 300);
   });
-  */
+  
+  
+  
+  
+  
+  
+  
+  cs2.addEventListener("click", () => {
+  
+    $("#disable-hover").css("display", "block");
+    $("#blur-up").css("z-index", "11");
+  
+    setTimeout(() => {
+      locoScroll.stop();
+  
+      //blur up
+      $("#blur-up").css("height", "100%");
+  
+      //blur down
+  
+    }, 300);
+  });
+  cs3.addEventListener("click", () => {
+  
+    $("#disable-hover").css("display", "block");
+    $("#blur-up").css("z-index", "12");
+  
+    setTimeout(() => {
+      locoScroll.stop();
+  
+      //blur up
+      $("#blur-up").css("height", "100%");
+  
+      //blur down
+  
+    }, 300);
+  });
+  cs4.addEventListener("click", () => {
+  
+    $("#disable-hover").css("display", "block");
+    $("#blur-up").css("z-index", "13");
+  
+    setTimeout(() => {
+      locoScroll.stop();
+  
+      //blur up
+      $("#blur-up").css("height", "100%");
+  
+      //blur down
+  
+    }, 300);
+  });
+  cs5.addEventListener("click", () => {
+  
+    $("#disable-hover").css("display", "block");
+    $("#blur-up").css("z-index", "14");
+  
+    setTimeout(() => {
+      locoScroll.stop();
+  
+      //blur up
+      $("#blur-up").css("height", "100%");
+  
+      //blur down
+  
+    }, 300);
+  });
+  
   
   
   
