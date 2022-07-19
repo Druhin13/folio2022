@@ -613,14 +613,13 @@
   
   
   
-
+  
   
   // cs details locomotive initializations
   
   const CS2locoScroll = new LocomotiveScroll({
     el: document.querySelector(".vtf-cs-main"),
     smooth: true,
-    multiplier: 0.75,
+    multiplier: 0.5,
   });
   CS2locoScroll.start();
-  
