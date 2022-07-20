@@ -712,6 +712,22 @@ function if_scrolling() {
 
 
 $('#cs1').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  //$(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t1 = setTimeout(show_preview1, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview1() {
@@ -725,6 +741,22 @@ $('#cs1').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs2').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  //$(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t2 = setTimeout(show_preview2, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview2() {
@@ -738,6 +770,22 @@ $('#cs2').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs3').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  //$(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t3 = setTimeout(show_preview3, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview3() {
@@ -751,6 +799,22 @@ $('#cs3').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs4').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  //$(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t4 = setTimeout(show_preview4, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview4() {
@@ -764,6 +828,22 @@ $('#cs4').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs5').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  //$(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t5 = setTimeout(show_preview5, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview5() {
@@ -777,6 +857,22 @@ $('#cs5').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs6').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  //$(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t6 = setTimeout(show_preview6, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview6() {
@@ -790,6 +886,22 @@ $('#cs6').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs7').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  //$(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t7 = setTimeout(show_preview7, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview7() {
@@ -803,6 +915,22 @@ $('#cs7').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs8').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  //$(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t8 = setTimeout(show_preview8, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview8() {
@@ -816,6 +944,22 @@ $('#cs8').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs9').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  //$(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t9 = setTimeout(show_preview9, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview9() {
@@ -829,6 +973,22 @@ $('#cs9').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs10').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  //$(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t10 = setTimeout(show_preview10, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview10() {
@@ -842,6 +1002,22 @@ $('#cs10').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs11').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  //$(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t11 = setTimeout(show_preview11, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview11() {
@@ -855,6 +1031,22 @@ $('#cs11').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs12').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  //$(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
   let t12 = setTimeout(show_preview12, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview12() {
@@ -868,6 +1060,22 @@ $('#cs12').mouseenter(function () { //if user is hovering over the case study
 
 
 $('#cs13').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  //$(".cs13-close-trigger").click();
+
   let t13 = setTimeout(show_preview13, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview13() {
