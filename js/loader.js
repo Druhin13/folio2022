@@ -717,12 +717,15 @@ $('#cs1').mouseenter(function () { //if user is hovering over the case study
   function show_preview1() {
     $(".cs1-trigger").click();
   }
+
+  $('#cs1').mouseleave(function () {
+    clearTimeout(t1);
+    $(".cs1-close-trigger").click();
+  });
+
 });
 
-$('#cs1').mouseleave(function () {
-  clearTimeout(t1);
-  $(".cs1-close-trigger").click();
-});
+
 
 
 /*
