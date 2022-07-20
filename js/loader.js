@@ -646,6 +646,7 @@ let current_scroll = setInterval(if_scrolling, 10);
 function if_scrolling() {
   if ($('html').hasClass("has-scroll-scrolling")) {
     $('#work').css('cursor', 'none');
+    $('#work').trigger('mouseleave');
 
     $('#cs1').trigger('mouseleave');
     $('#cs2').trigger('mouseleave');
