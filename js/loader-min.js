@@ -1088,7 +1088,7 @@ $('#cs13').mouseenter(function () { //if user is hovering over the case study
 });
 
 
-$('#work').mouseenter(function () { //if user is hovering over the case study
+$('#work').mouseover(function () { //if user is hovering over the case study
 
   //hiding the other cs previews
   $(".cs1-close-trigger").click();
