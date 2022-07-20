@@ -710,7 +710,6 @@ function if_scrolling() {
 
 // cs preview ; only when hovered over for atleast 2 secs
 
-const t1;
 
 $('#cs1').mouseenter(function () { //if user is hovering over the case study
   t1 = setTimeout(show_preview1, 1000); //then we are starting a timer for 1 second - to run the preview 
