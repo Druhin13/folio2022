@@ -195,7 +195,7 @@ $('#contact-link').click(function () {
 
 
 
-
+/*
 // testing on work section - case study tabs 
 
 const h1 = document.querySelectorAll(".hashtag-txt");
@@ -210,7 +210,7 @@ for (j = 0; j < h2.length; j++) {
 nh2 = h2[j].textContent.replace("#", "");
 h2[j].innerText = nh2;
 }
-
+*/
 
 
 
