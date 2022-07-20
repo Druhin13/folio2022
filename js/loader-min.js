@@ -646,6 +646,21 @@ let current_scroll = setInterval(if_scrolling, 10);
 function if_scrolling() {
   if ($('html').hasClass("has-scroll-scrolling")) {
     $('#work').css('cursor', 'none');
+
+    $('#cs1').css('cursor', 'none');
+    $('#cs2').css('cursor', 'none');
+    $('#cs3').css('cursor', 'none');
+    $('#cs4').css('cursor', 'none');
+    $('#cs5').css('cursor', 'none');
+    $('#cs6').css('cursor', 'none');
+    $('#cs7').css('cursor', 'none');
+    $('#cs8').css('cursor', 'none');
+    $('#cs9').css('cursor', 'none');
+    $('#cs10').css('cursor', 'none');
+    $('#cs11').css('cursor', 'none');
+    $('#cs12').css('cursor', 'none');
+    $('#cs13').css('cursor', 'none');
+
     $('#cs1').trigger('mouseleave');
     $('#cs2').trigger('mouseleave');
     $('#cs3').trigger('mouseleave');
