@@ -711,14 +711,173 @@ function if_scrolling() {
 // cs preview ; only when hovered over for atleast 2 secs
 
 
-$('#cs1').mouseenter(function () { //if user is hovering over the case study #1
-  let t = setTimeout(show_preview, 1500); //then we are starting a timer for 2 seconds - to run the preview 
+$('#cs1').mouseenter(function () { //if user is hovering over the case study
+  let t1 = setTimeout(show_preview1, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
-  function show_preview() {
+  function show_preview1() {
     $(".cs1-trigger").click();
   }
 });
 
-$('#cs1').mouseleave(function () { //if user is not hovering over the case study #1
+$('#cs1').mouseleave(function () {
   $(".cs1-close-trigger").click();
+});
+
+
+$('#cs2').mouseenter(function () { //if user is hovering over the case study
+  let t2 = setTimeout(show_preview2, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview2() {
+    $(".cs2-trigger").click();
+  }
+});
+
+$('#cs2').mouseleave(function () {
+  $(".cs2-close-trigger").click();
+});
+
+
+$('#cs3').mouseenter(function () { //if user is hovering over the case study
+  let t3 = setTimeout(show_preview3, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview3() {
+    $(".cs3-trigger").click();
+  }
+});
+
+$('#cs3').mouseleave(function () {
+  $(".cs3-close-trigger").click();
+});
+
+
+$('#cs4').mouseenter(function () { //if user is hovering over the case study
+  let t4 = setTimeout(show_preview4, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview4() {
+    $(".cs4-trigger").click();
+  }
+});
+
+$('#cs4').mouseleave(function () {
+  $(".cs4-close-trigger").click();
+});
+
+
+$('#cs5').mouseenter(function () { //if user is hovering over the case study
+  let t5 = setTimeout(show_preview5, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview5() {
+    $(".cs5-trigger").click();
+  }
+});
+
+$('#cs5').mouseleave(function () {
+  $(".cs5-close-trigger").click();
+});
+
+
+$('#cs6').mouseenter(function () { //if user is hovering over the case study
+  let t6 = setTimeout(show_preview6, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview6() {
+    $(".cs6-trigger").click();
+  }
+});
+
+$('#cs6').mouseleave(function () {
+  $(".cs6-close-trigger").click();
+});
+
+
+
+$('#cs7').mouseenter(function () { //if user is hovering over the case study
+  let t7 = setTimeout(show_preview7, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview7() {
+    $(".cs7-trigger").click();
+  }
+});
+
+$('#cs7').mouseleave(function () {
+  $(".cs7-close-trigger").click();
+});
+
+
+
+$('#cs8').mouseenter(function () { //if user is hovering over the case study
+  let t8 = setTimeout(show_preview8, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview8() {
+    $(".cs8-trigger").click();
+  }
+});
+
+$('#cs8').mouseleave(function () {
+  $(".cs8-close-trigger").click();
+});
+
+
+$('#cs9').mouseenter(function () { //if user is hovering over the case study
+  let t9 = setTimeout(show_preview9, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview9() {
+    $(".cs9-trigger").click();
+  }
+});
+
+$('#cs9').mouseleave(function () {
+  $(".cs9-close-trigger").click();
+});
+
+
+
+$('#cs10').mouseenter(function () { //if user is hovering over the case study
+  let t10 = setTimeout(show_preview10, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview10() {
+    $(".cs10-trigger").click();
+  }
+});
+
+$('#cs10').mouseleave(function () {
+  $(".cs10-close-trigger").click();
+});
+
+
+$('#cs11').mouseenter(function () { //if user is hovering over the case study
+  let t11 = setTimeout(show_preview11, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview11() {
+    $(".cs11-trigger").click();
+  }
+});
+
+$('#cs11').mouseleave(function () {
+  $(".cs11-close-trigger").click();
+});
+
+
+$('#cs12').mouseenter(function () { //if user is hovering over the case study
+  let t12 = setTimeout(show_preview12, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview12() {
+    $(".cs12-trigger").click();
+  }
+});
+
+$('#cs12').mouseleave(function () {
+  $(".cs12-close-trigger").click();
+});
+
+
+$('#cs13').mouseenter(function () { //if user is hovering over the case study
+  let t13 = setTimeout(show_preview13, 1000); //then we are starting a timer for 1 second - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview13() {
+    $(".cs13-trigger").click();
+  }
+});
+
+$('#cs13').mouseleave(function () {
+  $(".cs13-close-trigger").click();
 });
