@@ -640,7 +640,7 @@ CS2locoScroll.start();
 
 
 
-
+/*
 // hiding cs preview animation if page is currently scrolling
 let current_scroll = setInterval(if_scrolling, 10);
 function if_scrolling() {
@@ -701,8 +701,27 @@ function if_scrolling() {
 
       console.log("scrolling without hovering");
     }
-
   }
-
 }
 
+*/
+
+
+
+// cs preview ; only when hovered over for atleast 2 secs
+
+let t, hoverTime = 2000;
+
+if ($('#cs1').is(":hover")) //if user is hovering over the case study #1
+{
+  t = setTimeout('show_preview()', hoverTime); //then we are starting a timer for 2 seconds - to run the preview 
+  //once the timer is done, this function is called
+  function show_preview() {
+    $(".cs1-trigger").click();
+  }
+}
+else //if user is not hovering over the case study #1
+{
+  clearTimeout(t);
+  $(".cs1-close-trigger").click();
+}
