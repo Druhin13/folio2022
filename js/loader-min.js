@@ -712,23 +712,17 @@ function if_scrolling() {
 
 
 $('#cs1').mouseenter(function () { //if user is hovering over the case study
-  t1 = setTimeout(show_preview1, 1000); //then we are starting a timer for 1 second - to run the preview 
+  let t1 = setTimeout(show_preview1, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview1() {
     $(".cs1-trigger").click();
   }
-
   $('#cs1').mouseleave(function () {
     clearTimeout(t1);
     $(".cs1-close-trigger").click();
   });
-
 });
 
-
-
-
-/*
 
 $('#cs2').mouseenter(function () { //if user is hovering over the case study
   let t2 = setTimeout(show_preview2, 1000); //then we are starting a timer for 1 second - to run the preview 
@@ -736,11 +730,10 @@ $('#cs2').mouseenter(function () { //if user is hovering over the case study
   function show_preview2() {
     $(".cs2-trigger").click();
   }
-});
-
-$('#cs2').mouseleave(function () {
-  clearTimeout(t2);
-  $(".cs2-close-trigger").click();
+  $('#cs2').mouseleave(function () {
+    clearTimeout(t2);
+    $(".cs2-close-trigger").click();
+  });
 });
 
 
@@ -750,11 +743,10 @@ $('#cs3').mouseenter(function () { //if user is hovering over the case study
   function show_preview3() {
     $(".cs3-trigger").click();
   }
-});
-
-$('#cs3').mouseleave(function () {
-  clearTimeout(t3);
-  $(".cs3-close-trigger").click();
+  $('#cs3').mouseleave(function () {
+    clearTimeout(t3);
+    $(".cs3-close-trigger").click();
+  });
 });
 
 
@@ -764,11 +756,10 @@ $('#cs4').mouseenter(function () { //if user is hovering over the case study
   function show_preview4() {
     $(".cs4-trigger").click();
   }
-});
-
-$('#cs4').mouseleave(function () {
-  clearTimeout(t4);
-  $(".cs4-close-trigger").click();
+  $('#cs4').mouseleave(function () {
+    clearTimeout(t4);
+    $(".cs4-close-trigger").click();
+  });
 });
 
 
@@ -778,11 +769,10 @@ $('#cs5').mouseenter(function () { //if user is hovering over the case study
   function show_preview5() {
     $(".cs5-trigger").click();
   }
-});
-
-$('#cs5').mouseleave(function () {
-  clearTimeout(t5);
-  $(".cs5-close-trigger").click();
+  $('#cs5').mouseleave(function () {
+    clearTimeout(t5);
+    $(".cs5-close-trigger").click();
+  });
 });
 
 
@@ -792,13 +782,11 @@ $('#cs6').mouseenter(function () { //if user is hovering over the case study
   function show_preview6() {
     $(".cs6-trigger").click();
   }
+  $('#cs6').mouseleave(function () {
+    clearTimeout(t6);
+    $(".cs6-close-trigger").click();
+  });
 });
-
-$('#cs6').mouseleave(function () {
-  clearTimeout(t6);
-  $(".cs6-close-trigger").click();
-});
-
 
 
 $('#cs7').mouseenter(function () { //if user is hovering over the case study
@@ -807,13 +795,11 @@ $('#cs7').mouseenter(function () { //if user is hovering over the case study
   function show_preview7() {
     $(".cs7-trigger").click();
   }
+  $('#cs7').mouseleave(function () {
+    clearTimeout(t7);
+    $(".cs7-close-trigger").click();
+  });
 });
-
-$('#cs7').mouseleave(function () {
-  clearTimeout(t7);
-  $(".cs7-close-trigger").click();
-});
-
 
 
 $('#cs8').mouseenter(function () { //if user is hovering over the case study
@@ -822,11 +808,10 @@ $('#cs8').mouseenter(function () { //if user is hovering over the case study
   function show_preview8() {
     $(".cs8-trigger").click();
   }
-});
-
-$('#cs8').mouseleave(function () {
-  clearTimeout(t8);
-  $(".cs8-close-trigger").click();
+  $('#cs8').mouseleave(function () {
+    clearTimeout(t8);
+    $(".cs8-close-trigger").click();
+  });
 });
 
 
@@ -836,13 +821,11 @@ $('#cs9').mouseenter(function () { //if user is hovering over the case study
   function show_preview9() {
     $(".cs9-trigger").click();
   }
+  $('#cs9').mouseleave(function () {
+    clearTimeout(t9);
+    $(".cs9-close-trigger").click();
+  });
 });
-
-$('#cs9').mouseleave(function () {
-  clearTimeout(t9);
-  $(".cs9-close-trigger").click();
-});
-
 
 
 $('#cs10').mouseenter(function () { //if user is hovering over the case study
@@ -851,11 +834,10 @@ $('#cs10').mouseenter(function () { //if user is hovering over the case study
   function show_preview10() {
     $(".cs10-trigger").click();
   }
-});
-
-$('#cs10').mouseleave(function () {
-  clearTimeout(t10);
-  $(".cs10-close-trigger").click();
+  $('#cs10').mouseleave(function () {
+    clearTimeout(t10);
+    $(".cs10-close-trigger").click();
+  });
 });
 
 
@@ -865,11 +847,10 @@ $('#cs11').mouseenter(function () { //if user is hovering over the case study
   function show_preview11() {
     $(".cs11-trigger").click();
   }
-});
-
-$('#cs11').mouseleave(function () {
-  clearTimeout(t11);
-  $(".cs11-close-trigger").click();
+  $('#cs11').mouseleave(function () {
+    clearTimeout(t11);
+    $(".cs11-close-trigger").click();
+  });
 });
 
 
@@ -879,11 +860,10 @@ $('#cs12').mouseenter(function () { //if user is hovering over the case study
   function show_preview12() {
     $(".cs12-trigger").click();
   }
-});
-
-$('#cs12').mouseleave(function () {
-  clearTimeout(t12);
-  $(".cs12-close-trigger").click();
+  $('#cs12').mouseleave(function () {
+    clearTimeout(t12);
+    $(".cs12-close-trigger").click();
+  });
 });
 
 
@@ -893,11 +873,8 @@ $('#cs13').mouseenter(function () { //if user is hovering over the case study
   function show_preview13() {
     $(".cs13-trigger").click();
   }
+  $('#cs13').mouseleave(function () {
+    clearTimeout(t13);
+    $(".cs13-close-trigger").click();
+  });
 });
-
-$('#cs13').mouseleave(function () {
-  clearTimeout(t13);
-  $(".cs13-close-trigger").click();
-});
-
-*/
