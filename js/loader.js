@@ -720,6 +720,7 @@ $('#cs1').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs1').mouseleave(function () {
+  clearTimeout(t1);
   $(".cs1-close-trigger").click();
 });
 
@@ -733,6 +734,7 @@ $('#cs2').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs2').mouseleave(function () {
+  clearTimeout(t2);
   $(".cs2-close-trigger").click();
 });
 
@@ -746,6 +748,7 @@ $('#cs3').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs3').mouseleave(function () {
+  clearTimeout(t3);
   $(".cs3-close-trigger").click();
 });
 
@@ -759,6 +762,7 @@ $('#cs4').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs4').mouseleave(function () {
+  clearTimeout(t4);
   $(".cs4-close-trigger").click();
 });
 
@@ -772,6 +776,7 @@ $('#cs5').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs5').mouseleave(function () {
+  clearTimeout(t5);
   $(".cs5-close-trigger").click();
 });
 
@@ -785,6 +790,7 @@ $('#cs6').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs6').mouseleave(function () {
+  clearTimeout(t6);
   $(".cs6-close-trigger").click();
 });
 
@@ -799,6 +805,7 @@ $('#cs7').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs7').mouseleave(function () {
+  clearTimeout(t7);
   $(".cs7-close-trigger").click();
 });
 
@@ -813,6 +820,7 @@ $('#cs8').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs8').mouseleave(function () {
+  clearTimeout(t8);
   $(".cs8-close-trigger").click();
 });
 
@@ -826,6 +834,7 @@ $('#cs9').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs9').mouseleave(function () {
+  clearTimeout(t9);
   $(".cs9-close-trigger").click();
 });
 
@@ -840,6 +849,7 @@ $('#cs10').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs10').mouseleave(function () {
+  clearTimeout(t10);
   $(".cs10-close-trigger").click();
 });
 
@@ -853,6 +863,7 @@ $('#cs11').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs11').mouseleave(function () {
+  clearTimeout(t11);
   $(".cs11-close-trigger").click();
 });
 
@@ -866,6 +877,7 @@ $('#cs12').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs12').mouseleave(function () {
+  clearTimeout(t12);
   $(".cs12-close-trigger").click();
 });
 
@@ -879,5 +891,6 @@ $('#cs13').mouseenter(function () { //if user is hovering over the case study
 });
 
 $('#cs13').mouseleave(function () {
+  clearTimeout(t13);
   $(".cs13-close-trigger").click();
 });
