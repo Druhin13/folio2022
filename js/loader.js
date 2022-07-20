@@ -647,21 +647,6 @@ function if_scrolling() {
   if ($('html').hasClass("has-scroll-scrolling")) {
     $('#work').css('cursor', 'none');
 
-    $('#cs1').css('cursor', 'none');
-    $('#cs2').css('cursor', 'none');
-    $('#cs3').css('cursor', 'none');
-    $('#cs4').css('cursor', 'none');
-    $('#cs5').css('cursor', 'none');
-    $('#cs6').css('cursor', 'none');
-    $('#cs7').css('cursor', 'none');
-    $('#cs8').css('cursor', 'none');
-    $('#cs9').css('cursor', 'none');
-    $('#cs10').css('cursor', 'none');
-    $('#cs11').css('cursor', 'none');
-    $('#cs12').css('cursor', 'none');
-    $('#cs13').css('cursor', 'none');
-
-    /*
     $('#cs1').trigger('mouseleave');
     $('#cs2').trigger('mouseleave');
     $('#cs3').trigger('mouseleave');
@@ -675,25 +660,12 @@ function if_scrolling() {
     $('#cs11').trigger('mouseleave');
     $('#cs12').trigger('mouseleave');
     $('#cs12').trigger('mouseleave');
-    */
+
     console.log("scrolling");
   }
   else {
     $('#work').css('cursor', 'auto');
 
-    $('#cs1').css('cursor', 'auto');
-    $('#cs2').css('cursor', 'auto');
-    $('#cs3').css('cursor', 'auto');
-    $('#cs4').css('cursor', 'auto');
-    $('#cs5').css('cursor', 'auto');
-    $('#cs6').css('cursor', 'auto');
-    $('#cs7').css('cursor', 'auto');
-    $('#cs8').css('cursor', 'auto');
-    $('#cs9').css('cursor', 'auto');
-    $('#cs10').css('cursor', 'auto');
-    $('#cs11').css('cursor', 'auto');
-    $('#cs12').css('cursor', 'auto');
-    $('#cs13').css('cursor', 'auto');
     console.log("not scrolling");
   }
 }
