@@ -728,7 +728,7 @@ $('#cs1').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t1 = setTimeout(show_preview1, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t1 = setTimeout(show_preview1, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview1() {
     $(".cs1-trigger").click();
@@ -757,7 +757,7 @@ $('#cs2').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t2 = setTimeout(show_preview2, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t2 = setTimeout(show_preview2, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview2() {
     $(".cs2-trigger").click();
@@ -786,7 +786,7 @@ $('#cs3').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t3 = setTimeout(show_preview3, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t3 = setTimeout(show_preview3, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview3() {
     $(".cs3-trigger").click();
@@ -815,7 +815,7 @@ $('#cs4').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t4 = setTimeout(show_preview4, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t4 = setTimeout(show_preview4, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview4() {
     $(".cs4-trigger").click();
@@ -844,7 +844,7 @@ $('#cs5').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t5 = setTimeout(show_preview5, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t5 = setTimeout(show_preview5, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview5() {
     $(".cs5-trigger").click();
@@ -873,7 +873,7 @@ $('#cs6').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t6 = setTimeout(show_preview6, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t6 = setTimeout(show_preview6, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview6() {
     $(".cs6-trigger").click();
@@ -902,7 +902,7 @@ $('#cs7').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t7 = setTimeout(show_preview7, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t7 = setTimeout(show_preview7, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview7() {
     $(".cs7-trigger").click();
@@ -931,7 +931,7 @@ $('#cs8').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t8 = setTimeout(show_preview8, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t8 = setTimeout(show_preview8, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview8() {
     $(".cs8-trigger").click();
@@ -960,7 +960,7 @@ $('#cs9').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t9 = setTimeout(show_preview9, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t9 = setTimeout(show_preview9, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview9() {
     $(".cs9-trigger").click();
@@ -989,7 +989,7 @@ $('#cs10').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t10 = setTimeout(show_preview10, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t10 = setTimeout(show_preview10, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview10() {
     $(".cs10-trigger").click();
@@ -1018,7 +1018,7 @@ $('#cs11').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t11 = setTimeout(show_preview11, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t11 = setTimeout(show_preview11, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview11() {
     $(".cs11-trigger").click();
@@ -1047,7 +1047,7 @@ $('#cs12').mouseenter(function () { //if user is hovering over the case study
   //$(".cs12-close-trigger").click();
   $(".cs13-close-trigger").click();
 
-  let t12 = setTimeout(show_preview12, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t12 = setTimeout(show_preview12, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview12() {
     $(".cs12-trigger").click();
@@ -1076,7 +1076,7 @@ $('#cs13').mouseenter(function () { //if user is hovering over the case study
   $(".cs12-close-trigger").click();
   //$(".cs13-close-trigger").click();
 
-  let t13 = setTimeout(show_preview13, 500); //then we are starting a timer for 1 second - to run the preview 
+  let t13 = setTimeout(show_preview13, 300); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview13() {
     $(".cs13-trigger").click();
