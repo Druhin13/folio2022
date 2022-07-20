@@ -644,7 +644,7 @@ CS2locoScroll.start();
 // hiding cs preview animation if page is currently scrolling
 let current_scroll = setInterval(if_scrolling, 10);
 function if_scrolling() {
-  if ($('html').attr("has-scroll-scrolling")) {
+  if ($('html').hasClass("has-scroll-scrolling")) {
     $('#work').css('cursor', 'none');
     console.log("scrolling");
   }
@@ -653,3 +653,4 @@ function if_scrolling() {
     console.log("not scrolling");
   }
 }
+
