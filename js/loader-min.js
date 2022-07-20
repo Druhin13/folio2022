@@ -1086,3 +1086,23 @@ $('#cs13').mouseenter(function () { //if user is hovering over the case study
     $(".cs13-close-trigger").click();
   });
 });
+
+
+$('#work').mouseenter(function () { //if user is hovering over the case study
+
+  //hiding the other cs previews
+  $(".cs1-close-trigger").click();
+  $(".cs2-close-trigger").click();
+  $(".cs3-close-trigger").click();
+  $(".cs4-close-trigger").click();
+  $(".cs5-close-trigger").click();
+  $(".cs6-close-trigger").click();
+  $(".cs7-close-trigger").click();
+  $(".cs8-close-trigger").click();
+  $(".cs9-close-trigger").click();
+  $(".cs10-close-trigger").click();
+  $(".cs11-close-trigger").click();
+  $(".cs12-close-trigger").click();
+  $(".cs13-close-trigger").click();
+
+});
