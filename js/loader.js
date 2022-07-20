@@ -712,7 +712,7 @@ function if_scrolling() {
 
 
 $('#cs1').mouseenter(function () { //if user is hovering over the case study #1
-  let t = setTimeout(show_preview, 2000); //then we are starting a timer for 2 seconds - to run the preview 
+  let t = setTimeout(show_preview, 1500); //then we are starting a timer for 2 seconds - to run the preview 
   //once the timer is done, this function is called
   function show_preview() {
     $(".cs1-trigger").click();
@@ -720,6 +720,5 @@ $('#cs1').mouseenter(function () { //if user is hovering over the case study #1
 });
 
 $('#cs1').mouseleave(function () { //if user is not hovering over the case study #1
-  clearTimeout(t);
   $(".cs1-close-trigger").click();
 });
