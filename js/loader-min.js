@@ -645,58 +645,64 @@ CS2locoScroll.start();
 let current_scroll = setInterval(if_scrolling, 10);
 function if_scrolling() {
   if ($('html').hasClass("has-scroll-scrolling")) {
-    $('#work').css('cursor', 'none');
-    $('#work').trigger('mouseleave');
 
-    $('#cs1').css('cursor', 'none');
-    $('#cs2').css('cursor', 'none');
-    $('#cs3').css('cursor', 'none');
-    $('#cs4').css('cursor', 'none');
-    $('#cs5').css('cursor', 'none');
-    $('#cs6').css('cursor', 'none');
-    $('#cs7').css('cursor', 'none');
-    $('#cs8').css('cursor', 'none');
-    $('#cs9').css('cursor', 'none');
-    $('#cs10').css('cursor', 'none');
-    $('#cs11').css('cursor', 'none');
-    $('#cs12').css('cursor', 'none');
-    $('#cs13').css('cursor', 'none');
+    if ($('#cs1').is(":hover") || $('#cs2').is(":hover") || $('#cs3').is(":hover") || $('#cs4').is(":hover") || $('#cs5').is(":hover") || $('#cs6').is(":hover") || $('#cs7').is(":hover") || $('#cs8').is(":hover") || $('#cs9').is(":hover") || $('#cs10').is(":hover") || $('#cs11').is(":hover") || $('#cs12').is(":hover") || $('#cs13').is(":hover")) {
+      $('#work').css('cursor', 'none');
+      $('#work').trigger('mouseleave');
+
+      $('#cs1').css('cursor', 'none');
+      $('#cs2').css('cursor', 'none');
+      $('#cs3').css('cursor', 'none');
+      $('#cs4').css('cursor', 'none');
+      $('#cs5').css('cursor', 'none');
+      $('#cs6').css('cursor', 'none');
+      $('#cs7').css('cursor', 'none');
+      $('#cs8').css('cursor', 'none');
+      $('#cs9').css('cursor', 'none');
+      $('#cs10').css('cursor', 'none');
+      $('#cs11').css('cursor', 'none');
+      $('#cs12').css('cursor', 'none');
+      $('#cs13').css('cursor', 'none');
 
 
-    $('#cs1').trigger('mouseleave');
-    $('#cs2').trigger('mouseleave');
-    $('#cs3').trigger('mouseleave');
-    $('#cs4').trigger('mouseleave');
-    $('#cs5').trigger('mouseleave');
-    $('#cs6').trigger('mouseleave');
-    $('#cs7').trigger('mouseleave');
-    $('#cs8').trigger('mouseleave');
-    $('#cs9').trigger('mouseleave');
-    $('#cs10').trigger('mouseleave');
-    $('#cs11').trigger('mouseleave');
-    $('#cs12').trigger('mouseleave');
-    $('#cs12').trigger('mouseleave');
+      $('#cs1').trigger('mouseleave');
+      $('#cs2').trigger('mouseleave');
+      $('#cs3').trigger('mouseleave');
+      $('#cs4').trigger('mouseleave');
+      $('#cs5').trigger('mouseleave');
+      $('#cs6').trigger('mouseleave');
+      $('#cs7').trigger('mouseleave');
+      $('#cs8').trigger('mouseleave');
+      $('#cs9').trigger('mouseleave');
+      $('#cs10').trigger('mouseleave');
+      $('#cs11').trigger('mouseleave');
+      $('#cs12').trigger('mouseleave');
+      $('#cs13').trigger('mouseleave');
 
-    console.log("scrolling");
+      console.log("scrolling while hovering");
+    }
+
+    else {
+      $('#work').css('cursor', 'auto');
+
+      $('#cs1').css('cursor', 'pointer');
+      $('#cs2').css('cursor', 'pointer');
+      $('#cs3').css('cursor', 'pointer');
+      $('#cs4').css('cursor', 'pointer');
+      $('#cs5').css('cursor', 'pointer');
+      $('#cs6').css('cursor', 'pointer');
+      $('#cs7').css('cursor', 'pointer');
+      $('#cs8').css('cursor', 'pointer');
+      $('#cs9').css('cursor', 'pointer');
+      $('#cs10').css('cursor', 'pointer');
+      $('#cs11').css('cursor', 'pointer');
+      $('#cs12').css('cursor', 'pointer');
+      $('#cs13').css('cursor', 'pointer');
+
+      console.log("scrolling without hovering");
+    }
+
   }
-  else {
-    $('#work').css('cursor', 'auto');
 
-    $('#cs1').css('cursor', 'auto');
-    $('#cs2').css('cursor', 'auto');
-    $('#cs3').css('cursor', 'auto');
-    $('#cs4').css('cursor', 'auto');
-    $('#cs5').css('cursor', 'auto');
-    $('#cs6').css('cursor', 'auto');
-    $('#cs7').css('cursor', 'auto');
-    $('#cs8').css('cursor', 'auto');
-    $('#cs9').css('cursor', 'auto');
-    $('#cs10').css('cursor', 'auto');
-    $('#cs11').css('cursor', 'auto');
-    $('#cs12').css('cursor', 'auto');
-    $('#cs13').css('cursor', 'auto');
-
-    console.log("not scrolling");
-  }
 }
 
