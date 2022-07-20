@@ -195,8 +195,8 @@ $('#contact-link').click(function () {
 
 
 
-/*
-// testing on work section - case study tabs 
+
+/* testing on work section - case study tabs 
 
 const h1 = document.querySelectorAll(".hashtag-txt");
 const h2 = document.querySelectorAll(".hashtag-txt-hidden");
@@ -210,8 +210,8 @@ for (j = 0; j < h2.length; j++) {
 nh2 = h2[j].textContent.replace("#", "");
 h2[j].innerText = nh2;
 }
-*/
 
+*/
 
 
 
@@ -279,7 +279,7 @@ cs1.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -305,7 +305,7 @@ cs2.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -331,7 +331,7 @@ cs3.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -357,7 +357,7 @@ cs4.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -383,7 +383,7 @@ cs5.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -409,7 +409,7 @@ cs6.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -435,7 +435,7 @@ cs7.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -460,7 +460,7 @@ cs8.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -487,7 +487,7 @@ cs9.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -513,7 +513,7 @@ cs10.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -539,7 +539,7 @@ cs11.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -565,7 +565,7 @@ cs12.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -591,7 +591,7 @@ cs13.addEventListener("click", () => {
 
     //blur up
     $("#blur-up").css("height", "100%");
-     
+
 
     //blur down
     $("#blur-down").css("height", h);
@@ -636,3 +636,20 @@ const CS2locoScroll = new LocomotiveScroll({
   multiplier: 0.75,
 });
 CS2locoScroll.start();
+
+
+
+
+
+// hiding cs preview animation if page is currently scrolling
+let current_scroll = setInterval(if_scrolling, 10);
+function if_scrolling() {
+  if ($('html').attr("has-scroll-scrolling")) {
+    $('#work').css('cursor', 'none');
+    console.log("scrolling");
+  }
+  else {
+    $('#work').css('cursor', 'auto');
+    console.log("not scrolling");
+  }
+}
