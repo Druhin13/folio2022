@@ -636,3 +636,14 @@ const CS2locoScroll = new LocomotiveScroll({
   multiplier: 0.75,
 });
 CS2locoScroll.start();
+
+
+
+// if menu hold/pressed down
+
+$('#menu').on('mousedown', function () {
+  $('#menu-demo').css("opacity", "100%");
+}
+).on('mouseup mouseleave', function () {
+  $('#menu-demo').css("opacity", "0%");
+});
