@@ -710,9 +710,10 @@ function if_scrolling() {
 
 // cs preview ; only when hovered over for atleast 2 secs
 
+const t1;
 
 $('#cs1').mouseenter(function () { //if user is hovering over the case study
-  let t1 = setTimeout(show_preview1, 1000); //then we are starting a timer for 1 second - to run the preview 
+  t1 = setTimeout(show_preview1, 1000); //then we are starting a timer for 1 second - to run the preview 
   //once the timer is done, this function is called
   function show_preview1() {
     $(".cs1-trigger").click();
@@ -724,6 +725,8 @@ $('#cs1').mouseleave(function () {
   $(".cs1-close-trigger").click();
 });
 
+
+/*
 
 $('#cs2').mouseenter(function () { //if user is hovering over the case study
   let t2 = setTimeout(show_preview2, 1000); //then we are starting a timer for 1 second - to run the preview 
@@ -894,3 +897,5 @@ $('#cs13').mouseleave(function () {
   clearTimeout(t13);
   $(".cs13-close-trigger").click();
 });
+
+*/
