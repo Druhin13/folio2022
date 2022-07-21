@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Jul 21 2022 00:34:56 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Jul 21 2022 18:24:50 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -23,51 +23,93 @@
   <meta name="theme-color" content="#131313">
   <style>
 /*! locomotive-scroll v3.1.7 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+/*
 .c-scrollbar,
 .c-scrollbar_thumb {
 	position: absolute;
 	top: 0;
-	right: 0
+	right: 0;
 }
 .has-scroll-smooth body,
 html.has-scroll-smooth {
-	overflow: hidden
+	overflow: hidden;
 }
 html.has-scroll-dragging,
 html.has-scroll-dragging * {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
-	user-select: none
+	user-select: none;
 }
 .c-scrollbar {
-	z-index: 5000;
-	width: 7px;
+	z-index: 10000000;
+	width: 5px;
 	height: 100vh;
 	transform-origin: center right;
 	transition: transform .3s, opacity .3s;
-	opacity: 0
+	opacity: 0;
 }
 .c-scrollbar:hover {
-	transform: scaleX(1.45)
+	transform: scaleX(1.45);
 }
 .c-scrollbar:hover,
 .has-scroll-dragging .c-scrollbar,
 .has-scroll-scrolling .c-scrollbar {
-	opacity: 1
+	opacity: 1;
 }
 .c-scrollbar_thumb {
-	background-color: #adadad;
-	border-radius: 2px;
+	background-color: #131313;
+	border-radius: 0px;
 	width: 5px;
-	margin: 2px;
-	cursor: -webkit-grab;
-	cursor: grab
+	margin: 0px;
+	cursor: -webkit-grab;;
+	cursor: grab;
 }
 .has-scroll-dragging .c-scrollbar_thumb {
-	cursor: -webkit-grabbing;
-	cursor: grabbing
-}</style>
+	cursor: -webkit-grabbing;;
+	cursor: grabbing;
+}
+*/
+html.has-scroll-smooth {
+  overflow: hidden; }
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+.has-scroll-smooth body {
+  overflow: hidden; }
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh; }
+.c-scrollbar {
+z-index:5000;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7px;
+  height: 100vh;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0; }
+  .c-scrollbar:hover {
+    transform: scaleX(1.45); }
+  .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+    opacity: 1; }
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 5px;
+  /*border-radius: 0px;*/
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab; }
+  .has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+</style>
   <style>
 /* hiding scrollbar */
 ::-webkit-scrollbar{display:none}*{-ms-overflow-style:none;scrollbar-width:none}
@@ -77,6 +119,9 @@ html.has-scroll-dragging * {
 }
 .cs1-close-trigger, .cs2-close-trigger, .cs3-close-trigger, .cs4-close-trigger, .cs5-close-trigger, .cs6-close-trigger, .cs7-close-trigger, .cs8-close-trigger, .cs9-close-trigger, .cs10-close-trigger, .cs11-close-trigger, .cs12-close-trigger, .cs13-close-trigger{
 	display:none;
+}
+.drag-demo-container{
+	display:flex;
 }
 </style>
 </head>
@@ -93,6 +138,9 @@ html.has-scroll-dragging * {
           <div class="nav-text drag-text">Drag  IT  here</div>
         </a>
       </div>
+      <div class="drag-anim">
+        <div class="drag-anim-load" data-w-id="f05f019e-08a4-074c-598e-45c718d97399" data-animation-type="lottie" data-src="documents/drag-anim.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5208333333333333" data-duration="1"></div>
+      </div>
       <div id="menu-demo2" class="menu-demo drag-demo">
         <a href="#" class="nav-link-block drag-text w-inline-block">
           <div class="nav-text drag-text">Drag  IT  here</div>
@@ -102,23 +150,23 @@ html.has-scroll-dragging * {
     <ul id="slippylist" data-w-id="b6136b54-a0bd-3c19-2c63-b94d5a883bc8" style="-webkit-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" role="list" class="nav-reorder w-list-unstyled">
       <li id="clip-item1" class="clip-item1">
         <nav id="menu" data-w-id="c367e54e-de5a-5051-4ace-476d2db59268" class="menu instantly">
-          <a id="about-link" data-w-id="d5278c10-7102-b2c7-1d35-8557a4982bb0" href="#" class="nav-link-block w-inline-block">
+          <a id="about-link" data-w-id="d5278c10-7102-b2c7-1d35-8557a4982bb0" href="#" class="nav-link-block menu-height w-inline-block">
             <div class="nav-text">about</div>
             <div style="width:0%" class="line-bottom"></div>
           </a>
-          <a id="work-link" href="#" data-w-id="3283c732-da50-009e-be53-c642dfb73bd4" class="nav-link-block w-inline-block">
+          <a id="work-link" href="#" data-w-id="3283c732-da50-009e-be53-c642dfb73bd4" class="nav-link-block menu-height w-inline-block">
             <div class="nav-text">work</div>
             <div class="line-bottom"></div>
           </a>
-          <a id="awards-link" href="#" data-w-id="38ea054c-65b6-4985-baf8-583ac1c8af6a" class="nav-link-block w-inline-block">
+          <a id="awards-link" href="#" data-w-id="38ea054c-65b6-4985-baf8-583ac1c8af6a" class="nav-link-block menu-height w-inline-block">
             <div class="nav-text">awards</div>
             <div style="width:0%" class="line-bottom"></div>
           </a>
-          <a id="testimonials-link" href="#" data-w-id="5b16cd22-019a-15d9-0203-e3c655f558af" class="nav-link-block w-inline-block">
+          <a id="testimonials-link" href="#" data-w-id="5b16cd22-019a-15d9-0203-e3c655f558af" class="nav-link-block menu-height w-inline-block">
             <div class="nav-text">Testimonials</div>
             <div style="width:0%" class="line-bottom"></div>
           </a>
-          <a id="contact-link" data-w-id="73bad6d6-6c4c-0c0f-575a-d2ca55e0bb11" href="#" class="nav-link-block w-inline-block">
+          <a id="contact-link" data-w-id="73bad6d6-6c4c-0c0f-575a-d2ca55e0bb11" href="#" class="nav-link-block menu-height w-inline-block">
             <div class="nav-text">contact</div>
             <div style="width:0%" class="line-bottom"></div>
           </a><img src="images/drag.svg" loading="lazy" style="opacity:0" alt="" class="drag">
@@ -167,7 +215,8 @@ pointer-events:all;
 }
 /* these are special */
 .slip-reordering {
-    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    /*box-shadow: 0 1px 5px rgba(0,0,0,0.15);*/
+    box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.1);
     cursor: grabbing;
 }
 .slip-swiping-container {
@@ -334,7 +383,7 @@ pointer-events:all;
             <div class="cs-preview-text upper">view case study</div>
             <div class="cs-preview-text lower hide">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -382,7 +431,7 @@ pointer-events:all;
             <div class="cs-preview-text upper hide">view case study</div>
             <div class="cs-preview-text lower">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -425,7 +474,7 @@ pointer-events:all;
             <div class="cs-preview-text upper hide">view case study</div>
             <div class="cs-preview-text lower">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -468,7 +517,7 @@ pointer-events:all;
             <div class="cs-preview-text upper">view case study</div>
             <div class="cs-preview-text lower hide">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -511,7 +560,7 @@ pointer-events:all;
             <div class="cs-preview-text upper hide">view case study</div>
             <div class="cs-preview-text lower">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -549,7 +598,7 @@ pointer-events:all;
             <div class="cs-preview-text upper">view case study</div>
             <div class="cs-preview-text lower hide">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -592,7 +641,7 @@ pointer-events:all;
             <div class="cs-preview-text upper">view case study</div>
             <div class="cs-preview-text lower hide">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -635,7 +684,7 @@ pointer-events:all;
             <div class="cs-preview-text upper hide">view case study</div>
             <div class="cs-preview-text lower">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -683,7 +732,7 @@ pointer-events:all;
             <div class="cs-preview-text upper hide">view case study</div>
             <div class="cs-preview-text lower">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -726,7 +775,7 @@ pointer-events:all;
             <div class="cs-preview-text upper">view case study</div>
             <div class="cs-preview-text lower hide">view case study</div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -764,7 +813,7 @@ pointer-events:all;
             <div class="cs-preview-text lower">view case study</div>
             <div id="stamurai-preview" class="card-whipe lazy"></div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -807,7 +856,7 @@ pointer-events:all;
             <div class="cs-preview-text lower">view case study</div>
             <div id="insanedeals-preview" class="card-whipe lazy insanedeals"></div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -850,7 +899,7 @@ pointer-events:all;
             <div class="cs-preview-text upper hide">view case study</div>
             <div id="keralaonroad-preview" class="card-whipe lazy"></div>
           </figure>
-          <div class="list-parent">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -947,7 +996,7 @@ pointer-events:all;
       <div class="div-block"></div>
       <ul role="list" class="other-works-holder w-list-unstyled">
         <li id="screenoff" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51b9f8" class="case-study-link relative">
-          <div class="list-parent no-pointer">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco no-pointer">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -985,7 +1034,7 @@ pointer-events:all;
           </div>
         </li>
         <li id="mello" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba29" class="case-study-link relative">
-          <div class="list-parent no-pointer">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco no-pointer">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -1023,7 +1072,7 @@ pointer-events:all;
           </div>
         </li>
         <li id="mausumi" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba54" class="case-study-link relative">
-          <div class="list-parent no-pointer">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco no-pointer">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -1066,7 +1115,7 @@ pointer-events:all;
           </div>
         </li>
         <li id="nowiverse" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba7f" class="case-study-link relative">
-          <div class="list-parent no-pointer">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco no-pointer">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -1109,7 +1158,7 @@ pointer-events:all;
           </div>
         </li>
         <li id="webprompter" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51baaa" class="case-study-link relative">
-          <div class="list-parent no-pointer">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco no-pointer">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -1147,7 +1196,7 @@ pointer-events:all;
           </div>
         </li>
         <li id="invoiced" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51bacf" class="case-study-link relative">
-          <div class="list-parent no-pointer">
+          <div data-scroll-repeat="true" data-scroll="true" data-scroll-class="loco" class="list-parent loco no-pointer">
             <div class="line-top"></div>
             <div class="case-study-content-tab">
               <div class="parent flex-cc-h">
@@ -1524,7 +1573,7 @@ pointer-events:all;
   <div data-w-id="16749386-03ae-1dfb-a21f-17f50eba61e1" class="trigger2"></div>
   <div id="nothing" class="nothing wf-section">
     <div class="context-heading type6">that’s all i had mate ;<br>there isn’t anything more to show</div>
-    <div class="v-line"></div>
+    <div style="height:0vh;-webkit-transform:translate3d(0, -7vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -7vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -7vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -7vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="v-line"></div>
     <div class="div-block-3">
       <div class="something-text">Hire <span class="text-span-2">me</span> Already</div>
       <div class="context-heading type5">no forcing btw<br>you-do-you</div>
@@ -1824,6 +1873,7 @@ document.addEventListener("mousemove", () => {
   <script>
 $(".line").removeClass("expand");
 $(".white-transition").removeClass("expand");
+$(".list-parent").removeClass("loco");
 </script>
 </body>
 </html>

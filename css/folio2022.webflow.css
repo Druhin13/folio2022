@@ -89,117 +89,250 @@
   cursor: default;
 }
 
+.case-study-link.cs1 {
+  position: relative;
+  top: 4vh;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
 .case-study-link.cs1.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs2 {
+  position: relative;
+  top: 4vh;
   z-index: 11;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs2.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs3 {
+  position: relative;
+  top: 4vh;
   z-index: 12;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs3.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs4 {
+  position: relative;
+  top: 0vh;
   z-index: 13;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs4.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs5 {
+  position: relative;
+  top: 4vh;
   z-index: 14;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs5.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs6 {
+  position: relative;
+  top: 4vh;
   z-index: 15;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs6.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs7 {
+  position: relative;
+  top: 4vh;
   z-index: 16;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs7.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs8 {
+  position: relative;
+  top: 4vh;
   z-index: 17;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs8.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs9 {
+  position: relative;
+  top: 4vh;
   z-index: 18;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs9.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs10 {
+  position: relative;
+  top: 4vh;
   z-index: 19;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs10.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs11 {
+  position: relative;
+  top: 4vh;
   z-index: 20;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs11.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs12 {
+  position: relative;
+  top: 4vh;
   z-index: 21;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs12.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .case-study-link.cs13 {
+  position: relative;
+  top: 4vh;
   z-index: 22;
+  opacity: 0.1;
+  -webkit-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .case-study-link.cs13.loco {
   position: relative;
   top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .line-top {
@@ -791,6 +924,8 @@
 
 .menu.instantly {
   margin-top: 0vh;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
   cursor: -webkit-grab;
   cursor: grab;
 }
@@ -867,6 +1002,7 @@
 
 .list-parent {
   position: relative;
+  top: 3vh;
   width: 100%;
   padding-top: 0vh;
   padding-bottom: 0vh;
@@ -879,11 +1015,25 @@
   -ms-flex-align: center;
   align-items: center;
   background-color: #fff;
+  opacity: 0.1;
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+  -webkit-transition: all 750ms ease;
+  transition: all 750ms ease;
   cursor: pointer;
 }
 
 .list-parent.no-pointer {
   cursor: default;
+}
+
+.list-parent.loco {
+  top: 0vh;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .num-txt-ap {
@@ -934,6 +1084,10 @@
 
 .nav-link-block.left {
   padding-left: 0vw;
+}
+
+.nav-link-block.menu-height {
+  padding: 1.65vh 0.75vw 1.35vh;
 }
 
 .line-bottom {
@@ -1915,7 +2069,7 @@
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: inset 0 0 100px 20px hsla(0, 0%, 100%, 0.1);
+  box-shadow: inset 0 0 100px 20px hsla(0, 0%, 100%, 0.05);
 }
 
 .something-text {
@@ -2731,9 +2885,11 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border: 2px dashed #131313;
+  border-style: dashed;
+  border-width: 2px;
+  border-color: rgba(19, 19, 19, 0.5);
   background-color: #dadada;
-  box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.3);
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
 }
@@ -2745,10 +2901,7 @@
   right: 0%;
   bottom: 0%;
   z-index: 500;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 100vw;
   height: 100vh;
   padding: 2vh 2vw 2.5vh;
@@ -2761,6 +2914,49 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(19, 19, 19, 0.2);
+  opacity: 0;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.drag-anim {
+  position: relative;
+  top: 35vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3vw;
+  height: 3vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.5vw;
+  background-color: #e2e2e2;
+  opacity: 1;
+  mix-blend-mode: difference;
+}
+
+.drag-anim-load {
+  width: 1vw;
+  height: 1vw;
 }
 
 @media screen and (max-width: 991px) {
