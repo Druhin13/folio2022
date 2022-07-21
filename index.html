@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue Jul 19 2022 22:39:06 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Thu Jul 21 2022 00:34:56 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -57,7 +57,7 @@ html.has-scroll-dragging * {
 	opacity: 1
 }
 .c-scrollbar_thumb {
-	background-color: #adadad00;
+	background-color: #adadad;
 	border-radius: 2px;
 	width: 5px;
 	margin: 2px;
@@ -71,6 +71,13 @@ html.has-scroll-dragging * {
   <style>
 /* hiding scrollbar */
 ::-webkit-scrollbar{display:none}*{-ms-overflow-style:none;scrollbar-width:none}
+/* hiding cs preview triggers */
+.cs1-trigger, .cs2-trigger, .cs3-trigger, .cs4-trigger, .cs5-trigger, .cs6-trigger, .cs7-trigger, .cs8-trigger, .cs9-trigger, .cs10-trigger, .cs11-trigger, .cs12-trigger, .cs13-trigger{
+	display:none;
+}
+.cs1-close-trigger, .cs2-close-trigger, .cs3-close-trigger, .cs4-close-trigger, .cs5-close-trigger, .cs6-close-trigger, .cs7-close-trigger, .cs8-close-trigger, .cs9-close-trigger, .cs10-close-trigger, .cs11-close-trigger, .cs12-close-trigger, .cs13-close-trigger{
+	display:none;
+}
 </style>
 </head>
 <body data-scroll-time="0.5" class="body">
@@ -79,29 +86,156 @@ html.has-scroll-dragging * {
     <a rel="noreferrer" data-w-id="9f0840be-913d-096f-8cca-14c2b34ca500" style="-webkit-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://www.awwwards.com/sites/mausumi-showcase-of-writings" target="_blank" class="award-link w-inline-block"><img src="images/awwwards-honors.svg" loading="lazy" alt="Link to the Awwwards website showcase" class="aww"></a>
     <a rel="noreferrer" data-w-id="9f0840be-913d-096f-8cca-14c2b34ca502" style="-webkit-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-5vw, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" href="https://www.cssdesignawards.com/sites/mausumi/40427/" target="_blank" class="award-link w-inline-block"><img src="images/cssda-nominee-black.webp" loading="lazy" alt="Link to the CSSDA  website showcase" class="cssda"></a>
   </div>
-  <nav id="menu" style="width:25vw;-webkit-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="menu">
-    <a id="about-link" data-w-id="d5278c10-7102-b2c7-1d35-8557a4982bb0" href="#" class="nav-link-block w-inline-block">
-      <div class="nav-text">about</div>
-      <div style="width:0%" class="line-bottom"></div>
-    </a>
-    <a id="work-link" href="#" data-w-id="3283c732-da50-009e-be53-c642dfb73bd4" class="nav-link-block w-inline-block">
-      <div class="nav-text">work</div>
-      <div class="line-bottom"></div>
-    </a>
-    <a id="awards-link" href="#" data-w-id="38ea054c-65b6-4985-baf8-583ac1c8af6a" class="nav-link-block w-inline-block">
-      <div class="nav-text">awards</div>
-      <div style="width:0%" class="line-bottom"></div>
-    </a>
-    <a id="testimonials-link" href="#" data-w-id="5b16cd22-019a-15d9-0203-e3c655f558af" class="nav-link-block w-inline-block">
-      <div class="nav-text">Testimonials</div>
-      <div style="width:0%" class="line-bottom"></div>
-    </a>
-    <a id="contact-link" data-w-id="73bad6d6-6c4c-0c0f-575a-d2ca55e0bb11" href="#" class="nav-link-block w-inline-block">
-      <div class="nav-text">contact</div>
-      <div style="width:0%" class="line-bottom"></div>
-    </a>
-  </nav>
   <main id="locomotive-scroll" class="locomotive-scroll">
+    <div class="drag-demo-container">
+      <div id="menu-demo1" class="menu-demo drag-demo">
+        <a href="#" class="nav-link-block drag-text w-inline-block">
+          <div class="nav-text drag-text">Drag  IT  here</div>
+        </a>
+      </div>
+      <div id="menu-demo2" class="menu-demo drag-demo">
+        <a href="#" class="nav-link-block drag-text w-inline-block">
+          <div class="nav-text drag-text">Drag  IT  here</div>
+        </a>
+      </div>
+    </div>
+    <ul id="slippylist" data-w-id="b6136b54-a0bd-3c19-2c63-b94d5a883bc8" style="-webkit-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -13vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" role="list" class="nav-reorder w-list-unstyled">
+      <li id="clip-item1" class="clip-item1">
+        <nav id="menu" data-w-id="c367e54e-de5a-5051-4ace-476d2db59268" class="menu instantly">
+          <a id="about-link" data-w-id="d5278c10-7102-b2c7-1d35-8557a4982bb0" href="#" class="nav-link-block w-inline-block">
+            <div class="nav-text">about</div>
+            <div style="width:0%" class="line-bottom"></div>
+          </a>
+          <a id="work-link" href="#" data-w-id="3283c732-da50-009e-be53-c642dfb73bd4" class="nav-link-block w-inline-block">
+            <div class="nav-text">work</div>
+            <div class="line-bottom"></div>
+          </a>
+          <a id="awards-link" href="#" data-w-id="38ea054c-65b6-4985-baf8-583ac1c8af6a" class="nav-link-block w-inline-block">
+            <div class="nav-text">awards</div>
+            <div style="width:0%" class="line-bottom"></div>
+          </a>
+          <a id="testimonials-link" href="#" data-w-id="5b16cd22-019a-15d9-0203-e3c655f558af" class="nav-link-block w-inline-block">
+            <div class="nav-text">Testimonials</div>
+            <div style="width:0%" class="line-bottom"></div>
+          </a>
+          <a id="contact-link" data-w-id="73bad6d6-6c4c-0c0f-575a-d2ca55e0bb11" href="#" class="nav-link-block w-inline-block">
+            <div class="nav-text">contact</div>
+            <div style="width:0%" class="line-bottom"></div>
+          </a><img src="images/drag.svg" loading="lazy" style="opacity:0" alt="" class="drag">
+        </nav>
+      </li>
+      <li id="clip-item2" class="clip-item2 reorder-no-pointer">
+        <div id="nav-order-space" class="nav-order-space">
+          <div class="reorder-embed w-embed w-script">
+            <style>
+.nav-order-space{
+pointer-events:none;
+height:92vh;
+}
+</style>
+            <script src="https://pornel.net/slip/slip.js"></script>
+            <script>
+    var ol = document.getElementById('slippylist');
+    ol.addEventListener('slip:beforereorder', function(e){
+        if (/demo-no-reorder/.test(e.target.className)) {
+            e.preventDefault();
+        }
+    }, false);
+    ol.addEventListener('slip:beforeswipe', function(e){
+        if (e.target.nodeName == 'INPUT' || /demo-no-swipe/.test(e.target.className)) {
+            e.preventDefault();
+        }
+    }, false);
+    ol.addEventListener('slip:beforewait', function(e){
+        if (e.target.className.indexOf('instant') > -1) e.preventDefault();
+    }, false);
+    ol.addEventListener('slip:afterswipe', function(e){
+        e.target.parentNode.appendChild(e.target);
+    }, false);
+    ol.addEventListener('slip:reorder', function(e){
+        e.target.parentNode.insertBefore(e.target, e.detail.insertBefore);
+        return false;
+    }, false);
+    new Slip(ol);
+</script>
+            <style>
+#slippylist, .drag-demo-container{
+pointer-events:none;
+}
+#clip-item1{
+pointer-events:all;
+}
+/* these are special */
+.slip-reordering {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    cursor: grabbing;
+}
+.slip-swiping-container {
+    overflow-x: hidden;
+}
+#slippylist li {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: default;
+}
+/* the rest is junk for the demo page */
+#slippylist li.demo-allow-select {
+    padding: 1em;
+    line-height: 1.3;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+}
+#slippylist li.demo-allow-select span {
+    cursor: text;
+}
+/*
+#slippylist {
+    clear:left;
+    margin: 1em;
+    padding: 0 0 1px;
+}
+*/
+/*
+#slippylist li {
+    display:block;
+    border: 1px solid black;
+    background: white;
+    margin: 0; padding: 0 1em;
+    border-radius: 3px;
+    margin-bottom: -1px;
+    max-width: 100%;
+    line-height: 3;
+    vertical-align: middle;
+}*/
+/*
+#slippylist input {
+    vertical-align: middle;
+}
+*/
+#slippylist .instant::after {
+    content: " \2261";
+}
+/*
+#slippylist .instant {
+    float: right;
+}
+*/
+/*
+.skewed {
+    transform: rotate(2deg) scale(0.99);
+    -webkit-transform: rotate(2deg) scale(0.99);
+}
+*/
+.demo-no-swipe.demo-no-reorder {
+    opacity: 0.5;
+}
+</style>
+          </div>
+        </div>
+      </li>
+    </ul>
     <section id="about" data-scroll-section="true" data-scroll-sticky="true" data-scroll-target="#locomotive-scroll" class="landing wf-section">
       <div id="loader" data-w-id="c8442785-59a3-df2c-1473-e2fc1440e189" style="display:flex" class="loader">
         <div data-w-id="bb5f4941-0564-bcb9-14e5-19ed35d598b3" style="display:block;opacity:1;-webkit-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="overlay overall"></div>
@@ -165,14 +299,40 @@ html.has-scroll-dragging * {
               <li class="list-item">Web Development</li>
             </ul>
           </div>
+          <div id="cs1-trigger" data-w-id="cbf4baa9-230e-0004-d5f5-d1a1025a790f" class="cs1-trigger"></div>
+          <div id="cs2-trigger" data-w-id="5cda85c7-4620-f199-bc7b-ae4a72a19ea1" class="cs2-trigger"></div>
+          <div id="cs3-trigger" data-w-id="23e83490-69c4-d671-f7c6-e933e5f8b9f9" class="cs3-trigger"></div>
+          <div id="cs4-trigger" data-w-id="0ee307fb-670d-69ff-0e16-ddf87230b800" class="cs4-trigger"></div>
+          <div id="cs5-trigger" data-w-id="852c4bdc-db16-0d75-ce24-3384e8aa84ab" class="cs5-trigger"></div>
+          <div id="cs6-trigger" data-w-id="d1ad519c-306e-bca5-5fa8-a2955e8b6070" class="cs6-trigger"></div>
+          <div id="cs7-trigger" data-w-id="c7694726-c4b1-b283-8d1b-44c0740c931c" class="cs7-trigger"></div>
+          <div id="cs8-trigger" data-w-id="daff82e9-8d05-2a03-09ee-1af9a7598cb0" class="cs8-trigger"></div>
+          <div id="cs9-trigger" data-w-id="aa6dae0d-f6d9-8423-9392-7f5a0acd8d29" class="cs9-trigger"></div>
+          <div id="cs10-trigger" data-w-id="9aa188f8-c05e-4ca7-3acc-39508006b0bb" class="cs10-trigger"></div>
+          <div id="cs11-trigger" data-w-id="df0582ec-ff58-1900-64cb-4857d7c6fd10" class="cs11-trigger"></div>
+          <div id="cs12-trigger" data-w-id="afa75e51-c552-fc39-9936-dfdf907fc7bf" class="cs12-trigger"></div>
+          <div id="cs13-trigger" data-w-id="b4a81bd3-3c57-8cb0-2a82-81c046d93318" class="cs13-trigger"></div>
+          <div id="cs1-close-trigger" data-w-id="ff53c6ec-a6c0-50c4-d810-d3f156417529" class="cs1-close-trigger"></div>
+          <div id="cs2-close-trigger" data-w-id="a6338194-b01b-24ea-7c8a-6af3057bba47" class="cs2-close-trigger"></div>
+          <div id="cs3-close-trigger" data-w-id="6a849d71-9688-266c-4515-edb1a24b6078" class="cs3-close-trigger"></div>
+          <div id="cs4-close-trigger" data-w-id="10674688-e041-97bb-75da-2ddbae921e7b" class="cs4-close-trigger"></div>
+          <div id="cs5-close-trigger" data-w-id="f8a75bd1-ea8f-f5c9-7608-3c67ca4cdf2a" class="cs5-close-trigger"></div>
+          <div id="cs6-close-trigger" data-w-id="f26daa07-5565-dbdf-49aa-b5e6761f1366" class="cs6-close-trigger"></div>
+          <div id="cs7-close-trigger" data-w-id="2713c680-bfe0-a272-2a57-ea23d525d30d" class="cs7-close-trigger"></div>
+          <div id="cs8-close-trigger" data-w-id="8ac29429-bcf7-4402-e0a1-ad267fb576d3" class="cs8-close-trigger"></div>
+          <div id="cs9-close-trigger" data-w-id="70449241-51de-04ea-d03b-1b7319d0e072" class="cs9-close-trigger"></div>
+          <div id="cs10-close-trigger" data-w-id="0a491bde-618f-5a00-c63d-1867b7e4747a" class="cs10-close-trigger"></div>
+          <div id="cs11-close-trigger" data-w-id="05826a7a-f5a8-0628-e254-0d2b831cf230" class="cs11-close-trigger"></div>
+          <div id="cs12-close-trigger" data-w-id="92633b3d-edd7-87e0-3e90-e8fbd8a9f6b8" class="cs12-close-trigger"></div>
+          <div id="cs13-close-trigger" data-w-id="cba90c1d-a578-7ed9-3d56-14d62f592e4d" class="cs13-close-trigger"></div>
         </div>
       </div>
       <ul role="list" class="case-studies-holder w-list-unstyled">
         <li id="cs1" data-w-id="d0034fe9-973c-4d1b-c53f-708b6ee1fda8" class="case-study-link cs1 loco">
-          <figure class="cs-preview skillsunion">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview skillsunion">
             <div id="skillsunion-preview" class="card-whipe lazy"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper">view case study</div>
+            <div class="cs-preview-text lower hide">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -184,7 +344,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="21b1d313-116a-db59-0772-3f05aac6b230" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="21b1d313-116a-db59-0772-3f05aac6b230" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">SkillsUnion</div>
               </div>
               <div class="hashtag-holder">
@@ -217,10 +377,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs2" data-w-id="4857ab71-48df-e88b-a7e9-69166b4b3826" class="case-study-link cs2 loco">
-          <figure class="cs-preview vtf">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview vtf">
             <div id="vtf-preview" class="card-whipe lazy vtf"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper hide">view case study</div>
+            <div class="cs-preview-text lower">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -232,7 +392,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="47ff4e78-5073-2ad8-6911-01329dfb08f3" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="47ff4e78-5073-2ad8-6911-01329dfb08f3" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Value Tech Foundation</div>
               </div>
               <div class="hashtag-holder">
@@ -260,10 +420,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs3" data-w-id="0c9b8d1a-c525-9bb3-bff4-3f07781fea3b" class="case-study-link cs3 loco">
-          <figure class="cs-preview mausumi">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview mausumi">
             <div id="mausumi-preview" class="card-whipe lazy mausumi"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper hide">view case study</div>
+            <div class="cs-preview-text lower">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -275,7 +435,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="514ed3ba-af32-c63b-a5d0-a141a656bf0b" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="514ed3ba-af32-c63b-a5d0-a141a656bf0b" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Mausumi Showcase</div>
               </div>
               <div class="hashtag-holder">
@@ -303,10 +463,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs4" data-w-id="7978a760-00a9-0274-2a6b-26ff38d71588" class="case-study-link cs4 loco">
-          <figure class="cs-preview nowiverse">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview nowiverse">
             <div id="nowiverse-preview" class="card-whipe lazy nowiverse"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper">view case study</div>
+            <div class="cs-preview-text lower hide">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -318,7 +478,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="6d3176cf-8a4f-6c51-291d-c727dcc34edc" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="6d3176cf-8a4f-6c51-291d-c727dcc34edc" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Nowiverse by Awry Studios</div>
               </div>
               <div class="hashtag-holder">
@@ -346,10 +506,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs5" data-w-id="47241fcb-6b6b-b9af-2731-94d978d901ba" class="case-study-link cs5 loco">
-          <figure class="cs-preview vocal">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview vocal">
             <div id="vocal-preview" class="card-whipe lazy vocal"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper hide">view case study</div>
+            <div class="cs-preview-text lower">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -361,7 +521,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="cea475cd-16e4-a367-48ec-b70010453c97" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="cea475cd-16e4-a367-48ec-b70010453c97" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Vocal ~ Bigtent Creative</div>
               </div>
               <div class="hashtag-holder">
@@ -384,10 +544,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs6" data-w-id="b673e3bc-c5d2-f984-f1e8-af348f545382" class="case-study-link cs6 loco">
-          <figure class="cs-preview greenfox">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview greenfox">
             <div id="greenfox-preview" class="card-whipe lazy greenfox"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper">view case study</div>
+            <div class="cs-preview-text lower hide">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -399,7 +559,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="ad19ce64-d71d-d1d2-df75-94f5ca321c1c" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="ad19ce64-d71d-d1d2-df75-94f5ca321c1c" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">GreenFox</div>
               </div>
               <div class="hashtag-holder">
@@ -427,10 +587,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs7" data-w-id="2bcffff6-3000-48f2-9b0a-455048995fa0" class="case-study-link cs7 loco">
-          <figure class="cs-preview allbodies">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview allbodies">
             <div id="allbodies-preview" class="card-whipe lazy allbodies"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper">view case study</div>
+            <div class="cs-preview-text lower hide">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -442,7 +602,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="d0274224-4611-ab3a-ce52-ff9c3bea340e" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="d0274224-4611-ab3a-ce52-ff9c3bea340e" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">AllBodies</div>
               </div>
               <div class="hashtag-holder">
@@ -470,10 +630,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs8" data-w-id="671aacdd-7b91-f376-5acd-5751ffc2b126" class="case-study-link cs8 loco">
-          <figure class="cs-preview buzzoms">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview buzzoms">
             <div id="buzzoms-preview" class="card-whipe lazy"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper hide">view case study</div>
+            <div class="cs-preview-text lower">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -485,7 +645,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="21edccd5-8188-51f7-bee8-94b2813136d9" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="21edccd5-8188-51f7-bee8-94b2813136d9" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Buzzoms</div>
               </div>
               <div class="hashtag-holder">
@@ -518,10 +678,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs9" data-w-id="848c0b92-0319-7a6e-e7e1-4043d1a5ba61" class="case-study-link cs9 loco">
-          <figure class="cs-preview fathom">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview fathom">
             <div id="fathom-preview" class="card-whipe lazy fathom"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper hide">view case study</div>
+            <div class="cs-preview-text lower">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -533,7 +693,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="f6b4ee19-102c-5dd2-b93e-fb027bb5a846" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="f6b4ee19-102c-5dd2-b93e-fb027bb5a846" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">FathomOptics</div>
               </div>
               <div class="hashtag-holder">
@@ -561,10 +721,10 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs10" data-w-id="fd0e98e8-851a-73c5-ad1f-7923a22a3144" class="case-study-link cs10 loco">
-          <figure class="cs-preview biobot">
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview biobot">
             <div id="biobot-preview" class="card-whipe lazy biobot"></div>
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+            <div class="cs-preview-text upper">view case study</div>
+            <div class="cs-preview-text lower hide">view case study</div>
           </figure>
           <div class="list-parent">
             <div class="line-top"></div>
@@ -576,7 +736,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="6bebc0b8-7a8e-dc4d-b14c-d8efce0a4b2e" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="6bebc0b8-7a8e-dc4d-b14c-d8efce0a4b2e" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Constance ~ Biobot</div>
               </div>
               <div class="hashtag-holder">
@@ -599,9 +759,9 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs11" data-w-id="c3acfcaa-cd56-c4b5-954a-378e83669f30" class="case-study-link cs11 loco">
-          <figure class="cs-preview stamurai">
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview stamurai">
+            <div class="cs-preview-text upper hide">view case study</div>
+            <div class="cs-preview-text lower">view case study</div>
             <div id="stamurai-preview" class="card-whipe lazy"></div>
           </figure>
           <div class="list-parent">
@@ -614,7 +774,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="b6445d80-1929-cc1b-8ed1-d7c0be5bfbb3" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="b6445d80-1929-cc1b-8ed1-d7c0be5bfbb3" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Stamurai</div>
               </div>
               <div class="hashtag-holder">
@@ -642,9 +802,9 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs12" data-w-id="aef6301d-d1fd-8b71-a69f-16196915cbfe" class="case-study-link cs12 loco">
-          <figure class="cs-preview insanedeals">
-            <div class="cs-preview-text upper">view</div>
-            <div class="cs-preview-text lower">case study</div>
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview insanedeals">
+            <div class="cs-preview-text upper hide">view case study</div>
+            <div class="cs-preview-text lower">view case study</div>
             <div id="insanedeals-preview" class="card-whipe lazy insanedeals"></div>
           </figure>
           <div class="list-parent">
@@ -657,7 +817,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="c5fa7676-bef9-d6cc-c8e7-1f9f580877e3" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="c5fa7676-bef9-d6cc-c8e7-1f9f580877e3" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">InsaneDeals</div>
               </div>
               <div class="hashtag-holder">
@@ -685,9 +845,9 @@ html.has-scroll-dragging * {
           </div>
         </li>
         <li id="cs13" data-w-id="3e3be805-2d17-9346-715e-6712e5b35a33" class="case-study-link cs13 loco">
-          <figure class="cs-preview keralaonroad">
-            <div class="cs-preview-text lower">case study</div>
-            <div class="cs-preview-text upper">view</div>
+          <figure style="-webkit-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 75%, 0) scale3d(1, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="cs-preview keralaonroad">
+            <div class="cs-preview-text lower">view case study</div>
+            <div class="cs-preview-text upper hide">view case study</div>
             <div id="keralaonroad-preview" class="card-whipe lazy"></div>
           </figure>
           <div class="list-parent">
@@ -700,7 +860,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="7c44f009-de34-7a66-a5a8-e4b557de28f5" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="7c44f009-de34-7a66-a5a8-e4b557de28f5" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">KeralaOnRoad</div>
               </div>
               <div class="hashtag-holder">
@@ -780,7 +940,7 @@ html.has-scroll-dragging * {
 </style>
  -->
       </div>
-      <div class="end-blank-case-study">
+      <div id="end-blank-case-study" class="end-blank-case-study">
         <div class="line-top"></div>
         <div class="context-heading">other  works</div>
       </div>
@@ -797,7 +957,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba09" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba09" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">ScreenOFF*</div>
               </div>
               <div class="hashtag-holder">
@@ -835,7 +995,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba3a" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba3a" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Mello*</div>
               </div>
               <div class="hashtag-holder">
@@ -873,7 +1033,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba65" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba65" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Emojicryption</div>
               </div>
               <div class="hashtag-holder">
@@ -916,7 +1076,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba90" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51ba90" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Corona Info*</div>
               </div>
               <div class="hashtag-holder">
@@ -959,7 +1119,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51babb" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51babb" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Web Prompter*</div>
               </div>
               <div class="hashtag-holder">
@@ -997,7 +1157,7 @@ html.has-scroll-dragging * {
                 </div>
               </div>
               <div class="project-detail-holder">
-                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51bae0" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
+                <div class="lottie-animation" data-w-id="4cc4c11a-68de-dc29-dc12-bbccee51bae0" data-animation-type="lottie" data-src="documents/vtf-lottie.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="canvas" data-default-duration="3" data-duration="0"></div>
                 <div class="case-study-title">Invoiced*</div>
               </div>
               <div class="hashtag-holder">
@@ -1352,17 +1512,23 @@ html.has-scroll-dragging * {
         </div>
         <div id="more" data-w-id="cea5761e-542f-b131-d747-ce0b00c2033c" class="more">
           <div class="more-txts">
-            <div class="context-heading white paragraph title more-txt">wanna see more ?</div>
-            <div id="something-trigger" class="context-heading white paragraph title more-txt">click to see more</div>
+            <div class="context-heading white paragraph title more-txt"> </div>
+            <div id="something-trigger" class="context-heading white paragraph title more-txt"> </div>
           </div>
         </div>
       </div>
     </section>
-    <div class="something wf-section"></div>
+    <section data-scroll-section="true" data-w-id="71bb2a97-116a-e936-2037-38b31b332232" class="something wf-section"></section>
   </main>
   <div id="trigger1" data-w-id="8ed88e42-7bd2-bac9-502c-b1dcee8e2543" class="trigger1"></div>
+  <div data-w-id="16749386-03ae-1dfb-a21f-17f50eba61e1" class="trigger2"></div>
   <div id="nothing" class="nothing wf-section">
-    <div class="something-text">Hire <span class="text-span-2">me</span> Already</div>
+    <div class="context-heading type6">that’s all i had mate ;<br>there isn’t anything more to show</div>
+    <div class="v-line"></div>
+    <div class="div-block-3">
+      <div class="something-text">Hire <span class="text-span-2">me</span> Already</div>
+      <div class="context-heading type5">no forcing btw<br>you-do-you</div>
+    </div>
     <a data-w-id="6aa09842-7bbc-926b-695b-781b6e185bbf" href="mailto:contact@druh.in" class="hashtag relative white this2 w-inline-block">
       <div class="hashtag-txt this">c’mon</div>
       <div class="hashtag-txt-hidden this">c’mon</div>
@@ -1602,6 +1768,7 @@ document.addEventListener("mousemove", () => {
   <div class="marquee-embed w-embed"></div>
   <div class="all-cs wf-section">
     <div data-w-id="a79d6c29-f956-293e-3870-b4e6a4adac8f" class="vtf-cs">
+      <div class="noise-overlay"></div>
       <div class="cs-nav">
         <div data-w-id="da3a9d15-8d61-11dd-6508-5e89426558f3" class="hashtag relative white vtf">
           <div class="hashtag-txt cs"><strong>✕</strong>   close</div>
@@ -1609,12 +1776,12 @@ document.addEventListener("mousemove", () => {
           <div class="card-whipe dark-shade"></div>
         </div>
       </div>
-      <div id="vtf-cs-main" class="vtf-cs-main">
+      <div id="vtf-cs-main" data-w-id="9cbb3e30-8040-7715-2471-3b6033bf831a" class="vtf-cs-main">
         <div class="context-heading cs">Value tech foundation</div>
         <div class="cs-first-frame">
           <h1 class="cs-heading">Powering a <span class="text-span-3">future</span> built on Blockchain.</h1>
           <div>
-            <div id="line3" data-scroll="true" data-scroll-class="expand" class="line-cs"></div>
+            <div id="line3" data-scroll="true" data-scroll-class="expand" class="line-cs expand"></div>
             <div class="vtf-context">
               <div class="context-heading type4 vtf type2">VTF is a nonprofit organization dedicated to the advancement of blockchain technology. They are a trusted leader in ‘Value Tech’ advocacy, education, and R&amp;D. Their work moves society closer to a more secure, accessible, and equitable future.</div>
               <div>
@@ -1625,15 +1792,11 @@ document.addEventListener("mousemove", () => {
               <div class="scroll-circle">
                 <div class="lottie-animation-2" data-w-id="1a0a8dad-55d3-dd2d-2dea-ece57f795d4e" data-animation-type="lottie" data-src="documents/vtf-scrolldown.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0"></div>
               </div>
-              <div class="cs-small-container"></div>
+              <div class="cs-small-container"><img src="images/vtf-intro.webp" loading="lazy" srcset="images/vtf-intro-p-500.webp 500w, images/vtf-intro.webp 670w" sizes="100vw" alt="Value Tech Foundation" class="vtf-intro"></div>
             </div>
           </div>
         </div>
-        <h1 class="cs-heading">Powering a <span class="text-span-3">future</span> built on Blockchain.</h1>
-        <h1 class="cs-heading">Powering a <span class="text-span-3">future</span> built on Blockchain.</h1>
-        <h1 class="cs-heading">Powering a <span class="text-span-3">future</span> built on Blockchain.</h1>
-        <h1 class="cs-heading">Powering a <span class="text-span-3">future</span> built on Blockchain.</h1>
-        <h1 class="cs-heading">Powering a <span class="text-span-3">future</span> built on Blockchain.</h1>
+        <div id="line4" data-scroll="true" data-scroll-class="expand" class="line-cs"></div>
       </div>
       <div id="vtf-bg" class="circular-bg">
         <div class="cs-styling-embed w-embed">
