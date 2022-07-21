@@ -651,23 +651,28 @@ $('#menu').on('mousedown', function () {
   //  function dragdemo_show() {
   if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
     console.log("at the top of the screen");
-    $('.drag-demo-container').css("opacity", "100%");
-    $('#menu-demo1').css("opacity", "0%");
-    $('#menu-demo2').css("opacity", "75%");
-    $('#menu').css("cursor", "grabbing");
-    $('#menu').css("cursor", "-webkit-grabbing");
-    $('.drag-anim').css("top", "35vh");
-    $('.drag-anim').css("transform", "rotate(0deg)");
+    setTimeout(() => {
+      $('.drag-demo-container').css("opacity", "100%");
+      $('#menu-demo1').css("opacity", "0%");
+      $('#menu-demo2').css("opacity", "75%");
+      $('#menu').css("cursor", "grabbing");
+      $('#menu').css("cursor", "-webkit-grabbing");
+      $('.drag-anim').css("top", "35vh");
+      $('.drag-anim').css("transform", "rotate(0deg)");
+    }, 500);
+
   }
   else {  // the nav menu is at the bottom of the viewport
     console.log("at the bottom of the screen");
-    $('.drag-demo-container').css("opacity", "100%");
-    $('#menu-demo1').css("opacity", "75%");
-    $('#menu-demo2').css("opacity", "0%");
-    $('#menu').css("cursor", "grabbing");
-    $('#menu').css("cursor", "-webkit-grabbing");
-    $('.drag-anim').css("top", "-35vh");
-    $('.drag-anim').css("transform", "rotate(180deg)");
+    setTimeout(() => {
+      $('.drag-demo-container').css("opacity", "100%");
+      $('#menu-demo1').css("opacity", "75%");
+      $('#menu-demo2').css("opacity", "0%");
+      $('#menu').css("cursor", "grabbing");
+      $('#menu').css("cursor", "-webkit-grabbing");
+      $('.drag-anim').css("top", "-35vh");
+      $('.drag-anim').css("transform", "rotate(180deg)");
+    }, 500);
   }
   //  }
 }
