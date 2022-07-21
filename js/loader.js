@@ -669,12 +669,13 @@ var fPressed = false;
 $(window).keydown(function(evt) {
   if (evt.which == 70) { // f pressed
     fPressed = true;
-    document.documentElement.requestFullscreen()
+    document.documentElement.requestFullscreen();
+    locoScroll.update();
   }
 }).keyup(function(evt) {
   if (evt.which == 70 || evt.which == 27) { // f or esc pressed
     fPressed = false;
-    //document.exitFullscreen();
-    document.documentElement.exitFullscreen();
+    document.exitFullscreen();
+    locoScroll.update();
   }
 });
