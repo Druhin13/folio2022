@@ -680,7 +680,7 @@ $('#menu').on('mousedown', function () {
   $('#menu-demo2').css("opacity", "0%");
   $('#menu').css("cursor", "grab");
 
-  clearTimeout(presshold);
+  //  clearTimeout(presshold);
 });
 
 
