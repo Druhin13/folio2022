@@ -661,3 +661,20 @@ $('#menu').on('mousedown', function () {
   $('#menu-demo2').css("opacity", "0%");
   $('#menu').css("cursor", "grab");
 });
+
+
+// fullscreen mode
+
+var fPressed = false;
+$(window).keydown(function(evt) {
+  if (evt.which == 70) { // f pressed
+    fPressed = true;
+    document.documentElement.requestFullscreen()
+  }
+}).keyup(function(evt) {
+  if (evt.which == 70 || evt.which == 27) { // f or esc pressed
+    fPressed = false;
+    //document.exitFullscreen();
+    document.documentElement.exitFullscreen();
+  }
+});
