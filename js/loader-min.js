@@ -670,16 +670,20 @@ $(window).keydown(function (evt) {
   if (evt.which == 70) { // f pressed
     fPressed = true;
     document.documentElement.requestFullscreen();
+    locoScroll.stop();
     setTimeout(() => {
       locoScroll.update();
-    }, 250);
+      locoScroll.start();
+    }, 500);
   }
 }).keyup(function (evt) {
   if (evt.which == 70 || evt.which == 27) { // f or esc pressed
     fPressed = false;
     document.exitFullscreen();
+    locoScroll.stop();
     setTimeout(() => {
       locoScroll.update();
-    }, 250);
+      locoScroll.start();
+    }, 500);
   }
 });
