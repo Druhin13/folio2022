@@ -666,16 +666,20 @@ $('#menu').on('mousedown', function () {
 // fullscreen mode
 
 var fPressed = false;
-$(window).keydown(function(evt) {
+$(window).keydown(function (evt) {
   if (evt.which == 70) { // f pressed
     fPressed = true;
     document.documentElement.requestFullscreen();
-    locoScroll.update();
+    setTimeout(() => {
+      locoScroll.update();
+    }, 250);
   }
-}).keyup(function(evt) {
+}).keyup(function (evt) {
   if (evt.which == 70 || evt.which == 27) { // f or esc pressed
     fPressed = false;
     document.exitFullscreen();
-    locoScroll.update();
+    setTimeout(() => {
+      locoScroll.update();
+    }, 250);
   }
 });
