@@ -690,7 +690,6 @@ $('#menu').on('mousedown', function () {
 
 
 
-
 /*
 //if a link is pressed down on the nav menu - it should not show the drag demo
 
@@ -702,6 +701,17 @@ $('.nav-link-block').on('mousedown', function () {
   $('#menu').css("cursor", "grab");
 });
 */
+
+let scrolling = setInterval(checkifscrolling, 10);
+function checkifscrolling() {
+  if ($('html').hasClass("has-scroll-scrolling") == true) {
+    $('.drag-demo-container').css("opacity", "0%");
+
+    $('#menu-demo1').css("opacity", "0%");
+    $('#menu-demo2').css("opacity", "0%");
+    $('#menu').css("cursor", "grab");
+  }
+}
 
 
 
