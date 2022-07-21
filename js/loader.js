@@ -674,6 +674,22 @@ $('#menu').on('mousedown', function () {
 
 
 
+
+//if a link is pressed down on the nav menu - it should not show the drag demo
+
+$('.nav-link-block').on('mousedown', function () {
+  $('.drag-demo-container').css("opacity", "0%");
+
+  $('#menu-demo1').css("opacity", "0%");
+  $('#menu-demo2').css("opacity", "0%");
+  $('#menu').css("cursor", "grab");
+}
+
+
+
+
+
+
 // fullscreen mode
 
 var fPressed = false;

@@ -1,1 +1,718 @@
-!function($){$.fn.jQuerySimpleCounter=function(b){let a=$.extend({start:0,end:100,easing:"swing",duration:400,complete:""},b),c=$(this);$({count:a.start}).animate({count:a.end},{duration:a.duration,easing:a.easing,step:function(){let a=Math.ceil(this.count);c.text(a)},complete:a.complete})}}(jQuery);const locoScroll=new LocomotiveScroll({el:document.querySelector(".locomotive-scroll"),smooth:!0,multiplier:.5});locoScroll.stop();let timer=setInterval(remove,10);function remove(){$(".w-webflow-badge").remove()}setTimeout(()=>{var a=document.createElement("canvas");a.id="sketch",a.className="sketch",a.style.position="absolute",a.style.zIndex="100",a.style.backgroundColor="#ffffff00",a.style.marginLeft="52vw",document.body.insertBefore(a,document.body.firstChild);let b=document.getElementById("sketch"),c=b.getContext("2d");b.width=parent.offsetWidth,b.height=parent.offsetHeight,c.canvas.width=parent.offsetWidth,c.canvas.height=parent.offsetHeight;let f={x:0,y:0};function d(){c.canvas.width=window.innerWidth,c.canvas.height=window.innerHeight}function g(a){f.x=a.clientX-b.offsetLeft,f.y=a.clientY-b.offsetTop}function e(a){document.addEventListener("mousemove",h),g(a)}function h(a){c.beginPath(),c.lineWidth=1.15,c.lineCap="round",c.strokeStyle="#A4A4A4",c.moveTo(f.x,f.y),g(a),c.lineTo(f.x,f.y),c.stroke()}document.addEventListener("mouseover",e),window.addEventListener("resize",d),d(),$("#count").jQuerySimpleCounter({start:0,end:100,easing:"swing",duration:5e3})},2e3),function(a){"function"==typeof define&&define.amd?define(["jquery"],a):"object"==typeof exports?module.exports=a(require("jquery")):a(jQuery)}(function(b){function e(){if(i.length){var l,m,k,h=0,n=b.map(i,function(a){var b=a.data.selector,c=a.$element;return b?c.find(b):c});for(f=f||((k={height:d.innerHeight,width:d.innerWidth}).height||((l=c.compatMode)||!b.support.boxModel)&&(k={height:(m="CSS1Compat"===l?a:c.body).clientHeight,width:m.clientWidth}),k),g=g||{top:d.pageYOffset||a.scrollTop||c.body.scrollTop,left:d.pageXOffset||a.scrollLeft||c.body.scrollLeft};h<i.length;h++)if(b.contains(a,n[h][0])){var e=b(n[h]),o={height:e[0].offsetHeight,width:e[0].offsetWidth},j=e.offset(),p=e.data("inview");if(!g||!f)return;j.top+o.height>g.top&&j.top<g.top+f.height&&j.left+o.width>g.left&&j.left<g.left+f.width?p||e.data("inview",!0).trigger("inview",[!0]):p&&e.data("inview",!1).trigger("inview",[!1])}}}var f,g,h,i=[],c=document,d=window,a=c.documentElement;b.event.special.inview={add:function(a){i.push({data:a,$element:b(this),element:this}),!h&&i.length&&(h=setInterval(e,250))},remove:function(c){for(var a=0;a<i.length;a++){var b=i[a];if(b.element===this&&b.data.guid===c.guid){i.splice(a,1);break}}i.length||(clearInterval(h),h=null)}},b(d).bind("scroll resize scrollstop",function(){f=g=null}),!a.addEventListener&&a.attachEvent&&a.attachEvent("onfocusin",function(){g=null})});let test_timer=setInterval(test,10);function test(){parseInt($("#count")[0].innerHTML)>8&&$("#zero").css("display","none"),"100"==$("#count")[0].innerHTML&&($(".w-webflow-badge").remove(),clearInterval(timer),clearInterval(test_timer),document.body.style.cursor="default",$("#canvas-div").css("pointer-events","none"),$(".trigger1").click(),setTimeout(()=>{document.getElementById("sketch").style.display="none"},1e3),setTimeout(()=>{locoScroll.update(),locoScroll.start(),$("head").append('<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>')},750))}const about=document.querySelector("#about"),work=document.querySelector("#work"),awards=document.querySelector("#awards"),testimonials=document.querySelector("#testimonials"),contact=document.querySelector("#contact-test");$("#about-link").click(function(){locoScroll.scrollTo(about)}),$("#work-link").click(function(){locoScroll.scrollTo(work)}),$("#awards-link").click(function(){locoScroll.scrollTo(awards)}),$("#testimonials-link").click(function(){locoScroll.scrollTo(testimonials)}),$("#contact-link").click(function(){locoScroll.scrollTo(contact)});let options={timeZone:"Europe/London",hour:"2-digit",minute:"2-digit"},formatter=new Intl.DateTimeFormat([],options),time_a=formatter.format(new Date),ctime=setInterval(timecalc,1e3);function timecalc(){let a=formatter.format(new Date);$("#time").text(a),a!=time_a&&(time_a=a,$(".circle").click())}const cs1=document.getElementById("cs1"),cs2=document.getElementById("cs2"),cs3=document.getElementById("cs3"),cs4=document.getElementById("cs4"),cs5=document.getElementById("cs5"),cs6=document.getElementById("cs6"),cs7=document.getElementById("cs7"),cs8=document.getElementById("cs8"),cs9=document.getElementById("cs9"),cs10=document.getElementById("cs10"),cs11=document.getElementById("cs11"),cs12=document.getElementById("cs12"),cs13=document.getElementById("cs13");cs1.addEventListener("click",()=>{let a=parseInt("cs1".slice(2)),b=9,d=Math.round(31.65+3.15*(13-a))+"%";$("#disable-hover").css("display","block");let c=b+a;$("#blur-up").css("z-index",c),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",d)},300)}),cs2.addEventListener("click",()=>{let a=parseInt("cs2".slice(2)),b=9,d=Math.round(31.65+3.15*(13-a))+"%";$("#disable-hover").css("display","block");let c=b+a;$("#blur-up").css("z-index",c),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",d)},300)}),cs3.addEventListener("click",()=>{let a=parseInt("cs3".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 10px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs4.addEventListener("click",()=>{let a=parseInt("cs4".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 10px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs5.addEventListener("click",()=>{let a=parseInt("cs5".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 10px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs6.addEventListener("click",()=>{let a=parseInt("cs6".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 15px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs7.addEventListener("click",()=>{let a=parseInt("cs7".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 15px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs8.addEventListener("click",()=>{let a=parseInt("cs8".slice(2)),b=9,d=Math.round(31.65+3.15*(13-a))+"%";$("#disable-hover").css("display","block");let c=b+a;$("#blur-up").css("z-index",c),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",d)},300)}),cs9.addEventListener("click",()=>{let a=parseInt("cs9".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 5px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs10.addEventListener("click",()=>{let a=parseInt("cs10".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 10px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs11.addEventListener("click",()=>{let a=parseInt("cs11".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 10px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs12.addEventListener("click",()=>{let a=parseInt("cs12".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 10px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)}),cs13.addEventListener("click",()=>{let a=parseInt("cs13".slice(2)),c=9,b=Math.round(31.65+3.15*(13-a))+"%";b="calc("+b+" - 15px)",$("#disable-hover").css("display","block");let d=c+a;$("#blur-up").css("z-index",d),setTimeout(()=>{locoScroll.stop(),$("#blur-up").css("height","100%"),$("#blur-down").css("height",b)},300)});const disable_cs=document.getElementById("disable-hover");disable_cs.addEventListener("click",()=>{$("#disable-hover").css("display","none"),$("#blur-up").css("height","0%"),$("#blur-down").css("height","0%"),setTimeout(()=>{locoScroll.start(),$("#blur-up").css("z-index","9")},300)});const CS2locoScroll=new LocomotiveScroll({el:document.querySelector(".vtf-cs-main"),smooth:!0,multiplier:.75});CS2locoScroll.start(),$("#menu").on("mousedown",function(){0==$("#menu").position().top?($(".drag-demo-container").css("opacity","100%"),$("#menu-demo1").css("opacity","0%"),$("#menu-demo2").css("opacity","75%"),$("#menu").css("cursor","grabbing"),$("#menu").css("cursor","-webkit-grabbing"),$(".drag-anim").css("top","35vh"),$(".drag-anim").css("transform","rotate(0deg)")):($(".drag-demo-container").css("opacity","100%"),$("#menu-demo1").css("opacity","75%"),$("#menu-demo2").css("opacity","0%"),$("#menu").css("cursor","grabbing"),$("#menu").css("cursor","-webkit-grabbing"),$(".drag-anim").css("top","-35vh"),$(".drag-anim").css("transform","rotate(180deg)"))}).on("mouseup mouseleave",function(){$(".drag-demo-container").css("opacity","0%"),$("#menu-demo1").css("opacity","0%"),$("#menu-demo2").css("opacity","0%"),$("#menu").css("cursor","grab")});var fPressed=!1;$(window).keydown(function(a){70==a.which&&(fPressed=!0,document.documentElement.requestFullscreen(),locoScroll.stop(),setTimeout(()=>{locoScroll.update(),locoScroll.start()},500))}).keyup(function(a){(70==a.which||27==a.which)&&(fPressed=!1,document.exitFullscreen(),locoScroll.stop(),setTimeout(()=>{locoScroll.update(),locoScroll.start()},500))})
+//jQuerySimpleCounter.js
+(function ($) {
+  $.fn.jQuerySimpleCounter = function (options) {
+    let settings = $.extend({
+      start: 0,
+      end: 100,
+      easing: 'swing',
+      duration: 400,
+      complete: ''
+    }, options);
+
+    const thisElement = $(this);
+
+    $({ count: settings.start }).animate({ count: settings.end }, {
+      duration: settings.duration,
+      easing: settings.easing,
+      step: function () {
+        let mathCount = Math.ceil(this.count);
+        thisElement.text(mathCount);
+      },
+      complete: settings.complete
+    });
+  };
+}(jQuery));
+
+//locomotive initialization
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".locomotive-scroll"),
+  smooth: true,
+  multiplier: 0.5,
+});
+locoScroll.stop();
+
+let timer = setInterval(remove, 10);
+function remove() {
+  $(".w-webflow-badge").remove();
+}
+
+
+
+/*
+//hiding the 'something' section
+$('#something').hide();
+*/
+
+
+//counter initialization
+setTimeout(() => {
+
+  var new_canvas = document.createElement('canvas');
+  new_canvas.id = "sketch";
+  new_canvas.className = "sketch";
+  new_canvas.style.position = "absolute";
+  new_canvas.style.zIndex = "100";
+  new_canvas.style.backgroundColor = "#ffffff00";
+  //new_canvas.style.pointerEvents = "none";
+  new_canvas.style.marginLeft = "52vw";
+
+  //document.body.appendChild(new_canvas);
+  document.body.insertBefore(new_canvas, document.body.firstChild);
+
+  const canvas = document.getElementById("sketch");
+  const ctx = canvas.getContext("2d");
+
+  //testing size
+  canvas.width = parent.offsetWidth;
+  canvas.height = parent.offsetHeight;
+  ctx.canvas.width = parent.offsetWidth;
+  ctx.canvas.height = parent.offsetHeight;
+
+  let coord = { x: 0, y: 0 };
+
+  document.addEventListener("mouseover", start);
+  window.addEventListener("resize", resize);
+
+  resize();
+
+  function resize() {
+    ctx.canvas.width = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
+  }
+  function reposition(event) {
+    coord.x = event.clientX - canvas.offsetLeft;
+    coord.y = event.clientY - canvas.offsetTop;
+  }
+  function start(event) {
+    document.addEventListener("mousemove", draw);
+    reposition(event);
+  }
+  function stop() {
+    document.removeEventListener("mousemove", draw);
+  }
+  function draw(event) {
+    ctx.beginPath();
+    ctx.lineWidth = 1.15;
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "#A4A4A4";
+    ctx.moveTo(coord.x, coord.y);
+    reposition(event);
+    ctx.lineTo(coord.x, coord.y);
+    ctx.stroke();
+  }
+
+
+  $('#count').jQuerySimpleCounter({
+    start: 0,
+    end: 100,
+    easing: 'swing',
+    duration: 5000, //set the duration of the loading animation (5000 - 7000 ~6000)
+  });
+
+}, 2000);
+
+
+
+
+
+// jquery inview
+
+!function (a) { "function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? module.exports = a(require("jquery")) : a(jQuery) }(function (a) { function i() { var b, c, d = { height: f.innerHeight, width: f.innerWidth }; return d.height || (b = e.compatMode, (b || !a.support.boxModel) && (c = "CSS1Compat" === b ? g : e.body, d = { height: c.clientHeight, width: c.clientWidth })), d } function j() { return { top: f.pageYOffset || g.scrollTop || e.body.scrollTop, left: f.pageXOffset || g.scrollLeft || e.body.scrollLeft } } function k() { if (b.length) { var e = 0, f = a.map(b, function (a) { var b = a.data.selector, c = a.$element; return b ? c.find(b) : c }); for (c = c || i(), d = d || j(); e < b.length; e++)if (a.contains(g, f[e][0])) { var h = a(f[e]), k = { height: h[0].offsetHeight, width: h[0].offsetWidth }, l = h.offset(), m = h.data("inview"); if (!d || !c) return; l.top + k.height > d.top && l.top < d.top + c.height && l.left + k.width > d.left && l.left < d.left + c.width ? m || h.data("inview", !0).trigger("inview", [!0]) : m && h.data("inview", !1).trigger("inview", [!1]) } } } var c, d, h, b = [], e = document, f = window, g = e.documentElement; a.event.special.inview = { add: function (c) { b.push({ data: c, $element: a(this), element: this }), !h && b.length && (h = setInterval(k, 250)) }, remove: function (a) { for (var c = 0; c < b.length; c++) { var d = b[c]; if (d.element === this && d.data.guid === a.guid) { b.splice(c, 1); break } } b.length || (clearInterval(h), h = null) } }, a(f).bind("scroll resize scrollstop", function () { c = d = null }), !g.addEventListener && g.attachEvent && g.attachEvent("onfocusin", function () { d = null }) });
+
+
+
+
+
+
+//timer/checker initialization
+let test_timer = setInterval(test, 10);
+function test() {
+  if (parseInt($("#count")[0].innerHTML) > 8) {
+    $('#zero').css('display', 'none');
+  }
+
+  if ($("#count")[0].innerHTML == '100') {
+    //removing the badge
+    $(".w-webflow-badge").remove();
+    //turning off the continuous function run
+    clearInterval(timer);
+    clearInterval(test_timer);
+    //when loading is finished, setting cursor back to default...
+    document.body.style.cursor = 'default';
+    //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
+    $('#canvas-div').css('pointer-events', 'none');
+
+    //animate the trigger
+    $(".trigger1").click();
+
+
+    //waiting for 1 second, and then hiding the sketch canvas
+    setTimeout(() => {
+      //hiding the sketch canvas
+      document.getElementById("sketch").style.display = "none";
+    }, 1000);
+
+    //waiting for 1.75 seconds and then calculating the new page height
+    setTimeout(() => {
+      locoScroll.update();
+      locoScroll.start();
+
+      //loading the case study preview gifs
+      $('head').append('<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>');
+    }, 750);
+  }
+}
+
+
+
+//page link scroll trigger initialization
+const about = document.querySelector('#about');
+const work = document.querySelector('#work');
+const awards = document.querySelector('#awards');
+const testimonials = document.querySelector('#testimonials');
+const contact = document.querySelector('#contact-test');
+
+
+$('#about-link').click(function () {
+  locoScroll.scrollTo(about);
+});
+
+$('#work-link').click(function () {
+  locoScroll.scrollTo(work);
+});
+
+$('#awards-link').click(function () {
+  locoScroll.scrollTo(awards);
+});
+
+$('#testimonials-link').click(function () {
+  locoScroll.scrollTo(testimonials);
+});
+
+$('#contact-link').click(function () {
+  locoScroll.scrollTo(contact);
+});
+
+
+
+
+/* testing on work section - case study tabs 
+
+const h1 = document.querySelectorAll(".hashtag-txt");
+const h2 = document.querySelectorAll(".hashtag-txt-hidden");
+
+for (i = 0; i < h1.length; i++) {
+nh1 = h1[i].textContent.replace("#", "");
+h1[i].innerText = nh1;
+}
+
+for (j = 0; j < h2.length; j++) {
+nh2 = h2[j].textContent.replace("#", "");
+h2[j].innerText = nh2;
+}
+
+*/
+
+
+
+/* time calc */
+
+let options = {
+  timeZone: 'Europe/London',
+  //year: 'numeric',
+  //month: 'numeric',
+  //day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  //second: 'numeric',
+},
+  formatter = new Intl.DateTimeFormat([], options);
+
+let time_a = formatter.format(new Date());
+
+let ctime = setInterval(timecalc, 1000);
+function timecalc() {
+  let time_b = formatter.format(new Date());
+  $("#time").text(time_b);
+  if (time_b != time_a) {
+    time_a = time_b;
+    $(".circle").click();
+  }
+}
+
+
+
+//case study clicks
+
+const cs1 = document.getElementById('cs1')
+const cs2 = document.getElementById('cs2')
+const cs3 = document.getElementById('cs3')
+const cs4 = document.getElementById('cs4')
+const cs5 = document.getElementById('cs5')
+const cs6 = document.getElementById('cs6')
+const cs7 = document.getElementById('cs7')
+const cs8 = document.getElementById('cs8')
+const cs9 = document.getElementById('cs9')
+const cs10 = document.getElementById('cs10')
+const cs11 = document.getElementById('cs11')
+const cs12 = document.getElementById('cs12')
+const cs13 = document.getElementById('cs13')
+
+
+
+
+
+cs1.addEventListener("click", () => {
+  let csv = parseInt(("cs1").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+
+cs2.addEventListener("click", () => {
+  let csv = parseInt(("cs2").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs3.addEventListener("click", () => {
+  let csv = parseInt(("cs3").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 10px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs4.addEventListener("click", () => {
+  let csv = parseInt(("cs4").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 10px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs5.addEventListener("click", () => {
+  let csv = parseInt(("cs5").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 10px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs6.addEventListener("click", () => {
+  let csv = parseInt(("cs6").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 15px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs7.addEventListener("click", () => {
+  let csv = parseInt(("cs7").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 15px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs8.addEventListener("click", () => {
+  let csv = parseInt(("cs8").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs9.addEventListener("click", () => {
+  let csv = parseInt(("cs9").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 5px)";
+
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs10.addEventListener("click", () => {
+  let csv = parseInt(("cs10").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 10px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs11.addEventListener("click", () => {
+  let csv = parseInt(("cs11").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 10px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs12.addEventListener("click", () => {
+  let csv = parseInt(("cs12").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 10px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+cs13.addEventListener("click", () => {
+  let csv = parseInt(("cs13").slice(2)); //case study value / index of the selected case study
+  let bz = 9 //base z-index
+  let ns = 31.65; //last cs selected
+  let per = 3.15; //per cs size
+  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  h = "calc(" + h + " - 15px)";
+
+  $("#disable-hover").css("display", "block");
+
+  let z = bz + csv;
+  $("#blur-up").css("z-index", z);
+
+  setTimeout(() => {
+    locoScroll.stop();
+
+    //blur up
+    $("#blur-up").css("height", "100%");
+
+
+    //blur down
+    $("#blur-down").css("height", h);
+
+  }, 300);
+});
+
+
+
+
+
+//closing blur and disable overlay from the cs tabs
+
+const disable_cs = document.getElementById('disable-hover');
+
+disable_cs.addEventListener("click", () => {
+
+  $("#disable-hover").css("display", "none");
+  $("#blur-up").css("height", "0%");
+  $("#blur-down").css("height", "0%");
+
+  setTimeout(() => {
+    locoScroll.start();
+
+    //blur up
+    $("#blur-up").css("z-index", "9");
+
+    //blur down
+
+  }, 300);
+});
+
+
+
+
+
+// cs details locomotive initializations
+
+const CS2locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".vtf-cs-main"),
+  smooth: true,
+  multiplier: 0.75,
+});
+CS2locoScroll.start();
+
+
+
+// if menu hold/pressed down
+
+$('#menu').on('mousedown', function () {
+  if ($("#menu").position().top == 0) {
+    $('.drag-demo-container').css("opacity", "100%");
+    $('#menu-demo1').css("opacity", "0%");
+    $('#menu-demo2').css("opacity", "75%");
+    $('#menu').css("cursor", "grabbing");
+    $('#menu').css("cursor", "-webkit-grabbing");
+    $('.drag-anim').css("top", "35vh");
+    $('.drag-anim').css("transform", "rotate(0deg)");
+  }
+  else {
+    $('.drag-demo-container').css("opacity", "100%");
+    $('#menu-demo1').css("opacity", "75%");
+    $('#menu-demo2').css("opacity", "0%");
+    $('#menu').css("cursor", "grabbing");
+    $('#menu').css("cursor", "-webkit-grabbing");
+    $('.drag-anim').css("top", "-35vh");
+    $('.drag-anim').css("transform", "rotate(180deg)");
+  }
+}
+
+).on('mouseup mouseleave', function () {
+
+  $('.drag-demo-container').css("opacity", "0%");
+
+  $('#menu-demo1').css("opacity", "0%");
+  $('#menu-demo2').css("opacity", "0%");
+  $('#menu').css("cursor", "grab");
+});
+
+
+
+
+
+//if a link is pressed down on the nav menu - it should not show the drag demo
+
+$('.nav-link-block').on('mousedown', function () {
+  $('.drag-demo-container').css("opacity", "0%");
+
+  $('#menu-demo1').css("opacity", "0%");
+  $('#menu-demo2').css("opacity", "0%");
+  $('#menu').css("cursor", "grab");
+}
+
+
+
+
+
+
+// fullscreen mode
+
+var fPressed = false;
+$(window).keydown(function (evt) {
+  if (evt.which == 70) { // f pressed
+    fPressed = true;
+    document.documentElement.requestFullscreen();
+    locoScroll.stop();
+    setTimeout(() => {
+      locoScroll.update();
+      locoScroll.start();
+    }, 500);
+  }
+})
+
+  .keyup(function (evt) {
+    if (evt.which == 70 || evt.which == 27) { // f or esc pressed
+      fPressed = false;
+      document.exitFullscreen();
+      locoScroll.stop();
+      setTimeout(() => {
+        locoScroll.update();
+        locoScroll.start();
+      }, 500);
+    }
+  });
