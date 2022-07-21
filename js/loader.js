@@ -641,13 +641,15 @@ CS2locoScroll.start();
 
 // if menu hold/pressed down
 
+let presshold = 0;
+
 $('#menu').on('mousedown', function () {
 
   //waits a 1 second press-hold time
-  const presshold = setTimeout(dragdemo_show, 1000);
+  presshold = setTimeout(dragdemo_show, 1000);
 
   function dragdemo_show() {
-    if ($("#menu").position().top == 0) {
+    if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
       $('.drag-demo-container').css("opacity", "100%");
       $('#menu-demo1').css("opacity", "0%");
       $('#menu-demo2').css("opacity", "75%");
@@ -656,7 +658,7 @@ $('#menu').on('mousedown', function () {
       $('.drag-anim').css("top", "35vh");
       $('.drag-anim').css("transform", "rotate(0deg)");
     }
-    else {
+    else {  // the nav menu is at the bottom of the viewport
       $('.drag-demo-container').css("opacity", "100%");
       $('#menu-demo1').css("opacity", "75%");
       $('#menu-demo2').css("opacity", "0%");
@@ -675,6 +677,8 @@ $('#menu').on('mousedown', function () {
   $('#menu-demo1').css("opacity", "0%");
   $('#menu-demo2').css("opacity", "0%");
   $('#menu').css("cursor", "grab");
+
+  clearTimeout(presshold);
 });
 
 
