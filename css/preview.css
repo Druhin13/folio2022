@@ -62,11 +62,11 @@
     background-position: right 0px bottom 10%;
 }
 
-.testimonial-gif{
-	background-repeat: no-repeat;
+.testimonial-gif {
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
- 	background-image: url("https://druh.in/folio2022/images/gifs/testimonial.webp");
+    background-image: url("https://druh.in/folio2022/images/gifs/testimonial.webp");
 }
 
 
@@ -81,3 +81,11 @@
     font-style: italic;
 }
 */
+
+
+/*  */
+#cs1:hover {
+    transition-property: all;
+    transition-duration: 0ms;
+    transition-timing-function: ease;
+}
