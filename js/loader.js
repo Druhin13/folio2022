@@ -683,7 +683,7 @@ $('.nav-link-block').on('mousedown', function () {
   $('#menu-demo1').css("opacity", "0%");
   $('#menu-demo2').css("opacity", "0%");
   $('#menu').css("cursor", "grab");
-}
+});
 
 
 
