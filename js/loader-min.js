@@ -641,35 +641,35 @@ CS2locoScroll.start();
 
 // if menu hold/pressed down
 
-let presshold = 0;
+//let presshold = 0;
 
 $('#menu').on('mousedown', function () {
 
   //waits a 1 second press-hold time
-  presshold = setTimeout(dragdemo_show, 350);
+  //  presshold = setTimeout(dragdemo_show, 350);
 
-  function dragdemo_show() {
-    if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
-      console.log("at the top of the screen");
-      $('.drag-demo-container').css("opacity", "100%");
-      $('#menu-demo1').css("opacity", "0%");
-      $('#menu-demo2').css("opacity", "75%");
-      $('#menu').css("cursor", "grabbing");
-      $('#menu').css("cursor", "-webkit-grabbing");
-      $('.drag-anim').css("top", "35vh");
-      $('.drag-anim').css("transform", "rotate(0deg)");
-    }
-    else {  // the nav menu is at the bottom of the viewport
-      console.log("at the bottom of the screen");
-      $('.drag-demo-container').css("opacity", "100%");
-      $('#menu-demo1').css("opacity", "75%");
-      $('#menu-demo2').css("opacity", "0%");
-      $('#menu').css("cursor", "grabbing");
-      $('#menu').css("cursor", "-webkit-grabbing");
-      $('.drag-anim').css("top", "-35vh");
-      $('.drag-anim').css("transform", "rotate(180deg)");
-    }
+  //  function dragdemo_show() {
+  if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
+    console.log("at the top of the screen");
+    $('.drag-demo-container').css("opacity", "100%");
+    $('#menu-demo1').css("opacity", "0%");
+    $('#menu-demo2').css("opacity", "75%");
+    $('#menu').css("cursor", "grabbing");
+    $('#menu').css("cursor", "-webkit-grabbing");
+    $('.drag-anim').css("top", "35vh");
+    $('.drag-anim').css("transform", "rotate(0deg)");
   }
+  else {  // the nav menu is at the bottom of the viewport
+    console.log("at the bottom of the screen");
+    $('.drag-demo-container').css("opacity", "100%");
+    $('#menu-demo1').css("opacity", "75%");
+    $('#menu-demo2').css("opacity", "0%");
+    $('#menu').css("cursor", "grabbing");
+    $('#menu').css("cursor", "-webkit-grabbing");
+    $('.drag-anim').css("top", "-35vh");
+    $('.drag-anim').css("transform", "rotate(180deg)");
+  }
+  //  }
 }
 
 ).on('mouseup mouseleave', function () {
