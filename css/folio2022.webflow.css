@@ -1969,8 +1969,8 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding-right: 1.5vw;
-  padding-left: 1.5vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
   background-color: #cecece;
   -webkit-transition: all 1850ms cubic-bezier(.23, 1, .32, 1);
   transition: all 1850ms cubic-bezier(.23, 1, .32, 1);
