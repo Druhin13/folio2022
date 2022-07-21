@@ -643,24 +643,31 @@ CS2locoScroll.start();
 
 $('#menu').on('mousedown', function () {
   if ($("#menu").position().top == 0) {
+    $('.drag-demo-container').css("opacity", "100%");
     $('#menu-demo1').css("opacity", "0%");
     $('#menu-demo2').css("opacity", "75%");
     $('#menu').css("cursor", "grabbing");
     $('#menu').css("cursor", "-webkit-grabbing");
   }
   else {
+    $('.drag-demo-container').css("opacity", "100%");
     $('#menu-demo1').css("opacity", "75%");
     $('#menu-demo2').css("opacity", "0%");
     $('#menu').css("cursor", "grabbing");
     $('#menu').css("cursor", "-webkit-grabbing");
   }
-
 }
+
 ).on('mouseup mouseleave', function () {
+
+  $('.drag-demo-container').css("opacity", "0%");
+
   $('#menu-demo1').css("opacity", "0%");
   $('#menu-demo2').css("opacity", "0%");
   $('#menu').css("cursor", "grab");
 });
+
+
 
 
 // fullscreen mode
@@ -676,14 +683,16 @@ $(window).keydown(function (evt) {
       locoScroll.start();
     }, 500);
   }
-}).keyup(function (evt) {
-  if (evt.which == 70 || evt.which == 27) { // f or esc pressed
-    fPressed = false;
-    document.exitFullscreen();
-    locoScroll.stop();
-    setTimeout(() => {
-      locoScroll.update();
-      locoScroll.start();
-    }, 500);
-  }
-});
+})
+
+  .keyup(function (evt) {
+    if (evt.which == 70 || evt.which == 27) { // f or esc pressed
+      fPressed = false;
+      document.exitFullscreen();
+      locoScroll.stop();
+      setTimeout(() => {
+        locoScroll.update();
+        locoScroll.start();
+      }, 500);
+    }
+  });
