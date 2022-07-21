@@ -646,7 +646,7 @@ let presshold = 0;
 $('#menu').on('mousedown', function () {
 
   //waits a 1 second press-hold time
-  presshold = setTimeout(dragdemo_show, 500);
+  presshold = setTimeout(dragdemo_show, 350);
 
   function dragdemo_show() {
     if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
