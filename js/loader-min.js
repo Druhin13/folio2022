@@ -648,6 +648,8 @@ $('#menu').on('mousedown', function () {
     $('#menu-demo2').css("opacity", "75%");
     $('#menu').css("cursor", "grabbing");
     $('#menu').css("cursor", "-webkit-grabbing");
+    $('.drag-anim').css("top", "35vh");
+    $('.drag-anim').css("transform", "rotate(0deg)");
   }
   else {
     $('.drag-demo-container').css("opacity", "100%");
@@ -655,6 +657,8 @@ $('#menu').on('mousedown', function () {
     $('#menu-demo2').css("opacity", "0%");
     $('#menu').css("cursor", "grabbing");
     $('#menu').css("cursor", "-webkit-grabbing");
+    $('.drag-anim').css("top", "-35vh");
+    $('.drag-anim').css("transform", "rotate(180deg)");
   }
 }
 
