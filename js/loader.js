@@ -642,8 +642,15 @@ CS2locoScroll.start();
 // if menu hold/pressed down
 
 $('#menu').on('mousedown', function () {
-  $('#menu-demo1').css("opacity", "95%");
-  $('#menu-demo2').css("opacity", "95%");
+  if ($("#menu").position().top == 0) {
+    $('#menu-demo1').css("opacity", "0%");
+    $('#menu-demo2').css("opacity", "95%");
+  }
+  else {
+    $('#menu-demo1').css("opacity", "95%");
+    $('#menu-demo2').css("opacity", "0%");
+  }
+
 }
 ).on('mouseup mouseleave', function () {
   $('#menu-demo1').css("opacity", "0%");
