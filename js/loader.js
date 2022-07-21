@@ -644,12 +644,12 @@ CS2locoScroll.start();
 $('#menu').on('mousedown', function () {
   if ($("#menu").position().top == 0) {
     $('#menu-demo1').css("opacity", "0%");
-    $('#menu-demo2').css("opacity", "95%");
+    $('#menu-demo2').css("opacity", "75%");
     $('#menu-demo2').css("cursor", "grabbing");
     $('#menu-demo2').css("cursor", "-webkit-grabbing");
   }
   else {
-    $('#menu-demo1').css("opacity", "95%");
+    $('#menu-demo1').css("opacity", "75%");
     $('#menu-demo2').css("opacity", "0%");
     $('#menu-demo2').css("cursor", "-webkit-grabbing");
   }
