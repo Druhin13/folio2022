@@ -649,7 +649,7 @@ $('#menu').on('mousedown', function () {
 
   //  function dragdemo_show() {
   if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
-    console.log("at the top of the screen");
+    //console.log("at the top of the screen");
     setTimeout(() => {
       if ($('#clip-item1').hasClass("slip-reordering") == true) {
         $('.drag-demo-container').css("opacity", "100%");
@@ -664,7 +664,7 @@ $('#menu').on('mousedown', function () {
 
   }
   else {  // the nav menu is at the bottom of the viewport
-    console.log("at the bottom of the screen");
+    //console.log("at the bottom of the screen");
     setTimeout(() => {
       if ($('#clip-item1').hasClass("slip-reordering") == true) {
         $('.drag-demo-container').css("opacity", "100%");
