@@ -47,6 +47,8 @@ $('#something').hide();
 //counter initialization
 setTimeout(() => {
 
+  // creating the sketch cursor
+
   var new_canvas = document.createElement('canvas');
   new_canvas.id = "sketch";
   new_canvas.className = "sketch";
@@ -645,33 +647,34 @@ CS2locoScroll.start();
 
 $('#menu').on('mousedown', function () {
 
-  //waits a 1 second press-hold time
-  //  presshold = setTimeout(dragdemo_show, 350);
-
   //  function dragdemo_show() {
   if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
     console.log("at the top of the screen");
     setTimeout(() => {
-      $('.drag-demo-container').css("opacity", "100%");
-      $('#menu-demo1').css("opacity", "0%");
-      $('#menu-demo2').css("opacity", "75%");
-      $('#menu').css("cursor", "grabbing");
-      $('#menu').css("cursor", "-webkit-grabbing");
-      $('.drag-anim').css("top", "35vh");
-      $('.drag-anim').css("transform", "rotate(0deg)");
+      if ($('#clip-item1').hasClass("slip-reordering") == true) {
+        $('.drag-demo-container').css("opacity", "100%");
+        $('#menu-demo1').css("opacity", "0%");
+        $('#menu-demo2').css("opacity", "75%");
+        $('#menu').css("cursor", "grabbing");
+        $('#menu').css("cursor", "-webkit-grabbing");
+        $('.drag-anim').css("top", "35vh");
+        $('.drag-anim').css("transform", "rotate(0deg)");
+      }
     }, 500);
 
   }
   else {  // the nav menu is at the bottom of the viewport
     console.log("at the bottom of the screen");
     setTimeout(() => {
-      $('.drag-demo-container').css("opacity", "100%");
-      $('#menu-demo1').css("opacity", "75%");
-      $('#menu-demo2').css("opacity", "0%");
-      $('#menu').css("cursor", "grabbing");
-      $('#menu').css("cursor", "-webkit-grabbing");
-      $('.drag-anim').css("top", "-35vh");
-      $('.drag-anim').css("transform", "rotate(180deg)");
+      if ($('#clip-item1').hasClass("slip-reordering") == true) {
+        $('.drag-demo-container').css("opacity", "100%");
+        $('#menu-demo1').css("opacity", "75%");
+        $('#menu-demo2').css("opacity", "0%");
+        $('#menu').css("cursor", "grabbing");
+        $('#menu').css("cursor", "-webkit-grabbing");
+        $('.drag-anim').css("top", "-35vh");
+        $('.drag-anim').css("transform", "rotate(180deg)");
+      }
     }, 500);
   }
   //  }
