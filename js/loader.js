@@ -135,9 +135,8 @@ function test() {
 
   let progress_anim = setInterval(progress, 10);
   function progress() {
-    let w = parseInt($("#count")[0].innerHTML); //load counter value
-    let new_w = (Math.floor((w/100)*35)) + "vw";
-    $("#loader-line").css("width", new_w);
+    let w = parseInt($("#count")[0].innerHTML) + "%"; //load counter value
+    $("#loader-line").css("width", w);
   }
 
   if ($("#count")[0].innerHTML == '100') {
