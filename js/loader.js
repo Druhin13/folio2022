@@ -160,7 +160,7 @@ function test() {
     //waiting for 1 second, and then hiding the sketch canvas
     setTimeout(() => {
       //hiding the sketch canvas
-      document.getElementById("sketch").style.display = "none";
+      //document.getElementById("sketch").style.display = "none";
     }, 1000);
 
     //waiting for 1.75 seconds and then calculating the new page height
