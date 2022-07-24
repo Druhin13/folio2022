@@ -600,10 +600,11 @@
   align-items: flex-end;
   color: #fff;
   font-size: 0.65vw;
+  line-height: 1.15;
   font-weight: 400;
   text-align: center;
   letter-spacing: -0.012vw;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .context-heading.type6.vtf {
@@ -954,8 +955,8 @@
   justify-content: space-between;
   border-radius: 0.5vw;
   background-color: hsla(0, 0%, 93.7%, 0.85);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   -webkit-transition: all 250ms ease;
   transition: all 250ms ease;
 }
@@ -1697,7 +1698,7 @@
   display: flex;
   overflow: hidden;
   width: 100%;
-  height: 34vh;
+  height: 32vh;
   padding-top: 3vh;
   padding-right: 1.35vw;
   padding-left: 1.35vw;
@@ -1710,7 +1711,7 @@
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: #dedee0;
+  background-color: #e6e6e6;
   background-image: none;
   -webkit-filter: blur(0.5px);
   filter: blur(0.5px);
@@ -1825,7 +1826,7 @@
 .druhin {
   position: absolute;
   left: -0.25vw;
-  top: 0.5vh;
+  top: -1.5vh;
   z-index: 10;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1833,7 +1834,7 @@
   display: flex;
   overflow: visible;
   width: 50vw;
-  margin-left: -0.75vw;
+  margin-left: -1vw;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -1847,6 +1848,7 @@
   top: 0%;
   right: 0%;
   bottom: 34vh;
+  display: none;
   -webkit-filter: blur(0.65px);
   filter: blur(0.65px);
 }
@@ -1882,7 +1884,7 @@
 .copyright {
   position: absolute;
   left: auto;
-  top: 22vh;
+  top: 21vh;
   right: 1.5vw;
   bottom: auto;
   z-index: 10;
@@ -3086,8 +3088,8 @@
 
 .druhin-text {
   display: inline;
-  -webkit-filter: blur(6px);
-  filter: blur(6px);
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
   color: #cecece;
   font-size: 13.25vw;
 }
@@ -3130,7 +3132,7 @@
 .about-img {
   width: 2vw;
   height: 15vh;
-  margin-bottom: 2.5vh;
+  margin-bottom: 2.75vh;
   margin-left: 0vw;
   background-image: url('../images/about.svg');
   background-position: 0% 100%;
@@ -3138,6 +3140,23 @@
   background-repeat: no-repeat;
   -webkit-filter: blur(3px);
   filter: blur(3px);
+}
+
+.end-d-cover-overlay {
+  margin-right: -2vw;
+  margin-left: -6.25vw;
+  -webkit-filter: blur(6px);
+  filter: blur(6px);
+  color: #cecece;
+  font-size: 13.25vw;
+}
+
+.gap {
+  position: relative;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -100vh;
 }
 
 @media screen and (max-width: 991px) {
