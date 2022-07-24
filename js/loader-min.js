@@ -750,3 +750,21 @@
   context.clearRect(0, 0, context.canvas.width, context.canvas.height);
   context.beginPath();
   */
+  
+  
+  /*
+  e0="con";//con
+  e1="tictac";
+  e2=e1.slice(3,6);//tac
+  e3=e2.substring(1);//t
+  e4="bruh";
+  e5=e4.replace("b","d");//druh
+  e6="in";//in
+  $("#email1").text(e0+e2+e3+"@"+e5+"."+e6);
+  $("#email2").text(e0+e2+e3+"@"+e5+"."+e6);
+  */
+  
+  
+  //email
+  
+  var _0x380c9c=_0x30c3;function _0x30c3(a,b){var c=_0x138f();return(_0x30c3=function(a,b){return c[a-=154]})(a,b)}!function(c,d){for(var a=_0x30c3,b=c();;)try{if(parseInt(a(164))/1*(-parseInt(a(173))/2)+ -parseInt(a(155))/3*(-parseInt(a(179))/4)+ -parseInt(a(163))/5*(-parseInt(a(168))/6)+parseInt(a(167))/7+parseInt(a(170))/8+parseInt(a(159))/9*(-parseInt(a(166))/10)+parseInt(a(183))/11*(-parseInt(a(156))/12)==662543)break;b.push(b.shift())}catch(e){b.push(b.shift())}}(_0x138f,662543);var _0x29d2b8=function(){var a=!0;return function(c,d){var b=a?function(){if(d){var a=d.apply(c,arguments);return d=null,a}}:function(){};return a=!1,b}}(),_0x2ae7ee=_0x29d2b8(this,function(){var a=_0x30c3;return _0x2ae7ee.toString()[a(175)](a(180))[a(165)]()[a(185)](_0x2ae7ee)[a(175)](a(180))});_0x2ae7ee();var _0x24d741=function(){var a=!0;return function(c,d){var b=a?function(){var a=_0x30c3;if(d){var b=d[a(171)](c,arguments);return d=null,b}}:function(){};return a=!1,b}}(),_0xbed1ef=_0x24d741(this,function(){var b,a=_0x30c3;try{b=Function(a(184)+a(162)+");")()}catch(i){b=window}for(var e=b[a(177)]=b.console||{},f=[a(157),a(181),a(161),a(176),a(160),a(174),"trace"],d=0;d<f.length;d++){var c=_0x24d741[a(185)].prototype[a(172)](_0x24d741),g=f[d],h=e[g]||c;c[a(182)]=_0x24d741.bind(_0x24d741),c[a(165)]=h[a(165)][a(172)](h),e[g]=c}});function _0x138f(){var a=["22dcUMQp","return (function() ","constructor","#email2","7230ZvLjcR","2448156hBkkXu","log","slice","16479qrIwnm","exception","info",'{}.constructor("return this")( )',"2173075qpxupF","209171raWuPK","toString","5860pYiAkw","54082LMqrCi","18VvWDTA","bruh","9647424rDJLHg","apply","bind","8vtXkUX","table","search","error","console","text","768nmJRfa","(((.+)+)+)+$","warn","__proto__"];return(_0x138f=function(){return a})()}_0xbed1ef(),e0="con",e3=(e2=(e1="tictac")[_0x380c9c(158)](3,6))[_0x380c9c(158)](0,1),e5=(e4=_0x380c9c(169)).replace("b","d"),e6="in",$("#email1").text(e0+e2+e3+"@"+e5+"."+e6),$(_0x380c9c(154))[_0x380c9c(178)](e0+e2+e3+"@"+e5+"."+e6)
