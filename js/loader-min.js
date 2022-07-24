@@ -133,12 +133,21 @@
       $('#zero').css('display', 'none');
     }
   
+    let progress_anim = setInterval(progress, 10);
+    function progress() {
+      let w = parseInt($("#count")[0].innerHTML); //load counter value
+      let new_w = floor((w / 35) * 100) + "vw";
+      $("#loader-line").css("width", new_w);
+    }
+  
     if ($("#count")[0].innerHTML == '100') {
       //removing the badge
       $(".w-webflow-badge").remove();
       //turning off the continuous function run
       clearInterval(timer);
       clearInterval(test_timer);
+      clearInterval(progress_anim);
+      $("#loader-line").css("width", "35vw");
       //when loading is finished, setting cursor back to default...
       document.body.style.cursor = 'default';
       //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
@@ -734,7 +743,3 @@
         }, 500);
       }
     });
-  
-  
-  
-  
