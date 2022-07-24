@@ -95,7 +95,7 @@
     }
     function draw(event) {
       ctx.beginPath();
-      ctx.lineWidth = 1.15;
+      ctx.lineWidth = 0.75;
       ctx.lineCap = "round";
       ctx.strokeStyle = "#131313";
       ctx.moveTo(coord.x, coord.y);
