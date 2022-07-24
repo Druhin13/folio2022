@@ -742,3 +742,10 @@ $(window).keydown(function (evt) {
       }, 500);
     }
   });
+
+
+/*
+// check if sketch is in view or not
+context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+context.beginPath();
+*/
