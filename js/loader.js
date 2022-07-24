@@ -95,7 +95,7 @@ setTimeout(() => {
   }
   function draw(event) {
     ctx.beginPath();
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 2;
     ctx.lineCap = "round";
     ctx.strokeStyle = "#000000";
     ctx.moveTo(coord.x, coord.y);
