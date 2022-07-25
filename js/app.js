@@ -753,26 +753,40 @@ context.beginPath();
 
 
 /*
-//mailto:spam@test.com
-//mailto:contact@druh.in
-e0="con";//con
-e1="tictac";
-e2=e1.slice(3,6);//tac
-e3=e2.slice(0,1);//t
-e4="bruh";
-e5=e4.replace("b","d");//druh
-e6=".in";//.in
-  $('#email3').on('click', function(){
-    setTimeout(() => {
-      var href = $(this).attr('href');
-      $(this).attr('href', href.replace('spam',e0+e2+e3));
-      $(this).attr('href', href.replace('test',e5));
-      $(this).attr('href', href.replace('.com',e6));
-    }, 250);
-  });
+$(document).ready(function () {
+  //mailto:spam@test.com
+  //mailto:contact@druh.in
+  e0 = "con";//con
+  e1 = "tictac";
+  e2 = e1.slice(3, 6);//tac
+  e3 = e2.slice(0, 1);//t
+  e4 = "bruh";
+  e5 = e4.replace("b", "d");//druh
+  e6 = ".in";//.in
+  var where_to = "mailto:" + e0 + e2 + e3 + "@" + e5 + e6;
+  $('#email3').on('click', function (event) {
+    event.preventDefault();
+    document.location.href = where_to;
+  })
+});
 */
 
 
 //email
 
-function _0x4ba3(_0x2fa851,_0x366173){var _0xba3abc=_0x36c5();return _0x4ba3=function(_0x365440,_0x3d4c10){_0x365440=_0x365440-0x105;var _0x17788b=_0xba3abc[_0x365440];return _0x17788b;},_0x4ba3(_0x2fa851,_0x366173);}var _0x2071d7=_0x4ba3;(function(_0x5c0f70,_0x35ccfb){var _0x3e7534=_0x4ba3,_0xcfed41=_0x5c0f70();while(!![]){try{var _0x3462b3=parseInt(_0x3e7534(0x11b))/0x1+parseInt(_0x3e7534(0x112))/0x2*(parseInt(_0x3e7534(0x10a))/0x3)+parseInt(_0x3e7534(0x109))/0x4+parseInt(_0x3e7534(0x114))/0x5+-parseInt(_0x3e7534(0x11e))/0x6*(parseInt(_0x3e7534(0x124))/0x7)+parseInt(_0x3e7534(0x122))/0x8*(parseInt(_0x3e7534(0x129))/0x9)+-parseInt(_0x3e7534(0x107))/0xa;if(_0x3462b3===_0x35ccfb)break;else _0xcfed41['push'](_0xcfed41['shift']());}catch(_0xfc7dc2){_0xcfed41['push'](_0xcfed41['shift']());}}}(_0x36c5,0x83357));var _0x33f1b8=(function(){var _0x195688=!![];return function(_0x2cc086,_0x54458c){var _0x5463da=_0x195688?function(){if(_0x54458c){var _0xc0fea=_0x54458c['apply'](_0x2cc086,arguments);return _0x54458c=null,_0xc0fea;}}:function(){};return _0x195688=![],_0x5463da;};}()),_0x3a7851=_0x33f1b8(this,function(){var _0x39e394=_0x4ba3;return _0x3a7851[_0x39e394(0x10e)]()[_0x39e394(0x111)](_0x39e394(0x118))[_0x39e394(0x10e)]()['constructor'](_0x3a7851)[_0x39e394(0x111)]('(((.+)+)+)+$');});function _0x36c5(){var _0x357e42=['replace','constructor','16YyrSue','warn','21eCxRMj','__proto__','bruh','tictac','apply','3294963GMooHH','href','error','27319640OYDEdr','info','1250384UYzAkA','250935OWXAmq','attr','{}.constructor(\x22return\x20this\x22)(\x20)','log','toString','return\x20(function()\x20','console','search','14bURFCx','slice','4851095cIRZLr','test','.com','length','(((.+)+)+)+$','trace','#email3','897940mRDWgK','table','bind','458178JofGyk','prototype'];_0x36c5=function(){return _0x357e42;};return _0x36c5();}_0x3a7851();var _0x3d4c10=(function(){var _0x1fe1d3=!![];return function(_0x1049f7,_0x548ecc){var _0x2ec1ae=_0x1fe1d3?function(){var _0x5f0120=_0x4ba3;if(_0x548ecc){var _0x5857a5=_0x548ecc[_0x5f0120(0x128)](_0x1049f7,arguments);return _0x548ecc=null,_0x5857a5;}}:function(){};return _0x1fe1d3=![],_0x2ec1ae;};}()),_0x365440=_0x3d4c10(this,function(){var _0x2f7f0d=_0x4ba3,_0x3ad9c3;try{var _0x4db4bf=Function(_0x2f7f0d(0x10f)+_0x2f7f0d(0x10c)+');');_0x3ad9c3=_0x4db4bf();}catch(_0x503157){_0x3ad9c3=window;}var _0x49bf11=_0x3ad9c3[_0x2f7f0d(0x110)]=_0x3ad9c3[_0x2f7f0d(0x110)]||{},_0x204e85=[_0x2f7f0d(0x10d),_0x2f7f0d(0x123),_0x2f7f0d(0x108),_0x2f7f0d(0x106),'exception',_0x2f7f0d(0x11c),_0x2f7f0d(0x119)];for(var _0x140517=0x0;_0x140517<_0x204e85[_0x2f7f0d(0x117)];_0x140517++){var _0x523d9b=_0x3d4c10[_0x2f7f0d(0x121)][_0x2f7f0d(0x11f)]['bind'](_0x3d4c10),_0x2e847b=_0x204e85[_0x140517],_0x2d7418=_0x49bf11[_0x2e847b]||_0x523d9b;_0x523d9b[_0x2f7f0d(0x125)]=_0x3d4c10[_0x2f7f0d(0x11d)](_0x3d4c10),_0x523d9b[_0x2f7f0d(0x10e)]=_0x2d7418[_0x2f7f0d(0x10e)]['bind'](_0x2d7418),_0x49bf11[_0x2e847b]=_0x523d9b;}});_0x365440(),(e0='con',e3=(e2=(e1=_0x2071d7(0x127))[_0x2071d7(0x113)](0x3,0x6))[_0x2071d7(0x113)](0x0,0x1),e5=(e4=_0x2071d7(0x126))[_0x2071d7(0x120)]('b','d'),e6='.in',$(_0x2071d7(0x11a))['on']('click',function(){setTimeout(()=>{var _0xf9e3ec=_0x4ba3,_0xbdbdee=$(this)[_0xf9e3ec(0x10b)](_0xf9e3ec(0x105));$(this)['attr']('href',_0xbdbdee[_0xf9e3ec(0x120)]('spam',e0+e2+e3)),$(this)[_0xf9e3ec(0x10b)](_0xf9e3ec(0x105),_0xbdbdee['replace'](_0xf9e3ec(0x115),e5)),$(this)['attr'](_0xf9e3ec(0x105),_0xbdbdee[_0xf9e3ec(0x120)](_0xf9e3ec(0x116),e6));},0xfa);}));
+$(document).ready(function () {
+  //mailto:spam@test.com
+  //mailto:contact@druh.in
+  e0 = "con";//con
+  e1 = "tictac";
+  e2 = e1.slice(3, 6);//tac
+  e3 = e2.slice(0, 1);//t
+  e4 = "bruh";
+  e5 = e4.replace("b", "d");//druh
+  e6 = ".in";//.in
+  var where_to = "mailto:" + e0 + e2 + e3 + "@" + e5 + e6;
+  $('#email3').on('click', function (event) {
+    event.preventDefault();
+    document.location.href = where_to;
+  })
+});
