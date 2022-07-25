@@ -753,17 +753,21 @@ context.beginPath();
 
 
 /*
+//mailto:spam@test.com
+//mailto:contact@druh.in
 e0="con";//con
 e1="tictac";
 e2=e1.slice(3,6);//tac
 e3=e2.slice(0,1);//t
 e4="bruh";
 e5=e4.replace("b","d");//druh
-e6="in";//in
-e7=e0+e2+e3+"@"+e5+"."+e6;
-$("#email1").text(e7);
-$("#email2").text(e7);
-$("#email3").attr("href", "mailto:"+e7);
+e6=".in";//.in
+$('#email3').on('click', function(){
+    var href = $(this).attr('href');
+    $(this).attr('href', href.replace('spam',e0+e2+e3));
+  	$(this).attr('href', href.replace('test',e5));
+  	$(this).attr('href', href.replace('.com',e6));
+});
 */
 
 
