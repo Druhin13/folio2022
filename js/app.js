@@ -789,4 +789,6 @@ $(document).ready(function () {
     event.preventDefault();
     document.location.href = where_to;
   })
+  $('#email1').text = where_to;
+  $('#email2').text = where_to;
 });
