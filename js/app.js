@@ -55,6 +55,7 @@ setTimeout(() => {
   new_canvas.style.backgroundColor = "#ffffff00";
   new_canvas.width = window.innerWidth;
   new_canvas.height = window.innerHeight;
+  new_canvas.style.pointerEvents = "none";
 
   document.body.insertBefore(new_canvas, document.body.firstChild);
 
