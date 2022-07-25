@@ -51,12 +51,12 @@ setTimeout(() => {
   new_canvas.id = "sketch";
   new_canvas.className = "sketch";
   new_canvas.style.position = "absolute";
-  new_canvas.style.zIndex = "500";
+  new_canvas.style.zIndex = "100";
   new_canvas.style.backgroundColor = "transparent";
   new_canvas.width = window.innerWidth;
   new_canvas.height = window.innerHeight;
   new_canvas.style.mixBlendMode = "exclusion";
-  new_canvas.style.pointerEvents = "none";
+  //new_canvas.style.pointerEvents = "none";
 
   document.body.insertBefore(new_canvas, document.body.firstChild);
 
