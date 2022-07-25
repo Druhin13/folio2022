@@ -784,10 +784,10 @@ $(document).ready(function () {
   e4 = "bruh";
   e5 = e4.replace("b", "d");//druh
   e6 = ".in";//.in
-  var where_to = "mailto:" + e0 + e2 + e3 + "@" + e5 + e6;
+  var where_to = e0 + e2 + e3 + "@" + e5 + e6;
   $('#email3').on('click', function (event) {
     event.preventDefault();
-    document.location.href = where_to;
+    document.location.href = "mailto:" + where_to;
   })
   $('#email1').text(where_to);
   $('#email2').text(where_to);
