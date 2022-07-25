@@ -56,7 +56,7 @@ setTimeout(() => {
   new_canvas.style.zIndex = "100";
   new_canvas.style.backgroundColor = "#ffffff00";
   //new_canvas.style.marginLeft = "50vw";
-  new_canvas.style.marginTop = "60vh";
+  new_canvas.style.marginTop = "40vh";
 
   //document.body.appendChild(new_canvas);
   //document.body.insertBefore(new_canvas, document.body.firstChild); //old sketch insert - when used with blur + black + on landing section
