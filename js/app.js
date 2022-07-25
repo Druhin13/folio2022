@@ -55,9 +55,8 @@ setTimeout(() => {
   new_canvas.style.position = "absolute";
   new_canvas.style.zIndex = "100";
   new_canvas.style.backgroundColor = "#ffffff00";
-  //new_canvas.style.pointerEvents = "none";
-  new_canvas.style.marginLeft = "50vw";
-  new_canvas.style.marginTop = "-34vh";
+  //new_canvas.style.marginLeft = "50vw";
+  //new_canvas.style.marginTop = "-34vh";
 
   //document.body.appendChild(new_canvas);
   document.body.insertBefore(new_canvas, document.body.firstChild);
@@ -97,7 +96,7 @@ setTimeout(() => {
     ctx.beginPath();
     ctx.lineWidth = 1.75;
     ctx.lineCap = "round";
-    ctx.strokeStyle = "#000000";
+    ctx.strokeStyle = "#ffffff";
     ctx.moveTo(coord.x, coord.y);
     reposition(event);
     ctx.lineTo(coord.x, coord.y);
