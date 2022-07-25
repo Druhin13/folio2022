@@ -50,18 +50,14 @@ setTimeout(() => {
   var new_canvas = document.createElement('canvas');
   new_canvas.id = "sketch";
   new_canvas.className = "sketch";
-  new_canvas.style.position = "absolute";
-  new_canvas.style.zIndex = "100";
   new_canvas.style.backgroundColor = "#ffffff00";
   new_canvas.width = window.innerWidth;
   new_canvas.height = window.innerHeight;
-  //new_canvas.style.marginLeft = "50vw";
-  //new_canvas.style.marginTop = "40vh";
 
   document.getElementById("nothing").appendChild(new_canvas);
 
-  const canvas = document.getElementById("sketch");
-  const contextArea = canvas.getContext("2d");
+  const canvas = document.getElementById('sketch');
+  const contextArea = canvas.getContext('2d');
 
   this.points = [];
 
@@ -80,7 +76,7 @@ setTimeout(() => {
     contextArea.clearRect(0, 0, canvas.width, canvas.height);
     contextArea.beginPath();
     contextArea.strokeStyle = '#ffffff';
-    contextArea.lineWidth = 1;
+    contextArea.lineWidth = 0.75;
 
     for (let i = 0; i < this.points.length; i++) {
       contextArea.lineTo(this.points[i].point.x, this.points[i].point.y);
