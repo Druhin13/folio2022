@@ -57,7 +57,7 @@ setTimeout(() => {
   new_canvas.style.marginTop = "40vh";
 
   const canvas = document.getElementById("sketch");
-  const contextArea = canvas.getContext('2d');
+  const contextArea = canvas.getContext("2d");
 
   this.points = [];
 
