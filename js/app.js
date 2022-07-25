@@ -787,6 +787,8 @@ $(document).ready(function () {
   var where_to = e0 + e2 + e3 + "@" + e5 + e6;
   $('#email3').on('click', function (event) {
     event.preventDefault();
-    document.location.href = "mailto:" + where_to;
+    //document.location.href = "mailto:" + where_to;
+    e7="mailto:" + where_to;
+    window.open(e7, "_blank");
   })
 });
