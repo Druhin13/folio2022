@@ -47,6 +47,51 @@ $('#something').hide();
 //counter initialization
 setTimeout(() => {
 
+  var new_canvas = document.createElement('canvas');
+  new_canvas.id = "sketch";
+  new_canvas.className = "sketch";
+  new_canvas.style.position = "absolute";
+  new_canvas.style.zIndex = "100";
+  new_canvas.style.backgroundColor = "#ffffff00";
+  //new_canvas.style.marginLeft = "50vw";
+  new_canvas.style.marginTop = "40vh";
+
+  const canvas = document.getElementById("sketch");
+  const contextArea = canvas.getContext('2d');
+
+  this.points = [];
+
+  canvas.addEventListener('mousemove', e => {
+    const object = {
+      point: { x: e.offsetX, y: e.offsetY },
+      timer: setTimeout(function () {
+        this.points.shift();
+      }, 250),
+    };
+
+    this.points.push(object);
+  });
+
+  function draw() {
+    contextArea.clearRect(0, 0, 800, 800);
+    contextArea.beginPath();
+    contextArea.strokeStyle = 'black';
+    contextArea.lineWidth = 1;
+
+    for (let i = 0; i < this.points.length; i++) {
+      contextArea.lineTo(this.points[i].point.x, this.points[i].point.y);
+    }
+
+    contextArea.stroke();
+    contextArea.closePath();
+  }
+
+  setInterval(function () {
+    draw();
+  }, 25);
+
+
+  /*
   // creating the sketch cursor
 
   var new_canvas = document.createElement('canvas');
@@ -104,6 +149,8 @@ setTimeout(() => {
     ctx.lineTo(coord.x, coord.y);
     ctx.stroke();
   }
+
+  */
 
 
   $('#count').jQuerySimpleCounter({
