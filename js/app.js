@@ -64,7 +64,7 @@ setTimeout(() => {
 
   this.points = [];
 
-  body.addEventListener('mousemove', e => {
+  sketch.addEventListener('mousemove', e => {
     const object = {
       point: { x: e.offsetX, y: e.offsetY },
       timer: setTimeout(function () {
