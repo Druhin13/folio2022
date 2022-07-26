@@ -43,8 +43,7 @@ function remove() {
 $('#something').hide();
 */
 
-
-//counter initialization
+// creating the sketch cursor
 setTimeout(() => {
 
   var new_canvas = document.createElement('canvas');
@@ -65,7 +64,7 @@ setTimeout(() => {
 
   this.points = [];
 
-  canvas.addEventListener('mousemove', e => {
+  wrap.addEventListener('mousemove', e => {
     const object = {
       point: { x: e.offsetX, y: e.offsetY },
       timer: setTimeout(function () {
@@ -156,7 +155,7 @@ setTimeout(() => {
 
   */
 
-
+  //counter initialization
   $('#count').jQuerySimpleCounter({
     start: 0,
     end: 100,
