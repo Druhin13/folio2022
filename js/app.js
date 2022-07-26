@@ -64,7 +64,7 @@ setTimeout(() => {
 
   this.points = [];
 
-  wrap.addEventListener('mousemove', e => {
+  body.addEventListener('mousemove', e => {
     const object = {
       point: { x: e.offsetX, y: e.offsetY },
       timer: setTimeout(function () {
