@@ -779,7 +779,7 @@ $(window).keydown(function (evt) {
     setTimeout(() => {
       locoScroll.scrollTo(about);
       locoScroll.update();
-      locoScroll.start();
+      //locoScroll.start();
     }, 500);
   }
 })
@@ -792,7 +792,7 @@ $(window).keydown(function (evt) {
       setTimeout(() => {
         locoScroll.scrollTo(about);
         locoScroll.update();
-        locoScroll.start();
+        //locoScroll.start();
       }, 500);
     }
   });
