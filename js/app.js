@@ -777,6 +777,7 @@ $(window).keydown(function (evt) {
     document.documentElement.requestFullscreen();
     locoScroll.stop();
     setTimeout(() => {
+      locoScroll.scrollTo(about);
       locoScroll.update();
       locoScroll.start();
     }, 500);
@@ -789,6 +790,7 @@ $(window).keydown(function (evt) {
       document.exitFullscreen();
       locoScroll.stop();
       setTimeout(() => {
+        locoScroll.scrollTo(about);
         locoScroll.update();
         locoScroll.start();
       }, 500);
@@ -821,6 +823,7 @@ $(document).ready(function () {
   })
 });
 */
+
 
 
 //email
