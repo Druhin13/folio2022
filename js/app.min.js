@@ -777,9 +777,11 @@ $(window).keydown(function (evt) {
     document.documentElement.requestFullscreen();
     locoScroll.stop();
     setTimeout(() => {
-      locoScroll.scrollTo(about);
+      //locoScroll.scrollTo(about);
       locoScroll.update();
-      //locoScroll.start();
+      setTimeout(() => {
+        locoScroll.start();
+      }, 250);
     }, 500);
   }
 })
@@ -790,9 +792,11 @@ $(window).keydown(function (evt) {
       document.exitFullscreen();
       locoScroll.stop();
       setTimeout(() => {
-        locoScroll.scrollTo(about);
+        //locoScroll.scrollTo(about);
         locoScroll.update();
-        //locoScroll.start();
+        setTimeout(() => {
+          locoScroll.start();
+        }, 250);
       }, 500);
     }
   });
