@@ -775,7 +775,7 @@ $(window).keydown(function (evt) {
   if (evt.which == 70) { // f pressed
     fPressed = true;
     document.documentElement.requestFullscreen();
-    locoScroll.scrollTo(about, {duration:0});
+    locoScroll.scrollTo(about, { duration: 0 });
     locoScroll.stop();
     setTimeout(() => {
       locoScroll.update();
@@ -790,7 +790,7 @@ $(window).keydown(function (evt) {
     if (evt.which == 70 || evt.which == 27) { // f or esc pressed
       fPressed = false;
       document.exitFullscreen();
-      locoScroll.scrollTo(about, {duration:0});
+      locoScroll.scrollTo(about, { duration: 0 });
       locoScroll.stop();
       setTimeout(() => {
         locoScroll.update();
@@ -801,6 +801,11 @@ $(window).keydown(function (evt) {
     }
   });
 
+
+// if window resized -> 
+$(window).resize(function () {
+  location.reload();
+});
 
 /*
 // check if sketch is in view or not
