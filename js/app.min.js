@@ -779,9 +779,9 @@ $(window).keydown(function (evt) {
     setTimeout(() => {
       //locoScroll.scrollTo(about);
       locoScroll.update();
-      setTimeout(() => {
-        locoScroll.start();
-      }, 250);
+    }, 500);
+    setTimeout(() => {
+      locoScroll.start();
     }, 500);
   }
 })
@@ -794,9 +794,9 @@ $(window).keydown(function (evt) {
       setTimeout(() => {
         //locoScroll.scrollTo(about);
         locoScroll.update();
-        setTimeout(() => {
-          locoScroll.start();
-        }, 250);
+      }, 500);
+      setTimeout(() => {
+        locoScroll.start();
       }, 500);
     }
   });
