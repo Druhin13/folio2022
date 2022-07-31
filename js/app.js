@@ -25,7 +25,7 @@
 
 //locomotive initialization
 const locoScroll = new LocomotiveScroll({
-  el: document.querySelector("#wrap"),
+  el: document.querySelector(".locomotive-scroll"),
   smooth: true,
   multiplier: 0.5,
 });
@@ -767,7 +767,7 @@ function checkifscrolling() {
 }
 
 
-/*
+
 // fullscreen mode
 
 let fPressed = false;
@@ -775,12 +775,9 @@ $(window).keydown(function (evt) {
   if (evt.which == 70) { // f pressed
     fPressed = true;
     document.documentElement.requestFullscreen();
-    locoScroll.scrollTo(about, { duration: 0 });
     locoScroll.stop();
     setTimeout(() => {
       locoScroll.update();
-    }, 500);
-    setTimeout(() => {
       locoScroll.start();
     }, 500);
   }
@@ -790,23 +787,13 @@ $(window).keydown(function (evt) {
     if (evt.which == 70 || evt.which == 27) { // f or esc pressed
       fPressed = false;
       document.exitFullscreen();
-      locoScroll.scrollTo(about, { duration: 0 });
       locoScroll.stop();
       setTimeout(() => {
         locoScroll.update();
-      }, 500);
-      setTimeout(() => {
         locoScroll.start();
       }, 500);
     }
   });
-
-
-// if window resized -> 
-$(window).resize(function () {
-  location.reload();
-});
-*/
 
 
 /*
@@ -834,7 +821,6 @@ $(document).ready(function () {
   })
 });
 */
-
 
 
 //email
