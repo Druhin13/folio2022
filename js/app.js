@@ -767,7 +767,7 @@ function checkifscrolling() {
 }
 
 
-
+/*
 // fullscreen mode
 
 let fPressed = false;
@@ -806,6 +806,8 @@ $(window).keydown(function (evt) {
 $(window).resize(function () {
   location.reload();
 });
+*/
+
 
 /*
 // check if sketch is in view or not
