@@ -214,7 +214,7 @@ function test() {
       //document.getElementById("sketch").style.display = "none";
     }, 1000);
 
-    //waiting for 1.75 seconds and then calculating the new page height
+    //waiting for 0.75 seconds and then calculating the new page height
     setTimeout(() => {
       locoScroll.update();
       locoScroll.start();
