@@ -858,32 +858,6 @@ $(document).ready(function () {
 
 
 
-
-// case study hover
-
-$('#cs1')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs1').css('z-index', 10);
-  })
-  .mouseleave(function () {
-    setTimeout(() => {
-      $('#sticky-project-header').css('z-index', 25);
-    }, 500);
-
-    $('#cs2')
-      .mouseenter(function () {
-        $('#sticky-project-header').css('z-index', 0);
-        $('#cs2').css('z-index', 11);
-      })
-      .mouseleave(function () {
-        setTimeout(() => {
-          $('#sticky-project-header').css('z-index', 25);
-        }, 500);
-      });
-  });
-
-  
 // case study hover
 
 $('#cs1')
