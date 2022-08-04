@@ -1083,7 +1083,7 @@ $('#cs-all-holder1')
 
 
 //checks if the cs tabs has a hide class or not
-
+/*
 let timer_cs_hide_class = setInterval(check_cs_hide_class, 10);
 function check_cs_hide_class() {
 
@@ -1204,3 +1204,4 @@ function check_cs_hide_class() {
     $('#cs13').css('transition-duration', '500ms, 350ms');
   }
 }
+*/
