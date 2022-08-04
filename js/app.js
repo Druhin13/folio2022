@@ -873,7 +873,7 @@ $('#cs1')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -889,7 +889,7 @@ $('#cs2')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -905,7 +905,7 @@ $('#cs3')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -921,7 +921,7 @@ $('#cs4')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -937,7 +937,7 @@ $('#cs5')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -953,7 +953,7 @@ $('#cs6')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -969,7 +969,7 @@ $('#cs7')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -985,7 +985,7 @@ $('#cs8')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -1001,7 +1001,7 @@ $('#cs9')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -1017,7 +1017,7 @@ $('#cs10')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -1033,7 +1033,7 @@ $('#cs11')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -1049,7 +1049,7 @@ $('#cs12')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -1065,7 +1065,7 @@ $('#cs13')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 10);
+      }, 200);
     }
   });
 
@@ -1077,5 +1077,5 @@ $('#cs-all-holder1')
     setTimeout(() => {
       $('#sticky-project-header').css('z-index', 25);
       cs_hover = 0;
-    }, 10);
+    }, 200);
   });
