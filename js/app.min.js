@@ -869,10 +869,10 @@ $('#cs1')
   .mouseleave(function () {
     setTimeout(() => {
       $('#sticky-project-header').css('z-index', 25);
-    }, 1000);
+    }, 500);
   });
 
-  $('#cs2')
+$('#cs2')
   .mouseenter(function () {
     $('#sticky-project-header').css('z-index', 0);
     $('#cs2').css('z-index', 11);
@@ -880,5 +880,5 @@ $('#cs1')
   .mouseleave(function () {
     setTimeout(() => {
       $('#sticky-project-header').css('z-index', 25);
-    }, 1000);
+    }, 500);
   });
