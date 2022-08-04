@@ -1068,3 +1068,14 @@ $('#cs13')
       }, 350);
     }
   });
+
+
+$('#cs-all-holder1')
+  .mouseenter(function () {
+  })
+  .mouseleave(function () {
+    setTimeout(() => {
+      $('#sticky-project-header').css('z-index', 25);
+      cs_hover = 0;
+    }, 350);
+  });
