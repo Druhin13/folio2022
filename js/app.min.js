@@ -860,24 +860,211 @@ $(document).ready(function () {
 
 // case study hover
 
+let cs_hover = 0;
+
 $('#cs1')
   .mouseenter(function () {
     $('#sticky-project-header').css('z-index', 0);
     $('#cs1').css('z-index', 10);
+    cs_hover = 1;
   })
   .mouseleave(function () {
-    setTimeout(() => {
-      $('#sticky-project-header').css('z-index', 25);
-    }, 500);
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
   });
+
 
 $('#cs2')
   .mouseenter(function () {
     $('#sticky-project-header').css('z-index', 0);
     $('#cs2').css('z-index', 11);
+    cs_hover = 1;
   })
   .mouseleave(function () {
-    setTimeout(() => {
-      $('#sticky-project-header').css('z-index', 25);
-    }, 500);
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs3')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs3').css('z-index', 12);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs4')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs4').css('z-index', 13);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs5')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs5').css('z-index', 14);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs6')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs6').css('z-index', 15);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs7')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs7').css('z-index', 16);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs8')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs8').css('z-index', 17);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs9')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs9').css('z-index', 18);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs10')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs10').css('z-index', 19);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs11')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs11').css('z-index', 20);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs12')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs12').css('z-index', 21);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
+  });
+
+
+$('#cs13')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+    $('#cs13').css('z-index', 22);
+    cs_hover = 1;
+  })
+  .mouseleave(function () {
+    if (cs_hover != 0) {
+      setTimeout(() => {
+        $('#sticky-project-header').css('z-index', 25);
+        cs_hover = 0;
+      }, 500);
+    }
   });
