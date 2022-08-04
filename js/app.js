@@ -27,7 +27,7 @@
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".locomotive-scroll"),
   smooth: true,
-  multiplier: 0.35,
+  multiplier: 0.25,
 });
 locoScroll.stop();
 
@@ -1088,144 +1088,144 @@ let timer_cs_hide_class = setInterval(check_cs_hide_class, 10);
 function check_cs_hide_class() {
 
   if ($('#cs1').hasClass("hide") == true) {
-    $('#cs1').css('transition-property', 'top, opacity');
+    //$('#cs1').css('transition-property', 'top, opacity');
     $('#cs1').css('transition-duration', '0ms, 0ms');
     $('#cs1').css('pointer-events', 'none');
   }
   else {
-    $('#cs1').css('transition-property', 'top, opacity');
+    //$('#cs1').css('transition-property', 'top, opacity');
     //$('#cs1').css('transition-duration', '500ms, 350ms');
     $('#cs1').css('pointer-events', 'all');
   }
 
   if ($('#cs2').hasClass("hide") == true) {
-    $('#cs2').css('transition-property', 'top, opacity');
+    //$('#cs2').css('transition-property', 'top, opacity');
     $('#cs2').css('transition-duration', '0ms, 0ms');
     $('#cs2').css('pointer-events', 'none');
   }
   else {
-    $('#cs2').css('transition-property', 'top, opacity');
+    //$('#cs2').css('transition-property', 'top, opacity');
     //$('#cs2').css('transition-duration', '500ms, 350ms');
     $('#cs2').css('pointer-events', 'all');
   }
 
   if ($('#cs3').hasClass("hide") == true) {
-    $('#cs3').css('transition-property', 'top, opacity');
+    //$('#cs3').css('transition-property', 'top, opacity');
     $('#cs3').css('transition-duration', '0ms, 0ms');
     $('#cs3').css('pointer-events', 'none');
   }
   else {
-    $('#cs3').css('transition-property', 'top, opacity');
+    //$('#cs3').css('transition-property', 'top, opacity');
     //$('#cs3').css('transition-duration', '500ms, 350ms');
     $('#cs3').css('pointer-events', 'all');
   }
 
   if ($('#cs4').hasClass("hide") == true) {
-    $('#cs4').css('transition-property', 'top, opacity');
+    //$('#cs4').css('transition-property', 'top, opacity');
     $('#cs4').css('transition-duration', '0ms, 0ms');
     $('#cs4').css('pointer-events', 'none');
   }
   else {
-    $('#cs4').css('transition-property', 'top, opacity');
+    //$('#cs4').css('transition-property', 'top, opacity');
     //$('#cs4').css('transition-duration', '500ms, 350ms');
     $('#cs4').css('pointer-events', 'all');
   }
 
   if ($('#cs5').hasClass("hide") == true) {
-    $('#cs5').css('transition-property', 'top, opacity');
+    //$('#cs5').css('transition-property', 'top, opacity');
     $('#cs5').css('transition-duration', '0ms, 0ms');
     $('#cs5').css('pointer-events', 'none');
   }
   else {
-    $('#cs5').css('transition-property', 'top, opacity');
+    //$('#cs5').css('transition-property', 'top, opacity');
     //$('#cs5').css('transition-duration', '500ms, 350ms');
     $('#cs5').css('pointer-events', 'all');
   }
 
   if ($('#cs6').hasClass("hide") == true) {
-    $('#cs6').css('transition-property', 'top, opacity');
+    //$('#cs6').css('transition-property', 'top, opacity');
     $('#cs6').css('transition-duration', '0ms, 0ms');
     $('#cs6').css('pointer-events', 'none');
   }
   else {
-    $('#cs6').css('transition-property', 'top, opacity');
+    //$('#cs6').css('transition-property', 'top, opacity');
     //$('#cs6').css('transition-duration', '500ms, 350ms');
     $('#cs6').css('pointer-events', 'all');
   }
 
   if ($('#cs7').hasClass("hide") == true) {
-    $('#cs7').css('transition-property', 'top, opacity');
+    //$('#cs7').css('transition-property', 'top, opacity');
     $('#cs7').css('transition-duration', '0ms, 0ms');
     $('#cs7').css('pointer-events', 'none');
   }
   else {
-    $('#cs7').css('transition-property', 'top, opacity');
+    //$('#cs7').css('transition-property', 'top, opacity');
     //$('#cs7').css('transition-duration', '500ms, 350ms');
     $('#cs7').css('pointer-events', 'all');
   }
 
   if ($('#cs8').hasClass("hide") == true) {
-    $('#cs8').css('transition-property', 'top, opacity');
+    //$('#cs8').css('transition-property', 'top, opacity');
     $('#cs8').css('transition-duration', '0ms, 0ms');
     $('#cs8').css('pointer-events', 'none');
   }
   else {
-    $('#cs8').css('transition-property', 'top, opacity');
+    //$('#cs8').css('transition-property', 'top, opacity');
     //$('#cs8').css('transition-duration', '500ms, 350ms');
     $('#cs8').css('pointer-events', 'all');
   }
 
   if ($('#cs9').hasClass("hide") == true) {
-    $('#cs9').css('transition-property', 'top, opacity');
+    //$('#cs9').css('transition-property', 'top, opacity');
     $('#cs9').css('transition-duration', '0ms, 0ms');
     $('#cs9').css('pointer-events', 'none');
   }
   else {
-    $('#cs9').css('transition-property', 'top, opacity');
+    //$('#cs9').css('transition-property', 'top, opacity');
     //$('#cs9').css('transition-duration', '500ms, 350ms');
     $('#cs9').css('pointer-events', 'all');
   }
 
   if ($('#cs10').hasClass("hide") == true) {
-    $('#cs10').css('transition-property', 'top, opacity');
+    //$('#cs10').css('transition-property', 'top, opacity');
     $('#cs10').css('transition-duration', '0ms, 0ms');
     $('#cs10').css('pointer-events', 'none');
   }
   else {
-    $('#cs10').css('transition-property', 'top, opacity');
+    //$('#cs10').css('transition-property', 'top, opacity');
     //$('#cs10').css('transition-duration', '500ms, 350ms');
     $('#cs10').css('pointer-events', 'all');
   }
 
   if ($('#cs11').hasClass("hide") == true) {
-    $('#cs11').css('transition-property', 'top, opacity');
+    //$('#cs11').css('transition-property', 'top, opacity');
     $('#cs11').css('transition-duration', '0ms, 0ms');
     $('#cs11').css('pointer-events', 'none');
   }
   else {
-    $('#cs11').css('transition-property', 'top, opacity');
+    //$('#cs11').css('transition-property', 'top, opacity');
     //$('#cs11').css('transition-duration', '500ms, 350ms');
     $('#cs11').css('pointer-events', 'all');
   }
 
   if ($('#cs12').hasClass("hide") == true) {
-    $('#cs12').css('transition-property', 'top, opacity');
+    //$('#cs12').css('transition-property', 'top, opacity');
     $('#cs12').css('transition-duration', '0ms, 0ms');
     $('#cs12').css('pointer-events', 'none');
   }
   else {
-    $('#cs12').css('transition-property', 'top, opacity');
+    //$('#cs12').css('transition-property', 'top, opacity');
     //$('#cs12').css('transition-duration', '500ms, 350ms');
     $('#cs12').css('pointer-events', 'all');
   }
 
   if ($('#cs13').hasClass("hide") == true) {
-    $('#cs13').css('transition-property', 'top, opacity');
+    //$('#cs13').css('transition-property', 'top, opacity');
     $('#cs13').css('transition-duration', '0ms, 0ms');
     $('#cs13').css('pointer-events', 'none');
   }
   else {
-    $('#cs13').css('transition-property', 'top, opacity');
+    //$('#cs13').css('transition-property', 'top, opacity');
     //$('#cs13').css('transition-duration', '500ms, 350ms');
     $('#cs13').css('pointer-events', 'all');
   }
