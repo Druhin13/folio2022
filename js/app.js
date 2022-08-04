@@ -855,3 +855,18 @@ $(document).ready(function () {
     window.open(e7, "_blank");
   })
 });
+
+
+
+
+// case study hover
+
+$('#cs1')
+  .mouseenter(function () {
+    $('#sticky-project-header').css('z-index', 0);
+  })
+  .mouseleave(function () {
+    setTimeout(() => {
+      $('#sticky-project-header').css('z-index', 25);
+    }, 1000);
+  });
