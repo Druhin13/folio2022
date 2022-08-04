@@ -1079,3 +1079,17 @@ $('#cs-all-holder1')
       cs_hover = 0;
     }, 200);
   });
+
+
+
+//checks if the cs tabs has a hide class or not
+
+let timer_cs_hide_class = setInterval(check_cs_hide_class, 10);
+function check_cs_hide_class() {
+  if ($('#cs1').hasClass("hide") == true) {
+    console.log("cs1 is hidden");
+  }
+  else {
+    console.log("cs1 is visible");
+  }
+}
