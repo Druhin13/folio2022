@@ -1086,10 +1086,48 @@ $('#cs-all-holder1')
 
 let timer_cs_hide_class = setInterval(check_cs_hide_class, 10);
 function check_cs_hide_class() {
+
   if ($('#cs1').hasClass("hide") == true) {
-    console.log("cs1 is hidden");
+    $('#cs1').css('transition-property', 'top, opacity');
+    $('#cs1').css('transition-duration', '0ms, 0ms');
   }
   else {
-    console.log("cs1 is visible");
+    $('#cs1').css('transition-property', 'top, opacity');
+    $('#cs1').css('transition-duration', '500ms, 350ms');
+  }
+
+
+
+  if ($('#cs2').hasClass("hide") == true) {
+    $('#cs2').css('transition-property', 'top, opacity');
+    $('#cs2').css('transition-duration', '0ms, 0ms');
+  }
+  else {
+    $('#cs2').css('transition-property', 'top, opacity');
+    $('#cs2').css('transition-duration', '500ms, 350ms');
+  }
+  if ($('#cs3').hasClass("hide") == true) {
+    $('#cs3').css('transition-property', 'top, opacity');
+    $('#cs3').css('transition-duration', '0ms, 0ms');
+  }
+  else {
+    $('#cs3').css('transition-property', 'top, opacity');
+    $('#cs3').css('transition-duration', '500ms, 350ms');
+  }
+  if ($('#cs4').hasClass("hide") == true) {
+    $('#cs4').css('transition-property', 'top, opacity');
+    $('#cs4').css('transition-duration', '0ms, 0ms');
+  }
+  else {
+    $('#cs4').css('transition-property', 'top, opacity');
+    $('#cs4').css('transition-duration', '500ms, 350ms');
+  }
+  if ($('#cs5').hasClass("hide") == true) {
+    $('#cs5').css('transition-property', 'top, opacity');
+    $('#cs5').css('transition-duration', '0ms, 0ms');
+  }
+  else {
+    $('#cs5').css('transition-property', 'top, opacity');
+    $('#cs5').css('transition-duration', '500ms, 350ms');
   }
 }
