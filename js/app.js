@@ -869,7 +869,7 @@ $('#cs1')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -885,7 +885,7 @@ $('#cs2')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -901,7 +901,7 @@ $('#cs3')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -917,7 +917,7 @@ $('#cs4')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -933,7 +933,7 @@ $('#cs5')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -949,7 +949,7 @@ $('#cs6')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -965,7 +965,7 @@ $('#cs7')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -981,7 +981,7 @@ $('#cs8')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -997,7 +997,7 @@ $('#cs9')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -1013,7 +1013,7 @@ $('#cs10')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -1029,7 +1029,7 @@ $('#cs11')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -1045,7 +1045,7 @@ $('#cs12')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
@@ -1061,7 +1061,7 @@ $('#cs13')
     cs_hover = 1;
   })
   .mouseleave(function () {
-    if (cs_hover != 0) {
+    if (cs_hover != 1) {
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
