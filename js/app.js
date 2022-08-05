@@ -264,8 +264,9 @@ function test() {
 
         let cr_move = (((1080 - work_offset) / 2.5) * -1); // eg: 33.33
         console.log("cr = " + cr_move);
-        cr_move = "matrix(1, 0, 0, 1, 0, " + cr_move + ")";
-        $("#cr").css("transform", cr_move);
+        cr_move = cr_move + "px";
+        //$("#cr").css("transform", cr_move);
+        $("#cr").css("top", cr_move);
       }
 
 
