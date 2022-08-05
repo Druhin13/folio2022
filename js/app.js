@@ -227,44 +227,44 @@ function test() {
         let work_offset = $("#work").offset().top; // eg: 980
 
         let d_move = (((1080 - work_offset) / 4) * -1); // eg: 33.33
-        console.log("d = " + d_move);
+        //console.log("d = " + d_move);
         d_move = "matrix(1, 0, 0, 1, 0, " + d_move + ")";
         $("#d").css("transform", d_move);
         $("#d-opp").css("transform", d_move);
 
         let r_move = (((1080 - work_offset) / 2) * -1); // eg: 33.33
-        console.log("r = " + r_move);
+        //console.log("r = " + r_move);
         r_move = "matrix(1, 0, 0, 1, 0, " + r_move + ")";
         $("#r").css("transform", r_move);
 
         let u_move = (((1080 - work_offset) / 6) * -1); // eg: 33.33
-        console.log("u = " + u_move);
+        //console.log("u = " + u_move);
         u_move = "matrix(1, 0, 0, 1, 0, " + u_move + ")";
         $("#u").css("transform", u_move);
 
         let h_move = (((1080 - work_offset) / 4) * -1); // eg: 33.33
-        console.log("h = " + h_move);
+        //console.log("h = " + h_move);
         h_move = "matrix(1, 0, 0, 1, 0, " + h_move + ")";
         $("#h").css("transform", h_move);
 
         let i_move = (((1080 - work_offset) / 1) * -1); // eg: 33.33
-        console.log("i = " + i_move);
+        //console.log("i = " + i_move);
         i_move = "matrix(1, 0, 0, 1, 0, " + i_move + ")";
         $("#i").css("transform", i_move);
 
         let n_move = (((1080 - work_offset) / 2) * -1); // eg: 33.33
-        console.log("n = " + n_move);
+        //console.log("n = " + n_move);
         n_move = "matrix(1, 0, 0, 1, 0, " + n_move + ")";
         $("#n").css("transform", n_move);
 
         let ab_move = (((1080 - work_offset) / 1.5) * -1); // eg: 33.33
-        console.log("ab = " + ab_move);
+        //console.log("ab = " + ab_move);
         ab_move = "matrix(1, 0, 0, 1, 0, " + ab_move + ")";
         $("#ab").css("transform", ab_move);
 
         let cr_move = (((1080 - work_offset) / 2.5) * -1); // eg: 33.33
         cr_move = $("#cr").offset().top - cr_move;
-        console.log("cr = " + cr_move);
+        //console.log("cr = " + cr_move);
         cr_move = cr_move + "px";
         //$("#cr").css("transform", cr_move);
         $("#cr").css("top", cr_move);
