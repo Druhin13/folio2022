@@ -2368,13 +2368,17 @@
   right: 0%;
   bottom: 0%;
   z-index: 550;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   width: 100vw;
   height: 0vh;
   background-color: rgba(19, 19, 19, 0.92);
   -webkit-backdrop-filter: blur(1vw);
   backdrop-filter: blur(1vw);
-  -webkit-transition: all 1000ms cubic-bezier(.23, 1, .32, 1);
-  transition: all 1000ms cubic-bezier(.23, 1, .32, 1);
+  -webkit-transition: all 1250ms cubic-bezier(.23, 1, .32, 1);
+  transition: all 1250ms cubic-bezier(.23, 1, .32, 1);
 }
 
 .blur-down {
