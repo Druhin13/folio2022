@@ -28,8 +28,8 @@
   padding-left: 2vw;
   background-color: #fff;
   box-shadow: 0 0 100px 0 hsla(0, 0%, 100%, 0.1);
-  -webkit-filter: blur(0.3px);
-  filter: blur(0.3px);
+  -webkit-filter: blur(0.015vw);
+  filter: blur(0.015vw);
 }
 
 .heading1 {
@@ -1396,8 +1396,8 @@
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  -webkit-filter: blur(0.5px);
-  filter: blur(0.5px);
+  -webkit-filter: blur(0.025vw);
+  filter: blur(0.025vw);
 }
 
 .award-name {
@@ -1405,8 +1405,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-filter: blur(0.65px);
-  filter: blur(0.65px);
+  -webkit-filter: blur(0.03vw);
+  filter: blur(0.03vw);
 }
 
 .award-name.marquee3k {
@@ -1836,9 +1836,8 @@
   background-image: none;
   background-size: auto;
   background-repeat: repeat;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  cursor: wait;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 .loading-time-group {
@@ -1869,8 +1868,8 @@
   align-items: flex-start;
   background-color: #e6e6e6;
   background-image: none;
-  -webkit-filter: blur(0.5px);
-  filter: blur(0.5px);
+  -webkit-filter: blur(0.025vw);
+  filter: blur(0.025vw);
 }
 
 .awards-left {
@@ -1940,8 +1939,8 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 95vh;
-  -webkit-filter: blur(0.35px);
-  filter: blur(0.35px);
+  -webkit-filter: blur(0.015vw);
+  filter: blur(0.015vw);
 }
 
 .testimonial-preview-text {
@@ -2042,8 +2041,8 @@
   bottom: auto;
   z-index: 10;
   width: 3vw;
-  -webkit-filter: blur(4px);
-  filter: blur(4px);
+  -webkit-filter: blur(0.2vw);
+  filter: blur(0.2vw);
   mix-blend-mode: difference;
 }
 
@@ -2306,8 +2305,8 @@
 }
 
 .something-text.blur {
-  -webkit-filter: blur(1px);
-  filter: blur(1px);
+  -webkit-filter: blur(0.04vw);
+  filter: blur(0.04vw);
 }
 
 .text-span-2 {
@@ -2589,8 +2588,8 @@
   width: 100vw;
   height: 0%;
   background-color: hsla(0, 0%, 100%, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(0.5vw);
+  backdrop-filter: blur(0.5vw);
   -webkit-transition: none 0ms ease;
   transition: none 0ms ease;
 }
@@ -3249,8 +3248,8 @@
 
 .druhin-text {
   display: inline;
-  -webkit-filter: blur(8px);
-  filter: blur(8px);
+  -webkit-filter: blur(0.4vw);
+  filter: blur(0.4vw);
   color: #cecece;
   font-size: 13.25vw;
 }
@@ -3312,15 +3311,15 @@
   background-position: 0% 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
+  -webkit-filter: blur(0.15vw);
+  filter: blur(0.15vw);
 }
 
 .end-d-cover-overlay {
   margin-right: -2vw;
   margin-left: -6.25vw;
-  -webkit-filter: blur(6px);
-  filter: blur(6px);
+  -webkit-filter: blur(0.4vw);
+  filter: blur(0.4vw);
   color: #cecece;
   font-size: 13.25vw;
 }
@@ -3454,8 +3453,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-filter: blur(0.35px);
-  filter: blur(0.35px);
+  -webkit-filter: blur(0.015vw);
+  filter: blur(0.015vw);
 }
 
 @media screen and (max-width: 991px) {
