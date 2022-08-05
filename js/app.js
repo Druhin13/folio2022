@@ -223,7 +223,12 @@ function test() {
       // druhin text anim on scroll
       let project_timer = setInterval(druhintext, 10);
       function druhintext() {
-        console.log($("#work").offset().top);
+        if (($("#awards").offset().top) < 1000) {
+          clearInterval(project_timer);
+        }
+        else {
+          console.log($("#work").offset().top);
+        }
       }
 
 
