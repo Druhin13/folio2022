@@ -219,6 +219,14 @@ function test() {
       locoScroll.update();
       locoScroll.start();
 
+
+      // druhin text anim on scroll
+      let project_timer = setInterval(druhintext, 10);
+      function druhintext() {
+        console.log($("#work").offset().top);
+      }
+
+
       //loading the case study preview gifs
       $('head').append('<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>');
     }, 750);
