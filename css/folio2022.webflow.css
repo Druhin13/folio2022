@@ -1019,6 +1019,7 @@
 
 .card-whipe.lazy.mausumi {
   height: 120%;
+  background-color: #252525;
   -webkit-filter: blur(1px) brightness(80%);
   filter: blur(1px) brightness(80%);
 }
@@ -3453,8 +3454,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-filter: blur(0.65px);
-  filter: blur(0.65px);
+  -webkit-filter: blur(0.35px);
+  filter: blur(0.35px);
 }
 
 @media screen and (max-width: 991px) {

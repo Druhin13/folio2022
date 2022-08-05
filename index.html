@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Aug 04 2022 22:36:52 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Aug 05 2022 08:13:27 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -18,7 +18,7 @@
   <link href="css/folio2022.webflow.css" rel="stylesheet" type="text/css">
   <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
-  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <meta name="theme-color" content="#131313">
   <style>
@@ -123,6 +123,11 @@ z-index:5000;
 .drag-demo-container{
 	display:flex;
 }
+/*
+.druhin-text , .end-d-cover-overlay {
+	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+*/
 </style>
 </head>
 <body data-scroll-time="0.5" class="body">
@@ -301,7 +306,7 @@ pointer-events:all;
               <div class="context-heading white paragraph title folio-txt2">scroll down<span class="text-span-5"></span></div>
             </div>
           </div>
-        </div><img src="images/copyright.svg" loading="lazy" style="opacity:0" data-w-id="17a2319a-38b4-784a-a0dd-78760c330874" data-scroll="true" alt="" class="copyright">
+        </div><img src="images/copyright.svg" loading="lazy" style="opacity:0" data-w-id="17a2319a-38b4-784a-a0dd-78760c330874" id="cr" data-scroll="true" alt="" class="copyright">
         <div style="-webkit-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="name-cover"></div>
         <div class="grid-overlay">
           <div class="w-embed">
@@ -309,14 +314,14 @@ pointer-events:all;
           </div>
         </div>
         <div style="-webkit-transform:translate3d(0, 22vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 22vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 22vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 22vh, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="druhin">
-          <div class="end-d-cover-overlay">𐐒</div>
-          <div data-scroll="true" class="druhin-text d">D</div>
-          <div data-scroll="true" class="druhin-text r">R</div>
-          <div data-scroll="true" class="druhin-text u">U</div>
-          <div data-scroll="true" class="druhin-text h">H</div>
-          <div data-scroll="true" class="druhin-text i">I</div>
-          <div data-scroll="true" class="druhin-text n">N</div>
-          <div data-scroll="true" class="about-img"></div>
+          <div id="d-opp" data-scroll="true" class="end-d-cover-overlay">𐐒</div>
+          <div id="d" data-scroll="true" class="druhin-text d">D</div>
+          <div id="r" data-scroll="true" class="druhin-text r">R</div>
+          <div id="u" data-scroll="true" class="druhin-text u">U</div>
+          <div id="h" data-scroll="true" class="druhin-text h">H</div>
+          <div id="i" data-scroll="true" class="druhin-text i">I</div>
+          <div id="n" data-scroll="true" class="druhin-text n">N</div>
+          <div id="ab" data-scroll="true" class="about-img"></div>
         </div>
       </div>
       <div id="blur-up2" class="blur-up2"></div>
@@ -1863,6 +1868,8 @@ document.addEventListener("mousemove", () => {
   <script src="https://druh.in/folio2022/js/app.min.js"></script>
   <script src="https://druh.in/folio2022/js/marquee-min.js"></script>
   <script>
+$(".druhin-test").removeAttr("data-scroll");
+$(".end-d-cover-overlay").removeAttr("data-scroll");
 $(".line").removeClass("expand");
 $(".white-transition").removeClass("expand");
 $(".list-parent").removeClass("loco");
