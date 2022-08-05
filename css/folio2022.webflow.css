@@ -642,6 +642,10 @@
   letter-spacing: -0.012vw;
 }
 
+.context-heading.white.paragraph.testi {
+  opacity: 0.7;
+}
+
 .context-heading.white.type2 {
   font-size: 2.1875vw;
   font-weight: 400;
@@ -759,6 +763,17 @@
   display: block;
   width: 80%;
   margin-bottom: 15.5vh;
+}
+
+.context-heading.type6.loading-overlay {
+  position: static;
+  display: block;
+  width: auto;
+  margin-bottom: 0vh;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .context-type {
@@ -1546,6 +1561,12 @@
   bottom: 0%;
   z-index: 600;
   display: none;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background-color: #212121;
   cursor: wait;
 }
@@ -1610,6 +1631,7 @@
   height: 22vh;
   padding: 2.5em;
   border-radius: 1vw 1vw 0vw 0px;
+  background-color: #131313;
   -webkit-transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
@@ -1836,8 +1858,6 @@
   background-image: none;
   background-size: auto;
   background-repeat: repeat;
-  -webkit-backdrop-filter: none;
-  backdrop-filter: none;
 }
 
 .loading-time-group {
@@ -1982,7 +2002,7 @@
   position: absolute;
   left: -0.25vw;
   top: -1.5vh;
-  z-index: 10;
+  z-index: 24;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2341,17 +2361,20 @@
   display: none;
 }
 
-.blur-up {
-  position: absolute;
-  left: 0px;
-  z-index: 9;
+.cs-blur-all {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: 550;
   width: 100vw;
-  height: 0%;
-  background-color: hsla(0, 0%, 100%, 0.5);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  -webkit-transition: none 0ms ease;
-  transition: none 0ms ease;
+  height: 0vh;
+  background-color: rgba(19, 19, 19, 0.92);
+  -webkit-backdrop-filter: blur(1vw);
+  backdrop-filter: blur(1vw);
+  -webkit-transition: all 1000ms cubic-bezier(.23, 1, .32, 1);
+  transition: all 1000ms cubic-bezier(.23, 1, .32, 1);
 }
 
 .blur-down {
@@ -3224,6 +3247,7 @@
 }
 
 .vtf-trigger-open {
+  display: none;
   width: 2vw;
   height: 2vw;
   margin-left: 1vw;
@@ -3231,6 +3255,7 @@
 }
 
 .vtf-trigger-close {
+  display: none;
   width: 2vw;
   height: 2vw;
   margin-left: 1vw;
