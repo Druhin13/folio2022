@@ -256,6 +256,16 @@ function test() {
         console.log("n = " + n_move);
         n_move = "matrix(1, 0, 0, 1, 0, " + n_move + ")";
         $("#n").css("transform", n_move);
+
+        let ab_move = (((1080 - work_offset) / 1.5) * -1); // eg: 33.33
+        console.log("ab = " + ab_move);
+        ab_move = "matrix(1, 0, 0, 1, 0, " + ab_move + ")";
+        $("#ab").css("transform", ab_move);
+
+        let cr_move = (((1080 - work_offset) / 2.5) * -1); // eg: 33.33
+        console.log("cr = " + cr_move);
+        cr_move = "matrix(1, 0, 0, 1, 0, " + cr_move + ")";
+        $("#cr").css("transform", cr_move);
       }
 
 
