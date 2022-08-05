@@ -223,15 +223,17 @@ function test() {
       // druhin text anim on scroll
       let project_timer = setInterval(druhintext, 1);
       function druhintext() {
-        console.log($("#work").offset().top);
+        //console.log($("#work").offset().top);
         let work_offset = $("#work").offset().top; // eg: 980
 
         let d_move = ((1080 - work_offset) / 3) * -1; // eg: 33.33
         d_move = "matrix(1, 0, 0, 1, 0, " + d_move + ")";
+        console.log("d = " + d_move);
         $("#d").css("transform", d_move);
 
         let r_move = ((1080 - work_offset) / 2.5) * -1; // eg: 33.33
         r_move = "matrix(1, 0, 0, 1, 0, " + r_move + ")";
+        console.log("r = " + r_move);
         $("#r").css("transform", r_move);
       }
 
