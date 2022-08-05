@@ -226,17 +226,36 @@ function test() {
         //console.log($("#work").offset().top);
         let work_offset = $("#work").offset().top; // eg: 980
 
-        let d_move = (((1080 - work_offset) / 3) * -1); // eg: 33.33
+        let d_move = (((1080 - work_offset) / 4) * -1); // eg: 33.33
         console.log("d = " + d_move);
         d_move = "matrix(1, 0, 0, 1, 0, " + d_move + ")";
-        //console.log("d = " + d_move);
         $("#d").css("transform", d_move);
+        $("#d-opp").css("transform", d_move);
 
         let r_move = (((1080 - work_offset) / 2) * -1); // eg: 33.33
         console.log("r = " + r_move);
         r_move = "matrix(1, 0, 0, 1, 0, " + r_move + ")";
-        //console.log("r = " + r_move);
         $("#r").css("transform", r_move);
+
+        let u_move = (((1080 - work_offset) / 4) * -1); // eg: 33.33
+        console.log("u = " + u_move);
+        u_move = "matrix(1, 0, 0, 1, 0, " + u_move + ")";
+        $("#u").css("transform", u_move);
+
+        let h_move = (((1080 - work_offset) / 3) * -1); // eg: 33.33
+        console.log("h = " + h_move);
+        h_move = "matrix(1, 0, 0, 1, 0, " + h_move + ")";
+        $("#h").css("transform", h_move);
+
+        let i_move = (((1080 - work_offset) / 1) * -1); // eg: 33.33
+        console.log("i = " + i_move);
+        i_move = "matrix(1, 0, 0, 1, 0, " + i_move + ")";
+        $("#i").css("transform", i_move);
+
+        let n_move = (((1080 - work_offset) / 2) * -1); // eg: 33.33
+        console.log("n = " + n_move);
+        n_move = "matrix(1, 0, 0, 1, 0, " + n_move + ")";
+        $("#n").css("transform", n_move);
       }
 
 
