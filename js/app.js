@@ -237,12 +237,12 @@ function test() {
         r_move = "matrix(1, 0, 0, 1, 0, " + r_move + ")";
         $("#r").css("transform", r_move);
 
-        let u_move = (((1080 - work_offset) / 4) * -1); // eg: 33.33
+        let u_move = (((1080 - work_offset) / 6) * -1); // eg: 33.33
         console.log("u = " + u_move);
         u_move = "matrix(1, 0, 0, 1, 0, " + u_move + ")";
         $("#u").css("transform", u_move);
 
-        let h_move = (((1080 - work_offset) / 3) * -1); // eg: 33.33
+        let h_move = (((1080 - work_offset) / 4) * -1); // eg: 33.33
         console.log("h = " + h_move);
         h_move = "matrix(1, 0, 0, 1, 0, " + h_move + ")";
         $("#h").css("transform", h_move);
