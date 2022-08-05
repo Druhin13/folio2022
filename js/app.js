@@ -262,12 +262,14 @@ function test() {
         ab_move = "matrix(1, 0, 0, 1, 0, " + ab_move + ")";
         $("#ab").css("transform", ab_move);
 
+        /*
         let cr_move = (((1080 - work_offset) / 2.5) * -1); // eg: 33.33
         cr_move = $("#cr").offset().top - cr_move;
         //console.log("cr = " + cr_move);
         cr_move = cr_move + "px";
         //$("#cr").css("transform", cr_move);
         $("#cr").css("top", cr_move);
+        */
       }
 
 
