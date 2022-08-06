@@ -393,6 +393,8 @@ cs1.addEventListener("click", () => {
 
   let cs_margin_top = $('#cs-all-holder1').offset().top + ($(window).height() * 0.028);
   console.log(cs_margin_top);
+  let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
+  console.log(cs_height);
 
   //$("#disable-hover").css("display", "block"); //showing the disable trigger
   locoScroll.stop(); //stopping user from scrolling through the whole document
@@ -423,6 +425,7 @@ cs1.addEventListener("click", () => {
   $('#cs1-preview').remove(); // remove the preview of the selected cs tab
 
   $('#cs-all-test').css('margin-top', cs_margin_top);
+  $('#cs-all-test').css('height', cs_height);
 
 });
 
