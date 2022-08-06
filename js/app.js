@@ -418,18 +418,18 @@ $('#cs1').click(function () {
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
 
 
-  $('#project-header-t1').text(" ");
-  $('#project-header-t2').text(" ");
-  $('#project-header-t3').text(" ");
-  $('#project-header-t4').text(" ");
-  $('#project-header-t5').text(" ");
+  $('#project-header-t1').text("Website");
+  $('#project-header-t2').text("Visual / Brand");
+  $('#project-header-t3').text("Marketing");
+  $('#project-header-t4').text("");
+  $('#project-header-t5').text("");
 
-  $('#project-header-year').text(" ");
+  $('#project-header-year').text("2021 - 2022");
 
-  $('#project-header-d1').text(" ");
-  $('#project-header-d2').text(" ");
-  $('#project-header-d3').text(" ");
-  $('#project-header-d4').text(" ");
+  $('#project-header-d1').text("UI Design");
+  $('#project-header-d2').text("UX Design");
+  $('#project-header-d3').text("Visual Direction");
+  $('#project-header-d4').text("");
 
 
 
