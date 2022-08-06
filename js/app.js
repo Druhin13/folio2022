@@ -383,31 +383,31 @@ const cs13 = document.getElementById('cs13')
 
 
 
-
+// if cs1 is clicked
 
 cs1.addEventListener("click", () => {
-  let csv = parseInt(("cs1").slice(2)); //case study value / index of the selected case study
-  let bz = 9 //base z-index
-  let ns = 31.65; //last cs selected
-  let per = 3.15; //per cs size
-  let h = Math.round(ns + (per * (13 - csv))) + "%";
+  // let csv = parseInt(("cs1").slice(2)); //case study value / index of the selected case study
+  // let bz = 9 //base z-index
+  // let ns = 31.65; //last cs selected
+  // let per = 3.15; //per cs size
+  // let h = Math.round(ns + (per * (13 - csv))) + "%";
 
   $("#disable-hover").css("display", "block");
 
-  let z = bz + csv;
-  $("#blur-up").css("z-index", z);
+  //let z = bz + csv;
+  //$("#blur-up").css("z-index", z);
 
-  setTimeout(() => {
-    locoScroll.stop();
+  //setTimeout(() => {
+  locoScroll.stop();
 
-    //blur up
-    $("#blur-up").css("height", "100%");
+  //blur up
+  $("#blur-all").css("height", "100vh");
 
 
-    //blur down
-    $("#blur-down").css("height", h);
+  //blur down
+  //$("#blur-down").css("height", h);
 
-  }, 300);
+  //}, 300);
 });
 
 
