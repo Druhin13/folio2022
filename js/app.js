@@ -396,7 +396,7 @@ cs1.addEventListener("click", () => {
   $('#cs1')
     .clone()
     .attr('id', "cs1-copy")
-    .append($('blur-all'));
+    .appendTo($('#blur-all'));
 });
 
 
