@@ -392,14 +392,20 @@ function timecalc() {
 $('#cs1').click(function () {
 
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
-  console.log(cs_margin_top);
   let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
-  console.log(cs_height);
 
   $("#disable-hover").css("display", "block"); //showing the disable trigger
   locoScroll.stop(); //stopping user from scrolling through the whole document
 
   $("#blur-all").css("height", "100vh"); //showing the blured overlay
+
+
+  //cloning the project header
+  $('#sticky-project-header')
+    .clone()
+    .attr('id', "project-header-test")
+    .appendTo($('#blur-all'));
+
 
 
   //cloning the case study tab (which is clicked)
