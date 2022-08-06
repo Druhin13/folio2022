@@ -392,11 +392,15 @@ cs1.addEventListener("click", () => {
 
   $("#blur-all").css("height", "100vh"); //showing the blured overlay
 
+  $("#cs1").css("z-index", "600");
+
+  /*
   //cloning the case study tab (which is clicked)
   $('#cs-all-holder1')
     .clone()
     .attr('id', "cs-all-test")
     .appendTo($('#blur-all'));
+  */
 });
 
 
