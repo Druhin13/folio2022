@@ -483,7 +483,8 @@ $('#cs2').click(function () {
     .appendTo($('#blur-all'));
 
   //removing all the other cs tabs
-  $('#cs1').remove();
+  //$('#cs1').remove();
+  $('#cs1').css('opacity', '0%');
   $('#cs3').remove();
   $('#cs4').remove();
   $('#cs5').remove();
