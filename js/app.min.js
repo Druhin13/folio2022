@@ -406,7 +406,10 @@ $('#cs1').click(function () {
     .attr('id', "project-header-test")
     .appendTo($('#blur-all'));
 
-
+  $('project-header-test').css('position', 'absolute');
+  $('project-header-test').css('top', '0');
+  $('project-header-test').css('background-color', 'transparent');
+  
 
   //cloning the case study tab (which is clicked)
   $('#cs-all-holder1')
