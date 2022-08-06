@@ -387,7 +387,7 @@ const cs13 = document.getElementById('cs13')
 
 cs1.addEventListener("click", () => {
 
-  let cs_margin_top = $('cs1').offset().top;
+  let cs_margin_top = $('#cs1').offset().top;
   console.log(cs_margin_top);
 
   $("#disable-hover").css("display", "block"); //showing the disable trigger
