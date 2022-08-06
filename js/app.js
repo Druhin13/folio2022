@@ -580,7 +580,7 @@ $('#cs3').click(function () {
 
 $('#cs4').click(function () {
   let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() - + ($(window).height() * 0.028));
+  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() - ($(window).height() * 0.028));
   let cs_height = $('#cs4').height() - ($(window).height() * 0.028);
   $("#disable-hover").css("display", "block"); //showing the disable trigger
   locoScroll.stop(); //stopping user from scrolling through the whole document
