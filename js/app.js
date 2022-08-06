@@ -389,7 +389,7 @@ function timecalc() {
 
 // if cs1 is clicked
 
-$('#cs1').addEventListener("click", () => {
+$('#cs1').click(function () {
 
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
   console.log(cs_margin_top);
@@ -436,7 +436,7 @@ $('#cs1').addEventListener("click", () => {
 });
 
 
-cs2.addEventListener("click", () => {
+cs2.click(function () {
   let csv = parseInt(("cs2").slice(2)); //case study value / index of the selected case study
   let bz = 9 //base z-index
   let ns = 31.65; //last cs selected
@@ -755,7 +755,7 @@ cs13.addEventListener("click", () => {
 
 //const disable_cs = document.getElementById('disable-hover');
 
-$('#disable-hover').addEventListener("click", () => {
+$('#disable-hover').click(function () {
 
   $("#disable-hover").css("display", "none");
   $('#cs-all-test').remove();
