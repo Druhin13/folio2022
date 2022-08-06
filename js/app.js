@@ -396,7 +396,7 @@ cs1.addEventListener("click", () => {
   let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
   console.log(cs_height);
 
-  //$("#disable-hover").css("display", "block"); //showing the disable trigger
+  $("#disable-hover").css("display", "block"); //showing the disable trigger
   locoScroll.stop(); //stopping user from scrolling through the whole document
 
   $("#blur-all").css("height", "100vh"); //showing the blured overlay
@@ -758,17 +758,12 @@ const disable_cs = document.getElementById('disable-hover');
 disable_cs.addEventListener("click", () => {
 
   $("#disable-hover").css("display", "none");
-  $("#blur-up").css("height", "0%");
-  $("#blur-down").css("height", "0%");
+  $('#cs-all-test').remove();
+
+  $("#blur-all").css("height", "0vh");
 
   setTimeout(() => {
     locoScroll.start();
-
-    //blur up
-    $("#blur-up").css("z-index", "9");
-
-    //blur down
-
   }, 300);
 });
 
