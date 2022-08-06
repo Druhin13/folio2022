@@ -39,6 +39,8 @@
   margin-bottom: 0px;
   margin-left: -0.35vw;
   padding-bottom: 0.75vh;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
   font-size: 6vw;
   line-height: 1;
   font-weight: 400;
@@ -485,6 +487,8 @@
 .context-holder.loco {
   z-index: 9;
   margin-top: 0.75vh;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
 .case-study-content-tab {
@@ -778,7 +782,8 @@
 
 .context-type {
   display: inline-block;
-  margin-right: 5vw;
+  width: 6.5vw;
+  margin-right: 4.5vw;
 }
 
 .list {
