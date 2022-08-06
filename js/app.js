@@ -590,11 +590,11 @@ $('#cs4').click(function () {
     .clone()
     .attr('id', "project-header-test")
     .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
 
 
   //testing
   if (header_margin_top > 0) {
+    $('#project-header-test').css('position', 'absolute');
     $('#project-header-test').css('top', header_margin_top);
   }//testing
 
