@@ -418,6 +418,21 @@ $('#cs1').click(function () {
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
 
 
+  $('#project-header-t1').text(" ");
+  $('#project-header-t2').text(" ");
+  $('#project-header-t3').text(" ");
+  $('#project-header-t4').text(" ");
+  $('#project-header-t5').text(" ");
+
+  $('#project-header-year').text(" ");
+
+  $('#project-header-d1').text(" ");
+  $('#project-header-d2').text(" ");
+  $('#project-header-d3').text(" ");
+  $('#project-header-d4').text(" ");
+
+
+
   //cloning the case study tab (which is clicked)
   $('#cs-all-holder1')
     .clone()
