@@ -2019,6 +2019,8 @@
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-filter: none;
+  filter: none;
   mix-blend-mode: difference;
 }
 
@@ -2377,11 +2379,23 @@
   height: 0vh;
   padding-right: 12vw;
   padding-left: 2vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   background-color: rgba(19, 19, 19, 0.92);
   -webkit-backdrop-filter: blur(1vw);
   backdrop-filter: blur(1vw);
-  -webkit-transition: all 1250ms cubic-bezier(.23, 1, .32, 1);
-  transition: all 1250ms cubic-bezier(.23, 1, .32, 1);
+  -webkit-transition: all 1000ms cubic-bezier(.23, 1, .32, 1);
+  transition: all 1000ms cubic-bezier(.23, 1, .32, 1);
 }
 
 .blur-down {
