@@ -386,28 +386,17 @@ const cs13 = document.getElementById('cs13')
 // if cs1 is clicked
 
 cs1.addEventListener("click", () => {
-  // let csv = parseInt(("cs1").slice(2)); //case study value / index of the selected case study
-  // let bz = 9 //base z-index
-  // let ns = 31.65; //last cs selected
-  // let per = 3.15; //per cs size
-  // let h = Math.round(ns + (per * (13 - csv))) + "%";
 
-  $("#disable-hover").css("display", "block");
+  $("#disable-hover").css("display", "block"); //showing the disable trigger
+  locoScroll.stop(); //stopping user from scrolling through the whole document
 
-  //let z = bz + csv;
-  //$("#blur-up").css("z-index", z);
+  $("#blur-all").css("height", "100vh"); //showing the blured overlay
 
-  //setTimeout(() => {
-  locoScroll.stop();
-
-  //blur up
-  $("#blur-all").css("height", "100vh");
-
-
-  //blur down
-  //$("#blur-down").css("height", h);
-
-  //}, 300);
+  //cloning the case study tab (which is clicked)
+  $('#item1-weight1')
+    .clone()
+    .attr('id', "cs1-copy")
+    .append($('blur-all'));
 });
 
 
