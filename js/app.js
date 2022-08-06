@@ -416,7 +416,7 @@ $('#cs1').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
