@@ -412,6 +412,8 @@ $('#cs1').click(function () {
   $('#project-header-test').css('background-color', 'transparent');
   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
 
 
   //cloning the case study tab (which is clicked)
