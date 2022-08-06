@@ -426,7 +426,7 @@ $('#cs1').click(function () {
   $('#cs1').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
 
   $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+  $('#cs1').css('height', cs_height);
 
   $('#cs1').css('width', "100vw");
   $('#cs1').css('margin-left', "-2vw");
