@@ -391,7 +391,7 @@ const cs13 = document.getElementById('cs13')
 
 cs1.addEventListener("click", () => {
 
-  let cs_margin_top = $('#cs-all-holder1').offset().top + ($(window).height() * 0.028);
+  let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
   console.log(cs_margin_top);
   let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
   console.log(cs_height);
