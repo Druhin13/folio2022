@@ -385,6 +385,9 @@ $('#cs1').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  if (header_margin_top == 0) {
+    $('#project-header-test').css('transform', '');
+  }
   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
   $('#project-header-test').css('background-color', 'transparent');
@@ -454,6 +457,9 @@ $('#cs2').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  if (header_margin_top == 0) {
+    $('#project-header-test').css('transform', '');
+  }
   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
   $('#project-header-test').css('background-color', 'transparent');
@@ -523,6 +529,9 @@ $('#cs3').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  if (header_margin_top == 0) {
+    $('#project-header-test').css('transform', '');
+  }
   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
   $('#project-header-test').css('background-color', 'transparent');
@@ -590,15 +599,11 @@ $('#cs4').click(function () {
     .clone()
     .attr('id', "project-header-test")
     .appendTo($('#blur-all'));
-
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
-  //testing
   if (header_margin_top == 0) {
     $('#project-header-test').css('transform', '');
-  }//testing
-
-
+  }
   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
   $('#project-header-test').css('background-color', 'transparent');
