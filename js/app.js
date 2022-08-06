@@ -442,7 +442,7 @@ $('#cs1').click(function () {
 
 $('#cs2').click(function () {
   let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1 + $('#cs1').height());
+  let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.014) + 1 + $('#cs1').height());
   let cs_height = $('#cs2').height() - ($(window).height() * 0.028);
   $("#disable-hover").css("display", "block"); //showing the disable trigger
   locoScroll.stop(); //stopping user from scrolling through the whole document
