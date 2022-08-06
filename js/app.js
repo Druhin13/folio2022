@@ -410,6 +410,7 @@ $('#cs1').click(function () {
 
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  $('#project-header-test').css('filter', 'blur(0.015vw)');
 
   $('#project-header-test').css('background-color', 'transparent');
   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
