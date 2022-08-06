@@ -408,7 +408,10 @@ $('#cs1').click(function () {
 
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', '0');
+
   $('#project-header-test').css('background-color', 'transparent');
+  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
 
 
   //cloning the case study tab (which is clicked)
@@ -769,6 +772,7 @@ $('#disable-hover').click(function () {
 
   $("#disable-hover").css("display", "none");
   $('#cs-all-test').remove();
+  $('#project-header-test').remove();
 
   $("#blur-all").css("height", "0vh");
 
