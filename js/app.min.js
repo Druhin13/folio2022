@@ -458,7 +458,74 @@ $('#cs1').click(function () {
   $('#cs1').css('padding-right', "12vw");
 });
 
+$('#cs2').click(function () {
+  let header_margin_top = $('#sticky-project-header').offset().top;
+  let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
+  let cs_height = $('#cs2').height() - ($(window).height() * 0.028);
+  $("#disable-hover").css("display", "block"); //showing the disable trigger
+  locoScroll.stop(); //stopping user from scrolling through the whole document
+  $("#blur-all").css("height", "100vh"); //showing the blured overlay
+  //cloning the project header
+  $('#sticky-project-header')
+    .clone()
+    .attr('id', "project-header-test")
+    .appendTo($('#blur-all'));
+  $('#project-header-test').css('position', 'absolute');
+  $('#project-header-test').css('top', header_margin_top);
+  $('#project-header-test').css('filter', 'blur(0.015vw)');
 
+  $('#project-header-test').css('background-color', 'transparent');
+  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+
+  $('#project-header-t1').text("Website");
+  $('#project-header-t2').text("Visual / Brand");
+  $('#project-header-t3').text("Editorial");
+  $('#project-header-t4').text("");
+  $('#project-header-t5').text("");
+
+  $('#project-header-year').text("2022");
+
+  $('#project-header-d1').text("UI Design");
+  $('#project-header-d2').text("Branding");
+  $('#project-header-d3').text("Web Development");
+  $('#project-header-d4').text("");
+
+  //cloning the case study tab (which is clicked)
+  $('#cs-all-holder1')
+    .clone()
+    .attr('id', "cs-all-test")
+    .appendTo($('#blur-all'));
+
+  //removing all the other cs tabs
+  $('#cs1').remove();
+  $('#cs3').remove();
+  $('#cs4').remove();
+  $('#cs5').remove();
+  $('#cs6').remove();
+  $('#cs7').remove();
+  $('#cs8').remove();
+  $('#cs9').remove();
+  $('#cs10').remove();
+  $('#cs11').remove();
+  $('#cs12').remove();
+  $('#cs13').remove();
+
+  $('#cs2-preview').remove(); // remove the preview of the selected cs tab
+  $('#cs2').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+  $('#cs2').find('.empty-space-case-study:eq(0)').css('height', ($('#cs2').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+
+  $('#cs-all-test').css('margin-top', cs_margin_top);
+  $('#cs-all-test').css('height', cs_height);
+
+  $('#cs2').css('width', "100vw");
+  $('#cs2').css('margin-left', "-2vw");
+  $('#cs2').css('padding-left', "2vw");
+  $('#cs2').css('padding-right', "12vw");
+});
 
 
 
