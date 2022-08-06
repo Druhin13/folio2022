@@ -155,6 +155,9 @@ setTimeout(() => {
 
   */
 
+
+  document.body.style.cursor = 'wait';
+
   //counter initialization
   $('#count').jQuerySimpleCounter({
     start: 0,
@@ -218,7 +221,7 @@ function test() {
     setTimeout(() => {
       locoScroll.update();
       locoScroll.start();
-
+      document.body.style.cursor = 'default';
 
       // // druhin text anim on scroll
       // let project_timer = setInterval(druhintext, 1);
