@@ -1566,6 +1566,7 @@
   bottom: 0%;
   z-index: 600;
   display: none;
+  padding-top: 10vh;
   padding-right: 5vw;
   padding-left: 5vw;
   -webkit-box-pack: justify;
