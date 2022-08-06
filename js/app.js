@@ -371,25 +371,25 @@ function timecalc() {
 
 //case study clicks
 
-const cs1 = document.getElementById('cs1')
-const cs2 = document.getElementById('cs2')
-const cs3 = document.getElementById('cs3')
-const cs4 = document.getElementById('cs4')
-const cs5 = document.getElementById('cs5')
-const cs6 = document.getElementById('cs6')
-const cs7 = document.getElementById('cs7')
-const cs8 = document.getElementById('cs8')
-const cs9 = document.getElementById('cs9')
-const cs10 = document.getElementById('cs10')
-const cs11 = document.getElementById('cs11')
-const cs12 = document.getElementById('cs12')
-const cs13 = document.getElementById('cs13')
+// const cs1 = document.getElementById('cs1')
+// const cs2 = document.getElementById('cs2')
+// const cs3 = document.getElementById('cs3')
+// const cs4 = document.getElementById('cs4')
+// const cs5 = document.getElementById('cs5')
+// const cs6 = document.getElementById('cs6')
+// const cs7 = document.getElementById('cs7')
+// const cs8 = document.getElementById('cs8')
+// const cs9 = document.getElementById('cs9')
+// const cs10 = document.getElementById('cs10')
+// const cs11 = document.getElementById('cs11')
+// const cs12 = document.getElementById('cs12')
+// const cs13 = document.getElementById('cs13')
 
 
 
 // if cs1 is clicked
 
-cs1.addEventListener("click", () => {
+$('#cs1').addEventListener("click", () => {
 
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
   console.log(cs_margin_top);
@@ -753,9 +753,9 @@ cs13.addEventListener("click", () => {
 
 //closing blur and disable overlay from the cs tabs
 
-const disable_cs = document.getElementById('disable-hover');
+//const disable_cs = document.getElementById('disable-hover');
 
-disable_cs.addEventListener("click", () => {
+$('#disable-hover').addEventListener("click", () => {
 
   $("#disable-hover").css("display", "none");
   $('#cs-all-test').remove();
