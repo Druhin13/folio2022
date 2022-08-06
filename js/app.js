@@ -424,7 +424,7 @@ $('#cs1').click(function () {
 
   $('#cs1-preview').remove(); // remove the preview of the selected cs tab
   $('#cs1').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs1').find('.empty-space-case-study:eq(0)').remove(); // remove empty space below the cs tab
+  //$('#cs1').find('.empty-space-case-study:eq(0)').remove(); // remove empty space below the cs tab
 
   $('#cs-all-test').css('margin-top', cs_margin_top);
   $('#cs-all-test').css('height', cs_height);
