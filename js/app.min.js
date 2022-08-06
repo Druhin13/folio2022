@@ -390,24 +390,17 @@ function timecalc() {
 // if cs1 is clicked
 
 $('#cs1').click(function () {
-
   let header_margin_top = $('#sticky-project-header').offset().top;
-
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
   let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
-
   $("#disable-hover").css("display", "block"); //showing the disable trigger
   locoScroll.stop(); //stopping user from scrolling through the whole document
-
   $("#blur-all").css("height", "100vh"); //showing the blured overlay
-
-
   //cloning the project header
   $('#sticky-project-header')
     .clone()
     .attr('id', "project-header-test")
     .appendTo($('#blur-all'));
-
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
   $('#project-header-test').css('filter', 'blur(0.015vw)');
@@ -463,7 +456,6 @@ $('#cs1').click(function () {
   $('#cs1').css('margin-left', "-2vw");
   $('#cs1').css('padding-left', "2vw");
   $('#cs1').css('padding-right', "12vw");
-
 });
 
 
