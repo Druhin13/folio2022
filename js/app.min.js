@@ -733,7 +733,7 @@ $('#cs5').click(function () {
 
 $('#cs6').click(function () {
   let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() - ($(window).height() * 0.056));
+  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() - ($(window).height() * 0.112));
   let cs_height = $('#cs6').height() - ($(window).height() * 0.028);
   $("#disable-hover").css("display", "block"); //showing the disable trigger
   locoScroll.stop(); //stopping user from scrolling through the whole document
@@ -767,7 +767,7 @@ $('#cs6').click(function () {
 
   $('#project-header-d1').text("Web Design");
   $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("");
+  $('#project-header-d3').text("Marketing");
   $('#project-header-d4').text("");
 
   //cloning the case study tab (which is clicked)
