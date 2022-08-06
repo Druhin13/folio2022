@@ -592,10 +592,10 @@ $('#cs4').click(function () {
     .appendTo($('#blur-all'));
 
   $('#project-header-test').css('position', 'absolute');
-
+  $('#project-header-test').css('top', header_margin_top);
   //testing
-  if (header_margin_top > 0) {
-    $('#project-header-test').css('top', header_margin_top);
+  if (header_margin_top == 0) {
+    $('#project-header-test').css('transform', '');
   }//testing
 
 
