@@ -391,6 +391,8 @@ function timecalc() {
 
 $('#cs1').click(function () {
 
+  let header_margin_top = $('#sticky-project-header').offset().top;
+
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
   let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
 
@@ -407,7 +409,7 @@ $('#cs1').click(function () {
     .appendTo($('#blur-all'));
 
   $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', '0');
+  $('#project-header-test').css('top', header_margin_top);
 
   $('#project-header-test').css('background-color', 'transparent');
   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
