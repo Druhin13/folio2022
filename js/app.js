@@ -1,3 +1,5 @@
+document.body.style.cursor = 'wait';
+
 //jQuerySimpleCounter.js
 (function ($) {
   $.fn.jQuerySimpleCounter = function (options) {
@@ -155,8 +157,6 @@ setTimeout(() => {
 
   */
 
-
-  document.body.style.cursor = 'wait';
 
   //counter initialization
   $('#count').jQuerySimpleCounter({
