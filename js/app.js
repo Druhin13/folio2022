@@ -369,6 +369,15 @@ function timecalc() {
 }
 
 
+// cs details locomotive initializations
+
+const CS2locoScroll = new LocomotiveScroll({
+  el: document.querySelector(".vtf-cs"),
+  smooth: true,
+  multiplier: 0.75,
+});
+// CS2locoScroll.start();
+
 
 //case study clicks
 
@@ -1330,18 +1339,6 @@ $('#disable-hover').click(function () {
   }, 300);
 });
 
-
-
-
-
-// cs details locomotive initializations
-
-const CS2locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".vtf-cs"),
-  smooth: true,
-  multiplier: 0.75,
-});
-// CS2locoScroll.start();
 
 
 
