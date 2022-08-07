@@ -1,5 +1,3 @@
-document.body.style.cursor = 'wait';
-
 //jQuerySimpleCounter.js
 (function ($) {
   $.fn.jQuerySimpleCounter = function (options) {
