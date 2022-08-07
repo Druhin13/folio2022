@@ -455,6 +455,7 @@ $('#cs1').click(function () {
 
 $('#cs2').click(function () {
   $('.vtf-trigger-open').click();
+  CS2locoScroll.update();
   CS2locoScroll.start();
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height());
