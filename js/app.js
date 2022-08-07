@@ -372,7 +372,7 @@ function timecalc() {
 // cs details locomotive initializations
 
 const CS2locoScroll = new LocomotiveScroll({
-  el: document.querySelector("#vtf-cs"),
+  el: document.querySelector(".all-cs"),
   smooth: true,
   multiplier: 0.75,
 });
