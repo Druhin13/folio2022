@@ -441,7 +441,7 @@ $('#cs1').click(function () {
   $('#cs1').css('width', "100vw");
   $('#cs1').css('margin-left', "-2vw");
   $('#cs1').css('padding-left', "2vw");
-  $('#cs1').css('padding-right', "2vw");
+  $('#cs1').css('padding-right', "12vw");
 });
 
 $('#cs2').click(function () {
@@ -513,7 +513,7 @@ $('#cs2').click(function () {
   $('#cs2').css('width', "100vw");
   $('#cs2').css('margin-left', "-2vw");
   $('#cs2').css('padding-left', "2vw");
-  $('#cs2').css('padding-right', "2vw");
+  $('#cs2').css('padding-right', "12vw");
 });
 
 $('#cs3').click(function () {
@@ -585,7 +585,7 @@ $('#cs3').click(function () {
   $('#cs3').css('width', "100vw");
   $('#cs3').css('margin-left', "-2vw");
   $('#cs3').css('padding-left', "2vw");
-  $('#cs3').css('padding-right', "2vw");
+  $('#cs3').css('padding-right', "12vw");
 });
 
 $('#cs4').click(function () {
@@ -657,7 +657,7 @@ $('#cs4').click(function () {
   $('#cs4').css('width', "100vw");
   $('#cs4').css('margin-left', "-2vw");
   $('#cs4').css('padding-left', "2vw");
-  $('#cs4').css('padding-right', "2vw");
+  $('#cs4').css('padding-right', "12vw");
 });
 
 $('#cs5').click(function () {
@@ -729,7 +729,7 @@ $('#cs5').click(function () {
   $('#cs5').css('width', "100vw");
   $('#cs5').css('margin-left', "-2vw");
   $('#cs5').css('padding-left', "2vw");
-  $('#cs5').css('padding-right', "2vw");
+  $('#cs5').css('padding-right', "12vw");
 });
 
 $('#cs6').click(function () {
@@ -801,7 +801,7 @@ $('#cs6').click(function () {
   $('#cs6').css('width', "100vw");
   $('#cs6').css('margin-left', "-2vw");
   $('#cs6').css('padding-left', "2vw");
-  $('#cs6').css('padding-right', "2vw");
+  $('#cs6').css('padding-right', "12vw");
 });
 
 $('#cs7').click(function () {
@@ -873,7 +873,7 @@ $('#cs7').click(function () {
   $('#cs7').css('width', "100vw");
   $('#cs7').css('margin-left', "-2vw");
   $('#cs7').css('padding-left', "2vw");
-  $('#cs7').css('padding-right', "2vw");
+  $('#cs7').css('padding-right', "12vw");
 });
 
 $('#cs8').click(function () {
@@ -945,7 +945,7 @@ $('#cs8').click(function () {
   $('#cs8').css('width', "100vw");
   $('#cs8').css('margin-left', "-2vw");
   $('#cs8').css('padding-left', "2vw");
-  $('#cs8').css('padding-right', "2vw");
+  $('#cs8').css('padding-right', "12vw");
 });
 
 $('#cs9').click(function () {
@@ -1017,7 +1017,7 @@ $('#cs9').click(function () {
   $('#cs9').css('width', "100vw");
   $('#cs9').css('margin-left', "-2vw");
   $('#cs9').css('padding-left', "2vw");
-  $('#cs9').css('padding-right', "2vw");
+  $('#cs9').css('padding-right', "12vw");
 });
 
 $('#cs10').click(function () {
@@ -1089,7 +1089,7 @@ $('#cs10').click(function () {
   $('#cs10').css('width', "100vw");
   $('#cs10').css('margin-left', "-2vw");
   $('#cs10').css('padding-left', "2vw");
-  $('#cs10').css('padding-right', "2vw");
+  $('#cs10').css('padding-right', "12vw");
 });
 
 $('#cs11').click(function () {
@@ -1161,7 +1161,7 @@ $('#cs11').click(function () {
   $('#cs11').css('width', "100vw");
   $('#cs11').css('margin-left', "-2vw");
   $('#cs11').css('padding-left', "2vw");
-  $('#cs11').css('padding-right', "2vw");
+  $('#cs11').css('padding-right', "12vw");
 });
 
 $('#cs12').click(function () {
@@ -1233,7 +1233,7 @@ $('#cs12').click(function () {
   $('#cs12').css('width', "100vw");
   $('#cs12').css('margin-left', "-2vw");
   $('#cs12').css('padding-left', "2vw");
-  $('#cs12').css('padding-right', "2vw");
+  $('#cs12').css('padding-right', "12vw");
 });
 
 $('#cs13').click(function () {
@@ -1305,7 +1305,7 @@ $('#cs13').click(function () {
   $('#cs13').css('width', "100vw");
   $('#cs13').css('margin-left', "-2vw");
   $('#cs13').css('padding-left', "2vw");
-  $('#cs13').css('padding-right', "2vw");
+  $('#cs13').css('padding-right', "12vw");
 });
 
 
