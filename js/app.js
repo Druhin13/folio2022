@@ -1335,7 +1335,7 @@ $('#disable-hover').click(function () {
 // cs details locomotive initializations
 
 const CS2locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".vtf-cs-main"),
+  el: document.querySelector(".vtf-cs"),
   smooth: true,
   multiplier: 0.75,
 });
