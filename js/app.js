@@ -445,6 +445,7 @@ $('#cs1').click(function () {
 });
 
 $('#cs2').click(function () {
+  CS2locoScroll.start();
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height());
   let cs_height = $('#cs2').height() - ($(window).height() * 0.028);
@@ -1339,7 +1340,7 @@ const CS2locoScroll = new LocomotiveScroll({
   smooth: true,
   multiplier: 0.75,
 });
-CS2locoScroll.start();
+// CS2locoScroll.start();
 
 
 
