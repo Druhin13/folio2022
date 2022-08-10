@@ -374,7 +374,7 @@ function timecalc() {
 const CS2locoScroll = new LocomotiveScroll({
   el: document.querySelector(".loco-test"),
   smooth: true,
-  multiplier: 0.5,
+  multiplier: 0.25,
 });
 
 CS2locoScroll.start();
