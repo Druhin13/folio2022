@@ -1,3 +1,14 @@
+.w-backgroundvideo-backgroundvideoplaypausebutton:focus-visible {
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: #3b79c3;
+}
+
 .w-layout-grid {
   display: -ms-grid;
   display: grid;
@@ -2599,8 +2610,8 @@
 }
 
 .cs-heading {
-  margin: 0px 1.85vw 6vh 1.75vw;
-  font-size: 4.75vw;
+  margin: 0px 1.75vw 6vh;
+  font-size: 5vw;
   line-height: 97%;
   font-weight: 500;
   text-align: justify;
@@ -2625,6 +2636,15 @@
   text-align: left;
   letter-spacing: -0.0675vw;
   text-transform: none;
+}
+
+.cs-heading.type4 {
+  margin-right: 0vw;
+  margin-bottom: 2.5vh;
+  margin-left: 0vw;
+  font-size: 7.6vw;
+  text-align: center;
+  letter-spacing: -0.19vw;
 }
 
 .text-span-3 {
@@ -2766,6 +2786,30 @@
   border-radius: 1.25vw;
   background-color: #112823;
   color: #9ec4a7;
+}
+
+.cs-first-frame.mausumi {
+  height: auto;
+  margin-bottom: 0vh;
+  padding-bottom: 2.75vw;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-radius: 1.25vw;
+  background-color: #e1d2bf;
+}
+
+.cs-first-frame.vocal {
+  height: auto;
+  margin-bottom: 0vh;
+  padding-bottom: 2.75vw;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-radius: 1.25vw;
+  background-color: #f9d54a;
 }
 
 .div-block-2 {
@@ -3821,6 +3865,14 @@
   color: #9ec4a7;
 }
 
+.cs-second-frame.mausumi {
+  background-color: #e1d2bf;
+}
+
+.cs-second-frame.vocal {
+  background-color: #f9d54a;
+}
+
 .div-block-6 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4243,6 +4295,79 @@
   background-size: cover;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.mausumi-cs {
+  position: relative;
+  background-color: #131313;
+}
+
+.vocal-cs {
+  position: relative;
+  background-color: #131313;
+}
+
+.cs-heading-holder {
+  width: 40.5vw;
+  margin-right: 1.75vw;
+  margin-left: 1.75vw;
+}
+
+.mausumi-vid {
+  height: 100%;
+  mix-blend-mode: luminosity;
+}
+
+.mausumi-vid-holder {
+  position: relative;
+  overflow: hidden;
+  height: 27.77777777777778vh;
+  margin-right: 1.75vw;
+  margin-left: 1.75vw;
+  border-radius: 1vw;
+  background-color: #131313;
+}
+
+.vid-overlay {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  mix-blend-mode: overlay;
+}
+
+.play-pause {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1.75vw;
+  height: 1.75vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.25vw;
+  background-color: #171717;
+}
+
+.play-state {
+  width: 75%;
+}
+
+.pause-state {
+  width: 75%;
 }
 
 @media screen and (max-width: 991px) {
