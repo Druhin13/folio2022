@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Fri Aug 12 2022 20:45:59 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Aug 13 2022 06:31:13 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -128,6 +128,19 @@ z-index:5000;
 	transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
 }
 */
+.matter-js-canvas {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+}
 </style>
 </head>
 <body data-scroll-time="0.5" class="body">
@@ -1953,7 +1966,7 @@ document.addEventListener("mousemove", () => {
             <div class="scroll-circle">
               <div class="scrolldown-lottie" data-w-id="9327b0b1-8440-93d4-5ab5-ec03a46f0745" data-animation-type="lottie" data-src="documents/vtf-scrolldown.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0"></div>
             </div>
-            <div class="cs-small-container"><img src="images/vtf-intro.webp" loading="lazy" srcset="images/vtf-intro-p-500.webp 500w, images/vtf-intro.webp 670w" sizes="6vw" alt="Value Tech Foundation" class="vtf-intro"></div>
+            <div id="vtf-small-container" class="cs-small-container"><img src="images/vtf-intro.webp" loading="lazy" srcset="images/vtf-intro-p-500.webp 500w, images/vtf-intro.webp 670w" sizes="6vw" alt="Value Tech Foundation" class="vtf-intro"></div>
           </div>
         </div>
       </div>
@@ -1993,8 +2006,8 @@ document.addEventListener("mousemove", () => {
         </div>
       </div>
       <div id="gf2" class="cs-second-frame greenfox">
-        <div class="div-block-7">
-          <div class="gf-overview">
+        <div class="greenfox-overview">
+          <div id="gf-overview" class="gf-overview">
             <div class="cs-text-grp">
               <div class="context-heading type4 nowi opacity">Project Overview</div>
               <div class="context-heading type4 greenfox">While working on this project, we as a team aimed to reflect GreenFox&#x27;s modern, eco-conscious approach to their work in HVAC through the overall visual design style.<br><br>In addition to helping GreenFox rebrand/repackage themselves and make their customers aware of the services they offer, we also worked together to highlight how GreenFox could help their customers become more aware of the impact of their purchases.</div>
@@ -2013,8 +2026,8 @@ document.addEventListener("mousemove", () => {
               </div>
               <div class="cs-text-grp">
                 <div class="context-heading type4 nowi opacity type2">Team</div>
-                <a href="https://www.behance.net/ThereseC?" target="_blank" class="context-heading type4 nowi type2 link gf">Fer Sagastume</a>
-                <a href="http://yazadd.com/" target="_blank" class="context-heading type4 nowi type2 link gf">Rees Winga</a>
+                <a href="https://fersagastume.com/" target="_blank" class="context-heading type4 nowi type2 link gf">Fer Sagastume</a>
+                <a href="https://www.linkedin.com/in/reeswinga" target="_blank" class="context-heading type4 nowi type2 link gf">Rees Winga</a>
               </div>
               <div class="cs-text-grp end">
                 <div class="context-heading type4 nowi opacity type2">Year</div>
@@ -2022,8 +2035,23 @@ document.addEventListener("mousemove", () => {
               </div>
             </div>
           </div>
-          <div class="cs-medium-container gf"></div>
-          <div class="cs-medium-container gf end"></div>
+          <div data-w-id="0adce96f-5f73-548a-f3fd-409103a84443" style="width:13vw" class="cs-medium-container gf"></div>
+          <div data-w-id="a7b22f70-defb-8a64-5c20-87ae14bf1dfc" style="width:13vw" class="cs-medium-container gf end"></div>
+        </div>
+        <div class="gf-img-collumn">
+          <div id="gf-canvas" class="gf-canvas"></div>
+          <div class="cs-large-container">
+            <div class="gf-color-palette"></div>
+          </div>
+        </div>
+        <div class="scrolling-section">
+          <div id="gf-scroll-text" data-scroll="true" data-scroll-speed="-5" class="scrolling-cs-text">Greenfox Cooling, Heating &amp; PlumbingGreenfox Cooling, Heating &amp; PlumbingGreenfox Cooling, Heating   &amp; Plumbing . . .gGreenfox Cooling</div>
+          <div data-scroll-speed="3" data-scroll="true" class="scrolling-cs-images"><img src="images/gf1.webp" loading="lazy" sizes="(max-width: 991px) 23vw, 24vw" srcset="images/gf1.webp 500w, images/gf1.webp 800w, images/gf1.webp 1080w, images/gf1.webp 1600w" alt="GreenFox Web Design example" class="gf-web-ss img1"><img src="images/gf2.webp" loading="lazy" sizes="(max-width: 991px) 23vw, 24vw" srcset="images/gf2.webp 500w, images/gf2.webp 800w, images/gf2.webp 1080w, images/gf2.webp 1600w" alt="GreenFox Web Design example" class="gf-web-ss img2"><img src="images/gf3.webp" loading="lazy" sizes="(max-width: 991px) 23vw, 24vw" srcset="images/gf3.webp 500w, images/gf3.webp 800w, images/gf3.webp 1080w, images/gf3.webp 1600w" alt="GreenFox Web Design example" class="gf-web-ss img3"></div>
+        </div>
+        <div class="gf-context">
+          <div>
+            <div class="context-heading type4 greenfox type3">Due to a Non-Disclosure Agreement, I can’t reveal any more details about this redesign project. But if you want to know more about the process, my role, the team, and the overall project in general - shoot me an email, and let’s have a chat &lt;3</div>
+          </div>
         </div>
       </div>
     </section>
@@ -2044,7 +2072,7 @@ document.addEventListener("mousemove", () => {
 		color: transparent;
 		background: transparent;
 }
-.nowiverse-image, #greenfox-grid {
+.nowiverse-image, #vtf-small-container, #greenfox-grid {
   --g: #000, #0000 1deg 179deg,#000 180deg;
   --mask:
     conic-gradient(from 45deg at bottom 10px right 10px,var(--g)) 100% 100%/100% 100% no-repeat;	
@@ -2058,18 +2086,26 @@ document.addEventListener("mousemove", () => {
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
-#nowi2, #gf2 {
+#nowi2, #vtf2, #gf2 {
   --g: #000, #0000 1deg 179deg,#000 180deg;
   --mask:
     conic-gradient(from -45deg at top    15px right 15px,var(--g)) 100% 0   /100% 100% no-repeat;	
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
+/* Scrolling text inside CS*/
+#gf-scroll-text	{
+	background: linear-gradient(90.51deg, #9EC4A7 0.44%, #0D2521 90.63%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
 </style>
     </div>
   </div>
   <div class="cs-nav">
-    <div class="context-heading cs dark">VAlue tech Foundation</div>
+    <div id="cs-heading" class="context-heading cs dark">VAlue tech Foundation</div>
     <div id="cs-close" data-w-id="f067015b-9b30-f11f-c05c-3899c0ed10f1" class="hashtag relative white">
       <div class="hashtag-txt cs-close">✕  close</div>
       <div class="hashtag-txt-hidden cs-close">✕  close</div>
@@ -2099,5 +2135,85 @@ $('#cs1, #cs2, #cs3, #cs4, #cs5, #cs6, #cs7, #cs8, #cs9, #cs10, #cs11, #cs12, #c
 $('#cs1, #cs2, #cs3, #cs4, #cs5, #cs6, #cs7, #cs8, #cs9, #cs10, #cs11, #cs12, #cs13').attr('data-scroll-class', 'hide');
 $('#cs1, #cs2, #cs3, #cs4, #cs5, #cs6, #cs7, #cs8, #cs9, #cs10, #cs11, #cs12, #cs13').attr('data-scroll-offset', '55%,-50%');
 </script>
+  <!--  matter-js  -->
+  <!-- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js" integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+		// The following variables set the global width and height of the canvas to the viewport width and height on page load.
+		var w = document.querySelector(".gf-canvas").clientWidth;
+		var h = document.querySelector(".gf-canvas").clientHeight;
+    // The following sets our canvas element as the Matter.js world.
+    const world = document.querySelector(".gf-matter-js-canvas");
+    const {
+        Engine,
+        Render,
+        Runner,
+        World,
+        Bodies
+    } = Matter;
+    // Below is where you'll place the image URLs you want to use for the sprite textures.
+    const textures = [
+       "https://druh.in/folio2022/images/gf-k1.svg",
+       "https://druh.in/folio2022/images/gf-k2.svg",
+       "https://druh.in/folio2022/images/gf-k3.svg",
+       "https://druh.in/folio2022/images/gf-k4.svg",
+       "https://druh.in/folio2022/images/gf-k5.svg",
+       "https://druh.in/folio2022/images/gf-k6.svg",
+       "https://druh.in/folio2022/images/gf-k7.svg"
+       ];
+    // This is how the ball shapes are generated. The sprite textures are applied to the ball shapes.
+    function createBall() {
+        const ball = Bodies.circle(Math.round(Math.random() * w), -30, 25, {
+            angle: Math.PI * (Math.random() * 2 - 1),
+            friction: 0.001,
+            frictionAir: 0.01,
+            restitution: 1,
+            render: {
+                sprite: {
+                    texture: textures[
+                        Math.floor(Math.random() * (textures.length))],
+                }
+            }
+        });
+        // The number below (35000) is the time in milliseconds it takes for the shapes to disappear.
+        // Customize this number to make them disappear faster or more slowly.
+        setTimeout(() => {
+            World.remove(engine.world, ball);
+        }, 350000);
+        return ball;
+    }
+    const engine = Engine.create();
+    const runner = Runner.create();
+    const render = Render.create({
+        canvas: world,
+        engine: engine,
+        options: {
+            width: Math.min(w),
+            height: Math.min(h),
+            background: "transparent",
+            wireframes: false
+        }
+    });
+    const boundaryOptions = {
+        isStatic: true,
+        render: {
+            fillStyle: "transparent",
+            strokeStyle: "transparent"
+        }
+    };
+    // This sets the ground of our world.
+    const ground = Bodies.rectangle(0, h, w*2, 1, boundaryOptions);
+    Render.run(render);
+    Runner.run(runner, engine);
+    World.add(engine.world, [ground]);
+    const handleClick = () => {
+        const ball2 = createBall();
+        World.add(engine.world, [ball2]);
+    };
+		// The following adds an event listener when clicking a button with the #love-button ID.
+    const button = document.querySelector("#gf-overview");
+    button.addEventListener("click", handleClick);
+</script>
+ -->
 </body>
 </html>
