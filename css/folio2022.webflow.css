@@ -709,6 +709,10 @@
   filter: blur(0.4vw);
 }
 
+.context-heading.type4.vtf.type2.mau {
+  width: 15.75vw;
+}
+
 .context-heading.type4.vtf.blur {
   -webkit-filter: blur(0.4vw);
   filter: blur(0.4vw);
@@ -730,6 +734,7 @@
 .context-heading.type4.nowi.type2.link {
   margin-bottom: 0.2vh;
   color: #131313;
+  text-align: left;
 }
 
 .context-heading.type4.nowi.type2.link.gf {
@@ -782,6 +787,54 @@
 
 .context-heading.type4.greenfox.type3 {
   width: 16vw;
+}
+
+.context-heading.type4.mausumi {
+  width: auto;
+  margin-right: 0px;
+  font-size: 0.75vw;
+  letter-spacing: -0.03vw;
+  text-transform: none;
+}
+
+.context-heading.type4.mausumi.type2 {
+  position: relative;
+  width: auto;
+  margin-right: 0vw;
+}
+
+.context-heading.type4.mausumi.type2.link {
+  margin-bottom: 0.2vh;
+  color: #131313;
+}
+
+.context-heading.type4.mausumi.type2.link.gf {
+  color: #9ec4a7;
+}
+
+.context-heading.type4.mausumi.opacity {
+  width: auto;
+  margin-bottom: 2.5vh;
+  opacity: 0.5;
+}
+
+.context-heading.type4.mausumi.opacity.type2 {
+  margin-right: 0vw;
+  margin-bottom: 0.4vh;
+}
+
+.context-heading.type4.mausumi.type3 {
+  width: 16vw;
+}
+
+.context-heading.type4.mausumi.white {
+  font-weight: 400;
+}
+
+.context-heading.type4.mausumi.white.absolute {
+  position: absolute;
+  top: 4.5vh;
+  color: #e1d2bf;
 }
 
 .context-heading.cs {
@@ -1009,6 +1062,7 @@
   margin-left: 0.5vw;
   border: 1px solid #131313;
   background-color: transparent;
+  text-decoration: none;
   cursor: default;
 }
 
@@ -1120,6 +1174,12 @@
 
 .hashtag-txt.cs-close {
   padding: 1vh 1vw 0.95vh;
+}
+
+.hashtag-txt.cs-close.white {
+  color: #e1d2bf;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .hashtag-txt-hidden {
@@ -3866,6 +3926,10 @@
 }
 
 .cs-second-frame.mausumi {
+  overflow: hidden;
+  margin-bottom: 0vh;
+  padding-right: 0vw;
+  padding-left: 0vw;
   background-color: #e1d2bf;
 }
 
@@ -3901,6 +3965,10 @@
 }
 
 .cs-text-grp.end {
+  margin-right: 0vw;
+}
+
+.cs-text-grp.mau {
   margin-right: 0vw;
 }
 
@@ -4145,6 +4213,27 @@
   background-image: url('../images/gf-logo2.svg');
 }
 
+.cs-medium-container.mau {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  background-image: url('../images/mau-card1.webp');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cs-medium-container.mau.end {
+  position: relative;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0vw;
+  background-color: #0f0f11;
+  background-image: none;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
 .gf-pallete {
   width: 82.5%;
   border-radius: 5px;
@@ -4362,12 +4451,179 @@
   background-color: #171717;
 }
 
-.play-state {
+.play-btn {
   width: 75%;
 }
 
-.pause-state {
+.pause-btn {
   width: 75%;
+}
+
+.mausumi-title {
+  margin-right: 1.75vw;
+  margin-bottom: 2.5vh;
+  margin-left: 1.75vw;
+}
+
+.cs-fourth-frame {
+  margin-top: 0.35vw;
+  margin-bottom: 6.5vh;
+  padding: 3.5vh 1.75vw 5vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 1.25vw;
+  background-color: #e1d2bf;
+  color: #131313;
+}
+
+.cs-fourth-frame.type2 {
+  height: auto;
+  margin-bottom: 0vh;
+  padding-bottom: 1vw;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  border-radius: 1.35vw;
+  background-color: #e5f904;
+}
+
+.cs-fourth-frame.vtf {
+  background-color: #d44a2e;
+}
+
+.cs-fourth-frame.greenfox {
+  overflow: hidden;
+  padding-right: 0vw;
+  padding-left: 0vw;
+  background-color: #112823;
+  color: #9ec4a7;
+}
+
+.cs-fourth-frame.mausumi {
+  padding-right: 0vw;
+  padding-left: 0vw;
+  background-color: #e1d2bf;
+}
+
+.cs-fourth-frame.vocal {
+  background-color: #f9d54a;
+}
+
+.awards-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 17vw;
+  margin-top: -1px;
+  padding-top: 0.65vh;
+  padding-bottom: 0.925vh;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-top: 1px solid #131313;
+  border-bottom: 1px solid #131313;
+}
+
+.mau-overview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 18.75vw;
+  margin-top: 3.25vh;
+  margin-right: 3.5vw;
+  padding-right: 1.75vw;
+  padding-left: 1.75vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.mausumi-overview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 120%;
+  margin-bottom: 8vh;
+}
+
+.mau-details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 17vw;
+  margin-top: 3vh;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.mau-details.type2 {
+  width: 15vw;
+}
+
+.text-span-7 {
+  display: inline-block;
+  font-size: 1.1vw;
+}
+
+.mau-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5vw;
+  height: 3vh;
+  margin-top: 3.75vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url('../images/mau-logo.svg');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mau-awards {
+  position: absolute;
+  left: 0%;
+  top: auto;
+  right: 0%;
+  bottom: 0%;
+  width: 15vw;
+  height: 25vh;
+  background-image: url('../images/mau-awards.webp');
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 @media screen and (max-width: 991px) {
