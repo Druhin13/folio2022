@@ -1063,7 +1063,7 @@
   border: 1px solid #131313;
   background-color: transparent;
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 .hashtag.relative.white.email {
@@ -2872,7 +2872,7 @@
   background-color: #f9d54a;
 }
 
-.div-block-2 {
+.cs-frame-end {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4367,6 +4367,17 @@
   background-image: url('../images/gf-logo2.svg');
 }
 
+.cs-large-container.mau {
+  background-image: url('../images/mau-cs-img2.webp');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cs-large-container.mau.type2 {
+  width: 50%;
+}
+
 .gf-canvas {
   width: 100%;
   border-radius: 0.5vw;
@@ -4579,6 +4590,15 @@
 
 .mau-details.type2 {
   width: 15vw;
+  padding-top: 0.65vh;
+  border-top: 1px solid #131313;
+}
+
+.mau-details.right {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .text-span-7 {
@@ -4624,6 +4644,36 @@
   background-image: url('../images/mau-awards.webp');
   background-position: 50% 50%;
   background-size: cover;
+}
+
+.mau-canvas {
+  width: 100%;
+  border-radius: 0.5vw;
+  background-image: url('../images/mau-color-palette.svg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cs-full-img {
+  position: relative;
+  overflow: hidden;
+  width: 40.5vw;
+  height: 40.5vw;
+  margin-right: 1.75vw;
+  margin-bottom: 6.75vh;
+  margin-left: 1.75vw;
+  border-radius: 0.5vw;
+  background-color: #0d2521;
+}
+
+.cs-full-img.mau {
+  margin-bottom: 1vw;
+  background-color: #221d17;
+  background-image: url('../images/mau-cs-img1.webp');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 991px) {
