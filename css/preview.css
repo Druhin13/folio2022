@@ -16,6 +16,11 @@
     background-size: cover;
 }
 
+#cs-close {
+    background-image: none;
+}
+
+
 #skillsunion-preview {
     background-image: url("https://druh.in/folio2022/images/gifs/skillsunion.webp");
 }
