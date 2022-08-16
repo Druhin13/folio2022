@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue Aug 16 2022 02:29:45 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Aug 16 2022 14:37:48 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="620f9cfb626c8c2085d559e6" data-wf-site="620f9cfb626c8cc4a0d559e5" lang="en">
 <head>
   <meta charset="utf-8">
@@ -1987,7 +1987,7 @@ document.addEventListener("mousemove", () => {
         </div>
         <div class="cs-frame-end">
           <div class="scroll-circle">
-            <div class="scrolldown-lottie" data-w-id="a0c96e05-07c1-39c0-6625-db3d64c5ea4d" data-animation-type="lottie" data-src="documents/mausumi-scrolldown.json" data-loop="0" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0"></div>
+            <div class="scrolldown-lottie" data-w-id="a0c96e05-07c1-39c0-6625-db3d64c5ea4d" data-animation-type="lottie" data-src="documents/mausumi-scrolldown.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.5" data-duration="0"></div>
           </div>
           <a id="mau-link" href="https://mausumi.in" target="_blank" class="hashtag relative white w-inline-block">
             <div class="hashtag-txt cs-close white">Mausumi.in   ↗</div>
@@ -2048,8 +2048,8 @@ document.addEventListener("mousemove", () => {
           </div>
         </div>
         <div class="gf-img-collumn">
-          <div class="mau-canvas"></div>
-          <div class="cs-large-container mau"></div>
+          <div class="cs-mid-container mau"><img src="images/mau-color-palette.svg" loading="lazy" alt="Mausumi Website - Color Palette" class="mau-color-palette"></div>
+          <div class="cs-large-container mau"><img class="mau-mobile-img" src="images/mau-cs-img3.webp" alt="Mausumi&#x27;s selected writings (Mobile version)" data-scroll-speed="2" data-scroll="true" sizes="11vw" loading="lazy" srcset="images/mau-cs-img3.webp 500w, images/mau-cs-img3.webp 800w"></div>
         </div>
         <div class="w-embed"><video class="cs-full-img mau" autoplay="" loop="" muted="" playsinline="" src="https://druh.in/folio2022/videos/mau-pageloader.webm"><video></video></video></div>
         <div class="cs-full-img mau"></div>
@@ -2198,7 +2198,7 @@ document.addEventListener("mousemove", () => {
           <div data-w-id="a7b22f70-defb-8a64-5c20-87ae14bf1dfc" style="width:13vw" class="cs-medium-container gf end"></div>
         </div>
         <div class="gf-img-collumn">
-          <div id="gf-canvas" class="gf-canvas"></div>
+          <div id="gf-canvas" class="cs-mid-container gf"></div>
           <div class="cs-large-container">
             <div class="gf-color-palette"></div>
           </div>
@@ -2245,10 +2245,20 @@ document.addEventListener("mousemove", () => {
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
-#nowi2, #vtf2, #gf2, #mau2, #vocal2 {
+#nowi2, #vtf2, #gf2, #vocal2, #mau4 {
   --g: #000, #0000 1deg 179deg,#000 180deg;
   --mask:
     conic-gradient(from -45deg at top    15px right 15px,var(--g)) 100% 0   /100% 100% no-repeat;	
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+#mau2 {
+  --mask: linear-gradient(45deg,#0000 21.21px,#000 0 calc(100% - 21.21px),#0000 0);	
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+#mau3 {
+  --mask: linear-gradient(-45deg,#0000 21.21px,#000 0 calc(100% - 21.21px),#0000 0);	
   -webkit-mask: var(--mask);
           mask: var(--mask);
 }
