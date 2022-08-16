@@ -384,6 +384,7 @@ CS2locoScroll.start();
 
 $('#cs1').click(function () {
   $('#cs-heading').text("SkillsUnion");
+  $('#cs-close').css('background-color', 'blue'); //need to change color of the blue
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
   let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
@@ -457,6 +458,7 @@ $('#cs1').click(function () {
 
 $('#cs2').click(function () {
   $('#cs-heading').text("Value Tech Foundation");
+  $('#cs-close').css('background-color', '#d44a2e');
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height());
   let cs_height = $('#cs2').height() - ($(window).height() * 0.028);
@@ -529,7 +531,8 @@ $('#cs2').click(function () {
 });
 
 $('#cs3').click(function () {
-  $('#cs-heading').text("Mausumi");
+  $('#cs-heading').text("Mausumi")
+  $('#cs-close').css('background-color', '#e1d2bf');
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() - + ($(window).height() * 0.028));
   let cs_height = $('#cs3').height() - ($(window).height() * 0.028);
@@ -603,6 +606,7 @@ $('#cs3').click(function () {
 
 $('#cs4').click(function () {
   $('#cs-heading').text("Nowiverse Arena");
+  $('#cs-close').css('background-color', '#e5f904');
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() - ($(window).height() * 0.056));
   let cs_height = $('#cs4').height() - ($(window).height() * 0.028);
@@ -676,6 +680,7 @@ $('#cs4').click(function () {
 
 $('#cs5').click(function () {
   $('#cs-heading').text("Vocal Media");
+  $('#cs-close').css('background-color', '#f9d54a');
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() - ($(window).height() * 0.084));
   let cs_height = $('#cs5').height() - ($(window).height() * 0.028);
@@ -749,6 +754,7 @@ $('#cs5').click(function () {
 
 $('#cs6').click(function () {
   $('#cs-heading').text("GreenFox");
+  $('#cs-close').css('background-color', '#112823');
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() - ($(window).height() * 0.112));
   let cs_height = $('#cs6').height() - ($(window).height() * 0.028);
@@ -822,6 +828,7 @@ $('#cs6').click(function () {
 
 $('#cs7').click(function () {
   $('#cs-heading').text("All Bodies");
+  $('#cs-close').css('background-color', '#d44a2e');
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() - ($(window).height() * 0.14));
   let cs_height = $('#cs7').height() - ($(window).height() * 0.028);
@@ -895,6 +902,7 @@ $('#cs7').click(function () {
 
 $('#cs8').click(function () {
   $('#cs-heading').text("Buzzoms");
+  $('#cs-close').css('background-color', '#d44a2e');
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() - ($(window).height() * 0.168));
   let cs_height = $('#cs8').height() - ($(window).height() * 0.028);
@@ -967,6 +975,7 @@ $('#cs8').click(function () {
 });
 
 $('#cs9').click(function () {
+  $('#cs-close').css('background-color', '#d44a2e');
   $('#cs-heading').text("FathomOptics");
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() - ($(window).height() * 0.196));
@@ -1040,6 +1049,7 @@ $('#cs9').click(function () {
 });
 
 $('#cs10').click(function () {
+  $('#cs-close').css('background-color', '#d44a2e');
   $('#cs-heading').text("Constance");
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() - ($(window).height() * 0.224));
@@ -1113,6 +1123,7 @@ $('#cs10').click(function () {
 });
 
 $('#cs11').click(function () {
+  $('#cs-close').css('background-color', '#d44a2e');
   $('#cs-heading').text("Stamurai");
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() - ($(window).height() * 0.252));
@@ -1186,6 +1197,7 @@ $('#cs11').click(function () {
 });
 
 $('#cs12').click(function () {
+  $('#cs-close').css('background-color', '#d44a2e');
   $('#cs-heading').text("InsaneDeals");
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() + $('#cs11').height() - ($(window).height() * 0.28));
@@ -1259,6 +1271,7 @@ $('#cs12').click(function () {
 });
 
 $('#cs13').click(function () {
+  $('#cs-close').css('background-color', '#d44a2e');
   $('#cs-heading').text("KeralaOnRoad");
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() + $('#cs11').height() + $('#cs12').height() - ($(window).height() * 0.308));
