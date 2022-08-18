@@ -33,7 +33,8 @@ locoScroll.stop();
 
 
 //removing the webflow badge
-$(".w-webflow-badge").css('margin-right', '15vw');
+//$(".w-webflow-badge").css('margin-right', '15vw');
+document.getElementsByClassName("w-webflow-badge")[0].style.marginRight = "50px";
 
 let timer = setInterval(remove, 10);
 function remove() {
