@@ -36,18 +36,18 @@ locoScroll.stop();
 //   $(".w-webflow-badge").remove();
 // }
 
-//used to stop on line 207
+//used to stop on line 218
 
 
-// event handler to remove the webflow badge (type1 - jquery)
-// $(document).ready(function () {
-//   $(".w-webflow-badge").remove();
-// });
+let timer = setInterval(remove, 10);
+function remove() {
+  if ($(".w-webflow-badge")[0]) {
+    $(".w-webflow-badge").remove();
+  } else {
+    clearInterval(timer);
+  }
+}
 
-// event handler to remove the webflow badge (type2 - vanilla js)
-// document.addEventListener("DOMContentLoaded", function (event) {
-//   $(".w-webflow-badge").remove();
-// });
 
 
 function webflow_remove() {
