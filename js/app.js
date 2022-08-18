@@ -31,13 +31,9 @@ const locoScroll = new LocomotiveScroll({
 });
 locoScroll.stop();
 
-// let timer = setInterval(remove, 10);
-// function remove() {
-//   $(".w-webflow-badge").remove();
-// }
 
-//used to stop on line 218
-
+//removing the webflow badge
+$(".w-webflow-badge").css('margin-right', '15vw');
 
 let timer = setInterval(remove, 10);
 function remove() {
