@@ -27,15 +27,15 @@
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".locomotive-scroll"),
   smooth: true,
-  //multiplier: 0.35,   //mine
+  multiplier: 0.5,   //mine
 
   //seperator
 
   //el: document.querySelector('#js-scroll'),   //other
   //smooth: true,
-  // reloadOnContextChange: true,   //other
-  lerp: 0.06, //other
-  // smoothMobile: true   //other
+  //reloadOnContextChange: true,   //other
+  //lerp: 0.06, //other
+  //smoothMobile: true   //other
 });
 locoScroll.stop();
 
