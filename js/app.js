@@ -1552,7 +1552,7 @@ $('#cs1')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1568,7 +1568,7 @@ $('#cs2')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1584,7 +1584,7 @@ $('#cs3')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1600,7 +1600,7 @@ $('#cs4')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1616,7 +1616,7 @@ $('#cs5')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1632,7 +1632,7 @@ $('#cs6')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1648,7 +1648,7 @@ $('#cs7')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1664,7 +1664,7 @@ $('#cs8')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1680,7 +1680,7 @@ $('#cs9')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1696,7 +1696,7 @@ $('#cs10')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1712,7 +1712,7 @@ $('#cs11')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1728,7 +1728,7 @@ $('#cs12')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1744,7 +1744,7 @@ $('#cs13')
       setTimeout(() => {
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
-      }, 170);
+      }, 160);
     }
   });
 
@@ -1756,7 +1756,7 @@ $('#cs-all-holder1')
     setTimeout(() => {
       $('#sticky-project-header').css('z-index', 25);
       cs_hover = 0;
-    }, 170);
+    }, 160);
   });
 
 
