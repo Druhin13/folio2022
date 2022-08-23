@@ -1481,10 +1481,18 @@ $(window).keydown(function (evt) {
   });
 
 
+
+
+/*
+
 // if window resized -> 
 $(window).resize(function () {
   location.reload();
 });
+
+*/
+
+
 
 /*
 // check if sketch is in view or not
