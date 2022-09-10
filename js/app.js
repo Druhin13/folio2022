@@ -1553,12 +1553,46 @@ $(document).ready(function () {
 
 
 
+
+
 // case study hover
 
-let cs_hover = 0;
+
+//sticky-project-header details
+const cs_offset = $("#sticky-project-header").height() * -1;
+
+const cs1_target = document.querySelector('#cs1');
+const cs2_target = document.querySelector('#cs2');
+const cs3_target = document.querySelector('#cs3');
+const cs4_target = document.querySelector('#cs4');
+const cs5_target = document.querySelector('#cs5');
+const cs6_target = document.querySelector('#cs6');
+const cs7_target = document.querySelector('#cs7');
+const cs8_target = document.querySelector('#cs8');
+const cs9_target = document.querySelector('#cs9');
+const cs10_target = document.querySelector('#cs10');
+const cs11_target = document.querySelector('#cs11');
+const cs12_target = document.querySelector('#cs12');
+const cs13_target = document.querySelector('#cs13');
+
+
+// check if user hovers over the cs1 tab 
 
 $('#cs1')
   .mouseenter(function () {
+
+    //check if the element has the class hidden
+    if ($('#cs1').hasClass("cs-gone") == true) {
+      locoScroll.scrollTo(cs1_target, { offset: cs_offset });
+
+    }
+    else {
+      $('.cs-gone').css('opacity', 0);
+
+    }
+
+
+
     $('#sticky-project-header').css('z-index', 0);
     $('#cs1').css('z-index', 10);
     cs_hover = 1;
@@ -1573,207 +1607,236 @@ $('#cs1')
   });
 
 
-$('#cs2')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs2').css('z-index', 11);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
 
 
-$('#cs3')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs3').css('z-index', 12);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
 
 
-$('#cs4')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs4').css('z-index', 13);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
 
 
-$('#cs5')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs5').css('z-index', 14);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// let cs_hover = 0;
+
+// $('#cs1')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs1').css('z-index', 10);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs6')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs6').css('z-index', 15);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// $('#cs2')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs2').css('z-index', 11);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs7')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs7').css('z-index', 16);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// $('#cs3')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs3').css('z-index', 12);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs8')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs8').css('z-index', 17);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// $('#cs4')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs4').css('z-index', 13);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs9')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs9').css('z-index', 18);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// $('#cs5')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs5').css('z-index', 14);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs10')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs10').css('z-index', 19);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// $('#cs6')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs6').css('z-index', 15);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs11')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs11').css('z-index', 20);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// $('#cs7')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs7').css('z-index', 16);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs12')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs12').css('z-index', 21);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// $('#cs8')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs8').css('z-index', 17);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs13')
-  .mouseenter(function () {
-    $('#sticky-project-header').css('z-index', 0);
-    $('#cs13').css('z-index', 22);
-    cs_hover = 1;
-  })
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-    }
-  });
+// $('#cs9')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs9').css('z-index', 18);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
 
 
-$('#cs-all-holder1')
-  .mouseenter(function () {
-  })
-  .mouseleave(function () {
-    setTimeout(() => {
-      $('#sticky-project-header').css('z-index', 25);
-      cs_hover = 0;
-    }, 200);
-  });
+// $('#cs10')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs10').css('z-index', 19);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
+
+
+// $('#cs11')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs11').css('z-index', 20);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
+
+
+// $('#cs12')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs12').css('z-index', 21);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
+
+
+// $('#cs13')
+//   .mouseenter(function () {
+//     $('#sticky-project-header').css('z-index', 0);
+//     $('#cs13').css('z-index', 22);
+//     cs_hover = 1;
+//   })
+//   .mouseleave(function () {
+//     if (cs_hover != 1) {
+//       setTimeout(() => {
+//         $('#sticky-project-header').css('z-index', 25);
+//         cs_hover = 0;
+//       }, 200);
+//     }
+//   });
+
+
+// $('#cs-all-holder1')
+//   .mouseenter(function () {
+//   })
+//   .mouseleave(function () {
+//     setTimeout(() => {
+//       $('#sticky-project-header').css('z-index', 25);
+//       cs_hover = 0;
+//     }, 200);
+//   });
+
+
+
+
+
 
 
 
