@@ -1588,7 +1588,7 @@ $('#cs1')
 
     //check if the element has the class hidden
     if ($('#cs1').hasClass("cs-gone") == true) {
-      locoScroll.scrollTo(cs1_target, { offset: cs_offset });
+      locoScroll.scrollTo(cs1_target, { offset: cs_offset, duration: 100 });
       $('#sticky-project-header').css('z-index', $('#cs1').css("z-index") - 1);
       cs_hover = 1;
     }
@@ -1617,7 +1617,7 @@ $('#cs2')
 
     //check if the element has the class hidden
     if ($('#cs2').hasClass("cs-gone") == true) {
-      locoScroll.scrollTo(cs2_target, { offset: cs_offset });
+      locoScroll.scrollTo(cs2_target, { offset: cs_offset, duration: 100 });
       $('#sticky-project-header').css('z-index', $('#cs2').css("z-index") - 1);
       //hides all the cs tabs before this
       $('#cs1').css('opacity', 0);
