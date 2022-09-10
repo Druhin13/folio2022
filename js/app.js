@@ -1627,6 +1627,7 @@ $('#cs2')
       $('.cs-gone').css('opacity', 0);
       //$('#sticky-project-header').css('z-index', 0);
       $('#sticky-project-header').css('z-index', $('#cs1').css("z-index") - 1);
+      $('#cs1').css('opacity', 1);
       cs_hover = 1;
     }
   })
@@ -1638,6 +1639,7 @@ $('#cs2')
         cs_hover = 0;
       }, 200);
     }
+    $('#cs1').css('opacity', 1);
   });
 
 
