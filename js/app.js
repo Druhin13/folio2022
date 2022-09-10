@@ -1634,8 +1634,8 @@ $('#cs2')
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
       }, 200);
+      $('#cs1').css('opacity', 1);
     }
-    $('#cs1').css('opacity', 1);
   });
 
 
@@ -1667,9 +1667,9 @@ $('#cs3')
         $('#sticky-project-header').css('z-index', 25);
         cs_hover = 0;
       }, 200);
+      $('#cs1').css('opacity', 1);
+      $('#cs2').css('opacity', 1);
     }
-    $('#cs1').css('opacity', 1);
-    $('#cs2').css('opacity', 1);
   });
 
 
