@@ -1575,6 +1575,8 @@ const cs11_target = document.querySelector('#cs11');
 const cs12_target = document.querySelector('#cs12');
 const cs13_target = document.querySelector('#cs13');
 
+$('#sticky-project-header').css('z-index', 25);
+
 
 // check if user hovers over the cs1 tab 
 
