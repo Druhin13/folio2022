@@ -1863,6 +1863,7 @@ $('#cs-all-holder1')
       $('#sticky-project-header').css('z-index', 25);
       cs_hover = 0;
     }, 200);
+    $('#cs1').css('opacity', 1);
   });
 
 
