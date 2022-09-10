@@ -1559,7 +1559,7 @@ $(document).ready(function () {
 
 
 //sticky-project-header details
-const cs_offset = $("#sticky-project-header").height() * -1;
+const cs_offset = ($("#sticky-project-header").height() + 1) * -1;
 
 const cs1_target = document.querySelector('#cs1');
 const cs2_target = document.querySelector('#cs2');
@@ -1586,7 +1586,7 @@ $('#cs1')
     //check if the element has the class hidden
     if ($('#cs1').hasClass("cs-gone") == true) {
       locoScroll.scrollTo(cs1_target, { offset: cs_offset });
-      $('#sticky-project-header').css('z-index', $('#cs1').zIndex());
+      $('#sticky-project-header').css('z-index', $('#cs1').css("z-index") - 1);
     }
     else {
       $('.cs-gone').css('opacity', 0);
