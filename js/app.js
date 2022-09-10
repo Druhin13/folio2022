@@ -1623,7 +1623,7 @@ $('#cs2')
     else {
       $('.cs-gone').css('opacity', 0);
       $('#sticky-project-header').css('z-index', $('#cs2').css("z-index") - 1);
-      $('#cs1').css('opacity', 1);
+      //$('#cs1').css('opacity', 1);
       cs_hover = 1;
     }
   })
@@ -1641,36 +1641,7 @@ $('#cs2')
 
 
 
-$('#cs3')
-  .mouseenter(function () {
-    //check if the element has the class hidden
-    if ($('#cs3').hasClass("cs-gone") == true) {
-      locoScroll.scrollTo(cs3_target, { offset: cs_offset, duration: 250 });
-      $('#sticky-project-header').css('z-index', $('#cs3').css("z-index") - 1);
-      //hides all the cs tabs before this
-      $('#cs1').css('opacity', 0);
-      $('#cs2').css('opacity', 0);
-      cs_hover = 1;
-    }
-    else {
-      $('.cs-gone').css('opacity', 0);
-      $('#sticky-project-header').css('z-index', $('#cs2').css("z-index") - 1);
-      $('#cs1').css('opacity', 1);
-      $('#cs2').css('opacity', 1);
-      cs_hover = 1;
-    }
-  })
 
-  .mouseleave(function () {
-    if (cs_hover != 1) {
-      setTimeout(() => {
-        $('#sticky-project-header').css('z-index', 25);
-        cs_hover = 0;
-      }, 200);
-      $('#cs1').css('opacity', 1);
-      $('#cs2').css('opacity', 1);
-    }
-  });
 
 
 
