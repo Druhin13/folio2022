@@ -319,7 +319,7 @@ const contact = document.querySelector('#contact-test');
 
 
 $('#scroll-down-main').click(function () {
-  locoScroll.scrollTo(about);
+  locoScroll.scrollTo(work);
 });
 
 $('#about-link').click(function () {
