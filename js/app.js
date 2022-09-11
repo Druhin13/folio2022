@@ -429,7 +429,7 @@ $('#cs1').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -503,7 +503,7 @@ $('#cs2').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -577,7 +577,7 @@ $('#cs3').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -651,7 +651,7 @@ $('#cs4').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -725,7 +725,7 @@ $('#cs5').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -799,7 +799,7 @@ $('#cs6').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -873,7 +873,7 @@ $('#cs7').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -947,7 +947,7 @@ $('#cs8').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -1021,7 +1021,7 @@ $('#cs9').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -1095,7 +1095,7 @@ $('#cs10').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -1169,7 +1169,7 @@ $('#cs11').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -1243,7 +1243,7 @@ $('#cs12').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
@@ -1317,7 +1317,7 @@ $('#cs13').click(function () {
   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+  $('#project-header-test').find('.heading1:eq(0)').text("Project");
 
   $('#project-header-t1').text("Website");
   $('#project-header-t2').text("Visual / Brand");
