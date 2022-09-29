@@ -1378,6 +1378,8 @@ $('#disable-hover').click(function () {
   $('#cs-all-test').remove();
   $('#project-header-test').remove();
 
+  $(".trigger4").click();
+
   $("#blur-all").css("height", "0vh");
 
   setTimeout(() => {
