@@ -1387,6 +1387,21 @@ $('#disable-hover').click(function () {
   }, 300);
 });
 
+$('#cs-close').click(function () {
+
+  $("#disable-hover").css("display", "none");
+  $('#cs-all-test').remove();
+  $('#project-header-test').remove();
+
+  $(".trigger4").click();
+
+  $("#blur-all").css("height", "0vh");
+
+  setTimeout(() => {
+    locoScroll.start();
+  }, 300);
+});
+
 
 
 
