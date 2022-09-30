@@ -390,15 +390,15 @@ function timecalc() {
 }
 
 
-// cs details locomotive initializations
+// // cs details locomotive initializations
 
-const CS2locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".loco-test"),
-  smooth: true,
-  multiplier: 0.325,
-});
+// const CS2locoScroll1 = new LocomotiveScroll({
+//   el: document.querySelector(".loco-test"),
+//   smooth: true,
+//   multiplier: 0.325,
+// });
 
-CS2locoScroll.start();
+// CS2locoScroll1.start();
 
 
 //case study clicks
