@@ -921,449 +921,449 @@ $('#cs7').click(function () {
   $('#cs7').css('padding-right', "12vw");
 });
 
-$('#cs8').click(function () {
-  $('#cs-heading').text("Buzzoms");
-  $('#cs-close').css('background-color', '#d44a2e');
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() - ($(window).height() * 0.168));
-  let cs_height = $('#cs8').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+// $('#cs8').click(function () {
+//   $('#cs-heading').text("Buzzoms");
+//   $('#cs-close').css('background-color', '#d44a2e');
+//   let header_margin_top = $('#sticky-project-header').offset().top;
+//   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() - ($(window).height() * 0.168));
+//   let cs_height = $('#cs8').height() - ($(window).height() * 0.028);
+//   $("#disable-hover").css("display", "block"); //showing the disable trigger
+//   locoScroll.stop(); //stopping user from scrolling through the whole document
+//   $("#blur-all").css("height", "100vh"); //showing the blured overlay
+//   //cloning the project header
+//   $('#sticky-project-header')
+//     .clone()
+//     .attr('id', "project-header-test")
+//     .appendTo($('#blur-all'));
+//   $('#project-header-test').css('position', 'absolute');
+//   $('#project-header-test').css('top', header_margin_top);
+//   if (header_margin_top == 0) {
+//     $('#project-header-test').css('transform', '');
+//   }
+//   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+//   $('#project-header-test').css('background-color', 'transparent');
+//   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+//   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+//   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+//   $('#project-header-t1').text("Website");
+//   $('#project-header-t2').text("Visual / Brand");
+//   $('#project-header-t3').text("");
+//   $('#project-header-t4').text("");
+//   $('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+//   $('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Marketing");
-  $('#project-header-d4').text("");
+//   $('#project-header-d1').text("Web Design");
+//   $('#project-header-d2').text("Branding");
+//   $('#project-header-d3').text("Marketing");
+//   $('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+//   //cloning the case study tab (which is clicked)
+//   $('#cs-all-holder1')
+//     .clone()
+//     .attr('id', "cs-all-test")
+//     .appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+//   //removing all the other cs tabs
+//   $('#cs1').remove();
+//   $('#cs2').remove();
+//   $('#cs3').remove();
+//   $('#cs4').remove();
+//   $('#cs5').remove();
+//   $('#cs6').remove();
+//   $('#cs7').remove();
+//   $('#cs9').remove();
+//   $('#cs10').remove();
+//   $('#cs11').remove();
+//   $('#cs12').remove();
+//   $('#cs13').remove();
 
-  $('#cs8-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs8').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs8').find('.empty-space-case-study:eq(0)').css('height', ($('#cs8').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+//   $('#cs8-preview').remove(); // remove the preview of the selected cs tab
+//   $('#cs8').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+//   $('#cs8').find('.empty-space-case-study:eq(0)').css('height', ($('#cs8').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+//   $('#cs-all-test').css('margin-top', cs_margin_top);
+//   $('#cs-all-test').css('height', cs_height);
 
-  $('#cs8').css('width', "100vw");
-  $('#cs8').css('margin-left', "-2vw");
-  $('#cs8').css('padding-left', "2vw");
-  $('#cs8').css('padding-right', "12vw");
-});
+//   $('#cs8').css('width', "100vw");
+//   $('#cs8').css('margin-left', "-2vw");
+//   $('#cs8').css('padding-left', "2vw");
+//   $('#cs8').css('padding-right', "12vw");
+// });
 
-$('#cs9').click(function () {
-  $('#cs-close').css('background-color', '#d44a2e');
-  $('#cs-heading').text("FathomOptics");
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() - ($(window).height() * 0.196));
-  let cs_height = $('#cs9').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+// $('#cs9').click(function () {
+//   $('#cs-close').css('background-color', '#d44a2e');
+//   $('#cs-heading').text("FathomOptics");
+//   let header_margin_top = $('#sticky-project-header').offset().top;
+//   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() - ($(window).height() * 0.196));
+//   let cs_height = $('#cs9').height() - ($(window).height() * 0.028);
+//   $("#disable-hover").css("display", "block"); //showing the disable trigger
+//   locoScroll.stop(); //stopping user from scrolling through the whole document
+//   $("#blur-all").css("height", "100vh"); //showing the blured overlay
+//   //cloning the project header
+//   $('#sticky-project-header')
+//     .clone()
+//     .attr('id', "project-header-test")
+//     .appendTo($('#blur-all'));
+//   $('#project-header-test').css('position', 'absolute');
+//   $('#project-header-test').css('top', header_margin_top);
+//   if (header_margin_top == 0) {
+//     $('#project-header-test').css('transform', '');
+//   }
+//   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+//   $('#project-header-test').css('background-color', 'transparent');
+//   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+//   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+//   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+//   $('#project-header-t1').text("Website");
+//   $('#project-header-t2').text("Visual / Brand");
+//   $('#project-header-t3').text("");
+//   $('#project-header-t4').text("");
+//   $('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+//   $('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Marketing");
-  $('#project-header-d4').text("");
+//   $('#project-header-d1').text("Web Design");
+//   $('#project-header-d2').text("Branding");
+//   $('#project-header-d3').text("Marketing");
+//   $('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+//   //cloning the case study tab (which is clicked)
+//   $('#cs-all-holder1')
+//     .clone()
+//     .attr('id', "cs-all-test")
+//     .appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+//   //removing all the other cs tabs
+//   $('#cs1').remove();
+//   $('#cs2').remove();
+//   $('#cs3').remove();
+//   $('#cs4').remove();
+//   $('#cs5').remove();
+//   $('#cs6').remove();
+//   $('#cs7').remove();
+//   $('#cs8').remove();
+//   $('#cs10').remove();
+//   $('#cs11').remove();
+//   $('#cs12').remove();
+//   $('#cs13').remove();
 
-  $('#cs9-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs9').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs9').find('.empty-space-case-study:eq(0)').css('height', ($('#cs9').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+//   $('#cs9-preview').remove(); // remove the preview of the selected cs tab
+//   $('#cs9').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+//   $('#cs9').find('.empty-space-case-study:eq(0)').css('height', ($('#cs9').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+//   $('#cs-all-test').css('margin-top', cs_margin_top);
+//   $('#cs-all-test').css('height', cs_height);
 
-  $('#cs9').css('width', "100vw");
-  $('#cs9').css('margin-left', "-2vw");
-  $('#cs9').css('padding-left', "2vw");
-  $('#cs9').css('padding-right', "12vw");
-});
+//   $('#cs9').css('width', "100vw");
+//   $('#cs9').css('margin-left', "-2vw");
+//   $('#cs9').css('padding-left', "2vw");
+//   $('#cs9').css('padding-right', "12vw");
+// });
 
-$('#cs10').click(function () {
-  $('#cs-close').css('background-color', '#d44a2e');
-  $('#cs-heading').text("Constance");
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() - ($(window).height() * 0.224));
-  let cs_height = $('#cs10').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+// $('#cs10').click(function () {
+//   $('#cs-close').css('background-color', '#d44a2e');
+//   $('#cs-heading').text("Constance");
+//   let header_margin_top = $('#sticky-project-header').offset().top;
+//   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() - ($(window).height() * 0.224));
+//   let cs_height = $('#cs10').height() - ($(window).height() * 0.028);
+//   $("#disable-hover").css("display", "block"); //showing the disable trigger
+//   locoScroll.stop(); //stopping user from scrolling through the whole document
+//   $("#blur-all").css("height", "100vh"); //showing the blured overlay
+//   //cloning the project header
+//   $('#sticky-project-header')
+//     .clone()
+//     .attr('id', "project-header-test")
+//     .appendTo($('#blur-all'));
+//   $('#project-header-test').css('position', 'absolute');
+//   $('#project-header-test').css('top', header_margin_top);
+//   if (header_margin_top == 0) {
+//     $('#project-header-test').css('transform', '');
+//   }
+//   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+//   $('#project-header-test').css('background-color', 'transparent');
+//   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+//   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+//   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+//   $('#project-header-t1').text("Website");
+//   $('#project-header-t2').text("Visual / Brand");
+//   $('#project-header-t3').text("");
+//   $('#project-header-t4').text("");
+//   $('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+//   $('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Marketing");
-  $('#project-header-d4').text("");
+//   $('#project-header-d1').text("Web Design");
+//   $('#project-header-d2').text("Branding");
+//   $('#project-header-d3').text("Marketing");
+//   $('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+//   //cloning the case study tab (which is clicked)
+//   $('#cs-all-holder1')
+//     .clone()
+//     .attr('id', "cs-all-test")
+//     .appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+//   //removing all the other cs tabs
+//   $('#cs1').remove();
+//   $('#cs2').remove();
+//   $('#cs3').remove();
+//   $('#cs4').remove();
+//   $('#cs5').remove();
+//   $('#cs6').remove();
+//   $('#cs7').remove();
+//   $('#cs8').remove();
+//   $('#cs9').remove();
+//   $('#cs11').remove();
+//   $('#cs12').remove();
+//   $('#cs13').remove();
 
-  $('#cs10-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs10').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs10').find('.empty-space-case-study:eq(0)').css('height', ($('#cs10').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+//   $('#cs10-preview').remove(); // remove the preview of the selected cs tab
+//   $('#cs10').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+//   $('#cs10').find('.empty-space-case-study:eq(0)').css('height', ($('#cs10').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+//   $('#cs-all-test').css('margin-top', cs_margin_top);
+//   $('#cs-all-test').css('height', cs_height);
 
-  $('#cs10').css('width', "100vw");
-  $('#cs10').css('margin-left', "-2vw");
-  $('#cs10').css('padding-left', "2vw");
-  $('#cs10').css('padding-right', "12vw");
-});
+//   $('#cs10').css('width', "100vw");
+//   $('#cs10').css('margin-left', "-2vw");
+//   $('#cs10').css('padding-left', "2vw");
+//   $('#cs10').css('padding-right', "12vw");
+// });
 
-$('#cs11').click(function () {
-  $('#cs-close').css('background-color', '#d44a2e');
-  $('#cs-heading').text("Stamurai");
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() - ($(window).height() * 0.252));
-  let cs_height = $('#cs11').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+// $('#cs11').click(function () {
+//   $('#cs-close').css('background-color', '#d44a2e');
+//   $('#cs-heading').text("Stamurai");
+//   let header_margin_top = $('#sticky-project-header').offset().top;
+//   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() - ($(window).height() * 0.252));
+//   let cs_height = $('#cs11').height() - ($(window).height() * 0.028);
+//   $("#disable-hover").css("display", "block"); //showing the disable trigger
+//   locoScroll.stop(); //stopping user from scrolling through the whole document
+//   $("#blur-all").css("height", "100vh"); //showing the blured overlay
+//   //cloning the project header
+//   $('#sticky-project-header')
+//     .clone()
+//     .attr('id', "project-header-test")
+//     .appendTo($('#blur-all'));
+//   $('#project-header-test').css('position', 'absolute');
+//   $('#project-header-test').css('top', header_margin_top);
+//   if (header_margin_top == 0) {
+//     $('#project-header-test').css('transform', '');
+//   }
+//   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+//   $('#project-header-test').css('background-color', 'transparent');
+//   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+//   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+//   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+//   $('#project-header-t1').text("Website");
+//   $('#project-header-t2').text("Visual / Brand");
+//   $('#project-header-t3').text("");
+//   $('#project-header-t4').text("");
+//   $('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+//   $('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Marketing");
-  $('#project-header-d4').text("");
+//   $('#project-header-d1').text("Web Design");
+//   $('#project-header-d2').text("Branding");
+//   $('#project-header-d3').text("Marketing");
+//   $('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+//   //cloning the case study tab (which is clicked)
+//   $('#cs-all-holder1')
+//     .clone()
+//     .attr('id', "cs-all-test")
+//     .appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+//   //removing all the other cs tabs
+//   $('#cs1').remove();
+//   $('#cs2').remove();
+//   $('#cs3').remove();
+//   $('#cs4').remove();
+//   $('#cs5').remove();
+//   $('#cs6').remove();
+//   $('#cs7').remove();
+//   $('#cs8').remove();
+//   $('#cs9').remove();
+//   $('#cs10').remove();
+//   $('#cs12').remove();
+//   $('#cs13').remove();
 
-  $('#cs11-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs11').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs11').find('.empty-space-case-study:eq(0)').css('height', ($('#cs11').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+//   $('#cs11-preview').remove(); // remove the preview of the selected cs tab
+//   $('#cs11').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+//   $('#cs11').find('.empty-space-case-study:eq(0)').css('height', ($('#cs11').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+//   $('#cs-all-test').css('margin-top', cs_margin_top);
+//   $('#cs-all-test').css('height', cs_height);
 
-  $('#cs11').css('width', "100vw");
-  $('#cs11').css('margin-left', "-2vw");
-  $('#cs11').css('padding-left', "2vw");
-  $('#cs11').css('padding-right', "12vw");
-});
+//   $('#cs11').css('width', "100vw");
+//   $('#cs11').css('margin-left', "-2vw");
+//   $('#cs11').css('padding-left', "2vw");
+//   $('#cs11').css('padding-right', "12vw");
+// });
 
-$('#cs12').click(function () {
-  $('#cs-close').css('background-color', '#d44a2e');
-  $('#cs-heading').text("InsaneDeals");
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() + $('#cs11').height() - ($(window).height() * 0.28));
-  let cs_height = $('#cs12').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+// $('#cs12').click(function () {
+//   $('#cs-close').css('background-color', '#d44a2e');
+//   $('#cs-heading').text("InsaneDeals");
+//   let header_margin_top = $('#sticky-project-header').offset().top;
+//   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() + $('#cs11').height() - ($(window).height() * 0.28));
+//   let cs_height = $('#cs12').height() - ($(window).height() * 0.028);
+//   $("#disable-hover").css("display", "block"); //showing the disable trigger
+//   locoScroll.stop(); //stopping user from scrolling through the whole document
+//   $("#blur-all").css("height", "100vh"); //showing the blured overlay
+//   //cloning the project header
+//   $('#sticky-project-header')
+//     .clone()
+//     .attr('id', "project-header-test")
+//     .appendTo($('#blur-all'));
+//   $('#project-header-test').css('position', 'absolute');
+//   $('#project-header-test').css('top', header_margin_top);
+//   if (header_margin_top == 0) {
+//     $('#project-header-test').css('transform', '');
+//   }
+//   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+//   $('#project-header-test').css('background-color', 'transparent');
+//   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+//   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+//   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+//   $('#project-header-t1').text("Website");
+//   $('#project-header-t2').text("Visual / Brand");
+//   $('#project-header-t3').text("");
+//   $('#project-header-t4').text("");
+//   $('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+//   $('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Marketing");
-  $('#project-header-d4').text("");
+//   $('#project-header-d1').text("Web Design");
+//   $('#project-header-d2').text("Branding");
+//   $('#project-header-d3').text("Marketing");
+//   $('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+//   //cloning the case study tab (which is clicked)
+//   $('#cs-all-holder1')
+//     .clone()
+//     .attr('id', "cs-all-test")
+//     .appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs13').remove();
+//   //removing all the other cs tabs
+//   $('#cs1').remove();
+//   $('#cs2').remove();
+//   $('#cs3').remove();
+//   $('#cs4').remove();
+//   $('#cs5').remove();
+//   $('#cs6').remove();
+//   $('#cs7').remove();
+//   $('#cs8').remove();
+//   $('#cs9').remove();
+//   $('#cs10').remove();
+//   $('#cs11').remove();
+//   $('#cs13').remove();
 
-  $('#cs12-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs12').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs12').find('.empty-space-case-study:eq(0)').css('height', ($('#cs12').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+//   $('#cs12-preview').remove(); // remove the preview of the selected cs tab
+//   $('#cs12').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+//   $('#cs12').find('.empty-space-case-study:eq(0)').css('height', ($('#cs12').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+//   $('#cs-all-test').css('margin-top', cs_margin_top);
+//   $('#cs-all-test').css('height', cs_height);
 
-  $('#cs12').css('width', "100vw");
-  $('#cs12').css('margin-left', "-2vw");
-  $('#cs12').css('padding-left', "2vw");
-  $('#cs12').css('padding-right', "12vw");
-});
+//   $('#cs12').css('width', "100vw");
+//   $('#cs12').css('margin-left', "-2vw");
+//   $('#cs12').css('padding-left', "2vw");
+//   $('#cs12').css('padding-right', "12vw");
+// });
 
-$('#cs13').click(function () {
-  $('#cs-close').css('background-color', '#d44a2e');
-  $('#cs-heading').text("KeralaOnRoad");
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() + $('#cs11').height() + $('#cs12').height() - ($(window).height() * 0.308));
-  let cs_height = $('#cs13').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+// $('#cs13').click(function () {
+//   $('#cs-close').css('background-color', '#d44a2e');
+//   $('#cs-heading').text("KeralaOnRoad");
+//   let header_margin_top = $('#sticky-project-header').offset().top;
+//   let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() + $('#cs7').height() + $('#cs8').height() + $('#cs9').height() + $('#cs10').height() + $('#cs11').height() + $('#cs12').height() - ($(window).height() * 0.308));
+//   let cs_height = $('#cs13').height() - ($(window).height() * 0.028);
+//   $("#disable-hover").css("display", "block"); //showing the disable trigger
+//   locoScroll.stop(); //stopping user from scrolling through the whole document
+//   $("#blur-all").css("height", "100vh"); //showing the blured overlay
+//   //cloning the project header
+//   $('#sticky-project-header')
+//     .clone()
+//     .attr('id', "project-header-test")
+//     .appendTo($('#blur-all'));
+//   $('#project-header-test').css('position', 'absolute');
+//   $('#project-header-test').css('top', header_margin_top);
+//   if (header_margin_top == 0) {
+//     $('#project-header-test').css('transform', '');
+//   }
+//   $('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+//   $('#project-header-test').css('background-color', 'transparent');
+//   $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+//   $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+//   $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+//   $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+//   $('#project-header-t1').text("Website");
+//   $('#project-header-t2').text("Visual / Brand");
+//   $('#project-header-t3').text("");
+//   $('#project-header-t4').text("");
+//   $('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+//   $('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Marketing");
-  $('#project-header-d4').text("");
+//   $('#project-header-d1').text("Web Design");
+//   $('#project-header-d2').text("Branding");
+//   $('#project-header-d3').text("Marketing");
+//   $('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+//   //cloning the case study tab (which is clicked)
+//   $('#cs-all-holder1')
+//     .clone()
+//     .attr('id', "cs-all-test")
+//     .appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
+//   //removing all the other cs tabs
+//   $('#cs1').remove();
+//   $('#cs2').remove();
+//   $('#cs3').remove();
+//   $('#cs4').remove();
+//   $('#cs5').remove();
+//   $('#cs6').remove();
+//   $('#cs7').remove();
+//   $('#cs8').remove();
+//   $('#cs9').remove();
+//   $('#cs10').remove();
+//   $('#cs11').remove();
+//   $('#cs12').remove();
 
-  $('#cs13-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs13').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs13').find('.empty-space-case-study:eq(0)').css('height', ($('#cs13').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+//   $('#cs13-preview').remove(); // remove the preview of the selected cs tab
+//   $('#cs13').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+//   $('#cs13').find('.empty-space-case-study:eq(0)').css('height', ($('#cs13').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+//   $('#cs-all-test').css('margin-top', cs_margin_top);
+//   $('#cs-all-test').css('height', cs_height);
 
-  $('#cs13').css('width', "100vw");
-  $('#cs13').css('margin-left', "-2vw");
-  $('#cs13').css('padding-left', "2vw");
-  $('#cs13').css('padding-right', "12vw");
-});
+//   $('#cs13').css('width', "100vw");
+//   $('#cs13').css('margin-left', "-2vw");
+//   $('#cs13').css('padding-left', "2vw");
+//   $('#cs13').css('padding-right', "12vw");
+// });
 
 
 
