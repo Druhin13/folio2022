@@ -1507,8 +1507,8 @@ locoScroll.on("scroll", (obj) => {
 });
 
 
-//while scrolling, if #testimonials or #contact-test has the attribute data-scroll-section-inview
-locoScroll.on("scroll", (obj) => {
+//check repeatedly
+setInterval(function () {
   //if #testimonials or #contact-test has the attribute data-scroll-section-inview
   if ($("#testimonials").attr("data-scroll-section-inview") || $("#contact-test").attr("data-scroll-section-inview")) {
       //set zindex of #landing-new to -10
@@ -1517,7 +1517,7 @@ locoScroll.on("scroll", (obj) => {
       //set zindex of #landing-new to 10
       $("#landing-new").css("z-index", "10");
   }
-});
+}, 100);
 
 
 
