@@ -1488,6 +1488,27 @@ $(window).keydown(function (evt) {
 
 
 
+/**
+*
+*
+*
+*/
+
+//while scrolling, if #contact-test is in view, then set opacity of #projects to 0 using locomotive
+locoScroll.on("scroll", (obj) => {
+  //check if #contact-test has the class in-view
+  if ($("#contact-test").hasClass("in-view")) {
+    //set opacity of #projects to 0
+    $("#projects").css("opacity", "0");
+  } else {
+    //set opacity of #projects to 1
+    $("#projects").css("opacity", "1");
+  }
+});
+
+
+
+
 /*
 
 // if window resized -> 
