@@ -1494,17 +1494,17 @@ $(window).keydown(function (evt) {
 *
 */
 
-//while scrolling, if #testimonials is in view, then set opacity of #projects to 0 using locomotive
+//while scrolling, if #testimonials or #contact-test has the attribute data-scroll-section-inview
 locoScroll.on("scroll", (obj) => {
-  //check if #testimonials has the class in-view
-      if ($("#testimonials").hasClass("inview")) {
-          //set opacity of #projects to 0
-          $("#projects").css("opacity", "0");
-      } else {
-          //set opacity of #projects to 1
-          $("#projects").css("opacity", "1");
-      }
-  });
+  //if #testimonials or #contact-test has the attribute data-scroll-section-inview
+  if ($("#testimonials").attr("data-scroll-section-inview") || $("#contact-test").attr("data-scroll-section-inview")) {
+    //set opacity of #projects to 0
+    $("#projects").css("opacity", "0");
+  } else {
+    //set opacity of #projects to 1
+    $("#projects").css("opacity", "1");
+  }
+});
 
 
 
