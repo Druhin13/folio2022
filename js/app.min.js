@@ -318,7 +318,7 @@ const testimonials = document.querySelector('#testimonials');
 const contact = document.querySelector('#contact-test');
 
 
-$('#scroll-down-main').click(function () {
+$('#landing-scroll').click(function () {
   locoScroll.scrollTo(work);
 });
 
