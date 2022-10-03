@@ -40,22 +40,22 @@ const locoScroll = new LocomotiveScroll({
 locoScroll.stop();
 
 
-//removing the webflow badge
-let timer = setInterval(remove, 10);
-function remove() {
-  if ($(".w-webflow-badge")[0]) {
-    $(".w-webflow-badge").remove();
-  } else {
-    clearInterval(timer);
-  }
-}
+// //removing the webflow badge
+// let timer = setInterval(remove, 10);
+// function remove() {
+//   if ($(".w-webflow-badge")[0]) {
+//     $(".w-webflow-badge").remove();
+//   } else {
+//     clearInterval(timer);
+//   }
+// }
 
 
 
-function webflow_remove() {
-  $(".w-webflow-badge").remove();
-}
-window.onload = webflow_remove;
+// function webflow_remove() {
+//   $(".w-webflow-badge").remove();
+// }
+// window.onload = webflow_remove;
 
 
 
@@ -63,6 +63,9 @@ window.onload = webflow_remove;
 //hiding the 'something' section
 $('#something').hide();
 */
+
+
+/*
 
 // creating the sketch cursor
 setTimeout(() => {
@@ -185,15 +188,15 @@ setTimeout(() => {
     duration: 5000, //set the duration of the loading animation (5000 - 7000 ~6000)
   });
 
-}, 2000);
+//}, 2000);
 
 
 
 
 
-// jquery inview
+// // jquery inview
 
-!function (a) { "function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? module.exports = a(require("jquery")) : a(jQuery) }(function (a) { function i() { var b, c, d = { height: f.innerHeight, width: f.innerWidth }; return d.height || (b = e.compatMode, (b || !a.support.boxModel) && (c = "CSS1Compat" === b ? g : e.body, d = { height: c.clientHeight, width: c.clientWidth })), d } function j() { return { top: f.pageYOffset || g.scrollTop || e.body.scrollTop, left: f.pageXOffset || g.scrollLeft || e.body.scrollLeft } } function k() { if (b.length) { var e = 0, f = a.map(b, function (a) { var b = a.data.selector, c = a.$element; return b ? c.find(b) : c }); for (c = c || i(), d = d || j(); e < b.length; e++)if (a.contains(g, f[e][0])) { var h = a(f[e]), k = { height: h[0].offsetHeight, width: h[0].offsetWidth }, l = h.offset(), m = h.data("inview"); if (!d || !c) return; l.top + k.height > d.top && l.top < d.top + c.height && l.left + k.width > d.left && l.left < d.left + c.width ? m || h.data("inview", !0).trigger("inview", [!0]) : m && h.data("inview", !1).trigger("inview", [!1]) } } } var c, d, h, b = [], e = document, f = window, g = e.documentElement; a.event.special.inview = { add: function (c) { b.push({ data: c, $element: a(this), element: this }), !h && b.length && (h = setInterval(k, 250)) }, remove: function (a) { for (var c = 0; c < b.length; c++) { var d = b[c]; if (d.element === this && d.data.guid === a.guid) { b.splice(c, 1); break } } b.length || (clearInterval(h), h = null) } }, a(f).bind("scroll resize scrollstop", function () { c = d = null }), !g.addEventListener && g.attachEvent && g.attachEvent("onfocusin", function () { d = null }) });
+// !function (a) { "function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? module.exports = a(require("jquery")) : a(jQuery) }(function (a) { function i() { var b, c, d = { height: f.innerHeight, width: f.innerWidth }; return d.height || (b = e.compatMode, (b || !a.support.boxModel) && (c = "CSS1Compat" === b ? g : e.body, d = { height: c.clientHeight, width: c.clientWidth })), d } function j() { return { top: f.pageYOffset || g.scrollTop || e.body.scrollTop, left: f.pageXOffset || g.scrollLeft || e.body.scrollLeft } } function k() { if (b.length) { var e = 0, f = a.map(b, function (a) { var b = a.data.selector, c = a.$element; return b ? c.find(b) : c }); for (c = c || i(), d = d || j(); e < b.length; e++)if (a.contains(g, f[e][0])) { var h = a(f[e]), k = { height: h[0].offsetHeight, width: h[0].offsetWidth }, l = h.offset(), m = h.data("inview"); if (!d || !c) return; l.top + k.height > d.top && l.top < d.top + c.height && l.left + k.width > d.left && l.left < d.left + c.width ? m || h.data("inview", !0).trigger("inview", [!0]) : m && h.data("inview", !1).trigger("inview", [!1]) } } } var c, d, h, b = [], e = document, f = window, g = e.documentElement; a.event.special.inview = { add: function (c) { b.push({ data: c, $element: a(this), element: this }), !h && b.length && (h = setInterval(k, 250)) }, remove: function (a) { for (var c = 0; c < b.length; c++) { var d = b[c]; if (d.element === this && d.data.guid === a.guid) { b.splice(c, 1); break } } b.length || (clearInterval(h), h = null) } }, a(f).bind("scroll resize scrollstop", function () { c = d = null }), !g.addEventListener && g.attachEvent && g.attachEvent("onfocusin", function () { d = null }) });
 
 
 
@@ -224,17 +227,17 @@ function test() {
     //when loading is finished, setting cursor back to default...
     document.body.style.cursor = 'default';
     //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
-    $('#canvas-div').css('pointer-events', 'none');
+    // $('#canvas-div').css('pointer-events', 'none');
 
     //animate the trigger
     $(".trigger1").click();
 
 
     //waiting for 1 second, and then hiding the sketch canvas
-    setTimeout(() => {
-      //hiding the sketch canvas
-      //document.getElementById("sketch").style.display = "none";
-    }, 1000);
+    // setTimeout(() => {
+    //   //hiding the sketch canvas
+    //   //document.getElementById("sketch").style.display = "none";
+    // }, 1000);
 
     //waiting for 0.75 seconds and then calculating the new page height
     setTimeout(() => {
@@ -1452,38 +1455,38 @@ function checkifscrolling() {
 
 
 
-// fullscreen mode
+// // fullscreen mode
 
-let fPressed = false;
-$(window).keydown(function (evt) {
-  if (evt.which == 70) { // f pressed
-    fPressed = true;
-    document.documentElement.requestFullscreen();
-    locoScroll.scrollTo(about, { duration: 0 });
-    locoScroll.stop();
-    setTimeout(() => {
-      locoScroll.update();
-    }, 500);
-    setTimeout(() => {
-      locoScroll.start();
-    }, 500);
-  }
-})
+// let fPressed = false;
+// $(window).keydown(function (evt) {
+//   if (evt.which == 70) { // f pressed
+//     fPressed = true;
+//     document.documentElement.requestFullscreen();
+//     locoScroll.scrollTo(about, { duration: 0 });
+//     locoScroll.stop();
+//     setTimeout(() => {
+//       locoScroll.update();
+//     }, 500);
+//     setTimeout(() => {
+//       locoScroll.start();
+//     }, 500);
+//   }
+// })
 
-  .keyup(function (evt) {
-    if (evt.which == 70 || evt.which == 27) { // f or esc pressed
-      fPressed = false;
-      document.exitFullscreen();
-      locoScroll.scrollTo(about, { duration: 0 });
-      locoScroll.stop();
-      setTimeout(() => {
-        locoScroll.update();
-      }, 500);
-      setTimeout(() => {
-        locoScroll.start();
-      }, 500);
-    }
-  });
+//   .keyup(function (evt) {
+//     if (evt.which == 70 || evt.which == 27) { // f or esc pressed
+//       fPressed = false;
+//       document.exitFullscreen();
+//       locoScroll.scrollTo(about, { duration: 0 });
+//       locoScroll.stop();
+//       setTimeout(() => {
+//         locoScroll.update();
+//       }, 500);
+//       setTimeout(() => {
+//         locoScroll.start();
+//       }, 500);
+//     }
+//   });
 
 
 
@@ -1931,112 +1934,112 @@ $(document).ready(function () {
 
 
 
-//checks if the cs tabs has a hide class or not
+// //checks if the cs tabs has a hide class or not
 
-let timer_cs_hide_class = setInterval(check_cs_hide_class, 10);
-function check_cs_hide_class() {
+// let timer_cs_hide_class = setInterval(check_cs_hide_class, 10);
+// function check_cs_hide_class() {
 
-  if ($('#cs1').hasClass("hide") == true) {
-    $('#cs1').css('transition-duration', '0ms, 0ms');
-    $('#cs1').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs1').css('pointer-events', 'all');
-  }
+//   if ($('#cs1').hasClass("hide") == true) {
+//     $('#cs1').css('transition-duration', '0ms, 0ms');
+//     $('#cs1').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs1').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs2').hasClass("hide") == true) {
-    $('#cs2').css('transition-duration', '0ms, 0ms');
-    $('#cs2').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs2').css('pointer-events', 'all');
-  }
+//   if ($('#cs2').hasClass("hide") == true) {
+//     $('#cs2').css('transition-duration', '0ms, 0ms');
+//     $('#cs2').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs2').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs3').hasClass("hide") == true) {
-    $('#cs3').css('transition-duration', '0ms, 0ms');
-    $('#cs3').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs3').css('pointer-events', 'all');
-  }
+//   if ($('#cs3').hasClass("hide") == true) {
+//     $('#cs3').css('transition-duration', '0ms, 0ms');
+//     $('#cs3').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs3').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs4').hasClass("hide") == true) {
-    $('#cs4').css('transition-duration', '0ms, 0ms');
-    $('#cs4').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs4').css('pointer-events', 'all');
-  }
+//   if ($('#cs4').hasClass("hide") == true) {
+//     $('#cs4').css('transition-duration', '0ms, 0ms');
+//     $('#cs4').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs4').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs5').hasClass("hide") == true) {
-    $('#cs5').css('transition-duration', '0ms, 0ms');
-    $('#cs5').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs5').css('pointer-events', 'all');
-  }
+//   if ($('#cs5').hasClass("hide") == true) {
+//     $('#cs5').css('transition-duration', '0ms, 0ms');
+//     $('#cs5').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs5').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs6').hasClass("hide") == true) {
-    $('#cs6').css('transition-duration', '0ms, 0ms');
-    $('#cs6').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs6').css('pointer-events', 'all');
-  }
+//   if ($('#cs6').hasClass("hide") == true) {
+//     $('#cs6').css('transition-duration', '0ms, 0ms');
+//     $('#cs6').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs6').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs7').hasClass("hide") == true) {
-    $('#cs7').css('transition-duration', '0ms, 0ms');
-    $('#cs7').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs7').css('pointer-events', 'all');
-  }
+//   if ($('#cs7').hasClass("hide") == true) {
+//     $('#cs7').css('transition-duration', '0ms, 0ms');
+//     $('#cs7').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs7').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs8').hasClass("hide") == true) {
-    $('#cs8').css('transition-duration', '0ms, 0ms');
-    $('#cs8').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs8').css('pointer-events', 'all');
-  }
+//   if ($('#cs8').hasClass("hide") == true) {
+//     $('#cs8').css('transition-duration', '0ms, 0ms');
+//     $('#cs8').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs8').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs9').hasClass("hide") == true) {
-    $('#cs9').css('transition-duration', '0ms, 0ms');
-    $('#cs9').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs9').css('pointer-events', 'all');
-  }
+//   if ($('#cs9').hasClass("hide") == true) {
+//     $('#cs9').css('transition-duration', '0ms, 0ms');
+//     $('#cs9').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs9').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs10').hasClass("hide") == true) {
-    $('#cs10').css('transition-duration', '0ms, 0ms');
-    $('#cs10').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs10').css('pointer-events', 'all');
-  }
+//   if ($('#cs10').hasClass("hide") == true) {
+//     $('#cs10').css('transition-duration', '0ms, 0ms');
+//     $('#cs10').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs10').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs11').hasClass("hide") == true) {
-    $('#cs11').css('transition-duration', '0ms, 0ms');
-    $('#cs11').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs11').css('pointer-events', 'all');
-  }
+//   if ($('#cs11').hasClass("hide") == true) {
+//     $('#cs11').css('transition-duration', '0ms, 0ms');
+//     $('#cs11').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs11').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs12').hasClass("hide") == true) {
-    $('#cs12').css('transition-duration', '0ms, 0ms');
-    $('#cs12').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs12').css('pointer-events', 'all');
-  }
+//   if ($('#cs12').hasClass("hide") == true) {
+//     $('#cs12').css('transition-duration', '0ms, 0ms');
+//     $('#cs12').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs12').css('pointer-events', 'all');
+//   }
 
-  if ($('#cs13').hasClass("hide") == true) {
-    $('#cs13').css('transition-duration', '0ms, 0ms');
-    $('#cs13').css('pointer-events', 'none');
-  }
-  else {
-    $('#cs13').css('pointer-events', 'all');
-  }
-}
+//   if ($('#cs13').hasClass("hide") == true) {
+//     $('#cs13').css('transition-duration', '0ms, 0ms');
+//     $('#cs13').css('pointer-events', 'none');
+//   }
+//   else {
+//     $('#cs13').css('pointer-events', 'all');
+//   }
+// }
