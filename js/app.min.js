@@ -1569,6 +1569,13 @@ $(document).ready(function () {
     window.open(e7, "_blank");
   })
 
+  $('#email4').on('click', function (event) {
+    event.preventDefault();
+    //document.location.href = "mailto:" + where_to;
+    e7 = "mailto:" + where_to;
+    window.open(e7, "_blank");
+  })
+
   $('#hire-me').on('click', function (event) {
     event.preventDefault();
     //document.location.href = "mailto:" + where_to;
