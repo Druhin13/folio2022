@@ -367,48 +367,30 @@ h2[j].innerText = nh2;
 
 
 
-// /* time calc */
+/* time calc */
 
-// let options = {
-//   timeZone: 'Europe/London',
-//   //year: 'numeric',
-//   //month: 'numeric',
-//   //day: 'numeric',
-//   hour: '2-digit',
-//   minute: '2-digit',
-//   //second: 'numeric',
-// },
-//   formatter = new Intl.DateTimeFormat([], options);
+let options = {
+  timeZone: 'Europe/London',
+  //year: 'numeric',
+  //month: 'numeric',
+  //day: 'numeric',
+  hour: '2-digit',
+  minute: '2-digit',
+  //second: 'numeric',
+},
+  formatter = new Intl.DateTimeFormat([], options);
 
-// let time_a = formatter.format(new Date());
+let time_a = formatter.format(new Date());
 
-// let ctime = setInterval(timecalc, 1000);
-// function timecalc() {
-//   let time_b = formatter.format(new Date());
-//   $("#time").text(time_b);
-//   if (time_b != time_a) {
-//     time_a = time_b;
-//     $(".circle").click();
-//   }
-// }
-
-
-
-// setting the current time of europe/london to the text of #time using asyncronous javascript
-async function time() {
-  //get the current time of europe/london
-  var time = await fetch("https://worldtimeapi.org/api/timezone/Europe/London").then(response => response.json());
-  //set the text of #time to the current time of europe/london and format it to hh:mm am/pm
-  $("#time").text(new Date(time.datetime).toLocaleTimeString('en-US', {
-      hour: 'numeric',
-      minute: 'numeric',
-      hour12: true
-  }));
+let ctime = setInterval(timecalc, 1000);
+function timecalc() {
+  let time_b = formatter.format(new Date());
+  $("#time").text(time_b);
+  if (time_b != time_a) {
+    time_a = time_b;
+    $(".circle").click();
+  }
 }
-//run time function every 1 second
-setInterval(time, 1000);
-
-
 
 
 // // cs details locomotive initializations
