@@ -409,7 +409,7 @@ function timecalc() {
 $('#cs1').click(function () {
   $('#cs-heading').text("SkillsUnion");
   $("#cs-heading").css("color", $("#su1").css("color"));
-  $("#cs-close").css("background-color", $("#su1").css("background-color"));
+  $("#cs-close").css("background-color", $("#su1").css("color"));
   let header_margin_top = $('#sticky-project-header').offset().top;
   let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
   let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
