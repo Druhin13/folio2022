@@ -1,27 +1,27 @@
-//jQuerySimpleCounter.js
-(function ($) {
-  $.fn.jQuerySimpleCounter = function (options) {
-    let settings = $.extend({
-      start: 0,
-      end: 100,
-      easing: 'swing',
-      duration: 400,
-      complete: ''
-    }, options);
+// //jQuerySimpleCounter.js
+// (function ($) {
+//   $.fn.jQuerySimpleCounter = function (options) {
+//     let settings = $.extend({
+//       start: 0,
+//       end: 100,
+//       easing: 'swing',
+//       duration: 400,
+//       complete: ''
+//     }, options);
 
-    const thisElement = $(this);
+//     const thisElement = $(this);
 
-    $({ count: settings.start }).animate({ count: settings.end }, {
-      duration: settings.duration,
-      easing: settings.easing,
-      step: function () {
-        let mathCount = Math.ceil(this.count);
-        thisElement.text(mathCount);
-      },
-      complete: settings.complete
-    });
-  };
-}(jQuery));
+//     $({ count: settings.start }).animate({ count: settings.end }, {
+//       duration: settings.duration,
+//       easing: settings.easing,
+//       step: function () {
+//         let mathCount = Math.ceil(this.count);
+//         thisElement.text(mathCount);
+//       },
+//       complete: settings.complete
+//     });
+//   };
+// }(jQuery));
 
 //locomotive initialization
 const locoScroll = new LocomotiveScroll({
@@ -180,13 +180,13 @@ setTimeout(() => {
   */
 
 
-  //counter initialization
-  $('#count').jQuerySimpleCounter({
-    start: 0,
-    end: 100,
-    easing: 'swing',
-    duration: 5000, //set the duration of the loading animation (5000 - 7000 ~6000)
-  });
+  // //counter initialization
+  // $('#count').jQuerySimpleCounter({
+  //   start: 0,
+  //   end: 100,
+  //   easing: 'swing',
+  //   duration: 5000, //set the duration of the loading animation (5000 - 7000 ~6000)
+  // });
 
 //}, 2000);
 
