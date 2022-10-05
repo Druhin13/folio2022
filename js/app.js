@@ -423,6 +423,7 @@ $('#cs1').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  $('#preview-hide').hide();
   if (header_margin_top == 0) {
     $('#project-header-test').css('transform', '');
   }
@@ -498,6 +499,7 @@ $('#cs2').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  $('#preview-hide').hide();
   if (header_margin_top == 0) {
     $('#project-header-test').css('transform', '');
   }
@@ -573,6 +575,7 @@ $('#cs3').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  $('#preview-hide').hide();
   if (header_margin_top == 0) {
     $('#project-header-test').css('transform', '');
   }
@@ -648,6 +651,7 @@ $('#cs4').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  $('#preview-hide').hide();
   if (header_margin_top == 0) {
     $('#project-header-test').css('transform', '');
   }
@@ -723,6 +727,7 @@ $('#cs5').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  $('#preview-hide').hide();
   if (header_margin_top == 0) {
     $('#project-header-test').css('transform', '');
   }
@@ -799,6 +804,7 @@ $('#cs6').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  $('#preview-hide').hide();
   if (header_margin_top == 0) {
     $('#project-header-test').css('transform', '');
   }
@@ -874,6 +880,7 @@ $('#cs7').click(function () {
     .appendTo($('#blur-all'));
   $('#project-header-test').css('position', 'absolute');
   $('#project-header-test').css('top', header_margin_top);
+  $('#preview-hide').hide();
   if (header_margin_top == 0) {
     $('#project-header-test').css('transform', '');
   }
