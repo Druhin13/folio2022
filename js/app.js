@@ -27,13 +27,7 @@
 const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".locomotive-scroll"),
   smooth: true,
-  multiplier: 0.4,
-  mobile: {
-    smooth: true
-  },
-  tablet: {
-    smooth: true
-  }   //mine
+  multiplier: 0.4,   //mine
 
   //seperator
 
