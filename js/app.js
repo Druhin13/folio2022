@@ -314,7 +314,7 @@ function test() {
 
 
 //page link scroll trigger initialization
-const about = document.querySelector('#about');
+const about = document.querySelector('#landing-new');
 const work = document.querySelector('#work');
 const awards = document.querySelector('#awards');
 const testimonials = document.querySelector('#testimonials');
