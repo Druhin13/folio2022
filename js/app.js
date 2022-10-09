@@ -385,7 +385,7 @@ let time_a = formatter.format(new Date());
 let ctime = setInterval(timecalc, 1000);
 function timecalc() {
   let time_b = formatter.format(new Date());
-  $("#time").text(time_b);
+  $("#time, #time-mobile").text(time_b);
   if (time_b != time_a) {
     time_a = time_b;
     $(".circle").click();
