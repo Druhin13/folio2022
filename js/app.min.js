@@ -1572,40 +1572,41 @@ $(document).ready(function () {
   e5 = e4.replace("b", "d");//druh
   e6 = ".in";//.in
   var where_to = e0 + e2 + e3 + "@" + e5 + e6;
-  $('#email3').on('click', function (event) {
+  $('#email3, #email4, #email5, #email6, #hire-me, #something').on('click', function (event) {
     event.preventDefault();
     //document.location.href = "mailto:" + where_to;
     e7 = "mailto:" + where_to;
     window.open(e7, "_blank");
   })
 
-  $('#email4').on('click', function (event) {
-    event.preventDefault();
-    //document.location.href = "mailto:" + where_to;
-    e7 = "mailto:" + where_to;
-    window.open(e7, "_blank");
-  })
+  // $('#email4').on('click', function (event) {
+  //   event.preventDefault();
+  //   //document.location.href = "mailto:" + where_to;
+  //   e7 = "mailto:" + where_to;
+  //   window.open(e7, "_blank");
+  // })
 
-  $('#email5').on('click', function (event) {
-    event.preventDefault();
-    //document.location.href = "mailto:" + where_to;
-    e7 = "mailto:" + where_to;
-    window.open(e7, "_blank");
-  })
+  // $('#email5').on('click', function (event) {
+  //   event.preventDefault();
+  //   //document.location.href = "mailto:" + where_to;
+  //   e7 = "mailto:" + where_to;
+  //   window.open(e7, "_blank");
+  // })
 
-  $('#hire-me').on('click', function (event) {
-    event.preventDefault();
-    //document.location.href = "mailto:" + where_to;
-    e7 = "mailto:" + where_to;
-    window.open(e7, "_blank");
-  })
+  // $('#hire-me').on('click', function (event) {
+  //   event.preventDefault();
+  //   //document.location.href = "mailto:" + where_to;
+  //   e7 = "mailto:" + where_to;
+  //   window.open(e7, "_blank");
+  // })
 
-  $('#something').on('click', function (event) {
-    event.preventDefault();
-    //document.location.href = "mailto:" + where_to;
-    e7 = "mailto:" + where_to;
-    window.open(e7, "_blank");
-  })
+  // $('#something').on('click', function (event) {
+  //   event.preventDefault();
+  //   //document.location.href = "mailto:" + where_to;
+  //   e7 = "mailto:" + where_to;
+  //   window.open(e7, "_blank");
+  // })
+
 });
 
 
