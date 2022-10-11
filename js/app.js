@@ -406,7 +406,7 @@ function timecalc() {
 
 //case study clicks
 
-$('#cs1, #cs1mobile').click(function () {
+$('#cs1').click(function () {
   $('#cs-heading').text("SkillsUnion");
   $("#cs-heading").css("color", $("#su1").css("color"));
   $("#cs-close").css("background-color", $("#su1").css("color"));
@@ -482,7 +482,7 @@ $('#cs1, #cs1mobile').click(function () {
   $('#cs1').css('padding-right', "12vw");
 });
 
-$('#cs2, #cs2mobile').click(function () {
+$('#cs2').click(function () {
   $('#cs-heading').text("Value Tech Foundation");
   $("#cs-heading").css("color", $("#vtf1").css("color"));
   $("#cs-close").css("background-color", $("#vtf1").css("background-color"));
