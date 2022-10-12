@@ -203,113 +203,113 @@ setTimeout(() => {
 
 
 
-//timer/checker initialization
-let test_timer = setInterval(test, 10);
-function test() {
-  if (parseInt($("#count")[0].innerHTML) > 8) {
-    $('#zero').css('display', 'none');
-  }
+// //timer/checker initialization
+// let test_timer = setInterval(test, 10);
+// function test() {
+//   if (parseInt($("#count")[0].innerHTML) > 8) {
+//     $('#zero').css('display', 'none');
+//   }
 
-  let progress_anim = setInterval(progress, 10);
-  function progress() {
-    let w = parseInt($("#count")[0].innerHTML) + "%"; //load counter value
-    $("#loader-line").css("width", w);
-  }
+//   let progress_anim = setInterval(progress, 10);
+//   function progress() {
+//     let w = parseInt($("#count")[0].innerHTML) + "%"; //load counter value
+//     $("#loader-line").css("width", w);
+//   }
 
-  if ($("#count")[0].innerHTML == '100') {
-    //removing the badge
-    $(".w-webflow-badge").remove();
-    //turning off the continuous function run
-    //clearInterval(timer);
-    clearInterval(test_timer);
-    clearInterval(progress_anim);
-    $("#loader-line").css("width", "35vw");
-    //when loading is finished, setting cursor back to default...
-    document.body.style.cursor = 'default';
-    //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
-    // $('#canvas-div').css('pointer-events', 'none');
+//   if ($("#count")[0].innerHTML == '100') {
+//     //removing the badge
+//     $(".w-webflow-badge").remove();
+//     //turning off the continuous function run
+//     //clearInterval(timer);
+//     clearInterval(test_timer);
+//     clearInterval(progress_anim);
+//     $("#loader-line").css("width", "35vw");
+//     //when loading is finished, setting cursor back to default...
+//     document.body.style.cursor = 'default';
+//     //setting the canvas pointer events to none, so that user cannot interact with the canvas once the loading animation is done
+//     // $('#canvas-div').css('pointer-events', 'none');
 
-    //animate the trigger
-    $(".trigger1").click();
-
-
-    //waiting for 1 second, and then hiding the sketch canvas
-    // setTimeout(() => {
-    //   //hiding the sketch canvas
-    //   //document.getElementById("sketch").style.display = "none";
-    // }, 1000);
-
-    //waiting for 0.75 seconds and then calculating the new page height
-    setTimeout(() => {
-      locoScroll.update();
-      locoScroll.start();
-      document.body.style.cursor = 'default';
-
-      // // druhin text anim on scroll
-      // let project_timer = setInterval(druhintext, 1);
-      // function druhintext() {
-
-      //   if ($("#awards").offset().top > $(window).height()) {
-      //     //console.log($("#work").offset().top);
-      //     let work_offset = $("#work").offset().top; // eg: 980
-
-      //     let d_move = (((($(window).height()) - work_offset) / 4) * -1); // eg: 33.33
-      //     //console.log("d = " + d_move);
-      //     d_move = "matrix(1, 0, 0, 1, 0, " + d_move + ")";
-      //     $("#d").css("transform", d_move);
-      //     $("#d-opp").css("transform", d_move);
-
-      //     let r_move = (((($(window).height()) - work_offset) / 2) * -1); // eg: 33.33
-      //     //console.log("r = " + r_move);
-      //     r_move = "matrix(1, 0, 0, 1, 0, " + r_move + ")";
-      //     $("#r").css("transform", r_move);
-
-      //     let u_move = (((($(window).height()) - work_offset) / 6) * -1); // eg: 33.33
-      //     //console.log("u = " + u_move);
-      //     u_move = "matrix(1, 0, 0, 1, 0, " + u_move + ")";
-      //     $("#u").css("transform", u_move);
-
-      //     let h_move = (((($(window).height()) - work_offset) / 4) * -1); // eg: 33.33
-      //     //console.log("h = " + h_move);
-      //     h_move = "matrix(1, 0, 0, 1, 0, " + h_move + ")";
-      //     $("#h").css("transform", h_move);
-
-      //     let i_move = (((($(window).height()) - work_offset) / 1) * -1); // eg: 33.33
-      //     //console.log("i = " + i_move);
-      //     i_move = "matrix(1, 0, 0, 1, 0, " + i_move + ")";
-      //     $("#i").css("transform", i_move);
-
-      //     let n_move = (((($(window).height()) - work_offset) / 2) * -1); // eg: 33.33
-      //     //console.log("n = " + n_move);
-      //     n_move = "matrix(1, 0, 0, 1, 0, " + n_move + ")";
-      //     $("#n").css("transform", n_move);
-
-      //     let ab_move = (((($(window).height()) - work_offset) / 1.5) * -1); // eg: 33.33
-      //     //console.log("ab = " + ab_move);
-      //     ab_move = "matrix(1, 0, 0, 1, 0, " + ab_move + ")";
-      //     $("#ab").css("transform", ab_move);
-
-      //     /*
-      //     let cr_move = (((($(window).height()) - work_offset) / 2.5) * -1); // eg: 33.33
-      //     cr_move = $("#cr").offset().top - cr_move;
-      //     //console.log("cr = " + cr_move);
-      //     cr_move = cr_move + "px";
-      //     //$("#cr").css("transform", cr_move);
-      //     $("#cr").css("top", cr_move);
-      //     */
-      //   }
-
-      //   else {
-      //     clearInterval(project_timer);
-      //   }
-      // }
+//     //animate the trigger
+//     $(".trigger1").click();
 
 
-      //loading the case study preview gifs
-      $('head').append('<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>');
-    }, 750);
-  }
-}
+//     //waiting for 1 second, and then hiding the sketch canvas
+//     // setTimeout(() => {
+//     //   //hiding the sketch canvas
+//     //   //document.getElementById("sketch").style.display = "none";
+//     // }, 1000);
+
+//     //waiting for 0.75 seconds and then calculating the new page height
+//     setTimeout(() => {
+//       locoScroll.update();
+//       locoScroll.start();
+//       document.body.style.cursor = 'default';
+
+//       // // druhin text anim on scroll
+//       // let project_timer = setInterval(druhintext, 1);
+//       // function druhintext() {
+
+//       //   if ($("#awards").offset().top > $(window).height()) {
+//       //     //console.log($("#work").offset().top);
+//       //     let work_offset = $("#work").offset().top; // eg: 980
+
+//       //     let d_move = (((($(window).height()) - work_offset) / 4) * -1); // eg: 33.33
+//       //     //console.log("d = " + d_move);
+//       //     d_move = "matrix(1, 0, 0, 1, 0, " + d_move + ")";
+//       //     $("#d").css("transform", d_move);
+//       //     $("#d-opp").css("transform", d_move);
+
+//       //     let r_move = (((($(window).height()) - work_offset) / 2) * -1); // eg: 33.33
+//       //     //console.log("r = " + r_move);
+//       //     r_move = "matrix(1, 0, 0, 1, 0, " + r_move + ")";
+//       //     $("#r").css("transform", r_move);
+
+//       //     let u_move = (((($(window).height()) - work_offset) / 6) * -1); // eg: 33.33
+//       //     //console.log("u = " + u_move);
+//       //     u_move = "matrix(1, 0, 0, 1, 0, " + u_move + ")";
+//       //     $("#u").css("transform", u_move);
+
+//       //     let h_move = (((($(window).height()) - work_offset) / 4) * -1); // eg: 33.33
+//       //     //console.log("h = " + h_move);
+//       //     h_move = "matrix(1, 0, 0, 1, 0, " + h_move + ")";
+//       //     $("#h").css("transform", h_move);
+
+//       //     let i_move = (((($(window).height()) - work_offset) / 1) * -1); // eg: 33.33
+//       //     //console.log("i = " + i_move);
+//       //     i_move = "matrix(1, 0, 0, 1, 0, " + i_move + ")";
+//       //     $("#i").css("transform", i_move);
+
+//       //     let n_move = (((($(window).height()) - work_offset) / 2) * -1); // eg: 33.33
+//       //     //console.log("n = " + n_move);
+//       //     n_move = "matrix(1, 0, 0, 1, 0, " + n_move + ")";
+//       //     $("#n").css("transform", n_move);
+
+//       //     let ab_move = (((($(window).height()) - work_offset) / 1.5) * -1); // eg: 33.33
+//       //     //console.log("ab = " + ab_move);
+//       //     ab_move = "matrix(1, 0, 0, 1, 0, " + ab_move + ")";
+//       //     $("#ab").css("transform", ab_move);
+
+//       //     /*
+//       //     let cr_move = (((($(window).height()) - work_offset) / 2.5) * -1); // eg: 33.33
+//       //     cr_move = $("#cr").offset().top - cr_move;
+//       //     //console.log("cr = " + cr_move);
+//       //     cr_move = cr_move + "px";
+//       //     //$("#cr").css("transform", cr_move);
+//       //     $("#cr").css("top", cr_move);
+//       //     */
+//       //   }
+
+//       //   else {
+//       //     clearInterval(project_timer);
+//       //   }
+//       // }
+
+
+//       //loading the case study preview gifs
+//       $('head').append('<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>');
+//     }, 750);
+//   }
+// }
 
 
 
