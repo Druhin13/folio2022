@@ -6521,6 +6521,10 @@
   display: none;
 }
 
+.contact-mobile._404 {
+  display: none;
+}
+
 .cs-logo-holders {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6971,6 +6975,10 @@
     padding-top: 5vh;
   }
 
+  .contact._404 {
+    min-height: 100vh;
+  }
+
   .aww {
     width: 5vw;
   }
@@ -7005,6 +7013,11 @@
 
   .time {
     font-size: 2.5vh;
+  }
+
+  .circle {
+    width: 1.75vh;
+    height: 1.75vh;
   }
 
   .email-div {
@@ -7151,6 +7164,10 @@
     color: #fdfdfd;
   }
 
+  .context-heading {
+    font-size: 3.25vw;
+  }
+
   .context-heading.type4.vtf {
     width: 100%;
     font-size: 3.25vw;
@@ -7259,6 +7276,14 @@
     font-size: 3.25vw;
   }
 
+  .context-type._404 {
+    width: auto;
+  }
+
+  .list-item {
+    font-size: 3.25vw;
+  }
+
   .hashtag.relative {
     bottom: 150px;
   }
@@ -7298,6 +7323,10 @@
 
   .nav-text {
     font-size: 2.5vw;
+  }
+
+  .sticky-section-header.loco.type2._404 {
+    margin-left: 3.5vw;
   }
 
   .locomotive-scroll {
@@ -7349,6 +7378,10 @@
     width: 2vh;
     height: 2vh;
     margin-right: 2vw;
+  }
+
+  .contact-div._404 {
+    display: none;
   }
 
   .contact-test {
@@ -8250,6 +8283,13 @@
     text-decoration: none;
   }
 
+  .context-holder-left {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
   .mobile-wrapper {
     z-index: 1;
     display: block;
@@ -8630,6 +8670,10 @@
     -ms-flex-pack: end;
     justify-content: flex-end;
     background-color: #dedee0;
+  }
+
+  .contact-mobile._404 {
+    display: block;
   }
 
   .image {
