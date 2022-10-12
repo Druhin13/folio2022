@@ -1,3 +1,1570 @@
+//codesandbox test.js
+
+// //add some js before body tag if the user is on desktop
+// if ($(window).width() > 1024) {
+// 	new cursoreffects.emojiCursor({
+// 		emoji: ["🔥"]
+// 	});
+// }
+
+//add a piece of code only if the user is on desktop and the user is hovering over the section id something, and remove that piece of code if the user hovers out of the section ; set the piece of code inside a variable so that it can be removed later
+if ($(window).width() > 1024) {
+	let something =
+		'<script>new cursoreffects.emojiCursor({emoji:["\uD83D\uDD25"]});</script>';
+	$("#something").hover(
+		function () {
+			$("body").append(something);
+		},
+		function () {
+			$("script").last().remove();
+			//remove the last canvas
+			$("canvas").last().remove();
+		}
+	);
+}
+/**
+ *
+ *
+ *
+ */
+
+//go fullscreeen when F or f if pressed or go off fullscreen when F is pressed again while in fullscreen
+document.addEventListener("keydown", function (e) {
+	if (e.keyCode == 70) {
+		if (document.fullscreenElement) {
+			document.exitFullscreen();
+		} else {
+			document.documentElement.requestFullscreen();
+		}
+	}
+});
+
+/**
+ *
+ *
+ *
+ */
+
+const CS2locoScroll1 = new LocomotiveScroll({
+	el: document.querySelector(".loco-test1"),
+	smooth: true,
+	multiplier: 0.6
+});
+
+//update CS2locoScroll1
+CS2locoScroll1.start();
+
+//run c_scrollbar function every 0.5 seconds and set it to a variable
+var c_scrollbar_interval = setInterval(c_scrollbar, 500);
+
+//set display none to .c-scrollbar repeatedly
+function c_scrollbar() {
+	//check the number of elements with class c-scrollbar and give them a id
+	$(".c-scrollbar").each(function (index) {
+		$(this).attr("id", "c-scrollbar" + index);
+		$(this)[0].style.mixBlendMode = "difference";
+		//console.log("set to difference");
+	});
+
+	//set a to the height of the child element of the first element with class c-scrollbar
+	var a = $("#c-scrollbar0").children().height();
+	//console.log("a = " + a);
+	//set b to the height of the child element of the second element with class c-scrollbar
+	var b = $("#c-scrollbar1").children().height();
+	//console.log("b = " + b);
+
+	//check which is smaller, a or b and hide the corresponding element with class c-scrollbar
+	if (a < b) {
+		$("#c-scrollbar0").hide();
+		//console.log("a is smaller");
+		//stop the interval
+		if (a == 0) {
+			clearInterval(c_scrollbar_interval);
+		}
+	} else {
+		$("#c-scrollbar1").hide();
+		//console.log("b is smaller");
+		//stop the interval
+		if (b == 0) {
+			clearInterval(c_scrollbar_interval);
+		}
+	}
+}
+
+/**
+ *
+ *
+ *
+ *
+ *
+ */
+
+//check if local storage preview is set or not
+if (localStorage.getItem("preview")) {
+	//if preview is set to off, then set the elements with class cs-preview to hidden
+	if (localStorage.getItem("preview") == "off") {
+		$(".cs-preview").css("display", "none");
+		//set text of preview-hide to show preview
+		$("#preview-hide-text").text("Show Previews");
+	} else {
+		//set it to flex
+		$(".cs-preview").css("display", "flex");
+		//set text of preview-hide to hide preview
+		$("#preview-hide-text").text("Hide Previews");
+	}
+} else {
+	//set local storage with the key "preview" and value "on"
+	localStorage.setItem("preview", "on");
+}
+
+//when the user clicks on #preview-hide
+$("#preview-hide").click(function () {
+	//check if local storage preview value
+	if (localStorage.getItem("preview") == "on") {
+		//if it is on, then set it to off
+		localStorage.setItem("preview", "off");
+		//set the elements with class cs-preview to hidden
+		$(".cs-preview").css("display", "none");
+		//set text of preview-hide to show preview
+		$("#preview-hide-text").text("Show Previews");
+	} else {
+		//set it to on
+		localStorage.setItem("preview", "on");
+		//set it to flex
+		$(".cs-preview").css("display", "flex");
+		//set text of preview-hide to hide preview
+		$("#preview-hide-text").text("Hide Previews");
+	}
+});
+
+/**
+ *
+ *
+ *
+ *
+ *
+ */
+//if ids cs1 or cs2 or cs3 or cs4 or cs5 or cs6 or cs7 is clicked
+$("#cs1, #cs2, #cs3, #cs4, #cs5, #cs6, #cs7").click(function () {
+	//store the text of preview-hide-text in a global variable and change the text of preview-hide-text to blank
+	$("#preview-hide-text").text("");
+	$(".c-scrollbar_thumb").css("background-color", "transparent");
+});
+
+//if cs1 is clicked
+$("#cs1, #cs1mobile").click(function () {
+	$(".skillsunion-cs").css("display", "block");
+	$(".vtf-cs").css("display", "none");
+	$(".mausumi-cs").css("display", "none");
+	$(".nowiverse-cs").css("display", "none");
+	$(".vocal-cs").css("display", "none");
+	$(".greenfox-cs").css("display", "none");
+	$(".allbodies-cs").css("display", "none");
+	//add in class to the loco-test1
+	$(".loco-test1").addClass("in");
+	$(".trigger3").click();
+	setTimeout(() => {
+		CS2locoScroll1.update();
+	}, 500);
+});
+
+$("#cs2, #cs2mobile").click(function () {
+	$(".skillsunion-cs").css("display", "none");
+	$(".vtf-cs").css("display", "block");
+	$(".mausumi-cs").css("display", "none");
+	$(".nowiverse-cs").css("display", "none");
+	$(".vocal-cs").css("display", "none");
+	$(".greenfox-cs").css("display", "none");
+	$(".allbodies-cs").css("display", "none");
+	//add in class to the loco-test1
+	$(".loco-test1").addClass("in");
+	$(".trigger3").click();
+	setTimeout(() => {
+		CS2locoScroll1.update();
+	}, 500);
+});
+
+$("#cs3, #cs3mobile").click(function () {
+	$(".skillsunion-cs").css("display", "none");
+	$(".vtf-cs").css("display", "none");
+	$(".mausumi-cs").css("display", "block");
+	$(".nowiverse-cs").css("display", "none");
+	$(".vocal-cs").css("display", "none");
+	$(".greenfox-cs").css("display", "none");
+	$(".allbodies-cs").css("display", "none");
+	//add in class to the loco-test1
+	$(".loco-test1").addClass("in");
+	$(".trigger3").click();
+	setTimeout(() => {
+		CS2locoScroll1.update();
+	}, 500);
+});
+
+$("#cs4, #cs4mobile").click(function () {
+	$(".skillsunion-cs").css("display", "none");
+	$(".vtf-cs").css("display", "none");
+	$(".mausumi-cs").css("display", "none");
+	$(".nowiverse-cs").css("display", "block");
+	$(".vocal-cs").css("display", "none");
+	$(".greenfox-cs").css("display", "none");
+	$(".allbodies-cs").css("display", "none");
+	//add in class to the loco-test1
+	$(".loco-test1").addClass("in");
+	$(".trigger3").click();
+	setTimeout(() => {
+		CS2locoScroll1.update();
+	}, 500);
+});
+
+$("#cs5, #cs5mobile").click(function () {
+	$(".skillsunion-cs").css("display", "none");
+	$(".vtf-cs").css("display", "none");
+	$(".mausumi-cs").css("display", "none");
+	$(".nowiverse-cs").css("display", "none");
+	$(".vocal-cs").css("display", "block");
+	$(".greenfox-cs").css("display", "none");
+	$(".allbodies-cs").css("display", "none");
+	//add in class to the loco-test1
+	$(".loco-test1").addClass("in");
+	$(".trigger3").click();
+	setTimeout(() => {
+		CS2locoScroll1.update();
+	}, 500);
+});
+
+$("#cs6, #cs6mobile").click(function () {
+	$(".skillsunion-cs").css("display", "none");
+	$(".vtf-cs").css("display", "none");
+	$(".mausumi-cs").css("display", "none");
+	$(".nowiverse-cs").css("display", "none");
+	$(".vocal-cs").css("display", "none");
+	$(".greenfox-cs").css("display", "block");
+	$(".allbodies-cs").css("display", "none");
+	//add in class to the loco-test1
+	$(".loco-test1").addClass("in");
+	$(".trigger3").click();
+	setTimeout(() => {
+		CS2locoScroll1.update();
+	}, 500);
+});
+
+$("#cs7, #cs7mobile").click(function () {
+	$(".skillsunion-cs").css("display", "none");
+	$(".vtf-cs").css("display", "none");
+	$(".mausumi-cs").css("display", "none");
+	$(".nowiverse-cs").css("display", "none");
+	$(".vocal-cs").css("display", "none");
+	$(".greenfox-cs").css("display", "none");
+	$(".allbodies-cs").css("display", "block");
+	//add in class to the loco-test1
+	$(".loco-test1").addClass("in");
+	$(".trigger3").click();
+	setTimeout(() => {
+		CS2locoScroll1.update();
+	}, 500);
+});
+
+/*
+/
+/
+/
+/
+*/
+
+$("#disable-hover").click(function () {
+	$(".c-scrollbar_thumb").css("background-color", "#d2d2d2");
+	$("#disable-hover").css("display", "none");
+	$("#cs-all-test").remove();
+	$("#project-header-test").remove();
+	$("#blur-all").css("height", "0vh");
+	if (localStorage.getItem("preview") == "on") {
+		$("#preview-hide-text").text("Hide Previews");
+	} else {
+		$("#preview-hide-text").text("Show Previews");
+	}
+	//go to the top of loco-test1
+	CS2locoScroll1.scrollTo(0, {
+		duration: 0
+	});
+
+	$(".loco-test1").removeClass("in");
+	$(".trigger4").click();
+
+	setTimeout(() => {
+		locoScroll.start();
+
+		$(".skillsunion-cs").css("display", "hide");
+		$(".vtf-cs").css("display", "hide");
+		$(".mausumi-cs").css("display", "hide");
+		$(".nowiverse-cs").css("display", "hide");
+		$(".vocal-cs").css("display", "hide");
+		$(".greenfox-cs").css("display", "hide");
+		$(".allbodies-cs").css("display", "hide");
+	}, 10);
+});
+
+$("#cs-close").click(function () {
+	$(".c-scrollbar_thumb").css("background-color", "#d2d2d2");
+	$("#disable-hover").css("display", "none");
+	$("#cs-all-test").remove();
+	$("#project-header-test").remove();
+	$("#blur-all").css("height", "0vh");
+	if (localStorage.getItem("preview") == "on") {
+		$("#preview-hide-text").text("Hide Previews");
+	} else {
+		$("#preview-hide-text").text("Show Previews");
+	}
+	//go to the top of loco-test1
+	CS2locoScroll1.scrollTo(0, {
+		duration: 0
+	});
+
+	$(".loco-test1").removeClass("in");
+	$(".trigger4").click();
+
+	setTimeout(() => {
+		locoScroll.start();
+
+		$(".skillsunion-cs").css("display", "hide");
+		$(".vtf-cs").css("display", "hide");
+		$(".mausumi-cs").css("display", "hide");
+		$(".nowiverse-cs").css("display", "hide");
+		$(".vocal-cs").css("display", "hide");
+		$(".greenfox-cs").css("display", "hide");
+		$(".allbodies-cs").css("display", "hide");
+	}, 10);
+});
+
+/*
+/
+/
+/
+/
+*/
+
+//check continuosly if .scroll-checker has the class visited in jquery
+$(document).ready(function () {
+	let scrollcheck = setInterval(scroll_checker, 10);
+
+	function scroll_checker() {
+		if ($(".scroll-checker").hasClass("visited")) {
+			//locomotive scroll go to bottom of the page
+			locoScroll.scrollTo("bottom", {
+				duration: 250
+			});
+			//stop the interval
+			clearInterval(scrollcheck);
+		}
+	}
+});
+
+// //set variable award_badges to 1
+// var award_badges = true;
+// //check if award_badges is 0, then hide the .award-badges
+// if (award_badges == false) {
+// 	$("#award-badges").hide();
+// }
+
+//check if div with class scroll-circle is clicked using jquery
+$(".scroll-circle").click(function () {
+	//get the id of the div that is clicked
+	var id = this.id;
+	//console.log(id);
+	//extract the first part of the id before the hyphen
+	var id = id.split("-")[0];
+	//console.log(id);
+	//add '2' to the id
+	var id = id + "2";
+	//console.log(id);
+	let scrollid = document.querySelector("#" + id);
+	//scroll to the id using locomotive scroll
+	CS2locoScroll1.scrollTo(scrollid, {
+		duration: 750
+	});
+});
+
+/*
+/
+/
+/
+*/
+
+//check if CS2locoScroll1 is scrolling down, then add class .scrolling-down to the text with id cs-heading, or if it is scrolling up, then remove the class .scrolling-down
+CS2locoScroll1.on("scroll", (obj) => {
+	if (obj.scroll.y > 0) {
+		$("#cs-heading").addClass("scrolling-down");
+	} else {
+		$("#cs-heading").removeClass("scrolling-down");
+	}
+});
+
+/*
+/
+/
+/
+*/
+
+//$(".cs-preview").css("display", "none");
+//$(".cs-preview").css("opacity", "0");
+
+// case study hover
+
+//sticky-project-header details
+const cs_offset = ($("#sticky-project-header").height() + 1) * -1;
+
+const cs1_target = document.querySelector("#cs1");
+const cs2_target = document.querySelector("#cs2");
+const cs3_target = document.querySelector("#cs3");
+const cs4_target = document.querySelector("#cs4");
+const cs5_target = document.querySelector("#cs5");
+const cs6_target = document.querySelector("#cs6");
+const cs7_target = document.querySelector("#cs7");
+const cs8_target = document.querySelector("#cs8");
+const cs9_target = document.querySelector("#cs9");
+const cs10_target = document.querySelector("#cs10");
+const cs11_target = document.querySelector("#cs11");
+const cs12_target = document.querySelector("#cs12");
+const cs13_target = document.querySelector("#cs13");
+
+$("#sticky-project-header").css("z-index", 25);
+
+let cs_hover = 0; //cs not hovering
+
+// check if user hovers over the cs1 tab
+$("#cs1")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs1").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs1_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs1").css("z-index") - 1); //z-index = 9
+			cs_hover = 1; //cs hovering
+		} else {
+			$("#sticky-project-header").css("z-index", $("#cs1").css("z-index") - 1); //z-index = 9
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0;
+			}, 0);
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs2 tab
+$("#cs2")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs2").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs2_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs2").css("z-index") - 1); //z-index = 10
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs2").css("z-index") - 1); //z-index = 10
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs3 tab
+$("#cs3")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs3").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs3_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs3").css("z-index") - 1); //z-index = 11
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs3").css("z-index") - 1); //z-index = 11
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs4 tab
+$("#cs4")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs4").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs4_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs4").css("z-index") - 1); //z-index = 12
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs4").css("z-index") - 1); //z-index = 12
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs5 tab
+$("#cs5")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs5").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs5_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs5").css("z-index") - 1); //z-index = 13
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs5").css("z-index") - 1); //z-index = 13
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs6 tab
+$("#cs6")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs6").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs6_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs6").css("z-index") - 1); //z-index = 14
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			//$("#cs5").css("opacity", 0); //hide cs5
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs6").css("z-index") - 1); //z-index = 14
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 13
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 14
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs7 tab
+$("#cs7")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs7").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs7_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs7").css("z-index") - 1); //z-index = 15
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			//$("#cs5").css("opacity", 0); //hide cs5
+			//$("#cs6").css("opacity", 0); //hide cs6
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs7").css("z-index") - 1); //z-index = 15
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 13
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 14
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 14
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 15
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs8 tab
+$("#cs8")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs8").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs8_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs8").css("z-index") - 1); //z-index = 16
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			//$("#cs5").css("opacity", 0); //hide cs5
+			//$("#cs6").css("opacity", 0); //hide cs6
+			//$("#cs7").css("opacity", 0); //hide cs7
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs8").css("z-index") - 1); //z-index = 16
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 13
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 14
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 15
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 14
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 15
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 16
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs9 tab
+$("#cs9")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs9").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs9_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs9").css("z-index") - 1); //z-index = 17
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			//$("#cs5").css("opacity", 0); //hide cs5
+			//$("#cs6").css("opacity", 0); //hide cs6
+			//$("#cs7").css("opacity", 0); //hide cs7
+			//$("#cs8").css("opacity", 0); //hide cs8
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs9").css("z-index") - 1); //z-index = 17
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 13
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 14
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 15
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 16
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 14
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 15
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 16
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 17
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs10 tab
+$("#cs10")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs10").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs10_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs10").css("z-index") - 1); //z-index = 18
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			//$("#cs5").css("opacity", 0); //hide cs5
+			//$("#cs6").css("opacity", 0); //hide cs6
+			//$("#cs7").css("opacity", 0); //hide cs7
+			//$("#cs8").css("opacity", 0); //hide cs8
+			//$("#cs9").css("opacity", 0); //hide cs9
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs10").css("z-index") - 1); //z-index = 18
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 13
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 14
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 15
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 16
+			$("#cs9").css("opacity", 1); // cs9 should be present
+			$("#cs9").css("z-index", 0); //z-index = 17
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 14
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 15
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 16
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 17
+			$("#cs9").css("opacity", 1); // cs9 should be present
+			$("#cs9").css("z-index", 0); //z-index = 18
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs11 tab
+$("#cs11")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs11").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs11_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs11").css("z-index") - 1); //z-index = 19
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			//$("#cs5").css("opacity", 0); //hide cs5
+			//$("#cs6").css("opacity", 0); //hide cs6
+			//$("#cs7").css("opacity", 0); //hide cs7
+			//$("#cs8").css("opacity", 0); //hide cs8
+			//$("#cs9").css("opacity", 0); //hide cs9
+			//$("#cs10").css("opacity", 0); //hide cs10
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs11").css("z-index") - 1); //z-index = 19
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 13
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 14
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 15
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 16
+			$("#cs9").css("opacity", 1); // cs9 should be present
+			$("#cs9").css("z-index", 0); //z-index = 17
+			$("#cs10").css("opacity", 1); // cs10 should be present
+			$("#cs10").css("z-index", 0); //z-index = 18
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 14
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 15
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 16
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 17
+			$("#cs9").css("opacity", 1); // cs9 should be present
+			$("#cs9").css("z-index", 0); //z-index = 18
+			$("#cs10").css("opacity", 1); // cs10 should be present
+			$("#cs10").css("z-index", 0); //z-index = 19
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs12 tab
+$("#cs12")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs12").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs12_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs12").css("z-index") - 1); //z-index = 20
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			//$("#cs5").css("opacity", 0); //hide cs5
+			//$("#cs6").css("opacity", 0); //hide cs6
+			//$("#cs7").css("opacity", 0); //hide cs7
+			//$("#cs8").css("opacity", 0); //hide cs8
+			//$("#cs9").css("opacity", 0); //hide cs9
+			//$("#cs10").css("opacity", 0); //hide cs10
+			//$("#cs11").css("opacity", 0); //hide cs11
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs12").css("z-index") - 1); //z-index = 20
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 13
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 14
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 15
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 16
+			$("#cs9").css("opacity", 1); // cs9 should be present
+			$("#cs9").css("z-index", 0); //z-index = 17
+			$("#cs10").css("opacity", 1); // cs10 should be present
+			$("#cs10").css("z-index", 0); //z-index = 18
+			$("#cs11").css("opacity", 1); // cs11 should be present
+			$("#cs11").css("z-index", 0); //z-index = 19
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 14
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 15
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 16
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 17
+			$("#cs9").css("opacity", 1); // cs9 should be present
+			$("#cs9").css("z-index", 0); //z-index = 18
+			$("#cs10").css("opacity", 1); // cs10 should be present
+			$("#cs10").css("z-index", 0); //z-index = 19
+			$("#cs11").css("opacity", 1); // cs11 should be present
+			$("#cs11").css("z-index", 0); //z-index = 20
+		}
+	});
+
+//
+//
+//
+//
+//
+// check if user hovers over the cs13 tab
+$("#cs13")
+	.mouseenter(function () {
+		//check if the element has the class cs-gone
+		if ($("#cs13").hasClass("cs-gone") == true) {
+			locoScroll.scrollTo(cs13_target, { offset: cs_offset, duration: 250 });
+			$("#sticky-project-header").css("z-index", $("#cs13").css("z-index") - 1); //z-index = 21
+			//hides all the cs tabs before this
+			//$("#cs1").css("opacity", 0); //hide cs1
+			//$("#cs2").css("opacity", 0); //hide cs2
+			//$("#cs3").css("opacity", 0); //hide cs3
+			//$("#cs4").css("opacity", 0); //hide cs4
+			//$("#cs5").css("opacity", 0); //hide cs5
+			//$("#cs6").css("opacity", 0); //hide cs6
+			//$("#cs7").css("opacity", 0); //hide cs7
+			//$("#cs8").css("opacity", 0); //hide cs8
+			//$("#cs9").css("opacity", 0); //hide cs9
+			//$("#cs10").css("opacity", 0); //hide cs10
+			//$("#cs11").css("opacity", 0); //hide cs11
+			//$("#cs12").css("opacity", 0); //hide cs12
+			cs_hover = 1; //cs hovering
+		} else {
+			//$('.cs-preview').css("display", none);
+			$("#sticky-project-header").css("z-index", $("#cs13").css("z-index") - 1); //z-index = 21
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 9
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 10
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 11
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 12
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 13
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 14
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 15
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 16
+			$("#cs9").css("opacity", 1); // cs9 should be present
+			$("#cs9").css("z-index", 0); //z-index = 17
+			$("#cs10").css("opacity", 1); // cs10 should be present
+			$("#cs10").css("z-index", 0); //z-index = 18
+			$("#cs11").css("opacity", 1); // cs11 should be present
+			$("#cs11").css("z-index", 0); //z-index = 19
+			$("#cs12").css("opacity", 1); // cs12 should be present
+			$("#cs12").css("z-index", 0); //z-index = 20
+			cs_hover = 1; //cs hovering
+		}
+	})
+
+	.mouseleave(function () {
+		if (cs_hover != 1) {
+			//if not hovering
+			setTimeout(() => {
+				$("#sticky-project-header").css("z-index", 25); //z-index = 25
+				cs_hover = 0; //not hovering
+			}, 0);
+			$("#cs1").css("opacity", 1); // cs1 should be present
+			$("#cs1").css("z-index", 0); //z-index = 10
+			$("#cs2").css("opacity", 1); // cs2 should be present
+			$("#cs2").css("z-index", 0); //z-index = 11
+			$("#cs3").css("opacity", 1); // cs3 should be present
+			$("#cs3").css("z-index", 0); //z-index = 12
+			$("#cs4").css("opacity", 1); // cs4 should be present
+			$("#cs4").css("z-index", 0); //z-index = 13
+			$("#cs5").css("opacity", 1); // cs5 should be present
+			$("#cs5").css("z-index", 0); //z-index = 14
+			$("#cs6").css("opacity", 1); // cs6 should be present
+			$("#cs6").css("z-index", 0); //z-index = 15
+			$("#cs7").css("opacity", 1); // cs7 should be present
+			$("#cs7").css("z-index", 0); //z-index = 16
+			$("#cs8").css("opacity", 1); // cs8 should be present
+			$("#cs8").css("z-index", 0); //z-index = 17
+			$("#cs9").css("opacity", 1); // cs9 should be present
+			$("#cs9").css("z-index", 0); //z-index = 18
+			$("#cs10").css("opacity", 1); // cs10 should be present
+			$("#cs10").css("z-index", 0); //z-index = 19
+			$("#cs11").css("opacity", 1); // cs11 should be present
+			$("#cs11").css("z-index", 0); //z-index = 20
+			$("#cs12").css("opacity", 1); // cs12 should be present
+			$("#cs12").css("z-index", 0); //z-index = 21
+		}
+	});
+//
+//
+//
+//
+//
+//
+
+// all
+
+$("#cs-all-holder1")
+	.mouseenter(function () {})
+	.mouseleave(function () {
+		setTimeout(() => {
+			$("#sticky-project-header").css("z-index", 25);
+			cs_hover = 0;
+		}, 0);
+		$("#cs1").css("opacity", 1);
+		$("#cs2").css("opacity", 1);
+		$("#cs3").css("opacity", 1);
+		$("#cs4").css("opacity", 1);
+		$("#cs5").css("opacity", 1);
+		$("#cs6").css("opacity", 1);
+		$("#cs7").css("opacity", 1);
+		$("#cs8").css("opacity", 1);
+		$("#cs9").css("opacity", 1);
+		$("#cs10").css("opacity", 1);
+		$("#cs11").css("opacity", 1);
+		$("#cs12").css("opacity", 1);
+		$("#cs13").css("opacity", 1);
+	});
+
+$("#sticky-project-header")
+	.mouseenter(function () {
+		setTimeout(() => {
+			$("#sticky-project-header").css("z-index", 25);
+			cs_hover = 0;
+		}, 0);
+		$("#cs1").css("opacity", 1);
+		$("#cs2").css("opacity", 1);
+		$("#cs3").css("opacity", 1);
+		$("#cs4").css("opacity", 1);
+		$("#cs5").css("opacity", 1);
+		$("#cs6").css("opacity", 1);
+		$("#cs7").css("opacity", 1);
+		$("#cs8").css("opacity", 1);
+		$("#cs9").css("opacity", 1);
+		$("#cs10").css("opacity", 1);
+		$("#cs11").css("opacity", 1);
+		$("#cs12").css("opacity", 1);
+		$("#cs13").css("opacity", 1);
+	})
+	.mouseleave(function () {});
+
+/*
+ *
+ *
+ *
+ *
+ *
+ */
+
+// //set locomotive scroll on for tablet and mobile
+// if ($(window).width() < 1024) {
+// 	//set locomotive scroll on
+// 	locoScroll.destroy();
+// 	locoScroll = null;
+// 	locoScroll = new LocomotiveScroll({
+// 		el: document.querySelector(".locomotive-scroll"),
+// 		smooth: true,
+// 		smoothMobile: true,
+// 		getDirection: true,
+// 		reloadOnContextChange: true,
+// 		tablet: {
+// 			smooth: true
+// 		}
+// 	});
+// }
+
+$("#cs1mobile").click(function () {
+	$("#cs-heading").text("SkillsUnion");
+	$("#cs-heading").css("color", $("#su1").css("color"));
+	$("#cs-close").css("background-color", $("#su1").css("color"));
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//go to the top of .loco-test1 using vaniall javascript after 1 secs
+	setTimeout(function () {
+		document.querySelector(".loco-test1").scrollIntoView({
+			behavior: "smooth"
+		});
+	}, 1);
+});
+
+$("#cs2mobile").click(function () {
+	$("#cs-heading").text("Value Tech Foundation");
+	$("#cs-heading").css("color", $("#vtf1").css("color"));
+	$("#cs-close").css("background-color", $("#vtf1").css("background-color"));
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//go to the top of .loco-test1 using vaniall javascript after 1 secs
+	setTimeout(function () {
+		document.querySelector(".loco-test1").scrollIntoView({
+			behavior: "smooth"
+		});
+	}, 1);
+});
+
+$("#cs3mobile").click(function () {
+	$("#cs-heading").text("Mausumi");
+	$("#cs-heading").css("color", $("#mau1").css("color"));
+	$("#cs-close").css("background-color", $("#mau1").css("background-color"));
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//go to the top of .loco-test1 using vaniall javascript after 1 secs
+	setTimeout(function () {
+		document.querySelector(".loco-test1").scrollIntoView({
+			behavior: "smooth"
+		});
+	}, 1);
+});
+
+$("#cs4mobile").click(function () {
+	$("#cs-heading").text("Nowiverse Arena");
+	$("#cs-heading").css("color", $("#nowi1").css("color"));
+	$("#cs-close").css("background-color", $("#nowi1").css("background-color"));
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//go to the top of .loco-test1 using vaniall javascript after 1 secs
+	setTimeout(function () {
+		document.querySelector(".loco-test1").scrollIntoView({
+			behavior: "smooth"
+		});
+	}, 1);
+});
+
+$("#cs5mobile").click(function () {
+	$("#cs-heading").text("Vocal Media");
+	$("#cs-heading").css("color", $("#vocal1").css("color"));
+	$("#cs-close").css("background-color", $("#vocal1").css("background-color"));
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//go to the top of .loco-test1 using vaniall javascript after 1 secs
+	setTimeout(function () {
+		document.querySelector(".loco-test1").scrollIntoView({
+			behavior: "smooth"
+		});
+	}, 1);
+});
+
+$("#cs6mobile").click(function () {
+	$("#cs-heading").text("GreenFox");
+	$("#cs-heading").css("color", $("#gf1").css("color"));
+	$("#cs-close").css("background-color", $("#gf1").css("color"));
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//go to the top of .loco-test1 using vaniall javascript after 1 secs
+	setTimeout(function () {
+		document.querySelector(".loco-test1").scrollIntoView({
+			behavior: "smooth"
+		});
+	}, 1);
+});
+
+$("#cs7mobile").click(function () {
+	$("#cs-heading").text("All Bodies");
+	$("#cs-heading").css("color", $("#ab1").css("color"));
+	$("#cs-close").css("background-color", $("#ab1").css("background-color"));
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//go to the top of .loco-test1 using vaniall javascript after 1 secs
+	setTimeout(function () {
+		document.querySelector(".loco-test1").scrollIntoView({
+			behavior: "smooth"
+		});
+	}, 1);
+});
+
+
+
+/*
+ *
+ *
+ *
+ */
+
+//codesandbox anim.js
+
+//make sure to remove .anim class from .landing-lottie
+$(".landing-lottie").removeClass("anim");
+//remove anim class from d1, r1, u1, h1, dot1, i1, n1
+//$(".d1, .r1, .u1, .h1, .dot1, .i1, .n1").removeClass("anim");
+
+/*
+ *
+ *
+ *
+ */
+
+//check if any local storage is with random load is present
+if (localStorage.getItem("randomload")) {
+	//set randomload with a random number between 40 to 50
+	randomload = Math.floor(Math.random() * 10) + 40;
+	//set the randomload in browser storage
+	localStorage.setItem("randomload", randomload);
+} else {
+	//store a random number between 10 to 20 in a variable
+	randomload = Math.floor(Math.random() * 10) + 10;
+	//set the randomload in browser storage
+	localStorage.setItem("randomload", randomload);
+}
+
+//create a loading percentage text that animates from whatever% to 100% without decimal point within 1.5 secs and set it to the text of #load using anime.js
+anime({
+	targets: "#load",
+	innerHTML: randomload,
+	easing: "easeInOutExpo",
+	duration: 3000,
+	round: 1,
+	//delay: 100,
+	complete: function (anim) {
+		setTimeout(function () {
+			anime({
+				targets: "#load",
+				innerHTML: 100,
+				easing: "easeInOutExpo",
+				duration: 2000,
+				round: 1,
+				//once the animation is complete, click on loadtrigger
+				complete: function (anim) {}
+			});
+		}, 500);
+		setTimeout(function () {
+			//menu navigation animation
+			$(".trigger1").click();
+			//loading the case study preview gifs
+			$("head").append(
+				'<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>'
+			);
+		}, 1750);
+	}
+});
+
+/*
+ *
+ *
+ *
+ */
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector(".tanim");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+	/\S/g,
+	"<span class='letter'>$&</span>"
+);
+
+//main DRUH.IN text animation
+var f1 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+f1.add({
+	targets: ".tanim .letter",
+	translateY: [500, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	easing: "easeOutExpo",
+	duration: 1400,
+	delay: (el, i) => 300 + 30 * i
+});
+
+/*
+ *
+ *
+ *
+ */
+
+//repeatedly check what the text of #load is and print it in the console
+let loadinterval = setInterval(function () {
+	if ($("#load").text() == 100) {
+		document.body.style.cursor = "default";
+		$(".loadtrigger").click();
+		setTimeout(function () {
+			f1.play();
+		}, 250);
+		locoScroll.start();
+		setTimeout(function () {
+			$(".landing-lottie").addClass("anim");
+		}, 500);
+
+		clearInterval(loadinterval);
+	}
+}, 100);
+
+/*
+//text intro animation
+
+.add({
+	targets: ".tanim .letter",
+	translateY: [100, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	easing: "easeOutExpo",
+	duration: 1400,
+	delay: (el, i) => 300 + 30 * i
+})
+
+*/
+
+/*
+//text outro animation
+
+.add({
+	targets: ".tanim .letter",
+	translateY: [0, -100],
+	opacity: [1, 0],
+	easing: "easeInExpo",
+	duration: 1200,
+	delay: (el, i) => 100 + 30 * i
+})
+
+*/
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+//animate the background color of a div landing-lottie with raial gradient as the user moves their mouse over the screen
+$(document).mousemove(function (e) {
+	let x = e.pageX;
+	let y = e.pageY;
+	$(".landing-lottie").css(
+		"background",
+		"radial-gradient(circle at " + x + "px " + y + "px, #373737, #131313)"
+	);
+});
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+
+
+
+
 // //jQuerySimpleCounter.js
 // (function ($) {
 //   $.fn.jQuerySimpleCounter = function (options) {
