@@ -1,6 +1,3 @@
-//show the awards left tag (awwwards + cssda)
-$("#awards-trigger").click();
-
 //codesandbox test.js
 
 // //add some js before body tag if the user is on desktop
@@ -1468,6 +1465,8 @@ anime({
 		setTimeout(function () {
 			//menu navigation animation
 			$(".trigger1").click();
+			//hide the awards left tag (awwwards + cssda)
+			$("#awards-trigger").click();
 			//loading the case study preview gifs
 			$("head").append(
 				'<link rel="stylesheet" href="https://druh.in/folio2022/css/preview.css"/>'
