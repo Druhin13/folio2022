@@ -1445,7 +1445,7 @@ anime({
 				complete: function (anim) {
 					//go through the span elements within the div with id scroll-in1 and add id druhin+index to each span element
 					$("#scroll-in1 span").each(function (index) {
-						$(this).attr("id", "druhin" + index);
+						$(this).attr("id", "druhin" + (index + 1));
 					});
 
 					//add attribute data-scroll to ids druhin1, druhin2, druhin3, druhin4, druhin5, druhin6, druhin7
