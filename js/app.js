@@ -3637,3 +3637,954 @@ $(document).ready(function () {
 //     $('#cs13').css('pointer-events', 'all');
 //   }
 // }
+
+
+
+//codesandbox anim2.js
+
+// Find all text with .tricks class and break each letter into a span
+var tricksWord = document.getElementsByClassName("tricks");
+for (var i = 0; i < tricksWord.length; i++) {
+	var wordWrap = tricksWord.item(i);
+	wordWrap.innerHTML = wordWrap.innerHTML.replace(
+		/(^|<\/?[^>]+>|\s+)([^\s<]+)/g,
+		'$1<span class="tricksword">$2</span>'
+	);
+}
+var tricksLetter = document.getElementsByClassName("tricksword");
+for (var i = 0; i < tricksLetter.length; i++) {
+	var letterWrap = tricksLetter.item(i);
+	letterWrap.innerHTML = letterWrap.textContent.replace(
+		/\S/g,
+		"<span class='letter'>$&</span>"
+	);
+}
+
+// Fade Up Animation
+var fadeUp = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp.add({
+	targets: ".fade-up .tricksword",
+	translateY: [100, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp2 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp2.add({
+	targets: ".fade-up2 .tricksword",
+	translateY: [125, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp3 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp3.add({
+	targets: ".fade-up3 .tricksword",
+	translateY: [100, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 40 * i
+});
+
+var fadeUp4 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp4.add({
+	targets: ".fade-up4 .tricksword",
+	translateY: [100, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 40 * i
+});
+
+var fadeUp5 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp5.add({
+	targets: ".fade-up5 .tricksword",
+	translateY: [100, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 40 * i
+});
+
+var fadeUp6 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp6.add({
+	targets: ".fade-up6 .tricksword",
+	translateY: [100, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 40 * i
+});
+
+var fadeUp7 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp7.add({
+	targets: ".fade-up7 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp8 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp8.add({
+	targets: ".fade-up8 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp9 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp9.add({
+	targets: ".fade-up9 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp10 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp10.add({
+	targets: ".fade-up10 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp11 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp11.add({
+	targets: ".fade-up11 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp12 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp12.add({
+	targets: ".fade-up12 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp13 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp13.add({
+	targets: ".fade-up13 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp14 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp14.add({
+	targets: ".fade-up14 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp15 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp15.add({
+	targets: ".fade-up15 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+var fadeUp16 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp16.add({
+	targets: ".fade-up16 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp17 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp17.add({
+	targets: ".fade-up17 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp18 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp18.add({
+	targets: ".fade-up18 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp19 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp19.add({
+	targets: ".fade-up19 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [15, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 35 * i
+});
+
+var fadeUp20 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp20.add({
+	targets: ".fade-up20 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 1000,
+	delay: (el, i) => 100 * i
+});
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+var fadeUp21 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp21.add({
+	targets: ".fade-up21 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp22 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp22.add({
+	targets: ".fade-up22 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp23 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp23.add({
+	targets: ".fade-up23 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp24 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp24.add({
+	targets: ".fade-up24 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp25 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp25.add({
+	targets: ".fade-up25 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp26 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp26.add({
+	targets: ".fade-up26 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp27 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp27.add({
+	targets: ".fade-up27 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp28 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp28.add({
+	targets: ".fade-up28 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp29 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp29.add({
+	targets: ".fade-up29 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp30 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp30.add({
+	targets: ".fade-up30 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp31 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp31.add({
+	targets: ".fade-up31 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp32 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp32.add({
+	targets: ".fade-up32 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp33 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp33.add({
+	targets: ".fade-up33 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp34 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp34.add({
+	targets: ".fade-up34 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp35 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp35.add({
+	targets: ".fade-up35 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp36 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp36.add({
+	targets: ".fade-up36 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+var fadeUp37 = anime.timeline({
+	loop: false,
+	autoplay: false
+});
+
+fadeUp37.add({
+	targets: ".fade-up37 .tricksword",
+	translateY: [200, 0],
+	translateZ: 0,
+	opacity: [0, 1],
+	//rotateZ: [10, 0],
+	easing: "easeOutExpo",
+	duration: 750,
+	delay: (el, i) => 50 * i
+});
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+// Play animation when scrolled into view
+$("#scroll-in1").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp.play();
+	} else {
+	}
+});
+$("#scroll-in2").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp2.play();
+		fadeUp7.play();
+		fadeUp8.play();
+		fadeUp9.play();
+	} else {
+	}
+});
+$("#scroll-in3").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp3.play();
+	} else {
+	}
+});
+$("#scroll-in4").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp4.play();
+	} else {
+	}
+});
+$("#scroll-in5").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp5.play();
+	} else {
+	}
+});
+$("#scroll-in6").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp6.play();
+	} else {
+	}
+});
+$("#scroll-in7").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp7.play();
+	} else {
+	}
+});
+$("#scroll-in8").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp8.play();
+	} else {
+	}
+});
+
+$("#scroll-in10").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp10.play();
+	} else {
+	}
+});
+$("#scroll-in11").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp11.play();
+	} else {
+	}
+});
+$("#scroll-in12").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp12.play();
+	} else {
+	}
+});
+$("#scroll-in13").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp13.play();
+	} else {
+	}
+});
+$("#scroll-in14").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp14.play();
+	} else {
+	}
+});
+$("#scroll-in15").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp15.play();
+	} else {
+	}
+});
+$("#scroll-in16").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp16.play();
+	} else {
+	}
+});
+
+/*
+ */
+
+$("#scroll-in17").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp17.play();
+	} else {
+	}
+});
+
+$("#scroll-in18").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp18.play();
+		fadeUp20.play();
+	} else {
+	}
+});
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+$("#cs1").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp21.play();
+	} else {
+	}
+});
+
+$("#cs2").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp22.play();
+	} else {
+	}
+});
+
+$("#cs3").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp23.play();
+	} else {
+	}
+});
+
+$("#cs4").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp24.play();
+	} else {
+	}
+});
+
+$("#cs5").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp25.play();
+	} else {
+	}
+});
+
+$("#cs6").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp26.play();
+	} else {
+	}
+});
+
+$("#cs7").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp27.play();
+	} else {
+	}
+});
+
+$("#cs8").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp28.play();
+	} else {
+	}
+});
+
+$("#cs9").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp29.play();
+	} else {
+	}
+});
+
+$("#cs11").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp30.play();
+	} else {
+	}
+});
+
+$("#cs12").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp31.play();
+	} else {
+	}
+});
+
+$("#screenoff").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp32.play();
+	} else {
+	}
+});
+
+$("#mello").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp33.play();
+	} else {
+	}
+});
+
+$("#mausumi").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp34.play();
+	} else {
+	}
+});
+
+$("#nowiverse").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp35.play();
+	} else {
+	}
+});
+
+$("#webprompter").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp36.play();
+	} else {
+	}
+});
+
+$("#invoiced").on("inview", function (event, isInView) {
+	if (isInView) {
+		fadeUp37.play();
+	} else {
+	}
+});
+
+/*
+ *
+ *
+ *
+ *
+ */
+
+//check if user on desktop
+if ($(window).width() > 1024) {
+	// druhin text anim on scroll
+	let project_timer = setInterval(druhintext, 1);
+	function druhintext() {
+		//if ($("#awards").offset().top > $(window).height()) {
+		////console.log($("#work").offset().top);
+		let work_offset = $("#work").offset().top; // eg: 980
+
+		let d_move = (($(window).height() - work_offset) / 3) * 1; // eg: 33.33
+		//console.log("d = " + d_move);
+		d_move = "matrix(1, 0, 0, 1, 0, " + d_move + ")";
+		$("#druhin1").css("transform", d_move);
+
+		let r_move = (($(window).height() - work_offset) / 2) * 1; // eg: 33.33
+		//console.log("r = " + r_move);
+		r_move = "matrix(1, 0, 0, 1, 0, " + r_move + ")";
+		$("#druhin3").css("transform", r_move);
+
+		let u_move = (($(window).height() - work_offset) / 6) * 1; // eg: 33.33
+		//console.log("u = " + u_move);
+		u_move = "matrix(1, 0, 0, 1, 0, " + u_move + ")";
+		//$("#druhin2").css("transform", u_move);
+
+		let h_move = (($(window).height() - work_offset) / 4) * 1; // eg: 33.33
+		//console.log("h = " + h_move);
+		h_move = "matrix(1, 0, 0, 1, 0, " + h_move + ")";
+		$("#druhin4").css("transform", h_move);
+		$("#druhin2").css("transform", h_move);
+
+		let i_move = (($(window).height() - work_offset) / 1) * 1; // eg: 33.33
+		//console.log("i = " + i_move);
+		i_move = "matrix(1, 0, 0, 1, 0, " + i_move + ")";
+		$("#druhin5").css("transform", i_move);
+
+		let n_move = (($(window).height() - work_offset) / 2) * 1; // eg: 33.33
+		//console.log("n = " + n_move);
+		n_move = "matrix(1, 0, 0, 1, 0, " + n_move + ")";
+		$("#druhin6").css("transform", n_move);
+
+		let ab_move = (($(window).height() - work_offset) / 1.5) * 1; // eg: 33.33
+		//console.log("ab = " + ab_move);
+		ab_move = "matrix(1, 0, 0, 1, 0, " + ab_move + ")";
+		$("#druhin7").css("transform", ab_move);
+	}
+}
+
+//if cs1mobile to cs7mobile is clicked
+$(
+	"#cs1mobile, #cs2mobile, #cs3mobile, #cs4mobile, #cs5mobile, #cs6mobile, #cs7mobile"
+).click(function () {
+	//stop user from scrolling in .mobile-wrapper
+
+	//set the height of .mobile-wrapper to 100vh and overflow to hidden
+	$(".mobile-wrapper").css("height", "100vh");
+	$(".mobile-wrapper").css("overflow", "hidden");
+});
+
+//if cs-close is clicked
+$("#cs-close").click(function () {
+	//if its not on desktop
+	if ($(window).width() < 1024) {
+		//allow to scroll in .mobile-wrapper
+
+		//set the height of .mobile-wrapper to auto and overflow to auto
+		$(".mobile-wrapper").css("height", "auto");
+		$(".mobile-wrapper").css("overflow", "auto");
+
+		//scroll to work-mobile
+		window.scrollTo({
+			top: $("#work-mobile").offset().top
+		});
+	}
+});
