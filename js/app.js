@@ -352,6 +352,10 @@ $(document).ready(function () {
 			locoScroll.scrollTo("bottom", {
 				duration: 250
 			});
+
+			//animate the 'Hire me already' text
+			fadeUp19.play();
+
 			//stop the interval
 			clearInterval(scrollcheck);
 		}
