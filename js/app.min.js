@@ -1,3 +1,6 @@
+//show the awards left tag (awwwards + cssda)
+$("#awards-trigger").click();
+
 //codesandbox test.js
 
 // //add some js before body tag if the user is on desktop
