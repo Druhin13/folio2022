@@ -1,3 +1,8 @@
+//hide award tags
+//comment them out if awarded
+document.querySelector(".aww").style.display = "none", document.querySelector(".cssda").style.display = "none";
+
+
 //codesandbox test.js
 
 // //add some js before body tag if the user is on desktop
