@@ -1225,7 +1225,7 @@ $("#cs13")
 // all
 
 $("#cs-all-holder1")
-	.mouseenter(function () {})
+	.mouseenter(function () { })
 	.mouseleave(function () {
 		setTimeout(() => {
 			$("#sticky-project-header").css("z-index", 25);
@@ -1266,7 +1266,7 @@ $("#sticky-project-header")
 		$("#cs12").css("opacity", 1);
 		$("#cs13").css("opacity", 1);
 	})
-	.mouseleave(function () {});
+	.mouseleave(function () { });
 
 /*
  *
@@ -1442,7 +1442,20 @@ anime({
 				duration: 2000,
 				round: 1,
 				//once the animation is complete, click on loadtrigger
-				complete: function (anim) {}
+				complete: function (anim) {
+					//go through the span elements within the div with id scroll-in1 and add id druhin+index to each span element
+					$("#scroll-in1 span").each(function (index) {
+						$(this).attr("id", "druhin" + index);
+					});
+
+					//add attribute data-scroll to ids druhin1, druhin2, druhin3, druhin4, druhin5, druhin6, druhin7
+					$("#druhin1, #druhin2, #druhin3, #druhin4, #druhin5, #druhin6, #druhin7").attr("data-scroll", "true");
+
+					//add attribute data-scroll-position to ids druhin1, druhin2, druhin3, druhin4, druhin5, druhin6, druhin7
+					$("#druhin1, #druhin2, #druhin3, #druhin4, #druhin5, #druhin6, #druhin7").attr("data-scroll-position", "top");
+
+					$("#druhin1").attr("data-scroll-speed", "-7");
+				}
 			});
 		}, 500);
 		setTimeout(function () {
@@ -1592,17 +1605,17 @@ $(document).mousemove(function (e) {
 
 //locomotive initialization
 const locoScroll = new LocomotiveScroll({
-  el: document.querySelector(".locomotive-scroll"),
-  smooth: true,
-  multiplier: 0.4,   //mine
+	el: document.querySelector(".locomotive-scroll"),
+	smooth: true,
+	multiplier: 0.4,   //mine
 
-  //seperator
+	//seperator
 
-  //el: document.querySelector('#js-scroll'),   //other
-  //smooth: true,
-  //reloadOnContextChange: true,   //other
-  //lerp: 0.06, //other
-  //smoothMobile: true   //other
+	//el: document.querySelector('#js-scroll'),   //other
+	//smooth: true,
+	//reloadOnContextChange: true,   //other
+	//lerp: 0.06, //other
+	//smoothMobile: true   //other
 });
 locoScroll.stop();
 
@@ -1656,32 +1669,32 @@ setTimeout(() => {
   this.points = [];
 
   sketch.addEventListener('mousemove', e => {
-    const object = {
-      point: { x: e.offsetX, y: e.offsetY },
-      timer: setTimeout(function () {
-        this.points.shift();
-      }, 250),
-    };
+	const object = {
+	  point: { x: e.offsetX, y: e.offsetY },
+	  timer: setTimeout(function () {
+		this.points.shift();
+	  }, 250),
+	};
 
-    this.points.push(object);
+	this.points.push(object);
   });
 
   function draw() {
-    contextArea.clearRect(0, 0, canvas.width, canvas.height);
-    contextArea.beginPath();
-    contextArea.strokeStyle = '#ffffff';
-    contextArea.lineWidth = 1;
+	contextArea.clearRect(0, 0, canvas.width, canvas.height);
+	contextArea.beginPath();
+	contextArea.strokeStyle = '#ffffff';
+	contextArea.lineWidth = 1;
 
-    for (let i = 0; i < this.points.length; i++) {
-      contextArea.lineTo(this.points[i].point.x, this.points[i].point.y);
-    }
+	for (let i = 0; i < this.points.length; i++) {
+	  contextArea.lineTo(this.points[i].point.x, this.points[i].point.y);
+	}
 
-    contextArea.stroke();
-    contextArea.closePath();
+	contextArea.stroke();
+	contextArea.closePath();
   }
 
   setInterval(function () {
-    draw();
+	draw();
   }, 25);
 
 
@@ -1718,30 +1731,30 @@ setTimeout(() => {
   resize();
 
   function resize() {
-    ctx.canvas.width = window.innerWidth;
-    ctx.canvas.height = window.innerHeight;
+	ctx.canvas.width = window.innerWidth;
+	ctx.canvas.height = window.innerHeight;
   }
   function reposition(event) {
-    coord.x = event.clientX - canvas.offsetLeft;
-    coord.y = event.clientY - canvas.offsetTop;
+	coord.x = event.clientX - canvas.offsetLeft;
+	coord.y = event.clientY - canvas.offsetTop;
   }
   function start(event) {
-    document.addEventListener("mousemove", draw);
-    reposition(event);
+	document.addEventListener("mousemove", draw);
+	reposition(event);
   }
   function stop() {
-    document.removeEventListener("mousemove", draw);
+	document.removeEventListener("mousemove", draw);
   }
   function draw(event) {
-    ctx.beginPath();
-    //ctx.lineWidth = 1.75; //old line width when used with blur + black + on landing section
-    ctx.lineWidth = 0.75; //new line width when used without blur + white + on hire me section
-    ctx.lineCap = "round";
-    ctx.strokeStyle = "#ffffff";
-    ctx.moveTo(coord.x, coord.y);
-    reposition(event);
-    ctx.lineTo(coord.x, coord.y);
-    ctx.stroke();
+	ctx.beginPath();
+	//ctx.lineWidth = 1.75; //old line width when used with blur + black + on landing section
+	ctx.lineWidth = 0.75; //new line width when used without blur + white + on hire me section
+	ctx.lineCap = "round";
+	ctx.strokeStyle = "#ffffff";
+	ctx.moveTo(coord.x, coord.y);
+	reposition(event);
+	ctx.lineTo(coord.x, coord.y);
+	ctx.stroke();
   }
 
   */
@@ -1889,27 +1902,27 @@ const contact = document.querySelector('#contact-test');
 
 
 $('#landing-scroll').click(function () {
-  locoScroll.scrollTo(work);
+	locoScroll.scrollTo(work);
 });
 
 $('#about-link').click(function () {
-  locoScroll.scrollTo(about);
+	locoScroll.scrollTo(about);
 });
 
 $('#work-link').click(function () {
-  locoScroll.scrollTo(work);
+	locoScroll.scrollTo(work);
 });
 
 $('#awards-link').click(function () {
-  locoScroll.scrollTo(awards);
+	locoScroll.scrollTo(awards);
 });
 
 $('#testimonials-link').click(function () {
-  locoScroll.scrollTo(testimonials);
+	locoScroll.scrollTo(testimonials);
 });
 
 $('#contact-link').click(function () {
-  locoScroll.scrollTo(contact);
+	locoScroll.scrollTo(contact);
 });
 
 
@@ -1937,26 +1950,26 @@ h2[j].innerText = nh2;
 /* time calc */
 
 let options = {
-  timeZone: 'Europe/London',
-  //year: 'numeric',
-  //month: 'numeric',
-  //day: 'numeric',
-  hour: '2-digit',
-  minute: '2-digit',
-  //second: 'numeric',
+	timeZone: 'Europe/London',
+	//year: 'numeric',
+	//month: 'numeric',
+	//day: 'numeric',
+	hour: '2-digit',
+	minute: '2-digit',
+	//second: 'numeric',
 },
-  formatter = new Intl.DateTimeFormat([], options);
+	formatter = new Intl.DateTimeFormat([], options);
 
 let time_a = formatter.format(new Date());
 
 let ctime = setInterval(timecalc, 1000);
 function timecalc() {
-  let time_b = formatter.format(new Date());
-  $("#time, #time-mobile").text(time_b);
-  if (time_b != time_a) {
-    time_a = time_b;
-    $(".circle").click();
-  }
+	let time_b = formatter.format(new Date());
+	$("#time, #time-mobile").text(time_b);
+	if (time_b != time_a) {
+		time_a = time_b;
+		$(".circle").click();
+	}
 }
 
 
@@ -1974,536 +1987,536 @@ function timecalc() {
 //case study clicks
 
 $('#cs1').click(function () {
-  $('#cs-heading').text("SkillsUnion");
-  $("#cs-heading").css("color", $("#su1").css("color"));
-  $("#cs-close").css("background-color", $("#su1").css("color"));
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
-  let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
+	$('#cs-heading').text("SkillsUnion");
+	$("#cs-heading").css("color", $("#su1").css("color"));
+	$("#cs-close").css("background-color", $("#su1").css("color"));
+	let header_margin_top = $('#sticky-project-header').offset().top;
+	let cs_margin_top = (($('#cs-all-holder1').offset().top) + ($(window).height() * 0.028) + 1);
+	let cs_height = $('#cs1').height() - ($(window).height() * 0.028);
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	locoScroll.stop(); //stopping user from scrolling through the whole document
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//cloning the project header
+	$('#sticky-project-header')
+		.clone()
+		.attr('id', "project-header-test")
+		.appendTo($('#blur-all'));
+	$('#project-header-test').css('position', 'absolute');
+	$('#project-header-test').css('top', header_margin_top);
 
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+	if (header_margin_top == 0) {
+		$('#project-header-test').css('transform', '');
+	}
+	$('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+	$('#project-header-test').css('background-color', 'transparent');
+	$('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+	$('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+	$('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("Marketing");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+	$('#project-header-t1').text("Website");
+	$('#project-header-t2').text("Visual / Brand");
+	$('#project-header-t3').text("Marketing");
+	$('#project-header-t4').text("");
+	$('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021 - 2022");
+	$('#project-header-year').text("2021 - 2022");
 
-  $('#project-header-d1').text("UI Design");
-  $('#project-header-d2').text("UX Design");
-  $('#project-header-d3').text("Visual Direction");
-  $('#project-header-d4').text("");
+	$('#project-header-d1').text("UI Design");
+	$('#project-header-d2').text("UX Design");
+	$('#project-header-d3').text("Visual Direction");
+	$('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+	//cloning the case study tab (which is clicked)
+	$('#cs-all-holder1')
+		.clone()
+		.attr('id', "cs-all-test")
+		.appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+	//removing all the other cs tabs
+	$('#cs2').remove();
+	$('#cs3').remove();
+	$('#cs4').remove();
+	$('#cs5').remove();
+	$('#cs6').remove();
+	$('#cs7').remove();
+	$('#cs8').remove();
+	$('#cs9').remove();
+	$('#cs10').remove();
+	$('#cs11').remove();
+	$('#cs12').remove();
+	$('#cs13').remove();
 
-  $('#cs1-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs1').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs1').find('.empty-space-case-study:eq(0)').css('height', ($('#cs1').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+	$('#cs1-preview').remove(); // remove the preview of the selected cs tab
+	$('#cs1').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+	$('#cs1').find('.empty-space-case-study:eq(0)').css('height', ($('#cs1').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+	$('#cs-all-test').css('margin-top', cs_margin_top);
+	$('#cs-all-test').css('height', cs_height);
 
-  $('#cs1').css('width', "100vw");
-  $('#cs1').css('margin-left', "-2vw");
-  $('#cs1').css('padding-left', "2vw");
-  $('#cs1').css('padding-right', "12vw");
+	$('#cs1').css('width', "100vw");
+	$('#cs1').css('margin-left', "-2vw");
+	$('#cs1').css('padding-left', "2vw");
+	$('#cs1').css('padding-right', "12vw");
 });
 
 $('#cs2').click(function () {
-  $('#cs-heading').text("Value Tech Foundation");
-  $("#cs-heading").css("color", $("#vtf1").css("color"));
-  $("#cs-close").css("background-color", $("#vtf1").css("background-color"));
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height());
-  let cs_height = $('#cs2').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
+	$('#cs-heading').text("Value Tech Foundation");
+	$("#cs-heading").css("color", $("#vtf1").css("color"));
+	$("#cs-close").css("background-color", $("#vtf1").css("background-color"));
+	let header_margin_top = $('#sticky-project-header').offset().top;
+	let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height());
+	let cs_height = $('#cs2').height() - ($(window).height() * 0.028);
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	locoScroll.stop(); //stopping user from scrolling through the whole document
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//cloning the project header
+	$('#sticky-project-header')
+		.clone()
+		.attr('id', "project-header-test")
+		.appendTo($('#blur-all'));
+	$('#project-header-test').css('position', 'absolute');
+	$('#project-header-test').css('top', header_margin_top);
 
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+	if (header_margin_top == 0) {
+		$('#project-header-test').css('transform', '');
+	}
+	$('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+	$('#project-header-test').css('background-color', 'transparent');
+	$('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+	$('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+	$('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("Editorial");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+	$('#project-header-t1').text("Website");
+	$('#project-header-t2').text("Visual / Brand");
+	$('#project-header-t3').text("Editorial");
+	$('#project-header-t4').text("");
+	$('#project-header-t5').text("");
 
-  $('#project-header-year').text("2022");
+	$('#project-header-year').text("2022");
 
-  $('#project-header-d1').text("UI Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Web Development");
-  $('#project-header-d4').text("");
+	$('#project-header-d1').text("UI Design");
+	$('#project-header-d2').text("Branding");
+	$('#project-header-d3').text("Web Development");
+	$('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+	//cloning the case study tab (which is clicked)
+	$('#cs-all-holder1')
+		.clone()
+		.attr('id', "cs-all-test")
+		.appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+	//removing all the other cs tabs
+	$('#cs1').remove();
+	$('#cs3').remove();
+	$('#cs4').remove();
+	$('#cs5').remove();
+	$('#cs6').remove();
+	$('#cs7').remove();
+	$('#cs8').remove();
+	$('#cs9').remove();
+	$('#cs10').remove();
+	$('#cs11').remove();
+	$('#cs12').remove();
+	$('#cs13').remove();
 
-  $('#cs2-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs2').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs2').find('.empty-space-case-study:eq(0)').css('height', ($('#cs2').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+	$('#cs2-preview').remove(); // remove the preview of the selected cs tab
+	$('#cs2').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+	$('#cs2').find('.empty-space-case-study:eq(0)').css('height', ($('#cs2').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+	$('#cs-all-test').css('margin-top', cs_margin_top);
+	$('#cs-all-test').css('height', cs_height);
 
-  $('#cs2').css('width', "100vw");
-  $('#cs2').css('margin-left', "-2vw");
-  $('#cs2').css('padding-left', "2vw");
-  $('#cs2').css('padding-right', "12vw");
+	$('#cs2').css('width', "100vw");
+	$('#cs2').css('margin-left', "-2vw");
+	$('#cs2').css('padding-left', "2vw");
+	$('#cs2').css('padding-right', "12vw");
 });
 
 $('#cs3').click(function () {
-  $('#cs-heading').text("Mausumi")
-  $("#cs-heading").css("color", $("#mau1").css("color"));
-  $("#cs-close").css("background-color", $("#mau1").css("background-color"));
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() - + ($(window).height() * 0.028));
-  let cs_height = $('#cs3').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
+	$('#cs-heading').text("Mausumi")
+	$("#cs-heading").css("color", $("#mau1").css("color"));
+	$("#cs-close").css("background-color", $("#mau1").css("background-color"));
+	let header_margin_top = $('#sticky-project-header').offset().top;
+	let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() - + ($(window).height() * 0.028));
+	let cs_height = $('#cs3').height() - ($(window).height() * 0.028);
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	locoScroll.stop(); //stopping user from scrolling through the whole document
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//cloning the project header
+	$('#sticky-project-header')
+		.clone()
+		.attr('id', "project-header-test")
+		.appendTo($('#blur-all'));
+	$('#project-header-test').css('position', 'absolute');
+	$('#project-header-test').css('top', header_margin_top);
 
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+	if (header_margin_top == 0) {
+		$('#project-header-test').css('transform', '');
+	}
+	$('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+	$('#project-header-test').css('background-color', 'transparent');
+	$('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+	$('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+	$('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("Editorial");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+	$('#project-header-t1').text("Website");
+	$('#project-header-t2').text("Visual / Brand");
+	$('#project-header-t3').text("Editorial");
+	$('#project-header-t4').text("");
+	$('#project-header-t5').text("");
 
-  $('#project-header-year').text("2022");
+	$('#project-header-year').text("2022");
 
-  $('#project-header-d1').text("UI Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Web Development");
-  $('#project-header-d4').text("");
+	$('#project-header-d1').text("UI Design");
+	$('#project-header-d2').text("Branding");
+	$('#project-header-d3').text("Web Development");
+	$('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+	//cloning the case study tab (which is clicked)
+	$('#cs-all-holder1')
+		.clone()
+		.attr('id', "cs-all-test")
+		.appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+	//removing all the other cs tabs
+	$('#cs1').remove();
+	$('#cs2').remove();
+	$('#cs4').remove();
+	$('#cs5').remove();
+	$('#cs6').remove();
+	$('#cs7').remove();
+	$('#cs8').remove();
+	$('#cs9').remove();
+	$('#cs10').remove();
+	$('#cs11').remove();
+	$('#cs12').remove();
+	$('#cs13').remove();
 
-  $('#cs3-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs3').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs3').find('.empty-space-case-study:eq(0)').css('height', ($('#cs3').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+	$('#cs3-preview').remove(); // remove the preview of the selected cs tab
+	$('#cs3').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+	$('#cs3').find('.empty-space-case-study:eq(0)').css('height', ($('#cs3').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+	$('#cs-all-test').css('margin-top', cs_margin_top);
+	$('#cs-all-test').css('height', cs_height);
 
-  $('#cs3').css('width', "100vw");
-  $('#cs3').css('margin-left', "-2vw");
-  $('#cs3').css('padding-left', "2vw");
-  $('#cs3').css('padding-right', "12vw");
+	$('#cs3').css('width', "100vw");
+	$('#cs3').css('margin-left', "-2vw");
+	$('#cs3').css('padding-left', "2vw");
+	$('#cs3').css('padding-right', "12vw");
 });
 
 $('#cs4').click(function () {
-  $('#cs-heading').text("Nowiverse Arena");
-  $("#cs-heading").css("color", $("#nowi1").css("color"));
-  $("#cs-close").css("background-color", $("#nowi1").css("background-color"));
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() - ($(window).height() * 0.056));
-  let cs_height = $('#cs4').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
+	$('#cs-heading').text("Nowiverse Arena");
+	$("#cs-heading").css("color", $("#nowi1").css("color"));
+	$("#cs-close").css("background-color", $("#nowi1").css("background-color"));
+	let header_margin_top = $('#sticky-project-header').offset().top;
+	let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() - ($(window).height() * 0.056));
+	let cs_height = $('#cs4').height() - ($(window).height() * 0.028);
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	locoScroll.stop(); //stopping user from scrolling through the whole document
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//cloning the project header
+	$('#sticky-project-header')
+		.clone()
+		.attr('id', "project-header-test")
+		.appendTo($('#blur-all'));
+	$('#project-header-test').css('position', 'absolute');
+	$('#project-header-test').css('top', header_margin_top);
 
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+	if (header_margin_top == 0) {
+		$('#project-header-test').css('transform', '');
+	}
+	$('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+	$('#project-header-test').css('background-color', 'transparent');
+	$('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+	$('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+	$('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("Editorial");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+	$('#project-header-t1').text("Website");
+	$('#project-header-t2').text("Visual / Brand");
+	$('#project-header-t3').text("Editorial");
+	$('#project-header-t4').text("");
+	$('#project-header-t5').text("");
 
-  $('#project-header-year').text("2022");
+	$('#project-header-year').text("2022");
 
-  $('#project-header-d1').text("UI Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Web Development");
-  $('#project-header-d4').text("");
+	$('#project-header-d1').text("UI Design");
+	$('#project-header-d2').text("Branding");
+	$('#project-header-d3').text("Web Development");
+	$('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+	//cloning the case study tab (which is clicked)
+	$('#cs-all-holder1')
+		.clone()
+		.attr('id', "cs-all-test")
+		.appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+	//removing all the other cs tabs
+	$('#cs1').remove();
+	$('#cs2').remove();
+	$('#cs3').remove();
+	$('#cs5').remove();
+	$('#cs6').remove();
+	$('#cs7').remove();
+	$('#cs8').remove();
+	$('#cs9').remove();
+	$('#cs10').remove();
+	$('#cs11').remove();
+	$('#cs12').remove();
+	$('#cs13').remove();
 
-  $('#cs4-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs4').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs4').find('.empty-space-case-study:eq(0)').css('height', ($('#cs4').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+	$('#cs4-preview').remove(); // remove the preview of the selected cs tab
+	$('#cs4').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+	$('#cs4').find('.empty-space-case-study:eq(0)').css('height', ($('#cs4').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+	$('#cs-all-test').css('margin-top', cs_margin_top);
+	$('#cs-all-test').css('height', cs_height);
 
-  $('#cs4').css('width', "100vw");
-  $('#cs4').css('margin-left', "-2vw");
-  $('#cs4').css('padding-left', "2vw");
-  $('#cs4').css('padding-right', "12vw");
+	$('#cs4').css('width', "100vw");
+	$('#cs4').css('margin-left', "-2vw");
+	$('#cs4').css('padding-left', "2vw");
+	$('#cs4').css('padding-right', "12vw");
 });
 
 $('#cs5').click(function () {
-  $('#cs-heading').text("Vocal Media");
-  $("#cs-heading").css("color", $("#vocal1").css("color"));
-  $("#cs-close").css("background-color", $("#vocal1").css("background-color"));
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() - ($(window).height() * 0.084));
-  let cs_height = $('#cs5').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
+	$('#cs-heading').text("Vocal Media");
+	$("#cs-heading").css("color", $("#vocal1").css("color"));
+	$("#cs-close").css("background-color", $("#vocal1").css("background-color"));
+	let header_margin_top = $('#sticky-project-header').offset().top;
+	let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() - ($(window).height() * 0.084));
+	let cs_height = $('#cs5').height() - ($(window).height() * 0.028);
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	locoScroll.stop(); //stopping user from scrolling through the whole document
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//cloning the project header
+	$('#sticky-project-header')
+		.clone()
+		.attr('id', "project-header-test")
+		.appendTo($('#blur-all'));
+	$('#project-header-test').css('position', 'absolute');
+	$('#project-header-test').css('top', header_margin_top);
 
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+	if (header_margin_top == 0) {
+		$('#project-header-test').css('transform', '');
+	}
+	$('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+	$('#project-header-test').css('background-color', 'transparent');
+	$('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+	$('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+	$('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+	$('#project-header-t1').text("Website");
+	$('#project-header-t2').text("Visual / Brand");
+	$('#project-header-t3').text("");
+	$('#project-header-t4').text("");
+	$('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+	$('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("");
-  $('#project-header-d4').text("");
+	$('#project-header-d1').text("Web Design");
+	$('#project-header-d2').text("Branding");
+	$('#project-header-d3').text("");
+	$('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+	//cloning the case study tab (which is clicked)
+	$('#cs-all-holder1')
+		.clone()
+		.attr('id', "cs-all-test")
+		.appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs6').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+	//removing all the other cs tabs
+	$('#cs1').remove();
+	$('#cs2').remove();
+	$('#cs3').remove();
+	$('#cs4').remove();
+	$('#cs6').remove();
+	$('#cs7').remove();
+	$('#cs8').remove();
+	$('#cs9').remove();
+	$('#cs10').remove();
+	$('#cs11').remove();
+	$('#cs12').remove();
+	$('#cs13').remove();
 
-  $('#cs5-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs5').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs5').find('.empty-space-case-study:eq(0)').css('height', ($('#cs5').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+	$('#cs5-preview').remove(); // remove the preview of the selected cs tab
+	$('#cs5').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+	$('#cs5').find('.empty-space-case-study:eq(0)').css('height', ($('#cs5').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+	$('#cs-all-test').css('margin-top', cs_margin_top);
+	$('#cs-all-test').css('height', cs_height);
 
-  $('#cs5').css('width', "100vw");
-  $('#cs5').css('margin-left', "-2vw");
-  $('#cs5').css('padding-left', "2vw");
-  $('#cs5').css('padding-right', "12vw");
+	$('#cs5').css('width', "100vw");
+	$('#cs5').css('margin-left', "-2vw");
+	$('#cs5').css('padding-left', "2vw");
+	$('#cs5').css('padding-right', "12vw");
 });
 
 $('#cs6').click(function () {
-  $('#cs-heading').text("GreenFox");
-  //$("#cs-close").css("background-color", $("#gf1").css("background-color"));
-  $("#cs-heading").css("color", $("#gf1").css("color"));
-  $("#cs-close").css("background-color", $("#gf1").css("color"));
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() - ($(window).height() * 0.112));
-  let cs_height = $('#cs6').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
+	$('#cs-heading').text("GreenFox");
+	//$("#cs-close").css("background-color", $("#gf1").css("background-color"));
+	$("#cs-heading").css("color", $("#gf1").css("color"));
+	$("#cs-close").css("background-color", $("#gf1").css("color"));
+	let header_margin_top = $('#sticky-project-header').offset().top;
+	let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() - ($(window).height() * 0.112));
+	let cs_height = $('#cs6').height() - ($(window).height() * 0.028);
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	locoScroll.stop(); //stopping user from scrolling through the whole document
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//cloning the project header
+	$('#sticky-project-header')
+		.clone()
+		.attr('id', "project-header-test")
+		.appendTo($('#blur-all'));
+	$('#project-header-test').css('position', 'absolute');
+	$('#project-header-test').css('top', header_margin_top);
 
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+	if (header_margin_top == 0) {
+		$('#project-header-test').css('transform', '');
+	}
+	$('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+	$('#project-header-test').css('background-color', 'transparent');
+	$('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+	$('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+	$('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+	$('#project-header-t1').text("Website");
+	$('#project-header-t2').text("Visual / Brand");
+	$('#project-header-t3').text("");
+	$('#project-header-t4').text("");
+	$('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+	$('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Marketing");
-  $('#project-header-d4').text("");
+	$('#project-header-d1').text("Web Design");
+	$('#project-header-d2').text("Branding");
+	$('#project-header-d3').text("Marketing");
+	$('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+	//cloning the case study tab (which is clicked)
+	$('#cs-all-holder1')
+		.clone()
+		.attr('id', "cs-all-test")
+		.appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs7').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+	//removing all the other cs tabs
+	$('#cs1').remove();
+	$('#cs2').remove();
+	$('#cs3').remove();
+	$('#cs4').remove();
+	$('#cs5').remove();
+	$('#cs7').remove();
+	$('#cs8').remove();
+	$('#cs9').remove();
+	$('#cs10').remove();
+	$('#cs11').remove();
+	$('#cs12').remove();
+	$('#cs13').remove();
 
-  $('#cs6-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs6').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs6').find('.empty-space-case-study:eq(0)').css('height', ($('#cs6').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+	$('#cs6-preview').remove(); // remove the preview of the selected cs tab
+	$('#cs6').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+	$('#cs6').find('.empty-space-case-study:eq(0)').css('height', ($('#cs6').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+	$('#cs-all-test').css('margin-top', cs_margin_top);
+	$('#cs-all-test').css('height', cs_height);
 
-  $('#cs6').css('width', "100vw");
-  $('#cs6').css('margin-left', "-2vw");
-  $('#cs6').css('padding-left', "2vw");
-  $('#cs6').css('padding-right', "12vw");
+	$('#cs6').css('width', "100vw");
+	$('#cs6').css('margin-left', "-2vw");
+	$('#cs6').css('padding-left', "2vw");
+	$('#cs6').css('padding-right', "12vw");
 });
 
 $('#cs7').click(function () {
-  $('#cs-heading').text("All Bodies");
-  $("#cs-heading").css("color", $("#ab1").css("color"));
-  $("#cs-close").css("background-color", $("#ab1").css("background-color"));
-  let header_margin_top = $('#sticky-project-header').offset().top;
-  let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() - ($(window).height() * 0.14));
-  let cs_height = $('#cs7').height() - ($(window).height() * 0.028);
-  $("#disable-hover").css("display", "block"); //showing the disable trigger
-  locoScroll.stop(); //stopping user from scrolling through the whole document
-  $("#blur-all").css("height", "100vh"); //showing the blured overlay
-  //cloning the project header
-  $('#sticky-project-header')
-    .clone()
-    .attr('id', "project-header-test")
-    .appendTo($('#blur-all'));
-  $('#project-header-test').css('position', 'absolute');
-  $('#project-header-test').css('top', header_margin_top);
+	$('#cs-heading').text("All Bodies");
+	$("#cs-heading").css("color", $("#ab1").css("color"));
+	$("#cs-close").css("background-color", $("#ab1").css("background-color"));
+	let header_margin_top = $('#sticky-project-header').offset().top;
+	let cs_margin_top = (($('#cs-all-holder1').offset().top) + 1 + $('#cs1').height() + $('#cs2').height() + $('#cs3').height() + $('#cs4').height() + $('#cs5').height() + $('#cs6').height() - ($(window).height() * 0.14));
+	let cs_height = $('#cs7').height() - ($(window).height() * 0.028);
+	$("#disable-hover").css("display", "block"); //showing the disable trigger
+	locoScroll.stop(); //stopping user from scrolling through the whole document
+	$("#blur-all").css("height", "100vh"); //showing the blured overlay
+	//cloning the project header
+	$('#sticky-project-header')
+		.clone()
+		.attr('id', "project-header-test")
+		.appendTo($('#blur-all'));
+	$('#project-header-test').css('position', 'absolute');
+	$('#project-header-test').css('top', header_margin_top);
 
-  if (header_margin_top == 0) {
-    $('#project-header-test').css('transform', '');
-  }
-  $('#project-header-test').css('filter', 'blur(0.015vw)');
+	if (header_margin_top == 0) {
+		$('#project-header-test').css('transform', '');
+	}
+	$('#project-header-test').css('filter', 'blur(0.015vw)');
 
-  $('#project-header-test').css('background-color', 'transparent');
-  $('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
-  $('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
-  $('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
-  $('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
+	$('#project-header-test').css('background-color', 'transparent');
+	$('#project-header-test').find('.context-holder:eq(0)').css('background-color', 'transparent');
+	$('#project-header-test').find('.before-cs-top-space:eq(0)').remove();
+	$('#project-header-test').find('.context-holder:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').css('color', '#E2E2E2');
+	$('#project-header-test').find('.heading1:eq(0)').text("Project(s)");
 
-  $('#project-header-t1').text("Website");
-  $('#project-header-t2').text("Visual / Brand");
-  $('#project-header-t3').text("");
-  $('#project-header-t4').text("");
-  $('#project-header-t5').text("");
+	$('#project-header-t1').text("Website");
+	$('#project-header-t2').text("Visual / Brand");
+	$('#project-header-t3').text("");
+	$('#project-header-t4').text("");
+	$('#project-header-t5').text("");
 
-  $('#project-header-year').text("2021");
+	$('#project-header-year').text("2021");
 
-  $('#project-header-d1').text("Web Design");
-  $('#project-header-d2').text("Branding");
-  $('#project-header-d3').text("Marketing");
-  $('#project-header-d4').text("");
+	$('#project-header-d1').text("Web Design");
+	$('#project-header-d2').text("Branding");
+	$('#project-header-d3').text("Marketing");
+	$('#project-header-d4').text("");
 
-  //cloning the case study tab (which is clicked)
-  $('#cs-all-holder1')
-    .clone()
-    .attr('id', "cs-all-test")
-    .appendTo($('#blur-all'));
+	//cloning the case study tab (which is clicked)
+	$('#cs-all-holder1')
+		.clone()
+		.attr('id', "cs-all-test")
+		.appendTo($('#blur-all'));
 
-  //removing all the other cs tabs
-  $('#cs1').remove();
-  $('#cs2').remove();
-  $('#cs3').remove();
-  $('#cs4').remove();
-  $('#cs5').remove();
-  $('#cs6').remove();
-  $('#cs8').remove();
-  $('#cs9').remove();
-  $('#cs10').remove();
-  $('#cs11').remove();
-  $('#cs12').remove();
-  $('#cs13').remove();
+	//removing all the other cs tabs
+	$('#cs1').remove();
+	$('#cs2').remove();
+	$('#cs3').remove();
+	$('#cs4').remove();
+	$('#cs5').remove();
+	$('#cs6').remove();
+	$('#cs8').remove();
+	$('#cs9').remove();
+	$('#cs10').remove();
+	$('#cs11').remove();
+	$('#cs12').remove();
+	$('#cs13').remove();
 
-  $('#cs7-preview').remove(); // remove the preview of the selected cs tab
-  $('#cs7').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
-  $('#cs7').find('.empty-space-case-study:eq(0)').css('height', ($('#cs7').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
+	$('#cs7-preview').remove(); // remove the preview of the selected cs tab
+	$('#cs7').find('.line-top:eq(0)').remove(); // remove the line top in the cs tab
+	$('#cs7').find('.empty-space-case-study:eq(0)').css('height', ($('#cs7').find('.empty-space-case-study:eq(0)').height() + 1)); // remove empty space below the cs tab
 
-  $('#cs-all-test').css('margin-top', cs_margin_top);
-  $('#cs-all-test').css('height', cs_height);
+	$('#cs-all-test').css('margin-top', cs_margin_top);
+	$('#cs-all-test').css('height', cs_height);
 
-  $('#cs7').css('width', "100vw");
-  $('#cs7').css('margin-left', "-2vw");
-  $('#cs7').css('padding-left', "2vw");
-  $('#cs7').css('padding-right', "12vw");
+	$('#cs7').css('width', "100vw");
+	$('#cs7').css('margin-left', "-2vw");
+	$('#cs7').css('padding-left', "2vw");
+	$('#cs7').css('padding-right', "12vw");
 });
 
 // $('#cs8').click(function () {
@@ -2968,63 +2981,63 @@ $('#cs7').click(function () {
 
 $('#menu').on('mousedown', function () {
 
-  //  function dragdemo_show() {
-  if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
-    //console.log("at the top of the screen");
-    setTimeout(() => {
-      if ($('#clip-item1').hasClass("slip-reordering") == true) {
-        $('.drag-demo-container').css("opacity", "100%");
-        $('#menu-demo1').css("opacity", "0%");
-        $('#menu-demo2').css("opacity", "75%");
-        $('#menu').css("cursor", "grabbing");
-        $('#menu').css("cursor", "-webkit-grabbing");
-        $('.drag-anim').css("top", "35vh");
-        $('.drag-anim').css("transform", "rotate(0deg)");
-      }
-    }, 500);
+	//  function dragdemo_show() {
+	if ($("#menu").position().top == 0) { // checking if the nav menu is at the top of the viewport
+		//console.log("at the top of the screen");
+		setTimeout(() => {
+			if ($('#clip-item1').hasClass("slip-reordering") == true) {
+				$('.drag-demo-container').css("opacity", "100%");
+				$('#menu-demo1').css("opacity", "0%");
+				$('#menu-demo2').css("opacity", "75%");
+				$('#menu').css("cursor", "grabbing");
+				$('#menu').css("cursor", "-webkit-grabbing");
+				$('.drag-anim').css("top", "35vh");
+				$('.drag-anim').css("transform", "rotate(0deg)");
+			}
+		}, 500);
 
-  }
-  else {  // the nav menu is at the bottom of the viewport
-    //console.log("at the bottom of the screen");
-    setTimeout(() => {
-      if ($('#clip-item1').hasClass("slip-reordering") == true) {
-        $('.drag-demo-container').css("opacity", "100%");
-        $('#menu-demo1').css("opacity", "75%");
-        $('#menu-demo2').css("opacity", "0%");
-        $('#menu').css("cursor", "grabbing");
-        $('#menu').css("cursor", "-webkit-grabbing");
-        $('.drag-anim').css("top", "-35vh");
-        $('.drag-anim').css("transform", "rotate(180deg)");
-      }
-    }, 500);
-  }
-  //  }
+	}
+	else {  // the nav menu is at the bottom of the viewport
+		//console.log("at the bottom of the screen");
+		setTimeout(() => {
+			if ($('#clip-item1').hasClass("slip-reordering") == true) {
+				$('.drag-demo-container').css("opacity", "100%");
+				$('#menu-demo1').css("opacity", "75%");
+				$('#menu-demo2').css("opacity", "0%");
+				$('#menu').css("cursor", "grabbing");
+				$('#menu').css("cursor", "-webkit-grabbing");
+				$('.drag-anim').css("top", "-35vh");
+				$('.drag-anim').css("transform", "rotate(180deg)");
+			}
+		}, 500);
+	}
+	//  }
 }
 
 ).on('mouseup mouseleave', function () {
 
-  $('.drag-demo-container').css("opacity", "0%");
+	$('.drag-demo-container').css("opacity", "0%");
 
-  $('#menu-demo1').css("opacity", "0%");
-  $('#menu-demo2').css("opacity", "0%");
-  $('#menu').css("cursor", "grab");
+	$('#menu-demo1').css("opacity", "0%");
+	$('#menu-demo2').css("opacity", "0%");
+	$('#menu').css("cursor", "grab");
 
-  $('html').removeClass("has-scroll-scrolling");
+	$('html').removeClass("has-scroll-scrolling");
 
-  //  clearTimeout(presshold);
+	//  clearTimeout(presshold);
 });
 
 
 
 let scrolling = setInterval(checkifscrolling, 10);
 function checkifscrolling() {
-  if ($('html').hasClass("has-scroll-scrolling") == true) {
-    $('.drag-demo-container').css("opacity", "0%");
+	if ($('html').hasClass("has-scroll-scrolling") == true) {
+		$('.drag-demo-container').css("opacity", "0%");
 
-    $('#menu-demo1').css("opacity", "0%");
-    $('#menu-demo2').css("opacity", "0%");
-    $('#menu').css("cursor", "grab");
-  }
+		$('#menu-demo1').css("opacity", "0%");
+		$('#menu-demo2').css("opacity", "0%");
+		$('#menu').css("cursor", "grab");
+	}
 }
 
 
@@ -3073,14 +3086,14 @@ function checkifscrolling() {
 
 //while scrolling, if #testimonials or #contact-test has the attribute data-scroll-section-inview
 locoScroll.on("scroll", (obj) => {
-  //if #testimonials or #contact-test has the attribute data-scroll-section-inview
-  if ($("#testimonials").attr("data-scroll-section-inview") || $("#contact-test").attr("data-scroll-section-inview")) {
-    //set opacity of #projects to 0
-    $("#projects").css("opacity", "0");
-  } else {
-    //set opacity of #projects to 1
-    $("#projects").css("opacity", "1");
-  }
+	//if #testimonials or #contact-test has the attribute data-scroll-section-inview
+	if ($("#testimonials").attr("data-scroll-section-inview") || $("#contact-test").attr("data-scroll-section-inview")) {
+		//set opacity of #projects to 0
+		$("#projects").css("opacity", "0");
+	} else {
+		//set opacity of #projects to 1
+		$("#projects").css("opacity", "1");
+	}
 });
 
 
@@ -3118,8 +3131,8 @@ $(document).ready(function () {
   e6 = ".in";//.in
   var where_to = "mailto:" + e0 + e2 + e3 + "@" + e5 + e6;
   $('#email3').on('click', function (event) {
-    event.preventDefault();
-    document.location.href = where_to;
+	event.preventDefault();
+	document.location.href = where_to;
   })
 });
 */
@@ -3129,50 +3142,50 @@ $(document).ready(function () {
 //email
 
 $(document).ready(function () {
-  //mailto:spam@test.com
-  //mailto:contact@druh.in
-  e0 = "con";//con
-  e1 = "tictac";
-  e2 = e1.slice(3, 6);//tac
-  e3 = e2.slice(0, 1);//t
-  e4 = "bruh";
-  e5 = e4.replace("b", "d");//druh
-  e6 = ".in";//.in
-  var where_to = e0 + e2 + e3 + "@" + e5 + e6;
-  $('#email3, #email4, #email5, #email6, #hire-me, #something').on('click', function (event) {
-    event.preventDefault();
-    //document.location.href = "mailto:" + where_to;
-    e7 = "mailto:" + where_to;
-    window.open(e7, "_blank");
-  })
+	//mailto:spam@test.com
+	//mailto:contact@druh.in
+	e0 = "con";//con
+	e1 = "tictac";
+	e2 = e1.slice(3, 6);//tac
+	e3 = e2.slice(0, 1);//t
+	e4 = "bruh";
+	e5 = e4.replace("b", "d");//druh
+	e6 = ".in";//.in
+	var where_to = e0 + e2 + e3 + "@" + e5 + e6;
+	$('#email3, #email4, #email5, #email6, #hire-me, #something').on('click', function (event) {
+		event.preventDefault();
+		//document.location.href = "mailto:" + where_to;
+		e7 = "mailto:" + where_to;
+		window.open(e7, "_blank");
+	})
 
-  // $('#email4').on('click', function (event) {
-  //   event.preventDefault();
-  //   //document.location.href = "mailto:" + where_to;
-  //   e7 = "mailto:" + where_to;
-  //   window.open(e7, "_blank");
-  // })
+	// $('#email4').on('click', function (event) {
+	//   event.preventDefault();
+	//   //document.location.href = "mailto:" + where_to;
+	//   e7 = "mailto:" + where_to;
+	//   window.open(e7, "_blank");
+	// })
 
-  // $('#email5').on('click', function (event) {
-  //   event.preventDefault();
-  //   //document.location.href = "mailto:" + where_to;
-  //   e7 = "mailto:" + where_to;
-  //   window.open(e7, "_blank");
-  // })
+	// $('#email5').on('click', function (event) {
+	//   event.preventDefault();
+	//   //document.location.href = "mailto:" + where_to;
+	//   e7 = "mailto:" + where_to;
+	//   window.open(e7, "_blank");
+	// })
 
-  // $('#hire-me').on('click', function (event) {
-  //   event.preventDefault();
-  //   //document.location.href = "mailto:" + where_to;
-  //   e7 = "mailto:" + where_to;
-  //   window.open(e7, "_blank");
-  // })
+	// $('#hire-me').on('click', function (event) {
+	//   event.preventDefault();
+	//   //document.location.href = "mailto:" + where_to;
+	//   e7 = "mailto:" + where_to;
+	//   window.open(e7, "_blank");
+	// })
 
-  // $('#something').on('click', function (event) {
-  //   event.preventDefault();
-  //   //document.location.href = "mailto:" + where_to;
-  //   e7 = "mailto:" + where_to;
-  //   window.open(e7, "_blank");
-  // })
+	// $('#something').on('click', function (event) {
+	//   event.preventDefault();
+	//   //document.location.href = "mailto:" + where_to;
+	//   e7 = "mailto:" + where_to;
+	//   window.open(e7, "_blank");
+	// })
 
 });
 
