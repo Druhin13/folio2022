@@ -1452,9 +1452,9 @@ anime({
 					$("#druhin1, #druhin2, #druhin3, #druhin4, #druhin5, #druhin6, #druhin7").attr("data-scroll", "true");
 
 					//add attribute data-scroll-position to ids druhin1, druhin2, druhin3, druhin4, druhin5, druhin6, druhin7
-					$("#druhin1, #druhin2, #druhin3, #druhin4, #druhin5, #druhin6, #druhin7").attr("data-scroll-position", "top");
+					//$("#druhin1, #druhin2, #druhin3, #druhin4, #druhin5, #druhin6, #druhin7").attr("data-scroll-position", "top");
 
-					$("#druhin1").attr("data-scroll-speed", "-7");
+					$("#druhin1").attr("data-scroll-speed", "7");
 				}
 			});
 		}, 500);
