@@ -1,6 +1,7 @@
 //hide award tags
 //comment them out if awarded
-document.querySelector(".aww").style.display = "none", document.querySelector(".cssda").style.display = "none";
+//document.querySelector(".aww").style.display = "none";
+document.querySelector(".cssda").style.display = "none";
 
 
 //codesandbox test.js
